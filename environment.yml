@@ -1,0 +1,16 @@
+# Conda environment for open_call_agent.
+# Python packages are managed by Poetry (pyproject.toml / poetry.lock) and installed into this env.
+#
+#   conda env create -f environment.yml
+#   conda activate open-call-agent
+#   poetry install
+#   playwright install chromium
+name: open-call-agent
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - pip
+  - poetry=1.8
+  - cmake  # Needed to build llama-cpp-python (Metal is enabled by default on Apple Silicon)
+  - pkgs/main::llama.cpp=0.3.0.10760=mps*  # llama-server with Metal, for batched classification

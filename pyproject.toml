@@ -1,0 +1,44 @@
+[tool.poetry]
+name = "open-call-agent"
+version = "0.1.0"
+description = "Scrape events from ra.co and check promoter websites for open calls with a local LLM."
+authors = ["Orestes <lespaulmtg@gmail.com>"]
+readme = "README.md"
+packages = [{ include = "open_call_agent", from = "src" }, { include = "dashboard", from = "src" }]
+include = ["src/open_call_agent/ra/continents.json", "src/dashboard/static/*"]
+
+[tool.poetry.dependencies]
+python = ">=3.12,<3.13"
+# RA event scraper
+requests = "^2.34"
+# Open call checker: crawling and parsing
+beautifulsoup4 = "^4.15"
+lxml = "^6.1"
+playwright = "^1.63"
+dateparser = "^1.4"
+# Open call checker: local Qwen2.5-3B-Instruct model
+llama-cpp-python = "^0.3.35"
+huggingface-hub = "^1.31"
+# Link checks: email domains
+dnspython = "^2.7"
+# Progress bars
+tqdm = "^4.66"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3"
+
+[tool.poetry.scripts]
+open-call-agent = "open_call_agent.cli:main"
+open-call-dashboard = "dashboard.server:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+markers = [
+    "network: calls ra.co or promoter websites",
+    "llm: loads the local model (slow)",
+]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

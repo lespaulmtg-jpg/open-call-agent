@@ -1,0 +1,3 @@
+# Install packages into the active conda env (open-call-agent) instead of a separate Poetry virtualenv
+[virtualenvs]
+create = false

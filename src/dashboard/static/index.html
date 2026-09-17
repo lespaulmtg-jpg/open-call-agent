@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Open Call Agent</title>
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="sidebar">
+  <div class="brand">
+    <span class="brand-mark"></span>
+    <span>Open Call<br>Agent</span>
+  </div>
+  <button class="nav-button" data-view="festivals">Festivals</button>
+  <button class="nav-button" data-view="scraper">RA scraper</button>
+  <button class="nav-button" data-view="openCalls">Open call LLM</button>
+  <div class="sidebar-foot">
+    <div class="micro-label">Data</div>
+    <div id="data-dir" class="mono"></div>
+  </div>
+</nav>
+
+<main>
+  <section id="view-festivals" class="view">
+    <header class="view-head">
+      <div>
+        <div class="micro-label">Reviewed results</div>
+        <h1>Festivals</h1>
+        <p class="subtitle">Every reviewed festival, its open call status and where to apply</p>
+      </div>
+      <div class="head-actions">
+        <label class="field inline">
+          <span class="micro-label">Data source</span>
+          <select id="source-select"></select>
+        </label>
+        <button id="reload-festivals" class="button">Reload</button>
+      </div>
+    </header>
+    <div id="stats-festivals" class="stat-grid"></div>
+
+    <div class="panel">
+      <div class="panel-head">
+        <div>
+          <h2>Reviewed festivals</h2>
+          <p class="panel-note" id="table-note">Drag a column heading to reorder, click it to sort, click a row to add
+            your own status</p>
+        </div>
+        <div class="panel-tools">
+          <input id="search" type="search" placeholder="Filter table...">
+          <select id="country-filter">
+            <option value="">All countries</option>
+          </select>
+          <select id="city-filter">
+            <option value="">All cities</option>
+          </select>
+          <select id="status-filter">
+            <option value="">All statuses</option>
+          </select>
+          <select id="note-filter">
+            <option value="">All my statuses</option>
+          </select>
+          <select id="deadline-filter">
+            <option value="">Any deadline</option>
+            <option value="upcoming">Deadline ahead</option>
+            <option value="past">Deadline passed</option>
+            <option value="none">No deadline</option>
+          </select>
+          <button id="reset-table" class="button ghost">Reset</button>
+        </div>
+      </div>
+      <div class="table-wrap">
+        <table id="festival-table">
+          <thead><tr id="festival-head"></tr></thead>
+          <tbody id="festival-body"></tbody>
+        </table>
+      </div>
+      <div class="table-foot">
+        <span id="row-count"></span>
+        <button id="load-more" class="button ghost" hidden>Show more</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="view-scraper" class="view" hidden>
+    <header class="view-head">
+      <div>
+        <div class="micro-label">Resident Advisor</div>
+        <h1>RA scraper</h1>
+        <p class="subtitle">Scrape events by city, country or continent into the data directory</p>
+      </div>
+    </header>
+    <div id="stats-scraper" class="stat-grid"></div>
+    <div class="two-column">
+      <div class="panel">
+        <div class="panel-head"><h2>Run the scraper</h2></div>
+        <form id="form-scrape" class="job-form" data-kind="scrape"></form>
+      </div>
+      <div class="panel" id="jobs-scraper"></div>
+    </div>
+  </section>
+
+  <section id="view-openCalls" class="view" hidden>
+    <header class="view-head">
+      <div>
+        <div class="micro-label">Local models</div>
+        <h1>Open call LLM</h1>
+        <p class="subtitle">Crawl promoter websites with the 3B model, then review the findings with the 7B model</p>
+      </div>
+    </header>
+    <div id="stats-openCalls" class="stat-grid"></div>
+    <div class="two-column">
+      <div class="panel">
+        <div class="panel-head"><h2>Run a check</h2></div>
+        <div class="tabs" id="open-call-tabs">
+          <button class="tab active" data-kind="check-open-calls">Scoped check</button>
+          <button class="tab" data-kind="check-europe">Europe and summary</button>
+        </div>
+        <form id="form-check-open-calls" class="job-form" data-kind="check-open-calls"></form>
+        <form id="form-check-europe" class="job-form" data-kind="check-europe" hidden></form>
+      </div>
+      <div class="panel" id="jobs-openCalls"></div>
+    </div>
+  </section>
+</main>
+
+<div id="toast" class="toast" hidden></div>
+<script src="api.js"></script>
+<script src="table.js"></script>
+<script src="jobs.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
