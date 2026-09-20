@@ -2,8 +2,9 @@
 Aggregate festivals and their open call results into summary tables.
 
 - One row per festival (RA event lasting more than 24 hours), merging its editions and duplicate listings, joined with
-  the open call result of its promoters' websites. A festival with several websites takes the most positive result:
-  open, needs_review, closed, none.
+  the open call result of its own website, or of its promoters' websites when it has none or when hardly any page of
+  its own site could be read. A festival with several promoter websites takes the most positive result: open,
+  needs_review, closed, none.
   Festivals without a promoter website are "no_website"; websites missing from the results are "not_checked".
 - One row per country with counts per status.
 - A Markdown overview with the country table and every open call.
@@ -13,7 +14,7 @@ import re
 from collections import Counter, defaultdict
 from datetime import date
 
-from .open_call.batch import website_key
+from .open_call.batch import row_websites, website_key
 from .ra.events import read_rows, split_links, write_rows
 
 logger = logging.getLogger(__name__)
@@ -22,15 +23,33 @@ YEAR_RE = re.compile(r"\b(?:19|20)\d{2}\b")
 NON_WORD_RE = re.compile(r"[\W_]+")
 
 STATUS_RANK = ["open", "needs_review", "closed", "none", "not_checked", "no_website"]
+MIN_PAGES_FOR_NONE = 3  # Below this, "no call found" says more about the crawl than about the festival
 
 FESTIVAL_SUMMARY_COLUMNS = [
     "Open Call Status", "Deadline", "Country", "City", "Festival", "Start Date", "End Date", "Duration Hours", "Editions",
-    "Edition Dates", "Venue", "Promoters", "Website", "Open Call URL", "Announcement URL", "Opportunity Types",
+    "Edition Dates", "Venue", "Promoters", "Website", "Open Call URL", "Open Call URL Check", "Announcement URL",
+    "Announcement URL Check", "Opportunity Types",
     "How To Apply", "Contact Emails", "Instagram", "Status Reason", "Small Model Status", "Large Model Status",
     "Link Checks", "Attending", "Event URL", "Event URLs", "Event ID", "Country Code",
 ]
 COUNTRY_SUMMARY_COLUMNS = ["Country", "Country Code", "Festivals", "With Website", "Open", "Needs Review", "Closed",
                            "None", "Not Checked", "No Website"]
+
+
+def is_conclusive(result):
+    """
+    Decide whether a result can stand for the festival. "No call found" on a site where hardly any page could be read,
+    e.g. a one-page holding site, says little, so it doesn't outrank a call found on another of its websites.
+
+    :param result: An open call result row.
+    :return: True if the result is worth trusting on its own.
+    """
+    if result.get("status") != "none":
+        return True
+    try:
+        return int(result.get("pages_visited") or 0) >= MIN_PAGES_FOR_NONE
+    except ValueError:
+        return False
 
 
 def best_result(results):
@@ -39,6 +58,17 @@ def best_result(results):
     :return: The most positive result row.
     """
     return min(results, key=lambda row: STATUS_RANK.index(row["status"]) if row["status"] in STATUS_RANK else 3)
+
+
+def status_reason(result):
+    """
+    :param result: An open call result row.
+    :return: Why the festival has its status: the reviewing model's reason, plus what the link checks changed, since
+             those override the models, e.g. a page announcing a call whose form is closed.
+    """
+    reason = result.get("review_reason") or result.get("status_reason", "")
+    note = result.get("status_reason", "").split("link check:")
+    return f"Link check: {note[-1].strip()}" + (f" | {reason}" if reason else "") if len(note) > 1 else reason
 
 
 def link_check_summary(result):
@@ -77,6 +107,14 @@ def main_edition(editions, today=None):
     return next((row for row in editions if row["End Time"][:10] >= today), editions[-1])
 
 
+def unique(lists):
+    """
+    :param lists: Lists of values.
+    :return: The values, without duplicates, in order.
+    """
+    return list(dict.fromkeys(value for values in lists for value in values))
+
+
 def join_unique(values, separator=", "):
     """
     :param values: Strings, each possibly holding several items separated by separator.
@@ -110,14 +148,20 @@ def build_festival_rows(festival_paths, results_path, country_names=None, today=
     for editions in festivals.values():
         editions = sorted(editions.values(), key=lambda row: row["Start Time"])
         festival = main_edition(editions, today)
-        websites = split_links(join_unique(row["Promoter Websites"] for row in editions))
-        found = [results[website_key(website)] for website in websites if website_key(website) in results]
+        # The festival's own website comes first and decides the result when it has been checked; a promoter website
+        # can cover several festivals, so it only stands in when the festival has no website of its own
+        own_websites = unique(split_links(row.get("Event Website")) for row in editions)
+        websites = unique([own_websites] + [row_websites(row) for row in editions])
+        found = {website_key(website): results[website_key(website)] for website in websites
+                 if website_key(website) in results}
+        own_result = next((found[website_key(website)] for website in own_websites if website_key(website) in found
+                           and is_conclusive(found[website_key(website)])), None)
         if not websites:
             status, result = "no_website", {}
         elif not found:
             status, result = "not_checked", {}
         else:
-            result = best_result(found)
+            result = own_result or best_result(list(found.values()))
             status = result["status"]
 
         summary.append({
@@ -137,12 +181,15 @@ def build_festival_rows(festival_paths, results_path, country_names=None, today=
             "Promoters": join_unique(row["Promoters"] for row in editions),
             "Website": ", ".join(websites),
             "Open Call URL": result.get("open_call_url", ""),
+            "Open Call URL Check": result.get("open_call_url_check", ""),
             "Announcement URL": result.get("announcement_url", ""),
+            "Announcement URL Check": result.get("announcement_url_check", ""),
             "Opportunity Types": result.get("opportunity_types", ""),
             "How To Apply": result.get("how_to_apply", ""),
             "Contact Emails": result.get("contact_emails", ""),
-            "Instagram": join_unique(row["Promoter Instagrams"] for row in editions),
-            "Status Reason": result.get("review_reason") or result.get("status_reason", ""),
+            "Instagram": join_unique([row.get("Event Instagram", "") for row in editions] +
+                                     [row["Promoter Instagrams"] for row in editions]),
+            "Status Reason": status_reason(result),
             "Small Model Status": result.get("small_model_status") or result.get("status", ""),
             "Large Model Status": result.get("large_model_status", ""),
             "Link Checks": link_check_summary(result) if result else "",

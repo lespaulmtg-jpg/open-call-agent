@@ -51,6 +51,8 @@ JOB_TYPES = {
              "required": True},
             {"name": "festivals", "label": "Identify festivals as well", "type": "checkbox", "flag": "--festivals",
              "default": True},
+            {"name": "save_raw", "label": "Save each festival's full RA response as JSON", "type": "checkbox",
+             "flag": "--save-raw"},
         ],
     },
     "check-open-calls": {

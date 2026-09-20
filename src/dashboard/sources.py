@@ -107,6 +107,22 @@ def first_link(value):
     return (value or "").split(", ")[0]
 
 
+def working_link(value, checks):
+    """
+    Pick the first URL that its link check didn't find wanting, so the table doesn't send you to a page that is broken
+    or that redirects visitors elsewhere, e.g. a volunteer portal whose event page is gone.
+
+    :param value: A column holding one or more URLs separated by ", ".
+    :param checks: The matching *_check column, results separated by " | ".
+    :return: The first working URL, the first URL if none of them work, or an empty string.
+    """
+    urls = [url for url in (value or "").split(", ") if url]
+    results = (checks or "").split(" | ")
+    working = [url for index, url in enumerate(urls)
+               if index >= len(results) or not results[index].startswith(("broken", "redirected"))]
+    return (working or urls or [""])[0]
+
+
 def to_row(summary_row):
     """
     :param summary_row: A festival summary row.
@@ -122,7 +138,9 @@ def to_row(summary_row):
         "end_date": summary_row["End Date"],
         "status": summary_row["Open Call Status"],
         "deadline": summary_row["Deadline"],
-        "open_call_url": first_link(summary_row["Open Call URL"]) or first_link(summary_row["Announcement URL"]),
+        # A call's application link, or the page announcing it when the application link no longer works
+        "open_call_url": working_link(summary_row["Open Call URL"], summary_row.get("Open Call URL Check")) or
+                         working_link(summary_row["Announcement URL"], summary_row.get("Announcement URL Check")),
         # The festival's own website, with the RA listing it was scraped from as the source
         "festival_url": first_link(summary_row["Website"]),
         "website": summary_row["Website"],

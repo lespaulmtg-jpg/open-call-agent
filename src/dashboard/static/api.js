@@ -41,6 +41,59 @@ function renderStats(containerId, stats) {
   ])));
 }
 
+const HELP_DELAY = 1000;   /* Hover this long before the help box appears */
+
+/* Help boxes. An element explains itself through data-help, or through the help texts below for the parts of the
+   table that are built in JavaScript. Data cells never have one: they say what they are already. */
+const COLUMN_HELP = {
+  festival: 'The festival, with its editions and repeat listings merged into one row.',
+  month: 'When the festival takes place. Sorting uses the exact start date.',
+  status: 'What the models decided: open, closed, needs review or none. A second badge is the status you set.',
+  open_call_url: 'Where to apply: the application form, or the page announcing the call if the form no longer works.',
+  festival_url: "The festival's own website, or its promoter's when RA has no link for the festival itself.",
+  source_url: 'The ra.co listing this row was scraped from.',
+  country: 'Country of the venue.',
+  city: 'City of the venue, as ra.co names it.',
+  deadline: 'The application deadline the models found, as YYYY-MM-DD.',
+};
+
+function help(element, text) {
+  element.dataset.help = text;
+  return element;
+}
+
+function setUpTooltips() {
+  const tooltip = document.getElementById('tooltip');
+  let timer = null;
+
+  document.addEventListener('mouseover', event => {
+    const target = event.target.closest('[data-help]');
+    clearTimeout(timer);
+    if (!target) {
+      tooltip.hidden = true;
+      return;
+    }
+    timer = setTimeout(() => {
+      tooltip.textContent = target.dataset.help;
+      tooltip.hidden = false;
+      const box = target.getBoundingClientRect();
+      const width = tooltip.offsetWidth;
+      tooltip.style.left = `${Math.max(12, Math.min(box.left, window.innerWidth - width - 12))}px`;
+      /* Above the element when there is no room below */
+      const below = box.bottom + 8;
+      tooltip.style.top = below + tooltip.offsetHeight > window.innerHeight
+        ? `${box.top - tooltip.offsetHeight - 8}px` : `${below}px`;
+    }, HELP_DELAY);
+  });
+
+  document.addEventListener('mouseout', event => {
+    if (!event.relatedTarget || !event.relatedTarget.closest('[data-help]')) {
+      clearTimeout(timer);
+      tooltip.hidden = true;
+    }
+  });
+}
+
 /* Remembers table settings (column order, sort, filters) between visits. */
 const settings = {
   read(key, fallback) {

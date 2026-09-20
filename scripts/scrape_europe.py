@@ -23,6 +23,7 @@ from pathlib import Path
 from open_call_agent.festivals import identify_festivals
 from open_call_agent.paths import SCRAPED_DIR, events_csv_path, logs_dir, scraped_dir
 from open_call_agent.progress import progress, progress_logging
+from open_call_agent import runs
 from open_call_agent.storage import stop_on_sigterm
 from open_call_agent.ra.areas import CONTINENTS, countries_in_continent
 from open_call_agent.ra.client import RAClient
@@ -69,6 +70,7 @@ def scrape_chunks(countries, months, chunks_dir, client):
         for label, month_start, month_end in months:
             done += 1
             bar.update(1)
+            runs.report(progress=done)
             bar.set_postfix_str(f"{country['name']} {label}", refresh=False)
             marker = chunks_dir / label / code / ".done"
             if marker.exists():
@@ -136,16 +138,18 @@ def main():
     logger.info("Scraping %d countries in %s x %d months (%s to %s). Log: %s",
                 len(countries), args.continent, len(months), args.start, args.end, log_path)
 
-    with progress_logging():
+    with progress_logging(), runs.run("scrape", args.data_dir, f"{args.continent}, {args.start} to {args.end}",
+                                      vars(args)):
+        runs.set_total(len(countries) * len(months), "country-month")
         failures = scrape_chunks(countries, months, chunks_dir, client)
 
-    logger.info("Merging monthly chunks")
-    written = merge_chunks(chunks_dir, args.data_dir, args.start, args.end)
-    total_events = sum(len(read_rows(path)) for path in written)
-    festival_paths = [path for events_path in written for path in
-                      identify_festivals(args.data_dir, events_path.parent.parent.name, events_path.parent.name)]
-    festivals = sum(len(read_rows(path)) for path in set(festival_paths))
-    logger.info("Done: %d events and %d festivals in %d city CSVs", total_events, festivals, len(written))
+        logger.info("Merging monthly chunks")
+        written = merge_chunks(chunks_dir, args.data_dir, args.start, args.end)
+        total_events = sum(len(read_rows(path)) for path in written)
+        festival_paths = [path for events_path in written for path in
+                          identify_festivals(args.data_dir, events_path.parent.parent.name, events_path.parent.name)]
+        festivals = sum(len(read_rows(path)) for path in set(festival_paths))
+        logger.info("Done: %d events and %d festivals in %d city CSVs", total_events, festivals, len(written))
 
     if failures:
         logger.error("%d country-months failed; rerun this script to retry them: %s", len(failures),

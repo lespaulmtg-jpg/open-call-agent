@@ -254,6 +254,19 @@ rows at a time as you scroll. Jobs run as separate processes whose options come 
 sends SIGTERM, the safe stop. Statuses and notes live in their own JSON file, keyed by festival rather than by event
 ID, so they survive rescrapes and new editions.
 
+### Runs in the dashboard ([runs.py](src/open_call_agent/runs.py#L30), [past_runs.py](src/open_call_agent/past_runs.py#L43))
+
+**Issue.** The dashboard could only show jobs it had started itself, in memory, so its list was empty after a restart
+and never held the runs started in a terminal, which is where the long ones are run.
+
+**Solutions tested.** Reading figures out of the logs alone (brittle, and nothing to show while a run is going);
+keeping runs in memory (lost on restart).
+
+**Decision.** The commands record themselves: `runs.run(...)` writes data/runs/<started>_<kind>.json and the code doing
+the work reports into it (`runs.report(events=15, cities={...})`), which does nothing when no run is active. Runs from
+before this, and from terminals, are read back from their log files and marked as such, since their figures are only
+as good as what was logged.
+
 ## Results
 
 ### Statuses and URL columns ([checker.py](src/open_call_agent/open_call/checker.py#L699), [batch.py](src/open_call_agent/open_call/batch.py#L30))

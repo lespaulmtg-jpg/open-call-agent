@@ -48,11 +48,12 @@ the GPU.
 open-call-dashboard --open          # http://localhost:8000
 ```
 
-A local page with three views: **Festivals**, a table of the reviewed festivals whose columns (festival, month, status,
+Hovering for a second over anything you can act on explains what it does. A local page with three views: **Festivals**, a table of the reviewed festivals whose columns (festival, month, status,
 submissions URL, the festival's website, the RA listing it came from, country, city and deadline) can be dragged,
 sorted and filtered by text, country, city, status, your status and deadline, where a row expands into everything the scrapers found and into your own status (applied, not a
 festival, ...) and notes; **RA scraper** and **Open call LLM**, which start and stop the same commands as the CLI and
-show their log. The data source of the table is any results or summary CSV in `data/open_calls/`. Your statuses and
+list every run: how far it got, how long it took and what it found, with a window per run holding its figures, options,
+errors and output. Runs from the terminal appear too, read back from their logs. The data source of the table is any results or summary CSV in `data/open_calls/`. Your statuses and
 notes are stored in `data/dashboard/notes.json` and stay with a festival across new scrapes. The server is for
 localhost only: it has no authentication and starts processes, so don't expose it to a network.
 
@@ -65,6 +66,8 @@ data/open_calls/open_calls_<scope>_<date>.csv                    small model res
 data/open_calls/open_calls_<scope>_<date>_reviewed.csv           final results after the large model review
 data/open_calls/reports/, reviews/                               per-site JSON (pages, quotes, coverage, errors)
 data/open_calls/summary/                                         per-festival, per-country and Markdown summaries
+data/runs/<started>_<kind>.json                                   what each scraper or checker run did
+data/raw_events/<country>/<city>/<event id>.json                  RA's full response per festival (scrape --save-raw)
 data/dashboard/notes.json                                        your statuses and notes from the dashboard
 data/logs/                                                        logs
 ```

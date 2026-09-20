@@ -4,6 +4,8 @@ from pathlib import Path
 
 import pytest
 
+from open_call_agent.open_call.batch import row_websites
+
 from open_call_agent.cli import main
 from open_call_agent.open_call.batch import STATUSES, check_open_calls, collect_websites, website_key
 from open_call_agent.open_call.review import check_and_review_open_calls
@@ -151,11 +153,83 @@ def test_broken_links_send_an_open_call_to_review(monkeypatch):
            "announcement_url": "https://www.fogstudio.ch/proposals",
            "open_call_url": "https://docs.google.com/forms/d/e/fog/viewform",
            "promoter_instagrams": "https://www.instagram.com/fog_festival", "contact_emails": "info@fogstudio.ch"}
-    [checked] = links.check_rows([dict(row)])
+    [checked] = links.check_rows([dict(row)], in_browser=False)
     assert checked["status"] == "needs_review" and "announcement_url broken" in checked["status_reason"]
     assert (checked["announcement_url_check"], checked["open_call_url_check"], checked["instagram_check"],
             checked["email_check"]) == ("broken (404)", "ok", "unverifiable", "ok")
 
     # Blocked or unreachable links don't change the status: they may work in a browser
     responses["https://www.fogstudio.ch/proposals"] = "blocked (403)"
-    assert links.check_rows([dict(row)])[0]["status"] == "open"
+    assert links.check_rows([dict(row)], in_browser=False)[0]["status"] == "open"
+
+
+def test_application_links_are_opened_in_a_browser(monkeypatch):
+    """
+    Some portals answer every request with 200 OK and then redirect with JavaScript, e.g. helfereinsatz.ch sends
+    visitors from a festival's shift page to its generic list of open shifts once that festival is over.
+    """
+    from open_call_agent.open_call import links
+
+    assert links.redirect_target("https://portal.ch/kfka/de/browse/open/event/210209",
+                                 "https://portal.ch/kfka/de/a/open") == "/kfka/de/a/open"
+    assert links.redirect_target("https://portal.ch/x", "https://www.portal.ch/x/?lang=de") is None, "the same page"
+    assert links.redirect_target("https://portal.ch/x", "https://other.com/x") == "https://other.com/x"
+
+    monkeypatch.setattr(links, "check_url", lambda url: "ok")
+    monkeypatch.setattr(links, "check_email", lambda email: "ok")
+    monkeypatch.setattr(links, "check_urls_in_browser",
+                        lambda urls, **kwargs: {url: "redirected (/kfka/de/a/open)" for url in urls})
+    row = {"website": "https://www.detectclassic.com", "status": "open", "status_reason": "Open call on 2 page(s)",
+           "announcement_url": "https://detectclassic.com/betweenmountains/about/mitmachen",
+           "open_call_url": "https://portal.helfereinsatz.ch/kfka/de/browse/open/event/210209",
+           "promoter_instagrams": "", "contact_emails": ""}
+
+    [checked] = links.check_rows([dict(row)], in_browser=True)
+    assert checked["open_call_url_check"] == "redirected (/kfka/de/a/open)"
+    assert checked["announcement_url_check"] == "ok", "only application links are opened in a browser"
+
+    # A site the models found nothing on isn't worth opening
+    quiet = dict(row, status="none")
+    monkeypatch.setattr(links, "check_urls_in_browser", lambda urls, **kwargs: {url: "redirected (/x)" for url in urls})
+    assert links.check_rows([quiet], in_browser=True)[0]["open_call_url_check"] == "ok"
+
+
+def test_a_closed_form_closes_the_call(monkeypatch):
+    """
+    Organisers leave "applications are open" on their pages long after the form stops accepting them, as Between
+    Mountains did, so the form itself decides.
+    """
+    from open_call_agent.open_call import links
+
+    assert links.FORM_CLOSED_RE.search("Sorry this form Volunteer Application Form - ENG is now closed")
+    assert links.FORM_CLOSED_RE.search("This form is no longer accepting responses")
+    assert not links.FORM_CLOSED_RE.search("Fill in the form to apply, applications open until June")
+
+    monkeypatch.setattr(links, "check_url", lambda url: "ok")
+    monkeypatch.setattr(links, "check_email", lambda email: "ok")
+    row = {"website": "https://www.detectclassic.com", "status": "open", "status_reason": "Open call on 2 page(s)",
+           "announcement_url": "https://detectclassic.com/betweenmountains/about/mitmachen",
+           "open_call_url": "https://portal.helfereinsatz.ch/x, https://detectclassic.festivalpro.com/form/y",
+           "promoter_instagrams": "", "contact_emails": ""}
+    states = {"https://portal.helfereinsatz.ch/x": "redirected (/a/open)",
+              "https://detectclassic.festivalpro.com/form/y": "form closed"}
+    monkeypatch.setattr(links, "check_urls_in_browser", lambda urls, **kwargs: {url: states[url] for url in urls})
+
+    [checked] = links.check_rows([dict(row)], in_browser=True)
+    assert checked["open_call_url_check"] == "redirected (/a/open) | form closed"
+    assert checked["status"] == "closed" and "form says it is closed" in checked["status_reason"]
+
+    # One form still accepting keeps the call open
+    states["https://detectclassic.festivalpro.com/form/y"] = "ok"
+    assert links.check_rows([dict(row)], in_browser=True)[0]["status"] == "open"
+
+
+def test_row_websites_put_the_festivals_own_site_first():
+    """
+    The checker crawls the festival's own website before its promoters', which can cover several festivals.
+    """
+    row = {"Event Website": "http://betweenmountains.ch/", "Promoter Websites": "https://www.detectclassic.com"}
+    assert row_websites(row) == ["http://betweenmountains.ch/", "https://www.detectclassic.com"]
+    assert row_websites({"Promoter Websites": "https://fogstudio.ch"}) == ["https://fogstudio.ch"]
+    assert row_websites({"Event Website": "https://x.ch", "Promoter Websites": "https://x.ch"}) == ["https://x.ch"]
+    assert row_websites({}) == []

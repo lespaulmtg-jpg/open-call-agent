@@ -3,6 +3,7 @@ Dashboard tests: the table built from Swiss data, the notes, the command each jo
 No model and no network, apart from the Swiss fixture the other tests already scrape.
 """
 import json
+import os
 import time
 from urllib.error import HTTPError
 from urllib.request import Request, urlopen
@@ -10,10 +11,10 @@ from urllib.request import Request, urlopen
 import pytest
 
 from dashboard import jobs as jobs_module
-from dashboard.jobs import JobRunner, build_command
+from dashboard.jobs import JobRunner, build_command, clean_log_line
 from dashboard.notes import read_notes, save_note
 from dashboard.server import DashboardHandler
-from dashboard.sources import list_sources, load_rows, row_id
+from dashboard.sources import default_source, list_sources, load_rows, row_id, working_link
 from dashboard.stats import scrape_stats, table_stats
 from open_call_agent.open_call.batch import RESULT_COLUMNS
 from open_call_agent.ra.events import write_rows
@@ -45,7 +46,9 @@ def test_table_rows_and_stats(results_dir):
     fog = next(row for row in rows if row["festival"].startswith("FOG"))
     assert fog["status"] == "open" and fog["deadline"] == "2026-11-15" and fog["month"] == "Sep 2026"
     assert fog["open_call_url"] == "https://docs.google.com/forms/fog"
-    assert fog["festival_url"] == "https://fogstudio.ch", "the festival's own website"
+    # RA stores FOG's own link as http://fogstudio.ch, the promoter's as https://fogstudio.ch
+    assert fog["festival_url"].endswith("//fogstudio.ch"), "the festival's own website, as RA lists it"
+    assert fog["festival_url"] == fog["website"].split(", ")[0]
     assert fog["source"] == "RA" and fog["source_url"].startswith("https://ra.co/events/")
     assert {row["country"] for row in rows} == {"CH"} and "zurich" in {row["city"] for row in rows}
     assert "Duration Hours" in fog["details"] and "" not in fog["details"].values()
@@ -74,11 +77,61 @@ def test_row_id_is_stable_across_editions(results_dir):
            "a note stays with the festival when a new edition is scraped"
 
 
+def test_progress_bars_are_readable_in_the_log():
+    """
+    tqdm redraws a progress bar with carriage returns and escape codes; only its last state belongs in the browser.
+    """
+    assert clean_log_line("Scraping europe:   4%|\u258d  | 2/46 [00:05<02:04]\r\x1b[A") == \
+           "Scraping europe:   4%|\u258d  | 2/46 [00:05<02:04]"
+    assert clean_log_line("ch/zurich: 0listing\rch/zurich: 15listing [00:02]\n") == "ch/zurich: 15listing [00:02]"
+    assert clean_log_line("\x1b[A") == ""
+    assert clean_log_line("2026-09-18 INFO scraper: 15 events") == "2026-09-18 INFO scraper: 15 events"
+
+
+def test_newest_results_open_by_default(tmp_path):
+    """
+    A check run after a summary was written must be what the table shows, so the newest file wins whichever kind.
+    """
+    directory = tmp_path / "open_calls"
+    summary = directory / "summary" / "europe_festivals_2026-09-17.csv"
+    results = directory / "open_calls_ch_festivals_2026-09-18_reviewed.csv"
+    for path in (summary, results):
+        write_rows([], path, RESULT_COLUMNS)
+
+    def written_at(path, when):
+        os.utime(path, (when, when))
+
+    now = time.time()
+    written_at(results, now - 3600)
+    written_at(summary, now)
+    assert default_source(tmp_path).startswith("summary:"), "the summary is the newest"
+
+    written_at(results, now + 3600)
+    assert default_source(tmp_path) == f"results:{results.name}", "a later check wins over the older summary"
+
+
+def test_the_table_links_to_an_application_page_that_works():
+    """
+    An application link that redirects visitors elsewhere is not what the table should send you to.
+    """
+    assert working_link("https://portal.ch/event/210209, https://forms.gle/x",
+                        "redirected (/a/open) | ok") == "https://forms.gle/x"
+    assert working_link("https://forms.gle/x, https://portal.ch/y", "ok | ok") == "https://forms.gle/x"
+    assert working_link("https://portal.ch/y", "redirected (/a/open)") == "https://portal.ch/y", "nothing better"
+    assert working_link("https://forms.gle/x", "") == "https://forms.gle/x", "not checked yet"
+    assert working_link("", "") == ""
+
+
 def test_job_commands(tmp_path):
     command = build_command("scrape", {"where": "city", "where_value": "ch/zurich", "start": "2026-09-16",
                                        "end": "2026-09-18", "festivals": True}, tmp_path)
     assert command[2:] == ["-m", "open_call_agent.cli", "--data-dir", str(tmp_path), "scrape", "--city", "ch/zurich",
                            "--start", "2026-09-16", "--end", "2026-09-18", "--festivals"]
+    assert "--save-raw" not in command, "the raw responses are only saved when asked for"
+
+    with_raw = build_command("scrape", {"where": "country", "where_value": "ch", "start": "2026-09-16",
+                                        "end": "2026-09-18", "save_raw": True}, tmp_path)
+    assert "--save-raw" in with_raw and "--festivals" not in with_raw
 
     command = build_command("check-open-calls", {"where": "city", "country": "ch", "where_value": "zurich",
                                                  "festivals_only": True, "limit": 5}, tmp_path)

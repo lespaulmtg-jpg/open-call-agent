@@ -48,11 +48,23 @@ def test_swiss_festival_summary(swiss_data_dir, tmp_path):
     assert "FOG Festival 2026" in markdown_path.read_text()
 
 
-def festival(event_id, name, start, end, city="zurich", website="", instagram=""):
+def festival(event_id, name, start, end, city="zurich", website="", instagram="", event_website=""):
     return {"Event ID": event_id, "Event name": name, "Start Time": f"{start}T12:00:00.000",
             "End Time": f"{end}T23:00:00.000", "Country": "ch", "City": city, "Venue": "Venue", "Promoters": "FOG",
+            "Event Website": event_website, "Event Instagram": "",
             "Promoter Websites": website, "Promoter Instagrams": instagram, "Number of guests attending": "10",
             "Event URL": f"https://ra.co/events/{event_id}", "Duration Hours": "35"}
+
+
+def test_a_link_check_that_overrides_the_models_is_shown(tmp_path):
+    from open_call_agent.summary import status_reason
+
+    assert status_reason({"status_reason": "Open call on 4 page(s); link check: the application form says it is closed",
+                          "review_reason": "The page says applications are open."}) == \
+           "Link check: the application form says it is closed | The page says applications are open."
+    assert status_reason({"status_reason": "Open call on 1 page(s)", "review_reason": "Quotes verified."}) == \
+           "Quotes verified."
+    assert status_reason({"status_reason": "No call found"}) == "No call found"
 
 
 def test_festival_editions_appear_once(tmp_path):
@@ -79,3 +91,34 @@ def test_festival_editions_appear_once(tmp_path):
 
     after_all = build_festival_rows([zurich], results, today=date(2027, 1, 1))
     assert after_all[0]["Event ID"] == "2", "the latest edition is shown once all are over"
+
+
+def test_festival_website_decides_the_result(tmp_path):
+    """
+    A promoter website can cover several festivals (detectclassic.com covers Between Mountains and the German Detect
+    Classic Festival), so the festival's own website leads and decides its status.
+    """
+    path = tmp_path / "basel.csv"
+    write_rows([festival("1", "Between Mountains 2026", "2026-09-04", "2026-09-06", city="basel",
+                         website="https://www.detectclassic.com", event_website="http://betweenmountains.ch/")],
+               path, FESTIVAL_COLUMNS)
+    results = tmp_path / "results.csv"
+
+    def write_results(rows):
+        write_rows([{column: "" for column in RESULT_COLUMNS} | row for row in rows], results, RESULT_COLUMNS)
+
+    write_results([{"website": "https://www.detectclassic.com", "status": "open", "deadline": "2026-11-15"}])
+    [row] = build_festival_rows([path], results)
+    assert row["Website"] == "http://betweenmountains.ch/, https://www.detectclassic.com"
+    assert row["Open Call Status"] == "open", "the promoter's result stands in until the festival's site is checked"
+
+    write_results([{"website": "https://www.detectclassic.com", "status": "open", "deadline": "2026-11-15"},
+                   {"website": "http://betweenmountains.ch/", "status": "none", "pages_visited": "12"}])
+    [row] = build_festival_rows([path], results)
+    assert row["Open Call Status"] == "none", "the festival's own website decides once it has been checked"
+
+    # betweenmountains.ch is a one-page holding site: "no call found" there says nothing about the festival
+    write_results([{"website": "https://www.detectclassic.com", "status": "open", "deadline": "2026-11-15"},
+                   {"website": "http://betweenmountains.ch/", "status": "none", "pages_visited": "1"}])
+    [row] = build_festival_rows([path], results)
+    assert row["Open Call Status"] == "open", "a call found elsewhere outranks a crawl that read almost nothing"

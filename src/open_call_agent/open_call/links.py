@@ -8,6 +8,11 @@ Results are written to *_check columns, one value per link in the same order as 
 - broken (404), broken (410), broken (DNS): the page or domain doesn't exist.
 - blocked (403), blocked (429), ...: the site refused an automated request, so the link may still work in a browser.
 - error (500), timeout, unreachable: a server or connection problem that may be temporary.
+- redirected (<path>): the page sends visitors somewhere else once its JavaScript runs, e.g. a volunteer portal whose
+  event page is gone and which lands everyone on its generic list of open shifts. A plain request sees only 200 OK, so
+  application links are opened in a browser to catch this.
+- form closed: the application form itself says it stopped accepting applications. Organisers often leave the page
+  announcing a call unchanged, so the form is the better witness: an open call whose forms are all closed is closed.
 - unverifiable: Instagram answers every profile URL, existing or not, with the same page to logged-out visitors.
 - invalid: the email address is malformed.
 - no mail server: the email domain exists but has no MX or A record.
@@ -27,6 +32,7 @@ import requests
 
 from ..progress import progress
 from ..ra.events import read_rows, split_links, write_rows
+from .checker import FORM_CLOSED_RE
 
 logger = logging.getLogger(__name__)
 
@@ -88,6 +94,57 @@ def check_url(url):
     return f"error ({status})"
 
 
+def redirect_target(page_url, final_url):
+    """
+    Decide whether a page sent the visitor somewhere else, ignoring differences that keep the same page: the scheme,
+    "www.", a trailing slash, the query and the fragment.
+
+    :param page_url: The URL that was opened.
+    :param final_url: The URL the browser ended on.
+    :return: The path landed on, or None if it is the same page.
+    """
+    opened, landed = urlparse(page_url), urlparse(final_url)
+    if opened.netloc.lower().removeprefix("www.") != landed.netloc.lower().removeprefix("www."):
+        return final_url
+    if opened.path.rstrip("/") == landed.path.rstrip("/"):
+        return None
+    return landed.path or "/"
+
+
+def check_urls_in_browser(urls, timeout=TIMEOUT):
+    """
+    Open URLs in a headless browser to see where a visitor actually ends up. Some application portals answer every
+    request with 200 OK and then redirect with JavaScript, so their links look fine to a plain request.
+
+    :param urls: The URLs to open.
+    :param timeout: Seconds to wait per page.
+    :return: A dict of URL -> "ok", "redirected (<path>)" or None when the browser couldn't decide.
+    """
+    from playwright.sync_api import Error as PlaywrightError, sync_playwright
+
+    results = {}
+    try:
+        with sync_playwright() as playwright:
+            browser = playwright.chromium.launch()
+            page = browser.new_page(user_agent=USER_AGENT)
+            for url in progress(urls, desc="Opening application links", unit="link"):
+                try:
+                    page.goto(url, wait_until="networkidle", timeout=timeout * 1000)
+                    target = redirect_target(url, page.url)
+                    if FORM_CLOSED_RE.search(page.inner_text("body")):
+                        results[url] = "form closed"
+                    else:
+                        results[url] = f"redirected ({target})" if target else "ok"
+                except PlaywrightError as error:
+                    logger.debug("Could not open %s in a browser: %s", url, error)
+                    results[url] = None
+            browser.close()
+    except Exception as error:
+        # Without a browser the HTTP checks still stand
+        logger.warning("Skipping the browser link check: %s", error)
+    return results
+
+
 def check_email(email):
     """
     Check that an email address is well formed and its domain can receive mail (MX record, or an A record as fallback).
@@ -113,13 +170,14 @@ def check_email(email):
     return "no mail server"
 
 
-def check_rows(rows, workers=LINK_WORKERS):
+def check_rows(rows, workers=LINK_WORKERS, in_browser=True):
     """
     Check every link and email in result rows, each unique one once, and add the *_check columns. An open call whose
     announcement pages or open call links are all broken is changed to needs_review.
 
     :param rows: Result rows, updated in place.
     :param workers: Links checked at the same time.
+    :param in_browser: Also open the application links of found calls in a browser, to catch JavaScript redirects.
     :return: The rows.
     """
     targets = {(value, column == "contact_emails") for row in rows for column in CHECK_COLUMNS
@@ -133,6 +191,15 @@ def check_rows(rows, workers=LINK_WORKERS):
             checked[futures[future]] = future.result()
             bar.update(1)
 
+    # Only the application links of calls that were found: opening a page in a browser costs seconds, not milliseconds
+    if in_browser:
+        application_links = [value for row in rows if row.get("status") in ("open", "needs_review")
+                             for value in split_links(row.get("open_call_url"))
+                             if checked.get((value, False)) == "ok"]
+        for url, result in check_urls_in_browser(list(dict.fromkeys(application_links))).items():
+            if result:
+                checked[(url, False)] = result
+
     for row in rows:
         for column, check_column in CHECK_COLUMNS.items():
             row[check_column] = " | ".join(checked[(value, column == "contact_emails")]
@@ -144,6 +211,13 @@ def check_rows(rows, workers=LINK_WORKERS):
         if row["status"] == "open" and broken:
             row["status"] = "needs_review"
             row["status_reason"] = f"{row['status_reason']}; link check: {' and '.join(broken)} broken"
+
+        # The form outranks the page announcing the call: organisers often leave "applications are open" behind
+        application_checks = [result for result in row[CHECK_COLUMNS["open_call_url"]].split(" | ") if result]
+        if row["status"] == "open" and application_checks and "form closed" in application_checks and \
+                "ok" not in application_checks:
+            row["status"] = "closed"
+            row["status_reason"] = f"{row['status_reason']}; link check: the application form says it is closed"
     logger.info("Checked %d links and emails", len(targets))
     return rows
 

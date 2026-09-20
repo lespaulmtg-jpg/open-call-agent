@@ -2,11 +2,13 @@
 Data directory layout:
 
     data/scraped_data/<country>/<city>/events_<start>_<end>.csv      scraped events
+    data/raw_events/<country>/<city>/<event id>.json                 RA's full API response per festival (optional)
     data/scraped_data/<country>/<city>/festivals_<start>_<end>.csv   events lasting more than 24 hours
     data/open_calls/open_calls_<scope>_<date>.csv                    small model results per website
     data/open_calls/open_calls_<scope>_<date>_reviewed.csv           final results after the large model review
     data/open_calls/reports/<site>.json                              small model report per website
     data/open_calls/reviews/<site>.json                              large model review per website
+    data/runs/<started>_<kind>.json                                   what each scraper or checker run did
     data/logs/                                                        logs
 """
 import os
@@ -15,8 +17,10 @@ from pathlib import Path
 
 DEFAULT_DATA_DIR = Path(os.environ.get("OPEN_CALL_AGENT_DATA_DIR", "data"))
 SCRAPED_DIR = "scraped_data"
+RAW_EVENTS_DIR = "raw_events"
 OPEN_CALLS_DIR = "open_calls"
 LOGS_DIR = "logs"
+RUNS_DIR = "runs"
 EVENTS_PREFIX = "events_"
 FESTIVALS_PREFIX = "festivals_"
 
@@ -29,12 +33,35 @@ def scraped_dir(data_dir):
     return Path(data_dir) / SCRAPED_DIR
 
 
+def raw_events_dir(data_dir):
+    """
+    :param data_dir: The data directory.
+    :return: The Path holding RA's full API response per festival, kept apart from the CSVs.
+    """
+    return Path(data_dir) / RAW_EVENTS_DIR
+
+
+def raw_event_path(data_dir, country_code, city, event_id):
+    """
+    :return: The Path of one festival's raw API response.
+    """
+    return raw_events_dir(data_dir) / country_code.lower() / city / f"{event_id}.json"
+
+
 def open_calls_dir(data_dir):
     """
     :param data_dir: The data directory.
     :return: The Path holding open call results, reports and reviews.
     """
     return Path(data_dir) / OPEN_CALLS_DIR
+
+
+def runs_dir(data_dir):
+    """
+    :param data_dir: The data directory.
+    :return: The Path holding one JSON file per scraper or checker run.
+    """
+    return Path(data_dir) / RUNS_DIR
 
 
 def logs_dir(data_dir):

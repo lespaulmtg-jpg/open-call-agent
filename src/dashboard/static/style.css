@@ -18,6 +18,9 @@
 
 * { box-sizing: border-box; }
 
+/* A hidden element must not catch clicks, even when its class sets a display */
+[hidden] { display: none !important; }
+
 body {
   margin: 0;
   display: flex;
@@ -292,4 +295,77 @@ td.mono-cell { font-family: var(--mono); font-size: 13px; }
 @media (max-width: 1100px) {
   .two-column { grid-template-columns: 1fr; }
   .detail { grid-template-columns: 1fr; }
+}
+
+/* Runs */
+.run { border-top: 1px solid var(--line); padding: 14px 20px; cursor: pointer; }
+.run:hover { background: var(--panel-raised); }
+.run.open-run { background: var(--panel-raised); box-shadow: inset 2px 0 0 var(--accent); }
+.run-head { display: flex; align-items: baseline; gap: 10px; justify-content: space-between; }
+.run-meta { color: var(--muted); font-size: 12px; margin-top: 3px; }
+.run-stats { color: var(--text); font-size: 13px; margin-top: 8px; }
+.run-errors { color: var(--closed); font-size: 12px; margin-top: 6px; }
+
+.progress-row { display: flex; align-items: center; gap: 10px; margin-top: 10px; }
+.progress {
+  flex: 1;
+  height: 6px;
+  border-radius: 999px;
+  background: var(--line-strong);
+  overflow: hidden;
+}
+.progress-fill { height: 100%; background: var(--accent-dim); transition: width 0.4s ease; }
+.progress.running .progress-fill { background: var(--accent); }
+.progress.failed .progress-fill { background: var(--closed); }
+.progress.stopped .progress-fill { background: var(--muted); }
+.progress-label { color: var(--muted); font-size: 12px; white-space: nowrap; font-family: var(--mono); }
+
+/* Run window */
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(3, 6, 6, 0.72);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 60px 20px;
+  overflow: auto;
+  z-index: 20;
+}
+
+.window {
+  background: var(--panel);
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius);
+  width: min(900px, 100%);
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.6);
+}
+
+.window-head { display: flex; justify-content: space-between; gap: 20px; padding: 20px 24px 6px; }
+.window-head h2 { font-size: 22px; margin: 4px 0; }
+#run-window-body { padding: 10px 24px 24px; }
+#run-window-body h3 { margin: 22px 0 10px; font-size: 13px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent-dim); }
+.stat-grid.small { grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; margin: 16px 0 0; }
+.stat-grid.small .stat-card { padding: 12px 14px; }
+.stat-grid.small .value { font-size: 22px; margin: 4px 0 0; }
+.run-arguments { color: var(--muted); font-family: var(--mono); font-size: 12px; overflow-wrap: anywhere; }
+.run-error-list { margin: 0; padding-left: 18px; color: var(--closed); font-size: 13px; }
+.run-error-list li { margin-bottom: 6px; overflow-wrap: anywhere; }
+.window-actions { margin-top: 22px; }
+
+/* Help boxes */
+.tooltip {
+  position: fixed;
+  z-index: 40;
+  max-width: 340px;
+  background: var(--panel-raised);
+  border: 1px solid var(--line-strong);
+  border-left: 3px solid var(--accent-dim);
+  border-radius: 8px;
+  padding: 10px 12px;
+  font-size: 13px;
+  line-height: 1.45;
+  color: var(--text);
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.5);
+  pointer-events: none;
 }

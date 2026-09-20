@@ -15,6 +15,7 @@ from pathlib import Path
 from urllib.parse import urlparse
 
 from ..progress import progress
+from .. import runs
 from ..storage import read_json, write_json_atomic
 from ..paths import EVENTS_PREFIX, FESTIVALS_PREFIX, find_csvs, logs_dir, open_calls_dir, safe_filename, scraped_dir
 from ..ra.events import read_rows, split_links
@@ -49,9 +50,18 @@ def website_key(url):
     return f"{host}{parsed.path.rstrip('/')}"
 
 
+def row_websites(row):
+    """
+    :param row: An events or festivals CSV row.
+    :return: The event's own website first, then its promoters' websites, without duplicates.
+    """
+    websites = split_links(row.get("Event Website")) + split_links(row.get("Promoter Websites"))
+    return list(dict.fromkeys(websites))
+
+
 def collect_websites(csv_paths):
     """
-    Collect unique promoter websites from event CSVs, with the promoters, events and places they relate to.
+    Collect unique websites from event CSVs, with the promoters, events and places they relate to.
 
     :param csv_paths: Paths of events or festivals CSVs.
     :return: A dict of website key -> site info dict, in first-seen order.
@@ -59,7 +69,7 @@ def collect_websites(csv_paths):
     sites = {}
     for path in csv_paths:
         for row in read_rows(path):
-            for website in split_links(row.get("Promoter Websites")):
+            for website in row_websites(row):
                 site = sites.setdefault(website_key(website), {
                     "website": website, "promoters": {}, "event_names": {}, "event_urls": {},
                     "promoter_instagrams": {}, "countries": {}, "cities": {}})
@@ -69,7 +79,7 @@ def collect_websites(csv_paths):
                         site["promoters"][promoter] = None
                 site["event_names"][row["Event name"]] = None
                 site["event_urls"][row["Event URL"]] = None
-                for instagram in split_links(row.get("Promoter Instagrams")):
+                for instagram in split_links(row.get("Event Instagram")) + split_links(row.get("Promoter Instagrams")):
                     site["promoter_instagrams"][instagram] = None
                 site["countries"][row["Country"]] = None
                 site["cities"][row["City"]] = None
@@ -244,6 +254,8 @@ def check_open_calls(data_dir, country_code=None, city=None, festivals_only=Fals
     reports_dir.mkdir(parents=True, exist_ok=True)
     output_path.parent.mkdir(parents=True, exist_ok=True)
     logger.info("%d websites to check from %d CSV files", len(sites), len(csv_paths))
+    runs.set_total(len(sites), "site")
+    runs.report(websites=len(sites))
 
     def report_path_for(site):
         return reports_dir / f"{safe_filename(website_key(site['website']))}.json"
@@ -267,8 +279,10 @@ def check_open_calls(data_dir, country_code=None, city=None, festivals_only=Fals
                 if saved.get("model") == model_name:
                     logger.info("Already checked by %s on %s: %s", model_name, saved["checked_on"], site["website"])
                     write(site, saved)
+                    runs.report(reused=1, **{saved["status"]: 1})
                     continue
             to_check.append(site)
+        runs.report(progress=len(sites) - len(to_check))
 
         if to_check:
             # Loaded once, only when a site actually needs checking
@@ -291,6 +305,7 @@ def check_open_calls(data_dir, country_code=None, city=None, festivals_only=Fals
                     write(site, report)
                     logger.info("[%d/%d] %s: %s (crawl %.0fs, classify %.0fs)", done, len(to_check), website,
                                 report["status"], crawl_seconds, classify_seconds)
+                    runs.report(progress=len(sites) - len(to_check) + done, checked=1, **{report["status"]: 1})
                 bar.close()
             finally:
                 if "results" in locals():

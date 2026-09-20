@@ -15,10 +15,11 @@ from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 from urllib.parse import parse_qs, urlparse
 
-from open_call_agent.paths import DEFAULT_DATA_DIR
+from open_call_agent.paths import DEFAULT_DATA_DIR, open_calls_dir, scraped_dir
 
 from .jobs import JOB_TYPES, JobRunner
 from .notes import NOTE_STATUSES, read_notes, save_note
+from .runs import find_run, list_runs
 from .sources import default_source, list_sources, load_rows
 from .stats import llm_stats, scrape_stats, table_stats
 
@@ -35,6 +36,12 @@ class DashboardHandler(SimpleHTTPRequestHandler):
     def __init__(self, *args, context=None, **kwargs):
         self.context = context
         super().__init__(*args, directory=str(STATIC_DIR), **kwargs)
+
+    def end_headers(self):
+        # The page and its scripts change as the dashboard is worked on, so browsers must ask rather than reuse
+        if not urlparse(self.path).path.startswith("/api/"):
+            self.send_header("Cache-Control", "no-cache")
+        super().end_headers()
 
     def do_GET(self):
         path = urlparse(self.path).path
@@ -68,6 +75,10 @@ class DashboardHandler(SimpleHTTPRequestHandler):
             return {"stats": scrape_stats(data_dir, runner)}
         if path == "/api/stats/llm":
             return {"stats": llm_stats(data_dir, runner)}
+        if path == "/api/runs":
+            return {"runs": list_runs(data_dir, runner, query.get("kind"))}
+        if path == "/api/runs/detail":
+            return {"run": find_run(data_dir, runner, query.get("id", ""))}
         if path == "/api/jobs":
             return {"jobs": runner.as_list()}
         if path == "/api/jobs/log":
@@ -128,7 +139,11 @@ def serve(data_dir=DEFAULT_DATA_DIR, host="127.0.0.1", port=8000, project_dir=No
     :param project_dir: The directory the scrapers run in, the working directory by default.
     :param open_browser: Open the dashboard in a browser once it is up.
     """
-    context = {"data_dir": Path(data_dir), "runner": JobRunner(Path(data_dir), project_dir)}
+    data_dir = Path(data_dir).resolve()
+    if not scraped_dir(data_dir).is_dir() and not open_calls_dir(data_dir).is_dir():
+        print(f"No scraped data or results in {data_dir}. Start the dashboard in the project directory, or pass "
+              f"--data-dir <path>.")
+    context = {"data_dir": data_dir, "runner": JobRunner(data_dir, project_dir)}
     server = ThreadingHTTPServer((host, port), partial(DashboardHandler, context=context))
     url = f"http://{'localhost' if host == '127.0.0.1' else host}:{server.server_port}"
     print(f"Dashboard on {url} (data: {data_dir}). Ctrl+C to stop.")
