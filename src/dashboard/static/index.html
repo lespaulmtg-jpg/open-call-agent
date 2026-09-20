@@ -13,9 +13,9 @@
     <span class="brand-mark"></span>
     <span>Open Call<br>Agent</span>
   </div>
-  <button class="nav-button" data-view="festivals">Festivals</button>
-  <button class="nav-button" data-view="scraper">RA scraper</button>
-  <button class="nav-button" data-view="openCalls">Open call LLM</button>
+  <button class="nav-button" data-view="festivals" data-help="Browse the festivals that have been checked, filter them and keep your own status and notes.">Festivals</button>
+  <button class="nav-button" data-view="scraper" data-help="Scrape events from ra.co and see every scraper run.">RA scraper</button>
+  <button class="nav-button" data-view="openCalls" data-help="Check promoter and festival websites for open calls with the local models, and see every check.">Open call LLM</button>
   <div class="sidebar-foot">
     <div class="micro-label">Data</div>
     <div id="data-dir" class="mono"></div>
@@ -33,9 +33,9 @@
       <div class="head-actions">
         <label class="field inline">
           <span class="micro-label">Data source</span>
-          <select id="source-select"></select>
+          <select id="source-select" data-help="Which results the table is built from: a summary written by the Europe script, or the results of one check. The newest is shown first."></select>
         </label>
-        <button id="reload-festivals" class="button">Reload</button>
+        <button id="reload-festivals" class="button" data-help="Read the CSV files again, to pick up a check that has just finished.">Reload</button>
       </div>
     </header>
     <div id="stats-festivals" class="stat-grid"></div>
@@ -48,26 +48,26 @@
             your own status</p>
         </div>
         <div class="panel-tools">
-          <input id="search" type="search" placeholder="Filter table...">
-          <select id="country-filter">
+          <input id="search" type="search" placeholder="Filter table..." data-help="Match festival, promoter, country, city, month, status or your own notes.">
+          <select id="country-filter" data-help="Show one country only. The city list follows what you pick here.">
             <option value="">All countries</option>
           </select>
-          <select id="city-filter">
+          <select id="city-filter" data-help="Show one city only, from the chosen country.">
             <option value="">All cities</option>
           </select>
-          <select id="status-filter">
+          <select id="status-filter" data-help="The open call status found by the models: open, closed, needs review (unclear or the site could not be read fully) or none.">
             <option value="">All statuses</option>
           </select>
-          <select id="note-filter">
+          <select id="note-filter" data-help="The status you set yourself on a festival, e.g. applied or not a festival.">
             <option value="">All my statuses</option>
           </select>
-          <select id="deadline-filter">
+          <select id="deadline-filter" data-help="Whether the submission deadline is still ahead, has passed, or was never found.">
             <option value="">Any deadline</option>
             <option value="upcoming">Deadline ahead</option>
             <option value="past">Deadline passed</option>
             <option value="none">No deadline</option>
           </select>
-          <button id="reset-table" class="button ghost">Reset</button>
+          <button id="reset-table" class="button ghost" data-help="Clear the filters and put the columns back in their original order.">Reset</button>
         </div>
       </div>
       <div class="table-wrap">
@@ -78,7 +78,7 @@
       </div>
       <div class="table-foot">
         <span id="row-count"></span>
-        <button id="load-more" class="button ghost" hidden>Show more</button>
+        <button id="load-more" class="button ghost" hidden data-help="Add the next 100 festivals to the table. Scrolling does the same.">Show more</button>
       </div>
     </div>
   </section>
@@ -97,7 +97,7 @@
         <div class="panel-head"><h2>Run the scraper</h2></div>
         <form id="form-scrape" class="job-form" data-kind="scrape"></form>
       </div>
-      <div class="panel" id="jobs-scraper"></div>
+      <div class="panel" id="runs-scraper"></div>
     </div>
   </section>
 
@@ -114,19 +114,35 @@
       <div class="panel">
         <div class="panel-head"><h2>Run a check</h2></div>
         <div class="tabs" id="open-call-tabs">
-          <button class="tab active" data-kind="check-open-calls">Scoped check</button>
-          <button class="tab" data-kind="check-europe">Europe and summary</button>
+          <button class="tab active" data-kind="check-open-calls" data-help="Check one city, one country, or everything scraped, with the 3B model and then the 7B review.">Scoped check</button>
+          <button class="tab" data-kind="check-europe" data-help="Check every European festival and write the summary tables. This is the long run.">Europe and summary</button>
         </div>
         <form id="form-check-open-calls" class="job-form" data-kind="check-open-calls"></form>
         <form id="form-check-europe" class="job-form" data-kind="check-europe" hidden></form>
       </div>
-      <div class="panel" id="jobs-openCalls"></div>
+      <div class="panel" id="runs-openCalls"></div>
     </div>
   </section>
 </main>
 
+<div id="run-window" class="overlay" hidden>
+  <div class="window">
+    <div class="window-head">
+      <div>
+        <div class="micro-label" id="run-window-kind"></div>
+        <h2 id="run-window-title"></h2>
+        <p class="panel-note" id="run-window-when"></p>
+      </div>
+      <button id="run-window-close" class="button ghost" data-help="Close this window (or press Escape).">Close</button>
+    </div>
+    <div id="run-window-body"></div>
+  </div>
+</div>
+
+<div id="tooltip" class="tooltip" hidden></div>
 <div id="toast" class="toast" hidden></div>
 <script src="api.js"></script>
+<script src="runs.js"></script>
 <script src="table.js"></script>
 <script src="jobs.js"></script>
 <script src="app.js"></script>

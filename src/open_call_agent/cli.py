@@ -10,11 +10,13 @@ Command line interface.
     open-call-agent check-site -u http://fogstudio.ch/
 """
 import argparse
+import contextlib
 import json
 import logging
 import sys
 from datetime import date
 
+from . import runs
 from .paths import DEFAULT_DATA_DIR, logs_dir, scraped_dir
 from .progress import progress_logging
 from .storage import stop_on_sigterm
@@ -85,6 +87,8 @@ def build_parser():
     scrape.add_argument("--start", required=True, type=valid_date, help="Start date (inclusive), YYYY-MM-DD.")
     scrape.add_argument("--end", required=True, type=valid_date, help="End date (inclusive), YYYY-MM-DD.")
     scrape.add_argument("--festivals", action="store_true", help="Also identify festivals in the scraped CSVs.")
+    scrape.add_argument("--save-raw", action="store_true",
+                        help="Also save each festival's full RA response as data/raw_events/<country>/<city>/<id>.json.")
 
     festivals = commands.add_parser("festivals", help="Find events lasting more than 24 hours in existing event CSVs.")
     festivals.add_argument("--country", help="Limit to a country code.")
@@ -137,15 +141,15 @@ def run_scrape(args):
         if "/" not in args.city:
             raise ValueError("--city must be <country>/<city>, e.g. ch/zurich")
         country_code, city = args.city.split("/", 1)
-        paths = scrape_city(country_code, city, args.start, args.end, args.data_dir)
+        paths = scrape_city(country_code, city, args.start, args.end, args.data_dir, save_raw=args.save_raw)
     elif args.country:
-        paths = scrape_country(args.country, args.start, args.end, args.data_dir)
+        paths = scrape_country(args.country, args.start, args.end, args.data_dir, save_raw=args.save_raw)
     else:
-        paths = scrape_continent(args.continent.lower(), args.start, args.end, args.data_dir)
+        paths = scrape_continent(args.continent.lower(), args.start, args.end, args.data_dir, save_raw=args.save_raw)
 
     if args.festivals:
-        for path in paths:
-            identify_festivals(args.data_dir, path.parent.parent.name, path.parent.name)
+        # Only the CSVs just scraped, so other date ranges of the same cities are left alone
+        identify_festivals(args.data_dir, events_paths=paths)
     print(f"Wrote {len(paths)} event CSV files to {scraped_dir(args.data_dir)}")
 
 
@@ -228,6 +232,20 @@ def run_check_site(args):
 
 COMMANDS = {"scrape": run_scrape, "festivals": run_festivals, "check-open-calls": run_check_open_calls,
             "review-open-calls": run_review_open_calls, "check-site": run_check_site}
+# Commands worth recording as a run for the dashboard, and what kind of run they are
+RUN_KINDS = {"scrape": "scrape", "festivals": "scrape", "check-open-calls": "open_calls",
+             "review-open-calls": "open_calls"}
+
+
+def run_label(args):
+    """
+    :param args: The parsed command line arguments.
+    :return: What the run is, e.g. "ch, 2026-09-16 to 2026-09-18".
+    """
+    where = getattr(args, "city", None) or getattr(args, "country", None) or getattr(args, "continent", None) or \
+        getattr(args, "input", None) or "everything scraped"
+    dates = f", {args.start} to {args.end}" if getattr(args, "start", None) else ""
+    return f"{where}{dates}"
 
 
 def main(argv=None):
@@ -235,8 +253,10 @@ def main(argv=None):
     logging.basicConfig(level=logging.DEBUG if args.verbose else logging.INFO,
                         format="%(asctime)s %(levelname)s %(name)s: %(message)s")
     stop_on_sigterm()
+    arguments = {name: value for name, value in vars(args).items() if value not in (None, False)}
     try:
-        with progress_logging():
+        with progress_logging(), runs.run(RUN_KINDS[args.command], args.data_dir, run_label(args), arguments) \
+                if args.command in RUN_KINDS else contextlib.nullcontext():
             COMMANDS[args.command](args)
     except (ValueError, FileNotFoundError, RuntimeError) as error:
         print(f"Error: {error}", file=sys.stderr)

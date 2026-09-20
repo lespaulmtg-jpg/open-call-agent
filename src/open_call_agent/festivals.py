@@ -4,6 +4,7 @@ Identify festivals in scraped event CSVs: events lasting more than 24 hours.
 import logging
 from datetime import datetime
 
+from . import runs
 from .paths import EVENTS_PREFIX, festivals_csv_path, find_csvs
 from .ra.events import CSV_COLUMNS, read_rows, write_rows
 
@@ -45,7 +46,7 @@ def find_festivals(rows, min_hours=MIN_FESTIVAL_HOURS):
     return festivals
 
 
-def identify_festivals(data_dir, country_code=None, city=None, min_hours=MIN_FESTIVAL_HOURS):
+def identify_festivals(data_dir, country_code=None, city=None, min_hours=MIN_FESTIVAL_HOURS, events_paths=None):
     """
     Write a festivals CSV next to every events CSV in the data directory.
 
@@ -53,13 +54,15 @@ def identify_festivals(data_dir, country_code=None, city=None, min_hours=MIN_FES
     :param country_code: Optional RA country code to limit the search.
     :param city: Optional city folder name to limit the search.
     :param min_hours: The minimum duration, exclusive.
+    :param events_paths: Optional events CSVs to use, instead of searching for them.
     :return: A list of written festivals CSV Paths.
     """
     paths = []
-    for events_path in find_csvs(data_dir, EVENTS_PREFIX, country_code, city):
+    for events_path in events_paths or find_csvs(data_dir, EVENTS_PREFIX, country_code, city):
         festivals = find_festivals(read_rows(events_path), min_hours)
         path = festivals_csv_path(events_path)
         write_rows(festivals, path, FESTIVAL_COLUMNS)
         logger.info("%s: %d festivals -> %s", events_path.parent.name, len(festivals), path)
+        runs.report(festivals=len(festivals))
         paths.append(path)
     return paths

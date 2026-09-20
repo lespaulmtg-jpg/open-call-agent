@@ -78,8 +78,8 @@ function renderHead() {
   const head = document.getElementById('festival-head');
   head.replaceChildren(...columnsInOrder().map(column => {
     const sorted = table.sort.key === column.key;
-    const cell = element('th', {draggable: true, className: sorted ? 'sorted' : '', title: 'Click to sort, drag to move'},
-      [column.label]);
+    const cell = element('th', {draggable: true, className: sorted ? 'sorted' : ''}, [column.label]);
+    help(cell, `${COLUMN_HELP[column.key] || ''} Click to sort, drag to move.`.trim());
     if (sorted) cell.append(element('span', {className: 'sort-mark', textContent: table.sort.direction === 1 ? '↑' : '↓'}));
     cell.dataset.key = column.key;
 
@@ -146,11 +146,13 @@ function detailRow(row, columns) {
   ]);
 
   const note = noteOf(row);
-  const select = element('select', {}, config.statuses.map(status =>
-    element('option', {value: status.value, textContent: status.label, selected: status.value === note.status})));
+  const select = help(element('select', {}, config.statuses.map(status =>
+    element('option', {value: status.value, textContent: status.label, selected: status.value === note.status}))),
+    'Your own status for this festival. It is saved against the festival, so it survives new scrapes and editions.');
   const text = element('textarea', {placeholder: 'Your notes: who you contacted, what you sent, ...', value: note.note});
   const saved = element('span', {className: 'note-saved', textContent: note.updated ? `Saved ${note.updated.replace('T', ' ')}` : ''});
-  const save = element('button', {className: 'button primary', textContent: 'Save'});
+  const save = help(element('button', {className: 'button primary', textContent: 'Save'}),
+    'Save your status and note to data/dashboard/notes.json.');
 
   save.onclick = async event => {
     event.stopPropagation();

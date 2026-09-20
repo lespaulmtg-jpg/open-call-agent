@@ -13,12 +13,13 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import date
 from pathlib import Path
 
+from .. import runs
 from ..progress import progress
 from ..storage import read_json, write_json_atomic
 from ..paths import DEFAULT_DATA_DIR, logs_dir, open_calls_dir, safe_filename
 from ..ra.events import read_rows, split_links, write_rows
 from .batch import RESULT_COLUMNS, check_open_calls, website_key
-from .checker import FORM_URL_RE, SiteChecker, normalize_text
+from .checker import FORM_CLOSED_RE, FORM_URL_RE, SiteChecker, normalize_text
 from .dates import MIN_PAGE_DATE, format_date, is_too_old, normalize_deadline, normalize_deadline_column
 from .classifier import CHUNK_CHARS, CHUNK_OVERLAP, LARGE_MODEL, MAX_CHUNKS_PER_PAGE, STATUS_RANK, LlamaServer, \
     ServerClassifier, resolve_model_path
@@ -36,13 +37,6 @@ SITE_STATUS_RANK = ["open", "needs_review", "closed", "none"]
 REVIEW_FIELDS = ["status", "deadline", "deadline_text", "open_call_url", "announcement_url", "opportunity_types",
                  "how_to_apply", "large_model_status", "review_reason", "review_quotes", "reviewed_on"]
 # Messages hosted forms (Google Forms, Microsoft Forms, Typeform, Jotform, ...) show once they stop accepting responses
-FORM_CLOSED_RE = re.compile(
-    r"no longer accepting responses|not accepting responses|isn't accepting responses|form (is )?closed|"
-    r"closed for (submissions|responses)|nimmt keine antworten mehr an|akzeptiert keine antworten|"
-    r"n'accepte plus (les |de )?réponses|n'accepte plus de réponse|non accetta più risposte|no longer available",
-    re.IGNORECASE)
-
-
 def fetch_review_page(url, ignore_robots=False, min_page_date=MIN_PAGE_DATE):
     """
     Fetch one page for review, respecting robots.txt unless told otherwise.
@@ -308,6 +302,7 @@ def review_open_calls(input_path, output_path=None, model_path=None, llm_slots=2
         reviewed = review_row(row, evidence[index], results_by_page)
         reviewed_rows[index] = reviewed
         logger.info("%s: %s -> %s", row["website"], row["status"], reviewed["status"])
+        runs.report(reviewed=1, **{f"reviewed_{reviewed['status']}": 1})
         # Only a site the model actually classified counts as reviewed; fetch failures are retried next time
         if reviewed["large_model_status"]:
             write_json_atomic(review_path_for(row), {"website": row["website"], "model": model_name,

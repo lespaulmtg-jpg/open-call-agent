@@ -10,7 +10,7 @@ async function showView(view) {
     section.hidden = section.id !== `view-${view}`;
   }
   settings.write('view', view);
-  watchJobs(view !== 'festivals');
+  watchRuns(view);
 
   try {
     if (view === 'festivals' && !table.rows.length) await loadFestivals(document.getElementById('source-select').value);
@@ -72,6 +72,8 @@ async function start() {
   setUpSources();
   setUpTable();
   setUpTabs();
+  setUpTooltips();
+  setUpRunWindow();
   for (const kind of Object.keys(config.job_types)) buildJobForm(kind);
   for (const button of document.querySelectorAll('.nav-button')) {
     button.onclick = () => showView(button.dataset.view);

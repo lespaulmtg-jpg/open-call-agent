@@ -72,7 +72,18 @@ BLOCKED_PAGE_RE = re.compile(r"just a moment|attention required|checking your br
 # Hosted form services commonly used for open call applications
 FORM_URL_RE = re.compile(r"docs\.google\.com/forms|forms\.gle|typeform\.com|jotform\.com|airtable\.com/(app|shr)|tally\.so|"
                          r"cognitoforms\.com|formstack\.com|submittable\.com|forms\.office\.com|wufoo\.com|zohoforms|"
-                         r"123formbuilder|paperform\.co|fillout\.com|eventbrite\.[a-z.]+/e/.*call", re.IGNORECASE)
+                         r"123formbuilder|paperform\.co|fillout\.com|festivalpro\.com/form|"
+                         r"eventbrite\.[a-z.]+/e/.*call", re.IGNORECASE)
+# What a form says once it stops accepting applications. "this form <its name> is now closed" puts the form's name
+# between the words, so the wording is matched with the name allowed in between.
+FORM_CLOSED_RE = re.compile(
+    r"no longer accepting responses|not accepting responses|isn't accepting responses|"
+    r"\b(form|survey|umfrage|formular)\b[^.!?\n]{0,80}?\b(is |are |was |were )?(now |already )?closed\b|"
+    r"form (is )?closed|closed for (submissions|responses|applications)|"
+    r"(applications?|submissions?|bewerbungen|bewerbungsphase|einreichungen) [^.!?\n]{0,40}?"
+    r"(are closed|is closed|closed|vorbei|beendet|geschlossen)|"
+    r"nimmt keine antworten mehr an|akzeptiert keine antworten|n'accepte plus (les |de )?réponses|"
+    r"n'accepte plus de réponse|non accetta più risposte|no longer available", re.IGNORECASE)
 # Link text that points to an application or submission, e.g. "Send us your proposal", "Jetzt bewerben"
 CALL_LINK_TEXT_RE = re.compile(r"apply|application|submit|submission|proposal|open[\s-]?call|bewerb|einreich|anmeld|"
                                r"candidat|postule|propos|inscri|iscriv", re.IGNORECASE)

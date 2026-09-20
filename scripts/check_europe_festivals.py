@@ -30,6 +30,7 @@ from open_call_agent.open_call.dates import parse_min_date
 from open_call_agent.open_call.review import review_open_calls
 from open_call_agent.paths import FESTIVALS_PREFIX, logs_dir, open_calls_dir, scraped_dir
 from open_call_agent.progress import progress_logging
+from open_call_agent import runs
 from open_call_agent.storage import stop_on_sigterm
 from open_call_agent.ra.areas import CONTINENTS, COUNTRY_CONTINENTS
 from open_call_agent.ra.client import RAClient
@@ -130,7 +131,8 @@ def main():
     stop_on_sigterm()
     stopped = False
     try:
-        with progress_logging():
+        with progress_logging(), runs.run("open_calls", args.data_dir, f"{args.continent} festivals, {args.period}",
+                                          vars(args)):
             results_path = run_checks(args, paths, scope)
     except KeyboardInterrupt:
         # Every site finished before the stop is saved; summarise what there is

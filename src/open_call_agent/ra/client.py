@@ -46,6 +46,7 @@ query GET_EVENT_LISTINGS($filters: FilterInputDtoInput, $pageSize: Int, $page: I
       id
       event {
         id title date startTime endTime contentUrl attending
+        promotionalLinks { title url }
         artists { id name }
         venue { id name area { id name urlName } }
         promoters { id name website instagram socialMediaLinks { link platform } }
