@@ -32,14 +32,14 @@ import requests
 
 from ..progress import progress
 from ..ra.events import read_rows, split_links, write_rows
-from .checker import FORM_CLOSED_RE
+from ..urls import base_domain, matches_domain
+from .checker import FORM_CLOSED_RE, USER_AGENT
 
 logger = logging.getLogger(__name__)
 
-USER_AGENT = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
 TIMEOUT = 15
 LINK_WORKERS = 16
-EMAIL_RE = re.compile(r"[A-Za-z0-9._%+-]+@([A-Za-z0-9-]+\.)+[A-Za-z]{2,}")
+VALID_EMAIL_RE = re.compile(r"[A-Za-z0-9._%+-]+@([A-Za-z0-9-]+\.)+[A-Za-z]{2,}")
 DNS_ERROR_RE = re.compile(r"NameResolution|Name or service not known|nodename nor servname|getaddrinfo failed|"
                           r"No address associated|Failed to resolve", re.IGNORECASE)
 UNVERIFIABLE_HOSTS = ("instagram.com",)
@@ -70,7 +70,7 @@ def check_url(url):
     :return: A check result, e.g. "ok", "broken (404)" or "blocked (403)".
     """
     host = urlparse(url).netloc.lower()
-    if any(host == domain or host.endswith(f".{domain}") for domain in UNVERIFIABLE_HOSTS):
+    if matches_domain(host, UNVERIFIABLE_HOSTS):
         return "unverifiable"
     try:
         response = session().head(url, timeout=TIMEOUT, allow_redirects=True)
@@ -104,7 +104,7 @@ def redirect_target(page_url, final_url):
     :return: The path landed on, or None if it is the same page.
     """
     opened, landed = urlparse(page_url), urlparse(final_url)
-    if opened.netloc.lower().removeprefix("www.") != landed.netloc.lower().removeprefix("www."):
+    if base_domain(opened.netloc) != base_domain(landed.netloc):
         return final_url
     if opened.path.rstrip("/") == landed.path.rstrip("/"):
         return None
@@ -152,7 +152,7 @@ def check_email(email):
     :param email: The email address.
     :return: A check result: "ok", "invalid", "broken (DNS)", "no mail server" or "timeout".
     """
-    if not EMAIL_RE.fullmatch(email):
+    if not VALID_EMAIL_RE.fullmatch(email):
         return "invalid"
     domain = email.rsplit("@", 1)[1].lower()
     resolver = dns.resolver.Resolver()

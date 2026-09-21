@@ -6,22 +6,17 @@ import logging
 from datetime import datetime
 from pathlib import Path
 
-from open_call_agent.paths import FESTIVALS_PREFIX, open_calls_dir, scraped_dir
+from open_call_agent.paths import FESTIVALS_PREFIX, open_calls_dir, scraped_dir, summary_dir
 from open_call_agent.ra.events import read_rows
 from open_call_agent.summary import FESTIVAL_SUMMARY_COLUMNS, build_festival_rows, festival_key
 
 logger = logging.getLogger(__name__)
 
-ROW_COLUMNS = ["id", "festival", "month", "start_date", "end_date", "status", "deadline", "open_call_url",
-               "festival_url", "website", "source", "source_url", "country", "country_code", "city", "promoters"]
-
-
 def summary_paths(data_dir):
     """
     :return: Festival summary CSV Paths, newest first.
     """
-    directory = open_calls_dir(data_dir) / "summary"
-    paths = [path for path in directory.glob("*.csv") if not path.stem.endswith("_by_country")]
+    paths = [path for path in summary_dir(data_dir).glob("*.csv") if not path.stem.endswith("_by_country")]
     return sorted(paths, key=lambda path: path.stat().st_mtime, reverse=True)
 
 
@@ -73,7 +68,7 @@ def source_path(data_dir, source_id):
     :raises FileNotFoundError: If the source doesn't exist.
     """
     kind, _, name = (source_id or "").partition(":")
-    directory = open_calls_dir(data_dir) / "summary" if kind == "summary" else open_calls_dir(data_dir)
+    directory = summary_dir(data_dir) if kind == "summary" else open_calls_dir(data_dir)
     path = directory / Path(name).name
     if kind not in ("summary", "results") or not path.is_file():
         raise FileNotFoundError(f"Unknown data source '{source_id}'")

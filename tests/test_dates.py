@@ -3,7 +3,7 @@ from datetime import date
 import pytest
 from bs4 import BeautifulSoup
 
-from open_call_agent.open_call.checker import Page, SiteChecker
+from open_call_agent.open_call.checker import SiteChecker
 from open_call_agent.open_call.dates import (MIN_PAGE_DATE, html_page_dates, http_last_modified, is_too_old,
                                              normalize_deadline, normalize_deadline_column)
 

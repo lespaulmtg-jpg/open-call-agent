@@ -28,7 +28,7 @@ from datetime import date, datetime
 from open_call_agent.open_call.batch import check_open_calls
 from open_call_agent.open_call.dates import parse_min_date
 from open_call_agent.open_call.review import review_open_calls
-from open_call_agent.paths import FESTIVALS_PREFIX, logs_dir, open_calls_dir, scraped_dir
+from open_call_agent.paths import FESTIVALS_PREFIX, logs_dir, open_calls_dir, scraped_dir, summary_dir
 from open_call_agent.progress import progress_logging
 from open_call_agent import runs
 from open_call_agent.storage import stop_on_sigterm
@@ -141,7 +141,7 @@ def main():
         logger.warning("Stopped. Writing the summary from results saved so far (%s); run the same command again to "
                        "continue.", results_path)
 
-    output_dir = open_calls_dir(args.data_dir) / "summary"
+    output_dir = summary_dir(args.data_dir)
     title = f"{args.continent.replace('_', ' ').title()} festival open calls ({args.period.replace('_', ' to ')})"
     festival_path, country_path, markdown_path = write_summary(
         paths, results_path, output_dir, f"{scope}_{date.today()}",

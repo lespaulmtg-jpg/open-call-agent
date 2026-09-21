@@ -9,7 +9,7 @@ import pytest
 
 from open_call_agent.festivals import FESTIVAL_COLUMNS
 from open_call_agent.paths import raw_event_path
-from open_call_agent.ra.events import CSV_COLUMNS, read_rows, write_rows
+from open_call_agent.ra.events import read_rows, write_rows
 from open_call_agent.storage import write_json_atomic
 
 sys.path.insert(0, str(Path(__file__).parent.parent / "scripts"))

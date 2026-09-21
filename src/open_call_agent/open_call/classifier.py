@@ -26,18 +26,21 @@ from pathlib import Path
 
 import requests
 
+from .dates import format_date, normalize_deadline
+from .text import normalize_text
+
 logger = logging.getLogger(__name__)
 
 # (Hugging Face repo, file name or glob for split files). The small model checks every site; the large model reviews
 # sites the small model found open or needing review.
 SMALL_MODEL = ("Qwen/Qwen2.5-3B-Instruct-GGUF", "qwen2.5-3b-instruct-q4_k_m.gguf")
 LARGE_MODEL = ("Qwen/Qwen2.5-7B-Instruct-GGUF", "qwen2.5-7b-instruct-q4_k_m-*.gguf")
-MODEL_REPO, MODEL_FILE = SMALL_MODEL
 CONTEXT_TOKENS = 8192  # Per sequence (per server slot)
 MAX_OUTPUT_TOKENS = 600
 CHUNK_CHARS = 12000  # Roughly 3-4k tokens, leaving room for the prompt and answer
 CHUNK_OVERLAP = 500
 MAX_CHUNKS_PER_PAGE = 4  # Text beyond this is not classified, and flagged in the report
+MIN_QUOTE_CHARS = 15  # Shorter quotes match too easily to be evidence
 STATUS_RANK = ["open", "not_yet_open", "unclear", "closed", "none"]
 
 OPPORTUNITY_TYPES = ["music", "dj", "live_performance", "visuals", "video_film", "installation", "workshops",
@@ -93,6 +96,51 @@ CLASSIFIER_SCHEMA = {
     "required": ["reasoning", "status", "opportunity_types", "quotes", "deadline", "how_to_apply"],
     "additionalProperties": False,
 }
+
+
+def split_text(text):
+    """
+    Split page text into overlapping chunks the model can take in one call.
+
+    :param text: The page text.
+    :return: A list of chunks, at least one. Callers decide how many of them to classify (MAX_CHUNKS_PER_PAGE).
+    """
+    return [text[start:start + CHUNK_CHARS] for start in range(0, len(text), CHUNK_CHARS - CHUNK_OVERLAP)] or [""]
+
+
+def most_positive(results):
+    """
+    :param results: Classification dicts.
+    :return: The most positive one, by STATUS_RANK.
+    """
+    return min(results, key=lambda result: STATUS_RANK.index(result["status"]))
+
+
+def verify(result, evidence_text, where="the page"):
+    """
+    Check the model's evidence in code, the same way for both models: a quote it gave must appear verbatim in the text
+    it was given, and a deadline that has passed means the call is closed, whatever the model said.
+
+    :param result: A classification dict, updated in place.
+    :param evidence_text: The normalised text the model classified.
+    :param where: How to refer to that text in the reason, e.g. "the page" or "the pages".
+    :return: The result.
+    """
+    result["verified_quotes"] = [quote for quote in result["quotes"]
+                                 if len(quote) >= MIN_QUOTE_CHARS and normalize_text(quote) in evidence_text]
+    if result["status"] != "none" and not result["verified_quotes"]:
+        # The model's evidence isn't in the text, so don't trust the positive
+        result["reasoning"] = f"Downgraded: no quote found verbatim on {where}. Model said: {result['reasoning']}"
+        result["status"] = "unclear"
+
+    # Deadlines are stored as YYYY-MM-DD; the text as written on the page is kept in deadline_text
+    result["deadline_text"] = result["deadline"]
+    deadline = normalize_deadline(result["deadline"])
+    result["deadline"] = format_date(deadline)
+    if result["status"] == "open" and deadline and deadline < date.today():
+        result["reasoning"] = f"Downgraded: deadline {deadline} has passed. Model said: {result['reasoning']}"
+        result["status"] = "closed"
+    return result
 
 
 def build_messages(url, title, text):
