@@ -19,7 +19,6 @@ from dashboard.stats import scrape_stats, table_stats
 from open_call_agent.open_call.batch import RESULT_COLUMNS
 from open_call_agent.ra.events import write_rows
 
-from .conftest import COUNTRY
 
 SLEEP_JOB = {"label": "Sleep", "command": None, "gpu": True, "fields": []}
 

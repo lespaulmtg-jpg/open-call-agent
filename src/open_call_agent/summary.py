@@ -14,7 +14,8 @@ import re
 from collections import Counter, defaultdict
 from datetime import date
 
-from .open_call.batch import row_websites, website_key
+from .open_call.batch import STATUSES, row_websites
+from .urls import website_key
 from .ra.events import read_rows, split_links, write_rows
 
 logger = logging.getLogger(__name__)
@@ -22,7 +23,8 @@ logger = logging.getLogger(__name__)
 YEAR_RE = re.compile(r"\b(?:19|20)\d{2}\b")
 NON_WORD_RE = re.compile(r"[\W_]+")
 
-STATUS_RANK = ["open", "needs_review", "closed", "none", "not_checked", "no_website"]
+# A site's statuses, in the same order the checker ranks them, then the two a festival can have without a result
+STATUS_RANK = STATUSES + ["not_checked", "no_website"]
 MIN_PAGES_FOR_NONE = 3  # Below this, "no call found" says more about the crawl than about the festival
 
 FESTIVAL_SUMMARY_COLUMNS = [
@@ -57,7 +59,8 @@ def best_result(results):
     :param results: Open call result rows for one festival's websites.
     :return: The most positive result row.
     """
-    return min(results, key=lambda row: STATUS_RANK.index(row["status"]) if row["status"] in STATUS_RANK else 3)
+    unknown = STATUS_RANK.index("none")
+    return min(results, key=lambda row: STATUS_RANK.index(row["status"]) if row["status"] in STATUS_RANK else unknown)
 
 
 def status_reason(result):
@@ -69,6 +72,28 @@ def status_reason(result):
     reason = result.get("review_reason") or result.get("status_reason", "")
     note = result.get("status_reason", "").split("link check:")
     return f"Link check: {note[-1].strip()}" + (f" | {reason}" if reason else "") if len(note) > 1 else reason
+
+
+def choose_result(own_websites, websites, results):
+    """
+    Decide which website's open call result stands for a festival.
+
+    The festival's own website decides when it has been checked and its result is conclusive. A promoter website can
+    cover several festivals, so it only stands in otherwise, and then the most positive of them wins.
+
+    :param own_websites: The festival's own websites, from RA's links for the event.
+    :param websites: All of its websites, its own first.
+    :param results: Open call results by website key.
+    :return: A tuple of (status, result row), where the row is empty when nothing was found.
+    """
+    if not websites:
+        return "no_website", {}
+    found = {website: results[website_key(website)] for website in websites if website_key(website) in results}
+    if not found:
+        return "not_checked", {}
+    own = next((found[website] for website in own_websites if website in found and is_conclusive(found[website])), None)
+    result = own or best_result(list(found.values()))
+    return result["status"], result
 
 
 def link_check_summary(result):
@@ -148,21 +173,9 @@ def build_festival_rows(festival_paths, results_path, country_names=None, today=
     for editions in festivals.values():
         editions = sorted(editions.values(), key=lambda row: row["Start Time"])
         festival = main_edition(editions, today)
-        # The festival's own website comes first and decides the result when it has been checked; a promoter website
-        # can cover several festivals, so it only stands in when the festival has no website of its own
         own_websites = unique(split_links(row.get("Event Website")) for row in editions)
         websites = unique([own_websites] + [row_websites(row) for row in editions])
-        found = {website_key(website): results[website_key(website)] for website in websites
-                 if website_key(website) in results}
-        own_result = next((found[website_key(website)] for website in own_websites if website_key(website) in found
-                           and is_conclusive(found[website_key(website)])), None)
-        if not websites:
-            status, result = "no_website", {}
-        elif not found:
-            status, result = "not_checked", {}
-        else:
-            result = own_result or best_result(list(found.values()))
-            status = result["status"]
+        status, result = choose_result(own_websites, websites, results)
 
         summary.append({
             "Open Call Status": status,

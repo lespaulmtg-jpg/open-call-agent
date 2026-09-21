@@ -14,7 +14,6 @@ import gzip
 import logging
 import re
 import time
-import unicodedata
 from collections import deque
 from datetime import date
 from urllib.parse import urljoin, urlparse, urlunparse, parse_qsl, unquote, urlencode
@@ -23,8 +22,10 @@ from urllib.robotparser import RobotFileParser
 import requests
 from bs4 import BeautifulSoup
 
-from .dates import MIN_PAGE_DATE, format_date, html_page_dates, http_last_modified, is_too_old, normalize_deadline
-from .classifier import CHUNK_CHARS, CHUNK_OVERLAP, MAX_CHUNKS_PER_PAGE, STATUS_RANK
+from ..urls import base_domain, matches_domain
+from .classifier import MAX_CHUNKS_PER_PAGE, most_positive, split_text, verify
+from .dates import MIN_PAGE_DATE, format_date, html_page_dates, http_last_modified, is_too_old
+from .text import normalize_text
 
 logger = logging.getLogger(__name__)
 
@@ -64,7 +65,7 @@ LIKELY_PAGE_RE = re.compile(
     r"a-propos|propos|nous-rejoindre|rejoindre|candidat|chi-siamo|contatti|partecipa",
     re.IGNORECASE)
 
-EMAIL_RE = re.compile(r"[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}")
+EMAIL_IN_TEXT_RE = re.compile(r"[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}")
 SKIP_EXTENSIONS = re.compile(r"\.(jpe?g|png|gif|webp|svg|ico|css|js|mjs|json|xml|zip|rar|gz|mp3|mp4|mov|wav|webm|woff2?|ttf|eot)$",
                              re.IGNORECASE)
 DOCUMENT_EXTENSIONS = re.compile(r"\.(pdf|docx?|odt|pptx?)$", re.IGNORECASE)
@@ -104,20 +105,6 @@ def normalize_url(url):
     return urlunparse((parsed.scheme.lower(), parsed.netloc.lower(), path, "", query, ""))
 
 
-def normalize_text(text):
-    """
-    Normalise text for verbatim quote matching (case, whitespace, quote and dash styles).
-
-    :param text: The text to normalise.
-    :return: The normalised text.
-    """
-    text = unicodedata.normalize("NFKC", text).lower()
-    text = re.sub(r"[‘’´`]", "'", text)
-    text = re.sub(r"[“”«»„]", '"', text)
-    text = re.sub(r"[‐-―−]", "-", text)
-    return re.sub(r"\s+", " ", text).strip()
-
-
 def parse_sitemap_date(value):
     """
     :param value: A sitemap lastmod value (W3C datetime, e.g. "2026-09-16" or "2026-09-16T07:45:25+00:00").
@@ -146,17 +133,6 @@ def open_call_urls(page, how_to_apply=""):
     return list(dict.fromkeys(link for link in links if normalize_url(link) != normalize_url(page.url)))
 
 
-def base_domain(host):
-    """
-    Get the host without a leading "www.", used to treat subdomains as part of the same site.
-
-    :param host: The host name.
-    :return: The host without "www.".
-    """
-    host = host.lower().split(":")[0]
-    return host[4:] if host.startswith("www.") else host
-
-
 class Page:
     """
     A fetched page and the signals extracted from it.
@@ -179,7 +155,7 @@ class Page:
             href = anchor["href"].strip()
             if href.lower().startswith("mailto:"):
                 # mailto links are URL-encoded and may hold several addresses, e.g. "mailto:%20info@site.ch"
-                self.emails.update(EMAIL_RE.findall(unquote(href[7:].split("?")[0])))
+                self.emails.update(EMAIL_IN_TEXT_RE.findall(unquote(href[7:].split("?")[0])))
             elif not href.lower().startswith(("javascript:", "tel:", "#")):
                 self.links.append((urljoin(url, href), anchor.get_text(" ", strip=True)))
                 link_text = anchor.get_text(" ", strip=True)
@@ -191,7 +167,7 @@ class Page:
         for element in soup(["script", "style", "noscript", "template", "svg", "iframe"]):
             element.decompose()
         self.text = re.sub(r"\n\s*\n+", "\n", soup.get_text("\n", strip=True))
-        self.emails.update(EMAIL_RE.findall(self.text))
+        self.emails.update(EMAIL_IN_TEXT_RE.findall(self.text))
         self.set_content_text(self.text)
         self.noscript_js_warning = bool(re.search(r"enable\s+javascript|javascript\s+(is\s+)?(required|disabled)",
                                                   html, re.IGNORECASE))
@@ -271,7 +247,7 @@ class SiteChecker:
         """
         parsed = urlparse(url)
         host = base_domain(parsed.netloc)
-        return parsed.scheme in ("http", "https") and (host == self.domain or host.endswith(f".{self.domain}"))
+        return parsed.scheme in ("http", "https") and matches_domain(host, [self.domain])
 
     def throttle(self):
         """
@@ -535,11 +511,11 @@ class SiteChecker:
         text = page.content_text
         if page.form_links:
             text += "\n\nForm links on this page:\n" + "\n".join(f"- {link_text}: {link}" for link, link_text in page.form_links)
-        chunks = [text[start:start + CHUNK_CHARS] for start in range(0, len(text), CHUNK_CHARS - CHUNK_OVERLAP)]
+        chunks = split_text(text)
         if len(chunks) > MAX_CHUNKS_PER_PAGE:
             self.warnings.append(f"{page.url}: only the first {MAX_CHUNKS_PER_PAGE} of {len(chunks)} text chunks were classified.")
             chunks = chunks[:MAX_CHUNKS_PER_PAGE]
-        return chunks or [""]
+        return chunks
 
     def classify_chunk(self, page, text):
         """
@@ -569,23 +545,10 @@ class SiteChecker:
 
         page_text = normalize_text(page.text)
         for result in chunk_results:
-            result["verified_quotes"] = [quote for quote in result["quotes"]
-                                         if len(quote) >= 15 and normalize_text(quote) in page_text]
-            if result["status"] != "none" and not result["verified_quotes"]:
-                # The model's evidence isn't on the page, so don't trust the positive
-                result["reasoning"] = f"Downgraded: no quote found verbatim on the page. Model said: {result['reasoning']}"
-                result["status"] = "unclear"
-
-            # Deadlines are stored as YYYY-MM-DD; the text as written on the page is kept in deadline_text
-            result["deadline_text"] = result["deadline"]
-            deadline = normalize_deadline(result["deadline"])
-            result["deadline"] = format_date(deadline)
-            if result["status"] == "open" and deadline and deadline < date.today():
-                result["reasoning"] = f"Downgraded: deadline {deadline} has passed. Model said: {result['reasoning']}"
-                result["status"] = "closed"
+            verify(result, page_text)
 
         # Keep the most positive chunk result, merging evidence from chunks with the same status
-        best = min(chunk_results, key=lambda result: STATUS_RANK.index(result["status"]))
+        best = most_positive(chunk_results)
         same_status = [result for result in chunk_results if result["status"] == best["status"]]
         best["opportunity_types"] = sorted({kind for result in same_status for kind in result["opportunity_types"]})
         best["verified_quotes"] = list(dict.fromkeys(quote for result in same_status for quote in result["verified_quotes"]))

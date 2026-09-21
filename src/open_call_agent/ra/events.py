@@ -9,6 +9,7 @@ from urllib.parse import urlparse
 YEAR_RE = re.compile(r"\b(?:19|20)\d{2}\b")
 
 from ..storage import write_text_atomic
+from ..urls import base_domain, matches_domain
 
 SOCIAL_MEDIA_DOMAINS = ("instagram.com", "facebook.com", "fb.com", "twitter.com", "x.com", "tiktok.com",
                         "soundcloud.com", "youtube.com")
@@ -55,7 +56,7 @@ def host_name(host):
     :param host: A link's host name.
     :return: Its name without "www." and without the ending, e.g. "www.garbiczfestival.com" -> "garbiczfestival".
     """
-    return host.removeprefix("www.").rsplit(".", 1)[0]
+    return base_domain(host).rsplit(".", 1)[0]
 
 
 def names_match(name, event_title):
@@ -90,7 +91,7 @@ def get_event_website(event):
     candidates = []
     for position, (title, url) in enumerate(event_links(event)):
         host = urlparse(url).netloc.lower()
-        if any(host == domain or host.endswith(f".{domain}") for domain in NON_WEBSITE_DOMAINS):
+        if matches_domain(host, NON_WEBSITE_DOMAINS):
             continue
         if any(word in title or word in host for word in TICKET_LINK_WORDS):
             continue
@@ -110,17 +111,23 @@ def get_event_website(event):
     return url
 
 
+def instagram_profile(url):
+    """
+    :param url: Any URL, with or without a scheme.
+    :return: The Instagram profile URL it points to, or None if it isn't one. Links without an account handle, e.g.
+             "https://instagram.com/?hl=fr", are not profiles.
+    """
+    parsed = urlparse(url if "://" in url else f"https://{url}")
+    handle = parsed.path.strip("/").split("/")[0]
+    return f"https://www.instagram.com/{handle}" if parsed.netloc.lower().endswith("instagram.com") and handle else None
+
+
 def get_event_instagram(event):
     """
     :param event: The event dict from the RA API.
     :return: The event's own Instagram profile URL, or None.
     """
-    for _, url in event_links(event):
-        parsed = urlparse(url)
-        handle = parsed.path.strip("/").split("/")[0]
-        if parsed.netloc.lower().endswith("instagram.com") and handle:
-            return f"https://www.instagram.com/{handle}"
-    return None
+    return next((profile for _, url in event_links(event) if (profile := instagram_profile(url))), None)
 
 
 def get_promoter_website(promoter):
@@ -137,7 +144,7 @@ def get_promoter_website(promoter):
         website = f"https://{website}"
 
     host = urlparse(website).netloc.lower()
-    if not host or any(host == domain or host.endswith(f".{domain}") for domain in SOCIAL_MEDIA_DOMAINS):
+    if not host or matches_domain(host, SOCIAL_MEDIA_DOMAINS):
         return None
     return website
 
@@ -153,15 +160,7 @@ def get_promoter_instagram(promoter):
              if social_link["platform"] == "INSTAGRAM"]
     links.append(promoter.get("instagram"))
 
-    for link in links:
-        if not link:
-            continue
-        parsed = urlparse(link if "://" in link else f"https://{link}")
-        handle = parsed.path.strip("/").split("/")[0]
-        # Skip links without an account handle, e.g. "https://instagram.com/?hl=fr"
-        if parsed.netloc.lower().endswith("instagram.com") and handle:
-            return f"https://www.instagram.com/{handle}"
-    return None
+    return next((profile for link in links if link and (profile := instagram_profile(link))), None)
 
 
 def format_links(links):

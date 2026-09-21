@@ -7,7 +7,6 @@ needs_review or none. All pages are fetched before the model loads, and the mode
 has released the GPU (see classifier.acquire_gpu), so only one model occupies the GPU at a time.
 """
 import logging
-import re
 from collections import Counter, defaultdict
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import date
@@ -16,12 +15,14 @@ from pathlib import Path
 from .. import runs
 from ..progress import progress
 from ..storage import read_json, write_json_atomic
-from ..paths import DEFAULT_DATA_DIR, logs_dir, open_calls_dir, safe_filename
+from ..paths import DEFAULT_DATA_DIR, logs_dir, reviews_dir, safe_filename
 from ..ra.events import read_rows, split_links, write_rows
-from .batch import RESULT_COLUMNS, check_open_calls, website_key
-from .checker import FORM_CLOSED_RE, FORM_URL_RE, SiteChecker, normalize_text
-from .dates import MIN_PAGE_DATE, format_date, is_too_old, normalize_deadline, normalize_deadline_column
-from .classifier import CHUNK_CHARS, CHUNK_OVERLAP, LARGE_MODEL, MAX_CHUNKS_PER_PAGE, STATUS_RANK, LlamaServer, \
+from .batch import RESULT_COLUMNS, STATUSES, check_open_calls
+from ..urls import website_key
+from .checker import FORM_CLOSED_RE, FORM_URL_RE, SiteChecker
+from .text import normalize_text
+from .dates import MIN_PAGE_DATE, format_date, is_too_old, normalize_deadline_column
+from .classifier import LARGE_MODEL, MAX_CHUNKS_PER_PAGE, LlamaServer, most_positive, split_text, verify, \
     ServerClassifier, resolve_model_path
 
 logger = logging.getLogger(__name__)
@@ -32,11 +33,9 @@ REVIEW_COLUMNS = RESULT_COLUMNS + ["small_model_status", "large_model_status", "
 REVIEW_CONTEXT_TOKENS = 16384  # Announcement chunk plus form pages
 MAX_FORM_PAGES = 3
 MAX_FORM_CHARS = 4000
-SITE_STATUS_RANK = ["open", "needs_review", "closed", "none"]
 # Fields the large model decides, saved per site in open_calls/reviews/ so a site isn't reviewed twice by the same model
 REVIEW_FIELDS = ["status", "deadline", "deadline_text", "open_call_url", "announcement_url", "opportunity_types",
                  "how_to_apply", "large_model_status", "review_reason", "review_quotes", "reviewed_on"]
-# Messages hosted forms (Google Forms, Microsoft Forms, Typeform, Jotform, ...) show once they stop accepting responses
 def fetch_review_page(url, ignore_robots=False, min_page_date=MIN_PAGE_DATE):
     """
     Fetch one page for review, respecting robots.txt unless told otherwise.
@@ -75,7 +74,7 @@ def page_status(result, has_evidence, form_state=None):
     :param result: A classification dict with a verified status.
     :param has_evidence: Whether the page has keyword hits, a form link or a fetched open call page.
     :param form_state: "accepting" or "closed" for a fetched hosted form, or None.
-    :return: One of SITE_STATUS_RANK.
+    :return: One of STATUSES.
     """
     describes_call = result["status"] != "none" and result["verified_quotes"]
     if describes_call and form_state == "closed":
@@ -100,29 +99,6 @@ def form_state(form_pages):
     return "closed" if all(FORM_CLOSED_RE.search(page.text) for page in hosted) else "accepting"
 
 
-def verify(result, evidence_text):
-    """
-    Check the model's evidence in code: quotes must appear verbatim in the fetched pages, and a parsed deadline in the
-    past means the call is closed.
-
-    :param result: A classification dict, updated in place.
-    :param evidence_text: The normalised text of all fetched pages.
-    :return: The result.
-    """
-    result["verified_quotes"] = [quote for quote in result["quotes"]
-                                 if len(quote) >= 15 and normalize_text(quote) in evidence_text]
-    if result["status"] != "none" and not result["verified_quotes"]:
-        result["reasoning"] = f"Downgraded: no quote found verbatim on the pages. Model said: {result['reasoning']}"
-        result["status"] = "unclear"
-    result["deadline_text"] = result["deadline"]
-    deadline = normalize_deadline(result["deadline"])
-    result["deadline"] = format_date(deadline)
-    if result["status"] == "open" and deadline and deadline < date.today():
-        result["reasoning"] = f"Downgraded: deadline {deadline} has passed. Model said: {result['reasoning']}"
-        result["status"] = "closed"
-    return result
-
-
 def build_chunks(announcement, form_pages):
     """
     Build the texts to classify for one announcement page: its text in chunks, each followed by the open call pages.
@@ -132,9 +108,7 @@ def build_chunks(announcement, form_pages):
     :return: A list of texts.
     """
     forms = "".join(f"\n\n--- Open call page: {page.url} ---\n{page.text[:MAX_FORM_CHARS]}" for page in form_pages)
-    text = announcement.text
-    chunks = [text[start:start + CHUNK_CHARS] for start in range(0, len(text), CHUNK_CHARS - CHUNK_OVERLAP)]
-    return [f"{chunk}{forms}" for chunk in (chunks or [""])[:MAX_CHUNKS_PER_PAGE]]
+    return [f"{chunk}{forms}" for chunk in split_text(announcement.text)[:MAX_CHUNKS_PER_PAGE]]
 
 
 def fetch_evidence(row, ignore_robots, min_page_date=MIN_PAGE_DATE):
@@ -196,12 +170,11 @@ def review_row(row, evidence, results_by_page):
         if None in chunk_results:
             page_results.append((page, None, "needs_review"))
             continue
-        best = min((verify(result, evidence_text) for result in chunk_results),
-                   key=lambda result: STATUS_RANK.index(result["status"]))
+        best = most_positive([verify(result, evidence_text, where="the pages") for result in chunk_results])
         has_evidence = bool(page.keyword_hits or page.form_links or form_urls)
         page_results.append((page, best, page_status(best, has_evidence, forms)))
 
-    status = min((status for _, _, status in page_results), key=SITE_STATUS_RANK.index)
+    status = min((status for _, _, status in page_results), key=STATUSES.index)
     decided = [(page, result) for page, result, page_result_status in page_results
                if page_result_status == status and result is not None]
     failed = sum(result is None for _, result, _ in page_results)
@@ -239,6 +212,72 @@ def review_row(row, evidence, results_by_page):
     return reviewed
 
 
+def review_path(directory, website):
+    """
+    :param directory: Where saved reviews live.
+    :param website: The website URL.
+    :return: The Path of that site's saved review.
+    """
+    return directory / f"{safe_filename(website_key(website))}.json"
+
+
+def plan_reviews(rows, directory, model_name, reuse_reviews):
+    """
+    Work out which sites the large model has to read, and start the reviewed rows off from the first pass.
+
+    A site is skipped when the small model found nothing worth reviewing, when it has no announcement page to read, or
+    when the same model has reviewed it before, in which case the saved review is used.
+
+    :param rows: The first-pass result rows.
+    :param directory: Where saved reviews live.
+    :param model_name: The large model's file name, which saved reviews record.
+    :param reuse_reviews: Use saved reviews instead of reviewing again.
+    :return: A tuple of (reviewed rows, indexes to review, number of reviews reused).
+    """
+    reviewed_rows, candidates, reused = [], [], 0
+    for index, row in enumerate(rows):
+        reviewed_rows.append({**row, "small_model_status": row["status"]})
+        if row["status"] not in REVIEW_STATUSES:
+            continue
+        if not split_links(row["announcement_url"]):
+            reviewed_rows[index].update({"reviewed_on": date.today().isoformat(),
+                                         "review_reason": f"Not reviewed: no announcement page ({row['status_reason']})"})
+            continue
+        saved = read_json(review_path(directory, row["website"])) if reuse_reviews else None
+        if saved and saved.get("model") == model_name and all(field in saved["review"] for field in REVIEW_FIELDS):
+            reviewed_rows[index].update({field: saved["review"][field] for field in REVIEW_FIELDS})
+            reused += 1
+            continue
+        reviewed_rows[index]["review_reason"] = "Review pending"
+        candidates.append(index)
+    return reviewed_rows, candidates, reused
+
+
+def fetch_all_evidence(rows, candidates, ignore_robots, min_page_date, fetch_workers):
+    """
+    Fetch every candidate's pages before the model is loaded, so the large model only holds the GPU while classifying.
+
+    :param rows: The first-pass result rows.
+    :param candidates: Indexes to fetch for.
+    :param ignore_robots: Fetch pages even if robots.txt disallows it.
+    :param min_page_date: Don't process pages last modified or created before this date.
+    :param fetch_workers: Pages fetched at the same time.
+    :return: A dict of index -> evidence.
+    """
+    evidence = {}
+    with ThreadPoolExecutor(fetch_workers, thread_name_prefix="review-fetch") as pool, \
+            progress(total=len(candidates), desc="Large model: fetching pages", unit="site") as bar:
+        futures = {pool.submit(fetch_evidence, rows[index], ignore_robots, min_page_date): index for index in candidates}
+        try:
+            for future in as_completed(futures):
+                evidence[futures[future]] = future.result()
+                bar.update(1)
+        finally:
+            for future in futures:
+                future.cancel()
+    return evidence
+
+
 def review_open_calls(input_path, output_path=None, model_path=None, llm_slots=2, fetch_workers=4,
                       ignore_robots=False, log_dir=None, min_page_date=MIN_PAGE_DATE, reuse_reviews=True,
                       data_dir=DEFAULT_DATA_DIR):
@@ -259,13 +298,10 @@ def review_open_calls(input_path, output_path=None, model_path=None, llm_slots=2
     :return: The output CSV Path.
     """
     input_path = Path(input_path)
-    reviews_dir = open_calls_dir(data_dir) / "reviews"
-    reviews_dir.mkdir(parents=True, exist_ok=True)
+    reviews = reviews_dir(data_dir)
+    reviews.mkdir(parents=True, exist_ok=True)
     # Identifies the model without loading it
     model_name = Path(resolve_model_path(model_path, LARGE_MODEL)).name
-
-    def review_path_for(row):
-        return reviews_dir / f"{safe_filename(website_key(row['website']))}.json"
 
     output_path = Path(output_path or input_path.with_name(f"{input_path.stem}_reviewed.csv"))
     # Deadlines from older result files may be free text; store them all as YYYY-MM-DD
@@ -274,22 +310,7 @@ def review_open_calls(input_path, output_path=None, model_path=None, llm_slots=2
 
     # The reviewed rows start as the small model's results (or earlier reviews) and are updated site by site. They are
     # written to the CSV after every reviewed site, so a stopped run keeps everything reviewed so far.
-    reviewed_rows, candidates, reused = [], [], 0
-    for index, row in enumerate(rows):
-        reviewed_rows.append({**row, "small_model_status": row["status"]})
-        if row["status"] not in REVIEW_STATUSES:
-            continue
-        if not split_links(row["announcement_url"]):
-            reviewed_rows[index].update({"reviewed_on": date.today().isoformat(),
-                                         "review_reason": f"Not reviewed: no announcement page ({row['status_reason']})"})
-            continue
-        saved = read_json(review_path_for(row)) if reuse_reviews else None
-        if saved and saved.get("model") == model_name:
-            reviewed_rows[index].update({field: saved["review"][field] for field in REVIEW_FIELDS})
-            reused += 1
-            continue
-        reviewed_rows[index]["review_reason"] = "Review pending"
-        candidates.append(index)
+    reviewed_rows, candidates, reused = plan_reviews(rows, reviews, model_name, reuse_reviews)
     write_rows(reviewed_rows, output_path, REVIEW_COLUMNS)
     logger.info("Reviewing %d of %d sites with the large model (%d already reviewed by %s)", len(candidates), len(rows),
                 reused, model_name)
@@ -305,23 +326,12 @@ def review_open_calls(input_path, output_path=None, model_path=None, llm_slots=2
         runs.report(reviewed=1, **{f"reviewed_{reviewed['status']}": 1})
         # Only a site the model actually classified counts as reviewed; fetch failures are retried next time
         if reviewed["large_model_status"]:
-            write_json_atomic(review_path_for(row), {"website": row["website"], "model": model_name,
-                                                     "review": {field: reviewed[field] for field in REVIEW_FIELDS}})
+            write_json_atomic(review_path(reviews, row["website"]),
+                              {"website": row["website"], "model": model_name,
+                               "review": {field: reviewed[field] for field in REVIEW_FIELDS}})
         write_rows(reviewed_rows, output_path, REVIEW_COLUMNS)
 
-    # Network first, so the large model only occupies the GPU while classifying
-    evidence = {}
-    with ThreadPoolExecutor(fetch_workers, thread_name_prefix="review-fetch") as pool, \
-            progress(total=len(candidates), desc="Large model: fetching pages", unit="site") as bar:
-        futures = {pool.submit(fetch_evidence, rows[index], ignore_robots, min_page_date): index for index in candidates}
-        try:
-            for future in as_completed(futures):
-                evidence[futures[future]] = future.result()
-                bar.update(1)
-        finally:
-            for future in futures:
-                future.cancel()
-
+    evidence = fetch_all_evidence(rows, candidates, ignore_robots, min_page_date, fetch_workers)
     jobs = [(index, page, chunk, text) for index in candidates for page in evidence[index]["announcements"]
             for chunk, text in enumerate(build_chunks(page, evidence[index]["forms"]))]
     # Sites with nothing to classify (every page failed to fetch or was too old) are decided without the model

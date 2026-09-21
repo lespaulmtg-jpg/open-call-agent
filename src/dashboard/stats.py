@@ -3,8 +3,8 @@ The summary statistics at the top of each dashboard view.
 """
 from datetime import date
 
-from open_call_agent.open_call.batch import website_key
-from open_call_agent.paths import EVENTS_PREFIX, FESTIVALS_PREFIX, open_calls_dir, safe_filename, scraped_dir
+from open_call_agent.urls import website_key
+from open_call_agent.paths import EVENTS_PREFIX, FESTIVALS_PREFIX, reports_dir, reviews_dir, safe_filename, scraped_dir
 from open_call_agent.ra.events import read_rows, split_links
 from open_call_agent.storage import read_json
 
@@ -89,9 +89,8 @@ def llm_stats(data_dir, runner):
     :param runner: The JobRunner.
     :return: A list of statistics: websites checked by each model, open calls found and websites still to check.
     """
-    directory = open_calls_dir(data_dir)
-    reports = sorted((directory / "reports").glob("*.json"))
-    reviews = sorted((directory / "reviews").glob("*.json"))
+    reports = sorted(reports_dir(data_dir).glob("*.json"))
+    reviews = sorted(reviews_dir(data_dir).glob("*.json"))
     open_calls = sum((read_json(path) or {}).get("review", {}).get("status") == "open" for path in reviews)
     still_open = sum((read_json(path) or {}).get("status") == "open" for path in reports)
 

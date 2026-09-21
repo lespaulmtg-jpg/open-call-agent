@@ -7,7 +7,8 @@ import pytest
 from open_call_agent.open_call.batch import row_websites
 
 from open_call_agent.cli import main
-from open_call_agent.open_call.batch import STATUSES, check_open_calls, collect_websites, website_key
+from open_call_agent.open_call.batch import STATUSES, check_open_calls, collect_websites
+from open_call_agent.urls import website_key
 from open_call_agent.open_call.review import check_and_review_open_calls
 from open_call_agent.paths import FESTIVALS_PREFIX, find_csvs
 from open_call_agent.ra.events import read_rows

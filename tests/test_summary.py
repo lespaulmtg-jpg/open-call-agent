@@ -7,7 +7,7 @@ from open_call_agent.open_call.batch import RESULT_COLUMNS
 from open_call_agent.open_call.review import check_and_review_open_calls
 from open_call_agent.paths import FESTIVALS_PREFIX, find_csvs
 from open_call_agent.ra.events import read_rows, write_rows
-from open_call_agent.summary import STATUS_RANK, build_country_rows, build_festival_rows, festival_key, write_summary
+from open_call_agent.summary import STATUS_RANK, build_festival_rows, festival_key, write_summary
 
 from .conftest import COUNTRY
 

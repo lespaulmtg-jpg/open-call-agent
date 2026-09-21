@@ -9,6 +9,8 @@ Data directory layout:
     data/open_calls/reports/<site>.json                              small model report per website
     data/open_calls/reviews/<site>.json                              large model review per website
     data/runs/<started>_<kind>.json                                   what each scraper or checker run did
+    data/open_calls/summary/                                         per-festival and per-country summary tables
+    data/dashboard/notes.json                                        your statuses and notes from the dashboard
     data/logs/                                                        logs
 """
 import os
@@ -62,6 +64,30 @@ def runs_dir(data_dir):
     :return: The Path holding one JSON file per scraper or checker run.
     """
     return Path(data_dir) / RUNS_DIR
+
+
+def reports_dir(data_dir):
+    """
+    :param data_dir: The data directory.
+    :return: The Path holding the small model's report per website.
+    """
+    return open_calls_dir(data_dir) / "reports"
+
+
+def reviews_dir(data_dir):
+    """
+    :param data_dir: The data directory.
+    :return: The Path holding the large model's review per website.
+    """
+    return open_calls_dir(data_dir) / "reviews"
+
+
+def summary_dir(data_dir):
+    """
+    :param data_dir: The data directory.
+    :return: The Path holding the per-festival and per-country summary tables.
+    """
+    return open_calls_dir(data_dir) / "summary"
 
 
 def logs_dir(data_dir):

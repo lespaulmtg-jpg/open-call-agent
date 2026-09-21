@@ -12,12 +12,13 @@ from collections import Counter
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import date
 from pathlib import Path
-from urllib.parse import urlparse
 
 from ..progress import progress
 from .. import runs
 from ..storage import read_json, write_json_atomic
-from ..paths import EVENTS_PREFIX, FESTIVALS_PREFIX, find_csvs, logs_dir, open_calls_dir, safe_filename, scraped_dir
+from ..urls import website_key
+from ..paths import (EVENTS_PREFIX, FESTIVALS_PREFIX, find_csvs, logs_dir, open_calls_dir, reports_dir,
+                     safe_filename, scraped_dir)
 from ..ra.events import read_rows, split_links
 from .checker import SiteChecker
 from .classifier import SMALL_MODEL, LlamaServer, LocalClassifier, ServerClassifier, resolve_model_path
@@ -26,28 +27,15 @@ from .links import check_links_in_csv
 
 logger = logging.getLogger(__name__)
 
-# status is one of STATUSES. deadline is YYYY-MM-DD (several separated by " | "), with the text as written on the page in
-# deadline_text. announcement_url is the page announcing the call; open_call_url is the form or application link on it.
-STATUSES = ["open", "closed", "needs_review", "none"]
+# A site's status, most positive first. deadline is YYYY-MM-DD (several separated by " | "), with the text as written
+# on the page in deadline_text. announcement_url is the page announcing the call; open_call_url is the form on it.
+STATUSES = ["open", "needs_review", "closed", "none"]
 # The *_check columns hold link check results (see links.py), one per link in the matching column.
 RESULT_COLUMNS = ["website", "status", "status_reason", "deadline", "deadline_text", "open_call_url", "announcement_url",
                   "opportunity_types", "how_to_apply", "contact_emails", "promoter_instagrams", "website_check",
                   "announcement_url_check", "open_call_url_check", "instagram_check", "email_check", "event_names",
                   "event_urls", "promoters", "countries", "cities", "pages_visited", "issues", "checked_on",
                   "report_path"]
-
-
-def website_key(url):
-    """
-    Key a website URL so http/https, "www." and trailing slashes don't create duplicate checks.
-
-    :param url: The website URL.
-    :return: The key, e.g. "fogstudio.ch" or "example.com/festival".
-    """
-    parsed = urlparse(url if "://" in url else f"https://{url}")
-    host = parsed.netloc.lower()
-    host = host[4:] if host.startswith("www.") else host
-    return f"{host}{parsed.path.rstrip('/')}"
 
 
 def row_websites(row):
@@ -250,15 +238,15 @@ def check_open_calls(data_dir, country_code=None, city=None, festivals_only=Fals
     sites = list(collect_websites(csv_paths).values())[:limit]
     scope = scope or "_".join(part for part in [country_code, city, "festivals" if festivals_only else None] if part) or "all"
     output_path = Path(output_path or open_calls_dir(data_dir) / f"open_calls_{scope}_{date.today().isoformat()}.csv")
-    reports_dir = open_calls_dir(data_dir) / "reports"
-    reports_dir.mkdir(parents=True, exist_ok=True)
+    reports = reports_dir(data_dir)
+    reports.mkdir(parents=True, exist_ok=True)
     output_path.parent.mkdir(parents=True, exist_ok=True)
     logger.info("%d websites to check from %d CSV files", len(sites), len(csv_paths))
     runs.set_total(len(sites), "site")
     runs.report(websites=len(sites))
 
     def report_path_for(site):
-        return reports_dir / f"{safe_filename(website_key(site['website']))}.json"
+        return reports / f"{safe_filename(website_key(site['website']))}.json"
 
     # Identifies the model without loading it, so sites it has already checked can be skipped
     model_name = Path(resolve_model_path(model_path, SMALL_MODEL)).name
@@ -287,29 +275,27 @@ def check_open_calls(data_dir, country_code=None, city=None, festivals_only=Fals
         if to_check:
             # Loaded once, only when a site actually needs checking
             classifier, cleanup = create_classifier(backend, model_path, llm_slots, constrained, logs_dir(data_dir))
+            sites_by_website = {site["website"]: site for site in to_check}
+            results = check_sites(sites_by_website, classifier, crawl_workers, max_pages, max_llm_pages,
+                                  ignore_robots, min_page_date)
+            statuses = Counter()
             try:
-                sites_by_website = {site["website"]: site for site in to_check}
-                bar = progress(total=len(to_check), desc="Small model", unit="site")
-                statuses = Counter()
-                results = check_sites(sites_by_website, classifier, crawl_workers, max_pages, max_llm_pages,
-                                      ignore_robots, min_page_date)
-                for done, (website, report, crawl_seconds, classify_seconds) in enumerate(results, start=1):
-                    statuses[report["status"]] += 1
-                    bar.update(1)
-                    bar.set_postfix(statuses, refresh=False)
-                    site = sites_by_website[website]
-                    # Only a site the model actually classified counts as checked; unreachable sites are retried
-                    report["model"] = model_name if report["coverage"]["pages_classified"] else None
-                    # Saved as soon as each site is classified: a stopped run keeps every finished site
-                    write_json_atomic(report_path_for(site), report)
-                    write(site, report)
-                    logger.info("[%d/%d] %s: %s (crawl %.0fs, classify %.0fs)", done, len(to_check), website,
-                                report["status"], crawl_seconds, classify_seconds)
-                    runs.report(progress=len(sites) - len(to_check) + done, checked=1, **{report["status"]: 1})
-                bar.close()
+                with progress(total=len(to_check), desc="Small model", unit="site") as bar:
+                    for done, (website, report, crawl_seconds, classify_seconds) in enumerate(results, start=1):
+                        statuses[report["status"]] += 1
+                        bar.update(1)
+                        bar.set_postfix(statuses, refresh=False)
+                        site = sites_by_website[website]
+                        # Only a site the model actually classified counts as checked; unreachable sites are retried
+                        report["model"] = model_name if report["coverage"]["pages_classified"] else None
+                        # Saved as soon as each site is classified: a stopped run keeps every finished site
+                        write_json_atomic(report_path_for(site), report)
+                        write(site, report)
+                        logger.info("[%d/%d] %s: %s (crawl %.0fs, classify %.0fs)", done, len(to_check), website,
+                                    report["status"], crawl_seconds, classify_seconds)
+                        runs.report(progress=len(sites) - len(to_check) + done, checked=1, **{report["status"]: 1})
             finally:
-                if "results" in locals():
-                    results.close()  # Cancel queued sites before the model server is stopped
+                results.close()  # Cancel queued sites before the model server is stopped
                 cleanup()
 
     # Sanity-check the links and emails the small model's results point to (network only; the model is unloaded)
