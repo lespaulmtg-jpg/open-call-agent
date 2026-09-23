@@ -17,9 +17,10 @@ from urllib.parse import parse_qs, urlparse
 
 from open_call_agent.paths import DEFAULT_DATA_DIR, open_calls_dir, scraped_dir
 
+from .datasets import dataset_stats, list_datasets
 from .jobs import JOB_TYPES, JobRunner
 from .notes import NOTE_STATUSES, read_notes, save_note
-from .runs import find_run, list_runs
+from .runs import find_run, is_running, list_runs, restart_run, stop_run
 from .sources import default_source, list_sources, load_rows
 from .stats import llm_stats, scrape_stats, table_stats
 
@@ -66,11 +67,20 @@ class DashboardHandler(SimpleHTTPRequestHandler):
                     "data_dir": str(data_dir), "today": date.today().isoformat()}
         if path == "/api/festivals":
             source = query.get("source") or default_source(data_dir)
+            # A check writes its results as each site finishes, so the table follows a running check while it goes
+            checking = is_running(data_dir, runner, "open_calls")
             if not source:
-                return {"source": None, "rows": [], "notes": {}, "stats": table_stats(data_dir, None, {})}
+                return {"source": None, "rows": [], "notes": {}, "stats": table_stats(data_dir, None, {}),
+                        "checking": checking}
             notes = read_notes(data_dir)
             return {"source": source, "rows": load_rows(data_dir, source), "notes": notes,
-                    "stats": table_stats(data_dir, source, notes)}
+                    "stats": table_stats(data_dir, source, notes), "checking": checking}
+        if path == "/api/datasets":
+            datasets = list_datasets(data_dir)
+            return {"datasets": datasets, "stats": dataset_stats(datasets)}
+        if path == "/api/checking":
+            # Cheap enough for the festivals table to ask while it follows a running check
+            return {"checking": is_running(data_dir, runner, "open_calls")}
         if path == "/api/stats/scrape":
             return {"stats": scrape_stats(data_dir, runner)}
         if path == "/api/stats/llm":
@@ -94,6 +104,10 @@ class DashboardHandler(SimpleHTTPRequestHandler):
             return {"job": runner.start(body.get("kind"), body.get("options") or {}).as_dict()}
         if path == "/api/jobs/stop":
             return {"job": runner.stop(int(body.get("id", 0))).as_dict()}
+        if path == "/api/runs/stop":
+            return {"run": stop_run(data_dir, runner, body.get("id", ""))}
+        if path == "/api/runs/restart":
+            return {"job": restart_run(data_dir, runner, body.get("id", "")).as_dict()}
         raise FileNotFoundError(f"Unknown endpoint {path}")
 
     def respond(self, handler):

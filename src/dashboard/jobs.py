@@ -21,6 +21,9 @@ logger = logging.getLogger(__name__)
 
 MAX_LOG_LINES = 2000
 ANSI_RE = re.compile(r"\x1b\[[0-9;?]*[a-zA-Z]")
+# What a command of this project looks like in the process list, so a run started elsewhere is only signalled when the
+# process really is one of ours and not something that inherited its process id later
+OUR_COMMANDS = ("open_call_agent", "check_europe_festivals", "scrape_europe")
 
 
 def clean_log_line(line):
@@ -33,6 +36,40 @@ def clean_log_line(line):
     """
     parts = [ANSI_RE.sub("", part).strip() for part in line.rstrip("\n").split("\r")]
     return next((part for part in reversed(parts) if part), "")
+
+
+def is_our_process(pid):
+    """
+    Whether a process id still belongs to a run of this project. A run that was killed without recording how it ended
+    (the machine went down, say) leaves a record saying "running", and its process id may since have been given to
+    something else, so the command is checked too.
+
+    :param pid: A process id, or None.
+    :return: True if that process is running and is one of this project's commands.
+    """
+    if not pid:
+        return False
+    try:
+        result = subprocess.run(["ps", "-p", str(pid), "-o", "command="], capture_output=True, text=True, timeout=5)
+    except (OSError, subprocess.SubprocessError):
+        return False
+    return any(name in result.stdout for name in OUR_COMMANDS)
+
+
+def stop_process(pid):
+    """
+    Stop a run this dashboard didn't start, the same way it stops its own: SIGTERM to the process group, which the CLI
+    handles like Ctrl+C and which reaches the model server with it.
+
+    :param pid: The run's process id.
+    :raises ValueError: If that process isn't a running command of this project.
+    """
+    if not is_our_process(pid):
+        raise ValueError("That run is no longer running")
+    try:
+        os.killpg(os.getpgid(pid), signal.SIGTERM)
+    except (OSError, ProcessLookupError) as error:
+        raise ValueError(f"Could not stop the run: {error}")
 
 # Each field becomes a command line argument: a flag on its own for checkboxes, "--flag value" otherwise.
 JOB_TYPES = {
@@ -159,6 +196,64 @@ def build_command(kind, options, data_dir):
     for field in job_type["fields"]:
         command += field_arguments(field, options)
     return command
+
+
+def field_dest(part, field=None):
+    """
+    :param part: A field, or one option of a choice field, carrying a command line flag.
+    :param field: The field the part belongs to, for a choice option without a name of its own.
+    :return: The name the CLI records that flag under in a run's arguments, e.g. "--min-page-date" -> "min_page_date".
+    """
+    if "flag" in part:
+        return part["flag"].lstrip("-").replace("-", "_")
+    return part.get("name") or (field or {}).get("name", "")
+
+
+def run_options(kind, arguments):
+    """
+    Turn the arguments a recorded run was started with back into the options of this dashboard's form, so the same run
+    can be started again. Anything the form can't express is left out and falls back to the command's own default.
+
+    :param kind: A key of JOB_TYPES.
+    :param arguments: The run's arguments, as runs.py recorded them (every value a string, and only the ones that were
+        set, so a flag that isn't there was off).
+    :return: Options keyed by field name, as the browser would have submitted them.
+    """
+    options = {}
+    for field in JOB_TYPES[kind]["fields"]:
+        if field["type"] == "checkbox":
+            options[field["name"]] = field_dest(field) in arguments
+        elif field["type"] == "choice":
+            # The most specific choice is listed last (city after country), so it is matched first
+            for choice in reversed(field["options"]):
+                if "flag" not in choice or field_dest(choice) not in arguments:
+                    continue
+                options[field["name"]] = choice["value"]
+                options[f"{field['name']}_value"] = arguments[field_dest(choice)]
+                if "with" in choice:
+                    options[choice["with"]["name"]] = arguments.get(field_dest(choice["with"]), "")
+                break
+            else:
+                # The run named no area at all, e.g. a check of everything scraped, which is the choice without a flag
+                whole_lot = next((choice["value"] for choice in field["options"] if "flag" not in choice), None)
+                if whole_lot:
+                    options[field["name"]] = whole_lot
+        elif field_dest(field) in arguments:
+            options[field["name"]] = arguments[field_dest(field)]
+    return options
+
+
+def job_from_run(run):
+    """
+    Work out how to start a recorded run again.
+
+    :param run: A run dict.
+    :return: A tuple of (job type key, options), or (None, None) for a run this dashboard can't start: one rebuilt from
+        a log file, or a command with no form of its own, such as the Europe script or a review on its own.
+    """
+    arguments = run.get("arguments") or {}
+    kind = next((name for name, job in JOB_TYPES.items() if job.get("command") == [arguments.get("command")]), None)
+    return (kind, run_options(kind, arguments)) if kind else (None, None)
 
 
 class Job:

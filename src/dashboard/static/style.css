@@ -303,6 +303,7 @@ td.mono-cell { font-family: var(--mono); font-size: 13px; }
 .run.open-run { background: var(--panel-raised); box-shadow: inset 2px 0 0 var(--accent); }
 .run-head { display: flex; align-items: baseline; gap: 10px; justify-content: space-between; }
 .run-meta { color: var(--muted); font-size: 12px; margin-top: 3px; }
+.run-id { color: var(--none); font-size: 11px; margin: 3px 0 0; user-select: all; }
 .run-stats { color: var(--text); font-size: 13px; margin-top: 8px; }
 .run-errors { color: var(--closed); font-size: 12px; margin-top: 6px; }
 
@@ -349,9 +350,73 @@ td.mono-cell { font-family: var(--mono); font-size: 13px; }
 .stat-grid.small .stat-card { padding: 12px 14px; }
 .stat-grid.small .value { font-size: 22px; margin: 4px 0 0; }
 .run-arguments { color: var(--muted); font-family: var(--mono); font-size: 12px; overflow-wrap: anywhere; }
-.run-error-list { margin: 0; padding-left: 18px; color: var(--closed); font-size: 13px; }
-.run-error-list li { margin-bottom: 6px; overflow-wrap: anywhere; }
-.window-actions { margin-top: 22px; }
+.window-actions { margin-top: 22px; display: flex; gap: 10px; }
+.panel-note.warn { color: var(--review); }
+
+/* Datasets */
+.dataset { border-top: 1px solid var(--line); padding: 18px 20px; }
+.dataset-head { display: flex; justify-content: space-between; align-items: flex-start; gap: 20px; }
+.dataset-head h3 { margin: 4px 0; font-size: 17px; }
+.dataset-facts { display: flex; flex-wrap: wrap; gap: 8px; margin: 14px 0 4px; }
+.fact {
+  display: inline-flex;
+  gap: 8px;
+  align-items: baseline;
+  background: var(--panel-raised);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 4px 12px;
+  font-size: 12px;
+}
+
+.fact-label { color: var(--muted); }
+.fact-value { color: var(--text); font-family: var(--mono); }
+
+.steps { list-style: none; margin: 12px 0 0; padding: 0; }
+.step { display: flex; gap: 10px; align-items: baseline; padding: 4px 0; font-size: 13px; }
+.step-mark { width: 14px; text-align: center; }
+.step-label { min-width: 190px; color: var(--text); }
+.step-detail { color: var(--muted); overflow-wrap: anywhere; }
+.step.done .step-mark { color: var(--open); }
+.step.partial .step-mark { color: var(--review); }
+.step.none .step-mark, .step.none .step-label { color: var(--none); }
+
+/* Shown while a check is running and the table is following it */
+.live {
+  align-self: center;
+  color: var(--accent);
+  border: 1px solid var(--accent-dim);
+  border-radius: 999px;
+  padding: 4px 12px;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.live::before {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin-right: 7px;
+  border-radius: 50%;
+  background: var(--accent);
+  animation: pulse 1.8s ease-in-out infinite;
+}
+
+@keyframes pulse { 50% { opacity: 0.25; } }
+
+/* Errors, each opening into what is known about it */
+.run-error-list { margin: 0; font-size: 13px; }
+.run-error { border: 1px solid var(--line); border-radius: 8px; margin-bottom: 8px; background: var(--panel-raised); }
+.error-head { display: flex; align-items: baseline; gap: 10px; padding: 9px 12px; cursor: pointer; }
+.error-head:hover { background: var(--line); }
+.error-id { color: var(--accent-dim); font-size: 12px; }
+.error-type { color: var(--closed); font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase; white-space: nowrap; }
+.error-message { color: var(--text); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.error-detail { padding: 4px 12px 12px; border-top: 1px solid var(--line); }
+.error-detail .detail-grid { margin: 10px 0; }
+.error-line { color: var(--muted); font-size: 12px; overflow-wrap: anywhere; white-space: pre-wrap; }
 
 /* Help boxes */
 .tooltip {

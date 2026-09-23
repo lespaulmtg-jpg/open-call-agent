@@ -6,12 +6,13 @@ import logging
 
 import pytest
 
-from dashboard.jobs import JobRunner
-from dashboard.runs import list_runs
+from dashboard import runs as dashboard_runs
+from dashboard.jobs import JobRunner, build_command, job_from_run
+from dashboard.runs import find_run, is_running, list_runs, parse_error
 from open_call_agent import runs
 from open_call_agent.past_runs import run_from_log
-from open_call_agent.paths import logs_dir, runs_dir
-from open_call_agent.storage import read_json
+from open_call_agent.paths import logs_dir, reports_dir, runs_dir
+from open_call_agent.storage import read_json, write_json_atomic
 
 SCRAPE_LOG = """\
 2026-09-17 02:08:54,766 INFO scrape_europe: Scraping 46 countries in europe x 24 months (2025-01-01 to 2026-12-31).
@@ -113,3 +114,76 @@ def test_the_dashboard_lists_recorded_and_rebuilt_runs(tmp_path):
     assert scrape["percent"] == 100 and scrape["job_id"] is None
     assert scrape["stats"] == [{"label": "Events found", "value": 30}], "figures get names for the window"
     assert [run["kind"] for run in list_runs(tmp_path, JobRunner(tmp_path), kind="open_calls")] == ["open_calls"]
+
+
+def test_a_run_can_be_started_again_with_the_options_it_was_given():
+    """
+    A stopped run is carried on by running the same command again, so every option has to survive the round trip from
+    the record back to a command line.
+    """
+    def command_for(arguments):
+        kind, options = job_from_run({"arguments": arguments})
+        return " ".join(build_command(kind, options, "data")).split("--data-dir data ")[1]
+
+    assert command_for({"command": "check-open-calls", "festivals_only": "True", "no_review": "True",
+                        "min_page_date": "2025-01-01", "crawl_workers": "8"}) == \
+        "check-open-calls --festivals-only --no-review --min-page-date 2025-01-01 --crawl-workers 8 " \
+        "--llm-slots 4 --review-slots 2", "a check of everything scraped names no area, and keeps the form's defaults"
+    assert command_for({"command": "scrape", "city": "ch/zurich", "start": "2026-09-16", "end": "2026-09-18",
+                        "festivals": "True"}) == "scrape --city ch/zurich --start 2026-09-16 --end 2026-09-18 --festivals"
+    assert command_for({"command": "scrape", "continent": "europe", "start": "2026-01-01", "end": "2026-12-31"}) == \
+        "scrape --continent europe --start 2026-01-01 --end 2026-12-31", "no --festivals: it wasn't asked for"
+    assert command_for({"command": "check-open-calls", "country": "ch", "city": "basel"}).startswith(
+        "check-open-calls --country ch --city basel"), "a city carries the country it is in"
+    assert command_for({"command": "check-open-calls", "country": "ch"}).startswith("check-open-calls --country ch"), \
+        "a country on its own is not read as a city"
+
+    assert job_from_run({"arguments": {}}) == (None, None), "a run rebuilt from a log has nothing to start again"
+    assert job_from_run({"arguments": {"command": "review-open-calls"}}) == (None, None), "no form for this command"
+
+
+def test_an_error_is_split_into_parts_that_can_be_pointed_at():
+    error = parse_error("20260921_221356_open_calls", 0, "2026-09-22 08:58:41,560 https://www..klubpan.com failed")
+    assert error["id"] == "20260921_221356_open_calls#e1" and error["label"] == "e1"
+    assert error["time"] == "2026-09-22 08:58:41" and error["type"] == "site failed"
+    assert error["site"] == "https://www..klubpan.com" and error["message"] == "https://www..klubpan.com failed"
+
+    logged = parse_error("log_check", 1, "open_call_agent.open_call.batch: https://example.org failed: timeout")
+    assert logged["source"] == "open_call_agent.open_call.batch" and logged["site"] == "https://example.org"
+    assert logged["label"] == "e2"
+
+    crashed = parse_error("run", 0, "ValueError: no festival CSVs")
+    assert crashed["type"] == "ValueError" and not crashed["site"]
+
+
+def test_a_run_whose_process_is_gone_is_shown_as_stopped(tmp_path, monkeypatch):
+    """
+    A run only records how it ended if it gets the chance. One killed outright, e.g. by the machine going down, would
+    otherwise sit in the dashboard saying "running" for ever.
+    """
+    with runs.run("open_calls", tmp_path, "killed", {"command": "check-open-calls"}) as run:
+        runs.report(progress=1, total=2, unit="site")
+        run.save(force=True)
+        monkeypatch.setattr(dashboard_runs, "is_our_process", lambda pid: True)
+        listed = list_runs(tmp_path, JobRunner(tmp_path))[0]
+        assert listed["state"] == "running" and listed["percent"] == 50 and not listed["state_note"]
+        assert listed["can_stop"] and listed["can_restart"]
+
+        monkeypatch.setattr(dashboard_runs, "is_our_process", lambda pid: False)
+        gone = list_runs(tmp_path, JobRunner(tmp_path))[0]
+        assert gone["state"] == "stopped" and "machine going down" in gone["state_note"]
+        assert not gone["can_stop"] and gone["can_restart"], "it can still be started again"
+        assert is_running(tmp_path, JobRunner(tmp_path), "open_calls") is False
+
+
+def test_an_error_shows_what_the_sites_own_report_recorded(tmp_path):
+    write_json_atomic(reports_dir(tmp_path) / "example.org.json",
+                      {"status": "needs_review", "status_reason": "Site check crashed: LocationParseError",
+                       "errors": [{"stage": "crash", "url": "https://example.org", "error": "LocationParseError"}]})
+    with runs.run("open_calls", tmp_path, "with a failed site", {}) as run:
+        logging.getLogger("open_call_agent.open_call.batch").error("https://example.org failed")
+
+    [error] = find_run(tmp_path, JobRunner(tmp_path), run.id)["errors"]
+    assert error["site"] == "https://example.org" and error["report"]["status"] == "needs_review"
+    assert error["report"]["errors"] == ["crash: https://example.org: LocationParseError"]
+    assert "example.org.json" in error["report"]["path"]

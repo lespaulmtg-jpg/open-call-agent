@@ -2,6 +2,33 @@
 
 let config = {statuses: [], job_types: {}, today: new Date().toISOString().slice(0, 10)};
 
+/* A check writes its results as each site finishes, so the festivals table can follow one while it runs. */
+const CHECK_POLL = 10000;      /* How often the view asks whether a check is running */
+const TABLE_REFRESH = 20000;   /* How often it reads the results again while one is */
+let festivalsTimer = null;
+let lastFestivalLoad = 0;
+
+function showLive(checking) {
+  document.getElementById('live-badge').hidden = !checking;
+}
+
+function watchFestivals(view) {
+  clearInterval(festivalsTimer);
+  if (view !== 'festivals') return;
+  festivalsTimer = setInterval(async () => {
+    if (document.hidden) return;   /* Nobody is looking at it */
+    try {
+      const {checking} = await api('/api/checking');
+      showLive(checking);
+      if (checking && Date.now() - lastFestivalLoad >= TABLE_REFRESH) {
+        await loadFestivals(document.getElementById('source-select').value, true);
+      }
+    } catch (error) {
+      /* The next tick tries again. */
+    }
+  }, CHECK_POLL);
+}
+
 async function showView(view) {
   for (const button of document.querySelectorAll('.nav-button')) {
     button.classList.toggle('active', button.dataset.view === view);
@@ -11,9 +38,11 @@ async function showView(view) {
   }
   settings.write('view', view);
   watchRuns(view);
+  watchFestivals(view);
 
   try {
     if (view === 'festivals' && !table.rows.length) await loadFestivals(document.getElementById('source-select').value);
+    if (view === 'datasets') await loadDatasets();
     if (view === 'scraper') renderStats('stats-scraper', (await api('/api/stats/scrape')).stats);
     if (view === 'openCalls') renderStats('stats-openCalls', (await api('/api/stats/llm')).stats);
   } catch (error) {

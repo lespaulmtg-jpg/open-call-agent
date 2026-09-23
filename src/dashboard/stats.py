@@ -3,9 +3,10 @@ The summary statistics at the top of each dashboard view.
 """
 from datetime import date
 
+from open_call_agent.open_call.batch import row_websites
 from open_call_agent.urls import website_key
 from open_call_agent.paths import EVENTS_PREFIX, FESTIVALS_PREFIX, reports_dir, reviews_dir, safe_filename, scraped_dir
-from open_call_agent.ra.events import read_rows, split_links
+from open_call_agent.ra.events import read_rows
 from open_call_agent.storage import read_json
 
 from .notes import COMPLETED_STATUSES, EXCLUDED_STATUSES
@@ -74,12 +75,13 @@ def scrape_stats(data_dir, runner):
 def festival_websites(data_dir):
     """
     :param data_dir: The data directory.
-    :return: The keys of every promoter website of a scraped festival, as the checkers count them.
+    :return: The keys of every website of a scraped festival, counted with row_websites, the checker's own rule, so
+             this matches what a check reports as its total: the festival's own website as well as its promoters'.
     """
     websites = set()
     for path in scraped_dir(data_dir).glob(f"*/*/{FESTIVALS_PREFIX}*.csv"):
         for row in read_rows(path):
-            websites.update(website_key(website) for website in split_links(row["Promoter Websites"]))
+            websites.update(website_key(website) for website in row_websites(row))
     return websites
 
 
@@ -101,7 +103,7 @@ def llm_stats(data_dir, runner):
     return [
         statistic("Websites Checked", len(reports), "by the 3B model"),
         statistic("Open Calls Found", open_calls, f"confirmed by the 7B model of {still_open} the 3B model found"),
-        statistic("Websites Left To Check", unchecked, f"of {len(websites)} festival websites"),
+        statistic("Websites Left To Check", unchecked, f"of {len(websites):,} festival websites"),
         statistic("Model Jobs Running", runner.running_jobs(["check-open-calls", "check-europe"]),
                   "only one model uses the GPU"),
     ]
