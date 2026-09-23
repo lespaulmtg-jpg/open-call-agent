@@ -14,6 +14,7 @@
     <span>Open Call<br>Agent</span>
   </div>
   <button class="nav-button" data-view="festivals" data-help="Browse the festivals that have been checked, filter them and keep your own status and notes.">Festivals</button>
+  <button class="nav-button" data-view="datasets" data-help="Every dataset on disk: what it covers, when it was written and which steps have been run over it.">Datasets</button>
   <button class="nav-button" data-view="scraper" data-help="Scrape events from ra.co and see every scraper run.">RA scraper</button>
   <button class="nav-button" data-view="openCalls" data-help="Check promoter and festival websites for open calls with the local models, and see every check.">Open call LLM</button>
   <div class="sidebar-foot">
@@ -35,6 +36,7 @@
           <span class="micro-label">Data source</span>
           <select id="source-select" data-help="Which results the table is built from: a summary written by the Europe script, or the results of one check. The newest is shown first."></select>
         </label>
+        <span id="live-badge" class="live" hidden data-help="A check is running, so this table is read again every few seconds and festivals appear as their websites are checked.">Live</span>
         <button id="reload-festivals" class="button" data-help="Read the CSV files again, to pick up a check that has just finished.">Reload</button>
       </div>
     </header>
@@ -80,6 +82,28 @@
         <span id="row-count"></span>
         <button id="load-more" class="button ghost" hidden data-help="Add the next 100 festivals to the table. Scrolling does the same.">Show more</button>
       </div>
+    </div>
+  </section>
+
+  <section id="view-datasets" class="view" hidden>
+    <header class="view-head">
+      <div>
+        <div class="micro-label">What is on disk</div>
+        <h1>Datasets</h1>
+        <p class="subtitle">Every scrape, check and summary, with what has been run over it</p>
+      </div>
+    </header>
+    <div id="stats-datasets" class="stat-grid"></div>
+
+    <div class="panel">
+      <div class="panel-head">
+        <div>
+          <h2>Datasets</h2>
+          <p class="panel-note">Newest first. A step marked <span class="mono">◐</span> was only partly applied, e.g. a
+            check that was stopped before it reached every website.</p>
+        </div>
+      </div>
+      <div id="dataset-list"></div>
     </div>
   </section>
 
@@ -132,6 +156,7 @@
         <div class="micro-label" id="run-window-kind"></div>
         <h2 id="run-window-title"></h2>
         <p class="panel-note" id="run-window-when"></p>
+        <p class="run-id mono" id="run-window-id" data-help="This run's id. Its record is data/runs/&lt;id&gt;.json, and every error below is numbered within it."></p>
       </div>
       <button id="run-window-close" class="button ghost" data-help="Close this window (or press Escape).">Close</button>
     </div>
@@ -144,6 +169,7 @@
 <script src="api.js"></script>
 <script src="runs.js"></script>
 <script src="table.js"></script>
+<script src="datasets.js"></script>
 <script src="jobs.js"></script>
 <script src="app.js"></script>
 </body>

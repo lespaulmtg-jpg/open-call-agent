@@ -267,6 +267,24 @@ the work reports into it (`runs.report(events=15, cities={...})`), which does no
 before this, and from terminals, are read back from their log files and marked as such, since their figures are only
 as good as what was logged.
 
+### Watching a run without losing your place ([runs.js](src/dashboard/static/runs.js#L1), [runs.py](src/dashboard/runs.py#L70))
+
+**Issue.** A run's window refreshes every two seconds. Rebuilding it each time moved the page under the reader and
+threw away where they were in the output, so a running job's log couldn't be read at all. A run could only be stopped
+if this dashboard had started it, never started again, and a run killed outright — the machine going down mid-check —
+sat there saying "running" for ever, because a run only records how it ended if it gets the chance.
+
+**Solutions tested.** Re-rendering into a scroll position saved beforehand (still flickers, and the output is re-sent
+in full every tick); remembering the run's state in the browser (lost on reload, and wrong for runs started elsewhere).
+
+**Decision.** The window is built once and patched: the progress bar, figures and errors are written into the nodes
+already on the page, and only output newer than the last offset is appended (`/api/jobs/log?offset=`), following the
+end only while the reader is already at the end. A run is shown as stopped when its own process is gone — checked by
+its command, since a process id can be reused — and can be stopped whether or not this dashboard started it. Starting
+one again rebuilds the same command from the arguments it recorded, through the same declared options a form submits,
+so nothing runs that a form couldn't have started; sites already checked are reused, so it carries on rather than
+starting over.
+
 ### Shared rules instead of parallel copies ([classifier.py](src/open_call_agent/open_call/classifier.py#L110), [urls.py](src/open_call_agent/urls.py#L8))
 
 **Issue.** The two model passes had grown their own copies of the same rules: verifying quotes and deadlines (11 lines,

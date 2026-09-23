@@ -206,6 +206,18 @@ def test_api_endpoints(results_dir, monkeypatch):
 
         assert request(f"{url}/api/jobs")["jobs"] == []
         assert request(f"{url}/api/stats/llm")["stats"][0]["label"] == "Websites Checked"
+
+        datasets = request(f"{url}/api/datasets")
+        assert [dataset["kind"] for dataset in datasets["datasets"]] == ["results", "scrape"]
+        assert datasets["datasets"][0]["source_id"] == config["default_source"], "a dataset opens in the table"
+        assert datasets["stats"][0]["label"] == "Datasets"
+
+        assert festivals["checking"] is False and request(f"{url}/api/checking") == {"checking": False}, \
+            "the table only follows the results while a check is writing them"
+        for endpoint in ("/api/runs/stop", "/api/runs/restart"):
+            with pytest.raises(HTTPError) as error:
+                request(f"{url}{endpoint}", {"id": "no-such-run"})
+            assert error.value.code == 404
     finally:
         server.shutdown()
         server.server_close()

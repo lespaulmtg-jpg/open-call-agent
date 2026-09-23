@@ -191,8 +191,16 @@ function renderTable() {
   const rows = table.visible.slice(0, table.shown);
 
   if (!rows.length) {
-    body.replaceChildren(element('tr', {}, [element('td', {className: 'empty', colSpan: columns.length,
-      textContent: table.rows.length ? 'No festivals match these filters' : 'No data yet: run a scrape and an open call check'})]));
+    const hidden = table.rows.length;
+    const cell = element('td', {className: 'empty', colSpan: columns.length},
+      hidden ? [`No festivals match these filters — all ${hidden.toLocaleString()} in this dataset are hidden. `]
+        : ['No data yet: run a scrape and an open call check']);
+    if (hidden) {
+      const clear = element('button', {className: 'button ghost', textContent: 'Clear the filters'});
+      clear.onclick = () => document.getElementById('reset-table').click();
+      cell.append(clear);
+    }
+    body.replaceChildren(element('tr', {}, [cell]));
   } else {
     const nodes = [];
     for (const row of rows) {
@@ -222,19 +230,25 @@ function showMore() {
   renderTable();
 }
 
-async function loadFestivals(source) {
+async function loadFestivals(source, keepView = false) {
   const query = source ? `?source=${encodeURIComponent(source)}` : '';
   const data = await api(`/api/festivals${query}`);
+  const scroll = window.scrollY;
   table.rows = data.rows;
   table.notes = data.notes;
   table.source = data.source;
   table.today = config.today;
+  showLive(data.checking);
   renderStats('stats-festivals', data.stats);
 
   const statusFilter = document.getElementById('status-filter');
   const statuses = [...new Set(data.rows.map(row => row.status))].sort();
+  /* A status this dataset has none of still belongs in the list while it is the filter, or switching from a dataset
+     with open calls to one without would hide every row with nothing on screen to explain it. */
+  if (table.filters.status && !statuses.includes(table.filters.status)) statuses.push(table.filters.status);
   statusFilter.replaceChildren(element('option', {value: '', textContent: 'All statuses'}),
-    ...statuses.map(status => element('option', {value: status, textContent: status.replace(/_/g, ' ')})));
+    ...statuses.map(status => element('option', {value: status,
+      textContent: status.replace(/_/g, ' ') + (data.rows.some(row => row.status === status) ? '' : ' (none here)')})));
   statusFilter.value = table.filters.status;
 
   const noteFilter = document.getElementById('note-filter');
@@ -244,7 +258,10 @@ async function loadFestivals(source) {
   noteFilter.value = table.filters.note;
   fillPlaceFilters();
 
-  applyFilters();
+  /* A refresh while a check is running keeps the reader where they were, rather than jumping back to the first page */
+  applyFilters(keepView);
+  if (keepView) window.scrollTo({top: scroll});
+  lastFestivalLoad = Date.now();
 }
 
 function fillOptions(select, values, allLabel, selected) {
