@@ -7,6 +7,10 @@ It scrapes events from [ra.co](https://ra.co), works out which ones are festival
 and reads those pages with two local LLMs to decide whether a call is open. Everything runs on your machine; no API
 keys, no data sent anywhere.
 
+> **Hardware.** Built and run on an Apple Silicon Mac (M1 Max), where the models use the GPU through Metal. An
+> equivalent Mac should work as it stands. Anywhere else the models fall back to the CPU, and `environment.yml` needs
+> a llama.cpp build for that platform — the scraper, the dashboard and the link checks are unaffected.
+
 ![The festivals table](docs/screenshots/festivals.png)
 
 ---
@@ -73,7 +77,62 @@ playwright install chromium
 ```
 
 The models (Qwen2.5-3B and 7B Instruct, Q4_K_M GGUF, ~6.4 GB together) download to the Hugging Face cache the first
-time you run a check.
+time you run a check — **only when you run one**. The next section needs neither the models nor the network.
+
+---
+
+## Try it straight away: the sample data
+
+The repo ships with real results in [`sample_data/`](sample_data/), so you can see what the tool produces before
+scraping or downloading anything:
+
+```bash
+cd open-call-agent                               # --data-dir is read from where you start it
+open-call-dashboard --data-dir sample_data --open
+```
+
+That opens http://localhost:8000 on 113 festivals from 9 countries.
+
+> Seeing an empty page? Read the terminal. Started somewhere else, `sample_data` won't be found; started while another
+> dashboard is still running, the port is taken and your browser is showing *that* one. The dashboard names both.
+
+![The sample data in the dashboard](docs/screenshots/sample-data.png)
+
+### Five minutes in the dashboard
+
+1. **Set the status filter to `open`.** Five festivals remain. Each is a real open call: every application link
+   resolves to a live form or application page, and the two deadlines that are stated are still ahead.
+2. **Click a row.** It expands into everything the scrapers found: the deadline, the page announcing the call, the
+   application form, contact emails, Instagram, and the reason each model gave for its verdict.
+3. **Follow a "Submit" link.** FOG Festival's goes to its live Google Form, open until 15 November 2026.
+4. **Set your own status** on a festival — *interested*, *applied* — and add a note. It saves to
+   `sample_data/dashboard/notes.json` and stays with the festival.
+5. **Switch the data source** (top right) to `ch basel festivals (reviewed)` to see a second, smaller check.
+6. **Open the Datasets view** to see all four datasets and which steps have been run over each.
+7. **Open the Open call LLM view** and click the run in the list — the 7B review that produced these results, with
+   its figures and output.
+
+The **RA scraper** view works too, but pressing Start there will scrape ra.co for real.
+
+### What's in it, and how honest it is
+
+| | |
+| --- | --- |
+| `scraped_data/` | 113 festivals in 30 city files, from the European scrape |
+| `open_calls_europe_sample_*.csv` | 48 websites checked by the 3B model, link-checked, then reviewed by the 7B |
+| `open_calls_ch_basel_festivals_*.csv` | A second, complete check of 12 Basel websites |
+| `reports/`, `reviews/` | The per-site JSON behind every verdict |
+| `runs/` | The record of the review run that produced the reviewed CSV |
+
+These are **genuine pipeline outputs**, not hand-written fixtures: the statuses, quotes and reasons are what the
+models actually produced, and the link checks are what the checker actually found.
+
+The selection is curated in one direction only. Every website whose final status is `open` was opened and read by
+hand to confirm it is a festival, that applications are genuinely invited, and that the call is for an edition still
+ahead. Sites whose `open` verdict didn't survive that reading were left out of the sample rather than relabelled —
+so the sample under-states how often the pipeline is wrong. Several sites were deliberately kept *because* the
+pipeline rejects them correctly: an archived 2025 call for participation, a competition between editions, and a
+part-time job advert that reads like an open call.
 
 ---
 
@@ -203,6 +262,8 @@ open-call-dashboard --open          # http://localhost:8000
 ```
 
 - `--data-dir` — which data directory to read. Default `data/`, resolved to an absolute path and shown in the sidebar.
+  Pass `sample_data` to browse the results that ship with the repo (see
+  [Try it straight away](#try-it-straight-away-the-sample-data)).
 - `--host`, `--port` — default `127.0.0.1:8000`.
 - `--open` — open a browser once it is up.
 

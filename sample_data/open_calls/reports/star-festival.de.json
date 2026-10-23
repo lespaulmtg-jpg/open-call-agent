@@ -1,0 +1,111 @@
+{
+  "site": "https://star-festival.de/",
+  "checked_on": "2026-09-22",
+  "status": "none",
+  "status_reason": "No call found",
+  "opportunity_types": [],
+  "deadline": "",
+  "deadline_text": "",
+  "announcement_urls": [],
+  "open_call_urls": [],
+  "how_to_apply": "",
+  "call_pages": [],
+  "coverage": {
+    "discovery": "sitemap + links",
+    "sitemap_urls_found": 14,
+    "pages_visited": 6,
+    "js_rendered_pages": 0,
+    "pages_classified": 4,
+    "llm_used": true,
+    "skipped_by_robots": [],
+    "min_page_date": "2025-01-01",
+    "skipped_by_date": [],
+    "unchecked_documents": []
+  },
+  "contact_emails": [
+    "info@stuttgarttechnoandrave.de"
+  ],
+  "warnings": [
+    "Crawl time budget (120s) reached after 6 pages."
+  ],
+  "errors": [],
+  "pages": [
+    {
+      "url": "https://star-festival.de/",
+      "title": "Home • Stuttgart Techno and Rave",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page does not mention any open call or invitation for outside people to apply, submit or propose something. It only contains information about the lineup, FAQ, contact details, and testimonials.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://star-festival.de/faq-cashless",
+      "title": "FAQ Cashless • Stuttgart Techno and Rave",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page does not describe an open call for any opportunity. It only provides information about the cashless payment system and does not invite people to apply or submit.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://star-festival.de/faq",
+      "title": "FAQ • Stuttgart Techno and Rave",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page does not mention any open call for submissions, applications, or proposals. It only provides information about the festival, its schedule, and other details.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://star-festival.de/kontakt",
+      "title": "Kontakt • Stuttgart Techno and Rave",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page does not mention any open call or invitation for outside people to apply, submit or propose something. It only provides contact information and social media links.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    }
+  ],
+  "model": "qwen2.5-3b-instruct-q4_k_m.gguf"
+}

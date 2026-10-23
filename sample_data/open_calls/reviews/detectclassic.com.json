@@ -1,0 +1,17 @@
+{
+  "website": "https://www.detectclassic.com",
+  "model": "qwen2.5-7b-instruct-q4_k_m-00001-of-00002.gguf",
+  "review": {
+    "status": "open",
+    "deadline": "2026-09-17",
+    "deadline_text": "2026-09-17",
+    "open_call_url": "https://portal.helfereinsatz.ch/kfka/de/browse/open/event/210209, https://detectclassic.festivalpro.com/form/rBETKzrZKzjIExZOqSDM/0",
+    "announcement_url": "https://detectclassic.com/betweenmountains/about/mitmachen, https://detectclassic.com/en/betweenmountains/about/volunteering",
+    "opportunity_types": "volunteers",
+    "how_to_apply": "Melde dich auf unserem Helfereinsatz-Tool an und wähle deine gewünschte Schicht selbstständig aus. | Sign up on our volunteer platform and select your preferred shift.",
+    "large_model_status": "open",
+    "review_reason": "https://detectclassic.com/betweenmountains/about/mitmachen: The page clearly states 'Ab sofort könnt ihr euch als Volunteers bei uns bewerben' and 'Die Volunteering-Bewerbungsphase für 2026 ist gestartet! Melde dich ab sofort an', indicating that the call for volunteers is open now. | https://detectclassic.com/en/betweenmountains/about/volunteering: The page clearly states that the application period for volunteers is now open and provides a link to apply. The deadline for the previous call has passed, but the current call is open.",
+    "review_quotes": "Ab sofort könnt ihr euch als Volunteers bei uns bewerben. | The application period for volunteers for 2026 is now open! Apply now and join the volunteer team. | Sign up on our volunteer platform and select your preferred shift.",
+    "reviewed_on": "2026-09-17"
+  }
+}

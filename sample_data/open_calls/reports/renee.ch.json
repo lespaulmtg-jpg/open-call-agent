@@ -1,0 +1,55 @@
+{
+  "site": "https://www.renee.ch/",
+  "checked_on": "2026-09-18",
+  "status": "none",
+  "status_reason": "No call found",
+  "opportunity_types": [],
+  "deadline": "",
+  "deadline_text": "",
+  "announcement_urls": [],
+  "open_call_urls": [],
+  "how_to_apply": "",
+  "call_pages": [],
+  "coverage": {
+    "discovery": "link crawl (no sitemap found)",
+    "sitemap_urls_found": 0,
+    "pages_visited": 2,
+    "js_rendered_pages": 0,
+    "pages_classified": 1,
+    "llm_used": true,
+    "skipped_by_robots": [],
+    "min_page_date": "2025-01-01",
+    "skipped_by_date": [],
+    "unchecked_documents": []
+  },
+  "contact_emails": [
+    "info@btrain.ch",
+    "info@renee.ch"
+  ],
+  "warnings": [
+    "No sitemap and fewer than 3 pages found by crawling; coverage may be shallow."
+  ],
+  "errors": [],
+  "pages": [
+    {
+      "url": "https://www.renee.ch/",
+      "title": "RENÉE",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page does not describe any open call or opportunity to apply, submit or propose something. It only lists DJ sets and closing hours.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    }
+  ],
+  "model": "qwen2.5-3b-instruct-q4_k_m.gguf"
+}

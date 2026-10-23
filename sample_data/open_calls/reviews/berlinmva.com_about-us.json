@@ -1,0 +1,17 @@
+{
+  "website": "https://www.berlinmva.com/about-us/",
+  "model": "qwen2.5-7b-instruct-q4_k_m-00001-of-00002.gguf",
+  "review": {
+    "status": "needs_review",
+    "deadline": "2027-02-07",
+    "deadline_text": "February 7, 2027",
+    "open_call_url": "",
+    "announcement_url": "https://www.berlinmva.com/submit",
+    "opportunity_types": "music",
+    "how_to_apply": "Title of music video (example: name of band - name of song)\nLink to the music video\nApplicant name and role\nCountry of residence (where do you live?)\nE-mail\nWhatsApp / Mobile Phone Nr.",
+    "large_model_status": "needs_review",
+    "review_reason": "https://www.berlinmva.com/submit: The page clearly invites people to submit their music videos for the Berlin Music Video Awards 2027, with specific deadlines and instructions on how to apply.",
+    "review_quotes": "Submit your music videos  to the BMVA 2027",
+    "reviewed_on": "2026-10-23"
+  }
+}

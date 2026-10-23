@@ -1,0 +1,135 @@
+{
+  "site": "https://www.fogstudio.ch/",
+  "checked_on": "2026-09-17",
+  "status": "open",
+  "status_reason": "Open call announced on 1 page(s)",
+  "opportunity_types": [
+    "other"
+  ],
+  "deadline": "",
+  "deadline_text": "",
+  "announcement_urls": [
+    "https://www.fogstudio.ch/proposals"
+  ],
+  "open_call_urls": [
+    "https://docs.google.com/forms/d/e/1FAIpQLSejjuryg3ZA-5RZglw99DduZQxjYjUV9WPF7hMGywB5ONCQSQ/viewform?usp=header"
+  ],
+  "how_to_apply": "https://docs.google.com/forms/d/e/1FAIpQLSejjuryg3ZA-5RZglw99DduZQxjYjUV9WPF7hMGywB5ONCQSQ/viewform?usp=header",
+  "call_pages": [
+    {
+      "url": "https://www.fogstudio.ch/proposals",
+      "status": "open",
+      "confidence": "high",
+      "opportunity_types": [
+        "other"
+      ],
+      "verified_quotes": [
+        "If you want to send a proposal for 2027, use the following link.",
+        "Send us your proposal."
+      ],
+      "deadline": "",
+      "deadline_text": "",
+      "how_to_apply": "https://docs.google.com/forms/d/e/1FAIpQLSejjuryg3ZA-5RZglw99DduZQxjYjUV9WPF7hMGywB5ONCQSQ/viewform?usp=header",
+      "open_call_urls": [
+        "https://docs.google.com/forms/d/e/1FAIpQLSejjuryg3ZA-5RZglw99DduZQxjYjUV9WPF7hMGywB5ONCQSQ/viewform?usp=header"
+      ],
+      "reasoning": "The page invites people to send proposals for FOG 2027, and provides a link to a form where proposals can be submitted. The deadline is not specified, but it is for the following year, so it is considered 'open'."
+    }
+  ],
+  "coverage": {
+    "discovery": "link crawl (no sitemap found)",
+    "sitemap_urls_found": 0,
+    "pages_visited": 8,
+    "js_rendered_pages": 0,
+    "pages_classified": 3,
+    "llm_used": true,
+    "skipped_by_robots": [],
+    "min_page_date": "2025-01-01",
+    "skipped_by_date": [],
+    "unchecked_documents": []
+  },
+  "contact_emails": [
+    "info@fogstudio.ch"
+  ],
+  "warnings": [],
+  "errors": [],
+  "pages": [
+    {
+      "url": "https://www.fogstudio.ch/proposals",
+      "title": "Proposals",
+      "keyword_hits": [
+        "send a proposal",
+        "send us your proposal"
+      ],
+      "form_links": [
+        "https://docs.google.com/forms/d/e/1FAIpQLSejjuryg3ZA-5RZglw99DduZQxjYjUV9WPF7hMGywB5ONCQSQ/viewform?usp=header"
+      ],
+      "classification": {
+        "status": "open",
+        "opportunity_types": [
+          "other"
+        ],
+        "quotes": [
+          "If you want to send a proposal for 2027, use the following link.",
+          "Send us your proposal."
+        ],
+        "deadline": "",
+        "how_to_apply": "https://docs.google.com/forms/d/e/1FAIpQLSejjuryg3ZA-5RZglw99DduZQxjYjUV9WPF7hMGywB5ONCQSQ/viewform?usp=header",
+        "reasoning": "The page invites people to send proposals for FOG 2027, and provides a link to a form where proposals can be submitted. The deadline is not specified, but it is for the following year, so it is considered 'open'.",
+        "verified_quotes": [
+          "If you want to send a proposal for 2027, use the following link.",
+          "Send us your proposal."
+        ],
+        "deadline_text": "",
+        "confidence": "high",
+        "form_links": [
+          "https://docs.google.com/forms/d/e/1FAIpQLSejjuryg3ZA-5RZglw99DduZQxjYjUV9WPF7hMGywB5ONCQSQ/viewform?usp=header"
+        ],
+        "open_call_urls": [
+          "https://docs.google.com/forms/d/e/1FAIpQLSejjuryg3ZA-5RZglw99DduZQxjYjUV9WPF7hMGywB5ONCQSQ/viewform?usp=header"
+        ]
+      }
+    },
+    {
+      "url": "https://www.fogstudio.ch/about-fog",
+      "title": "About FOG",
+      "keyword_hits": [
+        "open call"
+      ],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page describes the 2026 edition of FOG and mentions that the festival is open at Kaserne with US ambient pioneer William Basinski. It does not provide any information about an open call for submissions or applications.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "high",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://www.fogstudio.ch/",
+      "title": "Festival Offener Genres",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page describes the FOG Festival 2026 and its program but does not mention any open call for applications, submissions, or proposals. There is no mention of a deadline or how to apply.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    }
+  ],
+  "model": "qwen2.5-3b-instruct-q4_k_m.gguf"
+}

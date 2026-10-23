@@ -1,0 +1,104 @@
+{
+  "site": "https://www.m7club.es/",
+  "checked_on": "2026-09-22",
+  "status": "none",
+  "status_reason": "No call found",
+  "opportunity_types": [],
+  "deadline": "",
+  "deadline_text": "",
+  "announcement_urls": [],
+  "open_call_urls": [],
+  "how_to_apply": "",
+  "call_pages": [],
+  "coverage": {
+    "discovery": "sitemap + links",
+    "sitemap_urls_found": 20,
+    "pages_visited": 17,
+    "js_rendered_pages": 1,
+    "pages_classified": 3,
+    "llm_used": true,
+    "skipped_by_robots": [],
+    "min_page_date": "2025-01-01",
+    "skipped_by_date": [],
+    "unchecked_documents": []
+  },
+  "contact_emails": [
+    "comunicacion@m7club.es",
+    "hola@m7club.es",
+    "m7club@europe.com",
+    "music@m7club.es",
+    "prensa@m7club.es",
+    "profesionales@m7club.es",
+    "trabajo@m7club.es"
+  ],
+  "warnings": [
+    "Crawl time budget (120s) reached after 17 pages."
+  ],
+  "errors": [
+    {
+      "url": "https://www.m7club.es/event-list",
+      "stage": "static_fetch",
+      "error": "HTTPSConnectionPool(host='www.m7club.es', port=443): Read timed out. (read timeout=20)"
+    }
+  ],
+  "pages": [
+    {
+      "url": "https://www.m7club.es/",
+      "title": "M7 Club Barcelona | Club de Música Electrónica y Techno Underground",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page describes upcoming events with artists and performers, but does not mention any open call for proposals, submissions, or applications. It only lists past events and upcoming events.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://www.m7club.es/contacta",
+      "title": "Contacta con M7 Club Barcelona para información, colaboraciones, reservas, prensa, artistas o cualquier consulta relacionada con nuestros eventos.",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page does not describe any open call or opportunity to submit proposals, applications, or submissions. It only provides contact information and mail addresses.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://www.m7club.es/home-1-1",
+      "title": "Faq's | M7CLUB",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page is about FAQ's and does not mention any open call for applications, submissions, or proposals. It only provides information about the FAQ section.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    }
+  ],
+  "model": "qwen2.5-3b-instruct-q4_k_m.gguf"
+}

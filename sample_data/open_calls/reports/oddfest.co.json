@@ -1,0 +1,252 @@
+{
+  "site": "https://oddfest.co/",
+  "checked_on": "2026-09-22",
+  "status": "open",
+  "status_reason": "Open call announced on 2 page(s)",
+  "opportunity_types": [
+    "dj",
+    "exhibition",
+    "installation",
+    "live_performance",
+    "music",
+    "other",
+    "residency",
+    "talks",
+    "vendors_food",
+    "video_film",
+    "visuals",
+    "volunteers",
+    "workshops"
+  ],
+  "deadline": "2026-09-22",
+  "deadline_text": "2026-09-22",
+  "announcement_urls": [
+    "https://oddfest.co/creative-week",
+    "https://oddfest.co/media"
+  ],
+  "open_call_urls": [
+    "https://docs.google.com/forms/d/e/1FAIpQLScMhhV9XDS2vt7QEz0voiHqp2LMNkzF4j7ey-d_JA4no_JzbA/viewform?usp=header"
+  ],
+  "how_to_apply": "https://docs.google.com/forms/d/e/1FAIpQLScMhhV9XDS2vt7QEz0voiHqp2LMNkzF4j7ey-d_JA4no_JzbA/viewform?usp=header | Click the link provided in the text to submit your application.",
+  "call_pages": [
+    {
+      "url": "https://oddfest.co/creative-week",
+      "status": "open",
+      "confidence": "high",
+      "opportunity_types": [
+        "dj",
+        "exhibition",
+        "installation",
+        "live_performance",
+        "music",
+        "other",
+        "residency",
+        "talks",
+        "vendors_food",
+        "video_film",
+        "visuals",
+        "volunteers",
+        "workshops"
+      ],
+      "verified_quotes": [
+        "Open Call For Creativity"
+      ],
+      "deadline": "",
+      "deadline_text": "",
+      "how_to_apply": "https://docs.google.com/forms/d/e/1FAIpQLScMhhV9XDS2vt7QEz0voiHqp2LMNkzF4j7ey-d_JA4no_JzbA/viewform?usp=header",
+      "open_call_urls": [
+        "https://docs.google.com/forms/d/e/1FAIpQLScMhhV9XDS2vt7QEz0voiHqp2LMNkzF4j7ey-d_JA4no_JzbA/viewform?usp=header"
+      ],
+      "reasoning": "The page describes an open call for creativity proposals, inviting artists, collectives, venues, organizations, and communities to propose events for Creative Week 2026. The call is described and a link to an application form is provided."
+    },
+    {
+      "url": "https://oddfest.co/media",
+      "status": "open",
+      "confidence": "high",
+      "opportunity_types": [
+        "other"
+      ],
+      "verified_quotes": [
+        "Submit your application here.",
+        "Media accreditation for ODDfest and ODDference is now open."
+      ],
+      "deadline": "2026-09-22",
+      "deadline_text": "2026-09-22",
+      "how_to_apply": "Click the link provided in the text to submit your application.",
+      "open_call_urls": [],
+      "reasoning": "The page mentions that media accreditation for ODDfest and ODDference is now open and invites applications. It also provides a link to submit the application."
+    }
+  ],
+  "coverage": {
+    "discovery": "link crawl (no sitemap found)",
+    "sitemap_urls_found": 0,
+    "pages_visited": 40,
+    "js_rendered_pages": 0,
+    "pages_classified": 6,
+    "llm_used": true,
+    "skipped_by_robots": [],
+    "min_page_date": "2025-01-01",
+    "skipped_by_date": [],
+    "unchecked_documents": []
+  },
+  "contact_emails": [
+    "hello@oddfest.co",
+    "laura@oddfest.co"
+  ],
+  "warnings": [],
+  "errors": [],
+  "pages": [
+    {
+      "url": "https://oddfest.co/creative-week",
+      "title": "Creative Week 2026 I Helsinki, June 8-14",
+      "keyword_hits": [
+        "open call"
+      ],
+      "form_links": [
+        "https://docs.google.com/forms/d/e/1FAIpQLScMhhV9XDS2vt7QEz0voiHqp2LMNkzF4j7ey-d_JA4no_JzbA/viewform?usp=header"
+      ],
+      "classification": {
+        "status": "open",
+        "opportunity_types": [
+          "dj",
+          "exhibition",
+          "installation",
+          "live_performance",
+          "music",
+          "other",
+          "residency",
+          "talks",
+          "vendors_food",
+          "video_film",
+          "visuals",
+          "volunteers",
+          "workshops"
+        ],
+        "quotes": [
+          "Open Call For Creativity",
+          "Apply"
+        ],
+        "deadline": "",
+        "how_to_apply": "https://docs.google.com/forms/d/e/1FAIpQLScMhhV9XDS2vt7QEz0voiHqp2LMNkzF4j7ey-d_JA4no_JzbA/viewform?usp=header",
+        "reasoning": "The page describes an open call for creativity proposals, inviting artists, collectives, venues, organizations, and communities to propose events for Creative Week 2026. The call is described and a link to an application form is provided.",
+        "verified_quotes": [
+          "Open Call For Creativity"
+        ],
+        "deadline_text": "",
+        "confidence": "high",
+        "form_links": [
+          "https://docs.google.com/forms/d/e/1FAIpQLScMhhV9XDS2vt7QEz0voiHqp2LMNkzF4j7ey-d_JA4no_JzbA/viewform?usp=header"
+        ],
+        "open_call_urls": [
+          "https://docs.google.com/forms/d/e/1FAIpQLScMhhV9XDS2vt7QEz0voiHqp2LMNkzF4j7ey-d_JA4no_JzbA/viewform?usp=header"
+        ]
+      }
+    },
+    {
+      "url": "https://oddfest.co/media",
+      "title": "media - ODDfest 2026",
+      "keyword_hits": [
+        "submit your application"
+      ],
+      "form_links": [],
+      "classification": {
+        "status": "open",
+        "opportunity_types": [
+          "other"
+        ],
+        "quotes": [
+          "Submit your application here.",
+          "Media accreditation for ODDfest and ODDference is now open."
+        ],
+        "deadline": "2026-09-22",
+        "how_to_apply": "Click the link provided in the text to submit your application.",
+        "reasoning": "The page mentions that media accreditation for ODDfest and ODDference is now open and invites applications. It also provides a link to submit the application.",
+        "verified_quotes": [
+          "Submit your application here.",
+          "Media accreditation for ODDfest and ODDference is now open."
+        ],
+        "deadline_text": "2026-09-22",
+        "confidence": "high",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://oddfest.co/",
+      "title": "ODDfest 2026 I Helsinki, June 12-13",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page describes ODDfest 2026, a festival with multiple venues and a diverse lineup of performers and speakers. It does not mention any open call for submissions, applications, or proposals.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://oddfest.co/about-creative-festival-helsinki-2026",
+      "title": "Creative Festival Helsinki 2025 – About ODDfest",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page does not describe any open call or opportunity for external applications, submissions, or proposals. It only provides information about the ODDfest event and its themes for 2025.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://oddfest.co/info",
+      "title": "FAQs - ODDfest 2026",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page does not describe any open call or invitation for outside people to apply, submit or propose something. It only provides information about ticket types, venues, safety protocols, accessibility, and food and drinks.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://oddfest.co/contact",
+      "title": "contact - ODDfest 2026",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page is a contact form and does not mention any open call for proposals, submissions, or applications. It only provides a way to send a message.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    }
+  ],
+  "model": "qwen2.5-3b-instruct-q4_k_m.gguf"
+}

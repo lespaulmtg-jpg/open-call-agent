@@ -112,6 +112,19 @@ def normalize_deadline_column(value):
     return " | ".join(sorted(format_date(deadline) for deadline in dates if deadline))
 
 
+def past_deadline(value, today=None):
+    """
+    Whether every deadline in a column has gone by. A call with several deadlines is still open while one of them is
+    ahead, so only a column where all of them have passed counts as past.
+
+    :param value: A deadline column value, which may hold several deadlines separated by " | ".
+    :param today: The day to compare against, default today.
+    :return: True if the column holds deadlines and all of them are in the past.
+    """
+    deadlines = [deadline for deadline in (normalize_deadline(part) for part in (value or "").split(" | ")) if deadline]
+    return bool(deadlines) and all(deadline < (today or date.today()) for deadline in deadlines)
+
+
 def html_page_dates(soup):
     """
     Find publication and modification dates in a page's metadata.

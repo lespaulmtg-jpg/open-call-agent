@@ -1,0 +1,120 @@
+{
+  "site": "https://fragment-a.com/",
+  "checked_on": "2026-09-22",
+  "status": "closed",
+  "status_reason": "Only closed calls found on 1 page(s)",
+  "opportunity_types": [
+    "other"
+  ],
+  "deadline": "2025-08-11",
+  "deadline_text": "11/08/2025",
+  "announcement_urls": [
+    "https://fragment-a.com/"
+  ],
+  "open_call_urls": [],
+  "how_to_apply": "",
+  "call_pages": [
+    {
+      "url": "https://fragment-a.com/",
+      "status": "closed",
+      "confidence": "low",
+      "opportunity_types": [
+        "other"
+      ],
+      "verified_quotes": [
+        "CONVOCATORIA CERRADA",
+        "Deadline: 11/08/2025"
+      ],
+      "deadline": "2025-08-11",
+      "deadline_text": "11/08/2025",
+      "how_to_apply": "",
+      "open_call_urls": [],
+      "reasoning": "The page describes a closed call for two artists to produce seven new EPs/albums with support from True Music Fund and Shesaid.so. The call is described as 'Convocatoria Cerrada' and the deadline is stated as 11/08/2025."
+    }
+  ],
+  "coverage": {
+    "discovery": "link crawl (no sitemap found)",
+    "sitemap_urls_found": 0,
+    "pages_visited": 12,
+    "js_rendered_pages": 1,
+    "pages_classified": 3,
+    "llm_used": true,
+    "skipped_by_robots": [],
+    "min_page_date": "2025-01-01",
+    "skipped_by_date": [],
+    "unchecked_documents": []
+  },
+  "contact_emails": [
+    "info@fragment-a.com"
+  ],
+  "warnings": [],
+  "errors": [],
+  "pages": [
+    {
+      "url": "https://fragment-a.com/",
+      "title": "Fragment A",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "closed",
+        "opportunity_types": [
+          "other"
+        ],
+        "quotes": [
+          "CONVOCATORIA CERRADA",
+          "Deadline: 11/08/2025"
+        ],
+        "deadline": "2025-08-11",
+        "how_to_apply": "",
+        "reasoning": "The page describes a closed call for two artists to produce seven new EPs/albums with support from True Music Fund and Shesaid.so. The call is described as 'Convocatoria Cerrada' and the deadline is stated as 11/08/2025.",
+        "verified_quotes": [
+          "CONVOCATORIA CERRADA",
+          "Deadline: 11/08/2025"
+        ],
+        "deadline_text": "11/08/2025",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://fragment-a.com/artistas.html",
+      "title": "Fragment A",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page lists artists associated with Fragment A, but does not mention any open call for artists or submissions. It only describes the current lineup and artists associated with the platform.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://fragment-a.com/contacto.html",
+      "title": "Fragment A",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page only contains contact information and does not mention any open call for submissions, applications, or proposals.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    }
+  ],
+  "model": "qwen2.5-3b-instruct-q4_k_m.gguf"
+}

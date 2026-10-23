@@ -21,7 +21,7 @@ from .batch import RESULT_COLUMNS, STATUSES, check_open_calls
 from ..urls import website_key
 from .checker import FORM_CLOSED_RE, FORM_URL_RE, SiteChecker
 from .text import normalize_text
-from .dates import MIN_PAGE_DATE, format_date, is_too_old, normalize_deadline_column
+from .dates import MIN_PAGE_DATE, format_date, is_too_old, normalize_deadline_column, past_deadline
 from .classifier import LARGE_MODEL, MAX_CHUNKS_PER_PAGE, LlamaServer, most_positive, split_text, verify, \
     ServerClassifier, resolve_model_path
 
@@ -209,6 +209,12 @@ def review_row(row, evidence, results_by_page):
         "how_to_apply": " | ".join(dict.fromkeys(result["how_to_apply"] for _, result in decided
                                                  if result["how_to_apply"])) or row["how_to_apply"],
     })
+
+    # A deadline kept from the first pass is still a deadline. classifier.verify only ever sees the one its own model
+    # returned, so a date that has gone by since the first pass would otherwise leave the row open.
+    if reviewed["status"] == "open" and past_deadline(reviewed["deadline"]):
+        reviewed["status"] = "closed"
+        reviewed["review_reason"] = f"{reviewed['review_reason']} | Deadline {reviewed['deadline']} has passed"
     return reviewed
 
 

@@ -1,0 +1,596 @@
+{
+  "site": "https://zermatt-unplugged.ch/",
+  "checked_on": "2026-09-21",
+  "status": "needs_review",
+  "status_reason": "Possible call (open without keyword or link evidence)",
+  "opportunity_types": [
+    "music"
+  ],
+  "deadline": "",
+  "deadline_text": "",
+  "announcement_urls": [
+    "https://zermatt-unplugged.ch/en/contact"
+  ],
+  "open_call_urls": [],
+  "how_to_apply": "Send",
+  "call_pages": [
+    {
+      "url": "https://zermatt-unplugged.ch/en/contact",
+      "status": "open",
+      "confidence": "low",
+      "opportunity_types": [
+        "music"
+      ],
+      "verified_quotes": [
+        "band application"
+      ],
+      "deadline": "",
+      "deadline_text": "",
+      "how_to_apply": "Send",
+      "open_call_urls": [],
+      "reasoning": "The page contains a section titled 'band application' with fields for first name, last name, email, and a send button. This indicates an open call for band applications."
+    }
+  ],
+  "coverage": {
+    "discovery": "sitemap + links",
+    "sitemap_urls_found": 4728,
+    "pages_visited": 28,
+    "js_rendered_pages": 0,
+    "pages_classified": 5,
+    "llm_used": true,
+    "skipped_by_robots": [],
+    "min_page_date": "2025-01-01",
+    "skipped_by_date": [
+      {
+        "url": "https://zermatt-unplugged.ch/fr/artist/deans",
+        "date": "2024-11-11",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://zermatt-unplugged.ch/de/programm/bisherige-konzerte/2017",
+        "date": "2024-12-05",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://zermatt-unplugged.ch/en/artist/marc-aymon",
+        "date": "2024-11-19",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://zermatt-unplugged.ch/de/artist/fil-bo-riva",
+        "date": "2024-12-04",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://zermatt-unplugged.ch/en/artist/strozzini",
+        "date": "2024-11-19",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://zermatt-unplugged.ch/de/artist/ronnie-scotts-all-stars-2024",
+        "date": "2024-11-26",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://zermatt-unplugged.ch/fr/artist/pablo-nouvelle",
+        "date": "2024-11-19",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://zermatt-unplugged.ch/en/program/previous-concerts/2021",
+        "date": "2024-12-08",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://zermatt-unplugged.ch/fr/artist/mayberg",
+        "date": "2024-11-23",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://zermatt-unplugged.ch/en/artist/alex-hepburn",
+        "date": "2024-11-19",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://zermatt-unplugged.ch/en/artist/pbr-streetgang",
+        "date": "2024-11-11",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://zermatt-unplugged.ch/de/artist/ay-wing",
+        "date": "2024-11-11",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://zermatt-unplugged.ch/en/artist/francis-cabrel",
+        "date": "2024-11-21",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://zermatt-unplugged.ch/de/artist/hermanos-gutierrez",
+        "date": "2024-12-08",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://zermatt-unplugged.ch/en/artist/niko-schwind",
+        "date": "2024-11-19",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://zermatt-unplugged.ch/en/artist/tom-freund",
+        "date": "2024-11-19",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://zermatt-unplugged.ch/en/artist/trummer",
+        "date": "2024-11-19",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://zermatt-unplugged.ch/fr/programme/concerts-passes/2007",
+        "date": "2024-11-26",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://zermatt-unplugged.ch/fr/artist/asgeir",
+        "date": "2024-11-12",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://zermatt-unplugged.ch/de/artist/mel-d",
+        "date": "2024-11-26",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://zermatt-unplugged.ch/de/artist/jamie-scott",
+        "date": "2024-11-19",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://zermatt-unplugged.ch/fr/artist/meimuna",
+        "date": "2024-11-19",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://zermatt-unplugged.ch/de/artist/crazy-p-soundsystem",
+        "date": "2024-11-11",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://zermatt-unplugged.ch/fr/artist/lola-marsh",
+        "date": "2024-12-08",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://zermatt-unplugged.ch/fr/artist/aka-aka-feat-thalstroem-live",
+        "date": "2024-11-19",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://zermatt-unplugged.ch/en/artist/__temp_xmvdrbbuzgylhwwiqyjmxhkuhxqzsvydfqsj",
+        "date": "2024-11-11",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://zermatt-unplugged.ch/fr/artist/naturally-7",
+        "date": "2024-11-19",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://zermatt-unplugged.ch/en/artist/cari-cari",
+        "date": "2024-11-11",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://zermatt-unplugged.ch/fr/artist/mahalia",
+        "date": "2024-11-11",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://zermatt-unplugged.ch/fr/artist/stefanie-heinzmann",
+        "date": "2024-11-19",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://zermatt-unplugged.ch/fr/artist/lianne-la-havas",
+        "date": "2024-11-19",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://zermatt-unplugged.ch/en/artist/klaus-egger-trio",
+        "date": "2024-11-26",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://zermatt-unplugged.ch/fr/artist/marianne-faithfull",
+        "date": "2024-11-19",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://zermatt-unplugged.ch/fr/programme/concerts-passes/2008",
+        "date": "2024-11-27",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://zermatt-unplugged.ch/fr/artist/jamie-cullum",
+        "date": "2024-11-19",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://zermatt-unplugged.ch/fr/artist/reto-burell",
+        "date": "2024-11-19",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://zermatt-unplugged.ch/en/artist/james-gruntz",
+        "date": "2024-12-08",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://zermatt-unplugged.ch/en/artist/sam-ryder",
+        "date": "2024-12-05",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://zermatt-unplugged.ch/en/artist/eddy-ramich",
+        "date": "2024-11-11",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://zermatt-unplugged.ch/de/artist/pool",
+        "date": "2024-11-26",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://zermatt-unplugged.ch/de/artist/andreas-kuemmert",
+        "date": "2024-12-05",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://zermatt-unplugged.ch/en/artist/2021-alex-diehl",
+        "date": "2024-12-08",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://zermatt-unplugged.ch/en/artist/ellas",
+        "date": "2024-12-08",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://zermatt-unplugged.ch/en/artist/kummerbuben",
+        "date": "2024-11-19",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://zermatt-unplugged.ch/de/artist/jd-roth",
+        "date": "2024-11-19",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://zermatt-unplugged.ch/de/artist/cam",
+        "date": "2024-10-07",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://zermatt-unplugged.ch/en/artist/lp",
+        "date": "2024-11-18",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://zermatt-unplugged.ch/en/artist/brett-dennen-2018",
+        "date": "2024-11-19",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://zermatt-unplugged.ch/de/artist/2021-seb-lorez",
+        "date": "2024-12-08",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://zermatt-unplugged.ch/en/artist/alanis-morissette-2",
+        "date": "2024-11-19",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://zermatt-unplugged.ch/fr/supplementary/teaser/kontakt-2",
+        "date": "2024-11-06",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://zermatt-unplugged.ch/de/artist/pilar-vega",
+        "date": "2024-11-26",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://zermatt-unplugged.ch/de/artist/2021-marzella",
+        "date": "2024-12-08",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://zermatt-unplugged.ch/en/artist/anna-aaron",
+        "date": "2024-11-19",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://zermatt-unplugged.ch/en/artist/lina-button",
+        "date": "2024-11-19",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://zermatt-unplugged.ch/fr/artist/cari-cari",
+        "date": "2024-11-11",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://zermatt-unplugged.ch/fr/artist/bongeziwe-mabandla",
+        "date": "2024-10-07",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://zermatt-unplugged.ch/de/artist/mika",
+        "date": "2024-12-05",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://zermatt-unplugged.ch/de/artist/november-ultra",
+        "date": "2024-10-10",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://zermatt-unplugged.ch/en/artist/jess-glynne",
+        "date": "2024-11-18",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://zermatt-unplugged.ch/de/artist/kotoe",
+        "date": "2024-11-26",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://zermatt-unplugged.ch/fr/artist/lesley-meguid",
+        "date": "2024-11-19",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://zermatt-unplugged.ch/de/artist/marianne-faithfull",
+        "date": "2024-11-19",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://zermatt-unplugged.ch/fr/programme/concerts-passes/2011",
+        "date": "2024-12-05",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://zermatt-unplugged.ch/de/artist/jon-cleary",
+        "date": "2024-11-11",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://zermatt-unplugged.ch/en/artist/paolo-nutini",
+        "date": "2024-11-18",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://zermatt-unplugged.ch/en/artist/2011-james-gruntz",
+        "date": "2024-12-08",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://zermatt-unplugged.ch/fr/artist/mando-diao-2013",
+        "date": "2024-11-19",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://zermatt-unplugged.ch/fr/artist/brett-dennen-2018",
+        "date": "2024-11-19",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://zermatt-unplugged.ch/en/artist/james-walsh-2012",
+        "date": "2024-11-19",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://zermatt-unplugged.ch/fr/artist/baby-genius",
+        "date": "2024-11-19",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://zermatt-unplugged.ch/en/artist/mel-d",
+        "date": "2024-11-26",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://zermatt-unplugged.ch/en/artist/band-of-horses",
+        "date": "2024-11-19",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://zermatt-unplugged.ch/fr/artist/2011-james-gruntz",
+        "date": "2024-12-08",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://zermatt-unplugged.ch/en/artist/arny-margret",
+        "date": "2024-11-26",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://zermatt-unplugged.ch/fr/artist/__temp_oxwrjwgjfxvfjcmguouzkfwlavixhvvxsxef",
+        "date": "2024-11-19",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://zermatt-unplugged.ch/en/artist/weyermann",
+        "date": "2024-11-21",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://zermatt-unplugged.ch/en/artist/the-franklin-electric",
+        "date": "2024-12-05",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://zermatt-unplugged.ch/en/artist/hecht-2013",
+        "date": "2024-11-19",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://zermatt-unplugged.ch/de/artist/andrea-bignasca",
+        "date": "2024-12-08",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://zermatt-unplugged.ch/en/artist/peter-cincotti",
+        "date": "2024-11-19",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://zermatt-unplugged.ch/fr/artist/mark-kelly",
+        "date": "2024-11-19",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://zermatt-unplugged.ch/en/artist/jon-and-roy",
+        "date": "2024-11-25",
+        "source": "sitemap lastmod"
+      }
+    ],
+    "unchecked_documents": []
+  },
+  "contact_emails": [
+    "booking@zermatt-unplugged.ch",
+    "info@zermatt-unplugged.ch"
+  ],
+  "warnings": [
+    "Crawl time budget (120s) reached after 28 pages."
+  ],
+  "errors": [
+    {
+      "url": "https://zermatt-unplugged.ch/en/artist/verycozi",
+      "stage": "llm",
+      "error": "('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))"
+    }
+  ],
+  "pages": [
+    {
+      "url": "https://zermatt-unplugged.ch/",
+      "title": "Zermatt Unplugged",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page describes past events and future events, but does not mention any open call for submissions or applications. It also does not provide any deadlines or details about how to apply.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": [
+          "https://zermatt-unplugged.ch/de/newsletter/"
+        ]
+      }
+    },
+    {
+      "url": "https://zermatt-unplugged.ch/en/contact",
+      "title": "Contact – Zermatt Unplugged",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "open",
+        "opportunity_types": [
+          "music"
+        ],
+        "quotes": [
+          "band application",
+          "First name",
+          "Last name",
+          "e-mail"
+        ],
+        "deadline": "",
+        "how_to_apply": "Send",
+        "reasoning": "The page contains a section titled 'band application' with fields for first name, last name, email, and a send button. This indicates an open call for band applications.",
+        "verified_quotes": [
+          "band application"
+        ],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://zermatt-unplugged.ch/fr/artist/say-yes-dog",
+      "title": "Say Yes Dog – Zermatt Unplugged",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page describes a past event and does not mention any open call for future submissions or applications. It only provides information about a past performance and does not invite people to apply or submit.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": [
+          "https://zermatt-unplugged.ch/fr/ton-séjour/zermatt/"
+        ]
+      }
+    },
+    {
+      "url": "https://zermatt-unplugged.ch/en/artist/verycozi",
+      "title": "Verycozi – Zermatt Unplugged",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": null
+    },
+    {
+      "url": "https://zermatt-unplugged.ch/fr/artist/mind-enterprises",
+      "title": "Mind Enterprises – Zermatt Unplugged",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page does not describe any open call or opportunity to apply. It only mentions past events and does not provide any information about future applications or submissions.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": [
+          "https://zermatt-unplugged.ch/fr/ton-séjour/zermatt/"
+        ]
+      }
+    },
+    {
+      "url": "https://zermatt-unplugged.ch/de/infos/mountain-academy",
+      "title": "Mountain Academy – Zermatt Unplugged",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page describes the Mountain Academy program and its mission, but does not mention any open call for applications, submissions, or proposals. It only talks about the past editions and future plans.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    }
+  ],
+  "model": "qwen2.5-3b-instruct-q4_k_m.gguf"
+}

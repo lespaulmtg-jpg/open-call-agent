@@ -1,0 +1,17 @@
+{
+  "website": "https://www.oddfest.co",
+  "model": "qwen2.5-7b-instruct-q4_k_m-00001-of-00002.gguf",
+  "review": {
+    "status": "closed",
+    "deadline": "2026-09-22",
+    "deadline_text": "2026-09-22",
+    "open_call_url": "https://docs.google.com/forms/d/e/1FAIpQLScMhhV9XDS2vt7QEz0voiHqp2LMNkzF4j7ey-d_JA4no_JzbA/viewform?usp=header",
+    "announcement_url": "https://allthingsodd.co/oddfest, https://allthingsodd.co/media",
+    "opportunity_types": "exhibition, installation, live_performance, music, other, residency, talks, visuals, workshops",
+    "how_to_apply": "Sign in to Google to save your progress. The form is available for submissions up to the event week. | Submit an Event to Creative Week via the provided Google form.",
+    "large_model_status": "open",
+    "review_reason": "https://allthingsodd.co/oddfest: The page invites people to submit events, concepts, or experiments for Creative Week, which is an open call with no deadline. | https://allthingsodd.co/media: The page clearly invites people to submit events for Creative Week with no deadline mentioned, and it states that the open call has no deadline. | Linked form is accepting | Deadline 2026-09-22 has passed",
+    "review_quotes": "Anyone can take part. Artists, collectives, venues, and organizations are invited to submit events, concepts, or experiments that activate Helsinki through creativity. | You can submit an event, concept, or creative experiment to be part of Creative Week. Submissions are open to artists, collectives, venues, organizations, and communities. | Anyone can take part. Artists, collectives, venues, and organizations are invited to submit events, concepts, or experiments that activate Helsinki through creativity. | If you have something creative to share with the city, this is your moment.",
+    "reviewed_on": "2026-10-23"
+  }
+}

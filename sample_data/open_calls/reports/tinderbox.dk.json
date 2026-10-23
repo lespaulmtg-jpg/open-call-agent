@@ -1,0 +1,271 @@
+{
+  "site": "https://tinderbox.dk/",
+  "checked_on": "2026-09-22",
+  "status": "open",
+  "status_reason": "Open call announced on 1 page(s)",
+  "opportunity_types": [
+    "dj",
+    "live_performance",
+    "music",
+    "other",
+    "workshops"
+  ],
+  "deadline": "",
+  "deadline_text": "",
+  "announcement_urls": [
+    "https://tinderbox.dk/en/performers-2"
+  ],
+  "open_call_urls": [],
+  "how_to_apply": "Send an email to roo@dtdgroup.dk with a description of your concept.",
+  "call_pages": [
+    {
+      "url": "https://tinderbox.dk/en/performers-2",
+      "status": "open",
+      "confidence": "high",
+      "opportunity_types": [
+        "dj",
+        "live_performance",
+        "music",
+        "other",
+        "workshops"
+      ],
+      "verified_quotes": [
+        "Open Call: Performers - Tinderbox - June 25 - 27 2026",
+        "Send an email to",
+        "roo@dtdgroup.dk"
+      ],
+      "deadline": "",
+      "deadline_text": "",
+      "how_to_apply": "Send an email to roo@dtdgroup.dk with a description of your concept.",
+      "open_call_urls": [],
+      "reasoning": "The page describes an open call for performers for the Tinderbox festival, inviting people to send proposals and ideas. It provides a contact email for submissions."
+    }
+  ],
+  "coverage": {
+    "discovery": "sitemap + links",
+    "sitemap_urls_found": 96,
+    "pages_visited": 40,
+    "js_rendered_pages": 2,
+    "pages_classified": 8,
+    "llm_used": true,
+    "skipped_by_robots": [],
+    "min_page_date": "2025-01-01",
+    "skipped_by_date": [
+      {
+        "url": "https://tinderbox.dk/en/job-2",
+        "date": "2023-12-08",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://tinderbox.dk/erhvervsnyhedsbrev",
+        "date": "2024-02-21",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://tinderbox.dk/en/vip-2",
+        "date": "2024-09-18",
+        "source": "sitemap lastmod"
+      }
+    ],
+    "unchecked_documents": []
+  },
+  "contact_emails": [
+    "data@dtdgroup.dk",
+    "datapolitik@tinderbox.dk",
+    "ibo@fynslaksefisk.dk",
+    "info@tinderbox.dk",
+    "job@dtdgroup.dk",
+    "kramer@dtdcrew.dk",
+    "kramer@dtdgroup.dk",
+    "maria@dtdgroup.dk",
+    "morell@dtdgroup.dk",
+    "presse@dtdgroup.dk",
+    "presse@tinderbox.dk",
+    "roo@dtdgroup.dk",
+    "tenna@dtdgroup.dk",
+    "volunteer@tinderbox.dk"
+  ],
+  "warnings": [],
+  "errors": [],
+  "pages": [
+    {
+      "url": "https://tinderbox.dk/en/faq",
+      "title": "FAQ - Tinderbox - June 25 - 27 2026",
+      "keyword_hits": [
+        "send your application"
+      ],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page does not describe any open call or invitation for outside people to apply, submit or propose something. It only provides information about the festival, ticketing, and rules.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "high",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://tinderbox.dk/en/performers-2",
+      "title": "Open Call: Performers - Tinderbox - June 25 - 27 2026",
+      "keyword_hits": [
+        "open call"
+      ],
+      "form_links": [],
+      "classification": {
+        "status": "open",
+        "opportunity_types": [
+          "dj",
+          "live_performance",
+          "music",
+          "other",
+          "workshops"
+        ],
+        "quotes": [
+          "Open Call: Performers - Tinderbox - June 25 - 27 2026",
+          "Send an email to",
+          "roo@dtdgroup.dk"
+        ],
+        "deadline": "",
+        "how_to_apply": "Send an email to roo@dtdgroup.dk with a description of your concept.",
+        "reasoning": "The page describes an open call for performers for the Tinderbox festival, inviting people to send proposals and ideas. It provides a contact email for submissions.",
+        "verified_quotes": [
+          "Open Call: Performers - Tinderbox - June 25 - 27 2026",
+          "Send an email to",
+          "roo@dtdgroup.dk"
+        ],
+        "deadline_text": "",
+        "confidence": "high",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://tinderbox.dk/",
+      "title": "Forside - Tinderbox 24. - 26. juni 2027",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page does not describe any open call or opportunity to apply. It only mentions future events and does not provide any information about submitting proposals or applications.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://tinderbox.dk/artister",
+      "title": "Artister - Tinderbox",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page describes the artists for the 2027 edition of Tinderbox, but does not mention any open call for submissions or applications. It does not provide any deadline or details about how to apply.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://tinderbox.dk/program",
+      "title": "Program - Tinderbox 24. - 26. juni 2027",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page describes the program for Tinderbox 2026, but does not mention any open call for proposals, applications, or submissions. It only lists the confirmed artists and does not invite anyone to apply.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://tinderbox.dk/en/good-to-know-as-a-volunteer",
+      "title": "Good to know as a volunteer (FAQ) - Tinderbox - June 25 - 27 2026",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [
+          "volunteers"
+        ],
+        "quotes": [
+          "Here you’ll find answers to the most frequently asked questions about volunteering at Tinderbox.",
+          "As a volunteer at Tinderbox, you represent the festival – whether you’re interacting with guests, fellow volunteers, employees, or partners."
+        ],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page describes volunteer opportunities and responsibilities, but does not mention an open call for applications or submissions. It provides information about volunteering at Tinderbox, including tasks, expectations, and practical information.",
+        "verified_quotes": [
+          "Here you’ll find answers to the most frequently asked questions about volunteering at Tinderbox.",
+          "As a volunteer at Tinderbox, you represent the festival – whether you’re interacting with guests, fellow volunteers, employees, or partners."
+        ],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://tinderbox.dk/en/about-tinderbox",
+      "title": "About Tinderbox - Tinderbox - June 25 - 27 2026",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page describes the history of Tinderbox and mentions sustainability efforts, but does not provide any information about an open call for applications, submissions, or proposals. There is no mention of deadlines or how to apply.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://tinderbox.dk/en/program-en-t",
+      "title": "Schedule - Tinderbox - June 25 - 27 2026",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page describes the schedule for Tinderbox 2026 and mentions that the schedule is subject to change. There is no mention of an open call for proposals, applications, or submissions.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    }
+  ],
+  "model": "qwen2.5-3b-instruct-q4_k_m.gguf"
+}

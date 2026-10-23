@@ -1,0 +1,132 @@
+{
+  "site": "https://kuppel-basel.ch/de/programm/hello-sasy",
+  "checked_on": "2026-09-18",
+  "status": "needs_review",
+  "status_reason": "Site could not be checked: Homepage could not be fetched",
+  "opportunity_types": [],
+  "deadline": "",
+  "deadline_text": "",
+  "announcement_urls": [],
+  "open_call_urls": [],
+  "how_to_apply": "",
+  "call_pages": [],
+  "coverage": {
+    "discovery": "sitemap + links",
+    "sitemap_urls_found": 610,
+    "pages_visited": 40,
+    "js_rendered_pages": 0,
+    "pages_classified": 5,
+    "llm_used": true,
+    "skipped_by_robots": [],
+    "min_page_date": "2025-01-01",
+    "skipped_by_date": [],
+    "unchecked_documents": []
+  },
+  "contact_emails": [],
+  "warnings": [],
+  "errors": [
+    {
+      "url": "https://kuppel-basel.ch/de/programm/hello-sasy",
+      "stage": "homepage",
+      "error": "Homepage could not be fetched"
+    }
+  ],
+  "pages": [
+    {
+      "url": "https://kuppel-basel.ch/programm/listening-session-1-fasnachts-dyytox",
+      "title": "Listening Session #1",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page describes a listening session event with a lineup of DJs and performers, but does not mention an open call for submissions or applications. It only states that the event is happening and provides details about it.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://kuppel-basel.ch/en/programm/operation-ensemble",
+      "title": "Opération Ensemble",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page describes a political event with a talk and an aktion, but does not mention any open call for proposals, applications, or submissions. There is no invitation to send proposals or applications, and no deadline is provided.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://kuppel-basel.ch/en/programm/thomas-d-x-flo-mega",
+      "title": "THOMAS D & THE KBCS",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page describes a show by Thomas D & The KBCS, but does not mention any call for proposals, applications, or submissions. It also does not provide a deadline or any information about when applications can be submitted.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://kuppel-basel.ch/programm/deeptaste-kopie",
+      "title": "DEEPTASTE",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page describes a Deeptech party event with a lineup of DJs and sets, but does not mention any call for proposals, applications, or submissions. It only provides information about the event itself.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://kuppel-basel.ch/programm/somatic-rituals",
+      "title": "Somatic Rituals",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page describes the upcoming Somatic Rituals event and does not mention any open call for applications, submissions, or proposals. There is no link to an application form or any invitation to send proposals.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    }
+  ],
+  "model": "qwen2.5-3b-instruct-q4_k_m.gguf"
+}

@@ -1,0 +1,17 @@
+{
+  "website": "https://hackthepromise.org/",
+  "model": "qwen2.5-7b-instruct-q4_k_m-00001-of-00002.gguf",
+  "review": {
+    "status": "closed",
+    "deadline": "2025-06-01",
+    "deadline_text": "2025-06-01 04:00 (Europe/Zurich)",
+    "open_call_url": "https://cfp.hackthepromise.org/htp25/cfp",
+    "announcement_url": "https://hackthepromise.org/festival-2025/cfp",
+    "opportunity_types": "installation, live_performance, talks, video_film, visuals, workshops",
+    "how_to_apply": "Submit your idea here: To the submission page",
+    "large_model_status": "closed",
+    "review_reason": "https://hackthepromise.org/festival-2025/cfp: The page describes a call for participation that closed on 2025-06-01, which is before today's date (2026-10-23).",
+    "review_quotes": "For the HackThePromise Festival 2025 we are looking for workshops, lectures, panels, live performances, films and other artistic and discursive contributions - with which we will put together an exciting interdisciplinary program and an exhibition over 3 days.",
+    "reviewed_on": "2026-10-23"
+  }
+}

@@ -1,0 +1,322 @@
+{
+  "site": "https://nordstern.com/",
+  "checked_on": "2026-09-17",
+  "status": "none",
+  "status_reason": "No call found",
+  "opportunity_types": [],
+  "deadline": "",
+  "deadline_text": "",
+  "announcement_urls": [],
+  "open_call_urls": [],
+  "how_to_apply": "",
+  "call_pages": [],
+  "coverage": {
+    "discovery": "sitemap + links",
+    "sitemap_urls_found": 8,
+    "pages_visited": 40,
+    "js_rendered_pages": 5,
+    "pages_classified": 12,
+    "llm_used": true,
+    "skipped_by_robots": [],
+    "min_page_date": "2025-01-01",
+    "skipped_by_date": [],
+    "unchecked_documents": []
+  },
+  "contact_emails": [
+    "info@nordstern.com",
+    "support@bookinea.app"
+  ],
+  "warnings": [],
+  "errors": [],
+  "pages": [
+    {
+      "url": "https://tickets.nordstern.com/en/about/privacy-policy",
+      "title": "Privacy Policy | Nordstern Basel | Bookinea",
+      "keyword_hits": [
+        "bewerbung",
+        "bewerbungen"
+      ],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page text does not describe any open call or provide information about an open call. It is a privacy policy page.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "high",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://tickets.nordstern.com/de/about/privacy-policy",
+      "title": "Privacy Policy | Nordstern Basel | Bookinea",
+      "keyword_hits": [
+        "bewerbung",
+        "bewerbungen"
+      ],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page text does not describe any open call for applications, submissions, or proposals. It is a privacy policy for a website.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "high",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://nordstern.com/",
+      "title": "Nordstern Club Basel - In Music We Trust",
+      "keyword_hits": [],
+      "form_links": [
+        "https://airtable.com/appDFij8hk57FXTJI/pagFKaoBnIS6UlhJB/form"
+      ],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page describes upcoming events and does not mention any open call for proposals, submissions, or applications. It also does not provide any deadlines or details about how to apply.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "high",
+        "form_links": [
+          "https://airtable.com/appDFij8hk57FXTJI/pagFKaoBnIS6UlhJB/form"
+        ],
+        "open_call_urls": [
+          "https://airtable.com/appDFij8hk57FXTJI/pagFKaoBnIS6UlhJB/form"
+        ]
+      }
+    },
+    {
+      "url": "https://nordstern.com/cashless",
+      "title": "Nordstern Club Basel - In Music We Trust",
+      "keyword_hits": [],
+      "form_links": [
+        "https://airtable.com/appDFij8hk57FXTJI/pagFKaoBnIS6UlhJB/form"
+      ],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page does not mention any open call for applications, submissions, or proposals. It only describes the cashless payment policy and some other club information.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "high",
+        "form_links": [
+          "https://airtable.com/appDFij8hk57FXTJI/pagFKaoBnIS6UlhJB/form"
+        ],
+        "open_call_urls": [
+          "https://airtable.com/appDFij8hk57FXTJI/pagFKaoBnIS6UlhJB/form"
+        ]
+      }
+    },
+    {
+      "url": "https://nordstern.com/events",
+      "title": "Nordstern Club Basel - In Music We Trust",
+      "keyword_hits": [],
+      "form_links": [
+        "https://airtable.com/appDFij8hk57FXTJI/pagFKaoBnIS6UlhJB/form"
+      ],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page does not describe any open call for proposals, applications, or submissions. It only lists upcoming events and their performers.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "high",
+        "form_links": [
+          "https://airtable.com/appDFij8hk57FXTJI/pagFKaoBnIS6UlhJB/form"
+        ],
+        "open_call_urls": [
+          "https://airtable.com/appDFij8hk57FXTJI/pagFKaoBnIS6UlhJB/form"
+        ]
+      }
+    },
+    {
+      "url": "https://nordstern.com/articles",
+      "title": "Nordstern Club Basel - In Music We Trust",
+      "keyword_hits": [],
+      "form_links": [
+        "https://airtable.com/appDFij8hk57FXTJI/pagFKaoBnIS6UlhJB/form"
+      ],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page does not mention any open call or invitation for outside people to apply, submit or propose something. It only contains information about the club, location, contact details, lost and found, lockers, and cashless payments.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "high",
+        "form_links": [
+          "https://airtable.com/appDFij8hk57FXTJI/pagFKaoBnIS6UlhJB/form"
+        ],
+        "open_call_urls": [
+          "https://airtable.com/appDFij8hk57FXTJI/pagFKaoBnIS6UlhJB/form"
+        ]
+      }
+    },
+    {
+      "url": "https://nordstern.com/data-and-privacy",
+      "title": "Nordstern Club Basel - In Music We Trust",
+      "keyword_hits": [],
+      "form_links": [
+        "https://airtable.com/appDFij8hk57FXTJI/pagFKaoBnIS6UlhJB/form"
+      ],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page does not mention any open call or invitation for outside people to apply, submit or propose something. It is purely a privacy policy and website description.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "high",
+        "form_links": [
+          "https://airtable.com/appDFij8hk57FXTJI/pagFKaoBnIS6UlhJB/form"
+        ],
+        "open_call_urls": [
+          "https://airtable.com/appDFij8hk57FXTJI/pagFKaoBnIS6UlhJB/form"
+        ]
+      }
+    },
+    {
+      "url": "https://nordstern.com/art-basel",
+      "title": "Nordstern - 18.06.26 - Nina Kraviz",
+      "keyword_hits": [],
+      "form_links": [
+        "https://airtable.com/appDFij8hk57FXTJI/pagFKaoBnIS6UlhJB/form"
+      ],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page describes an event lineup for Nina Kraviz at Nordstern on June 18, 2026, but does not mention any open call for submissions, applications, or proposals. There is no mention of a deadline or any call for participation.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "high",
+        "form_links": [
+          "https://airtable.com/appDFij8hk57FXTJI/pagFKaoBnIS6UlhJB/form"
+        ],
+        "open_call_urls": [
+          "https://airtable.com/appDFij8hk57FXTJI/pagFKaoBnIS6UlhJB/form"
+        ]
+      }
+    },
+    {
+      "url": "https://www.nordstern.com/",
+      "title": "Nordstern Club Basel - In Music We Trust",
+      "keyword_hits": [],
+      "form_links": [
+        "https://airtable.com/appDFij8hk57FXTJI/pagFKaoBnIS6UlhJB/form"
+      ],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page describes upcoming events and does not mention any open call for proposals, submissions, or applications. It also does not provide any deadlines or details about how to apply.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "high",
+        "form_links": [
+          "https://airtable.com/appDFij8hk57FXTJI/pagFKaoBnIS6UlhJB/form"
+        ],
+        "open_call_urls": [
+          "https://airtable.com/appDFij8hk57FXTJI/pagFKaoBnIS6UlhJB/form"
+        ]
+      }
+    },
+    {
+      "url": "https://www.nordstern.com/events",
+      "title": "Nordstern Club Basel - In Music We Trust",
+      "keyword_hits": [],
+      "form_links": [
+        "https://airtable.com/appDFij8hk57FXTJI/pagFKaoBnIS6UlhJB/form"
+      ],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page does not describe any open call for proposals, applications, or submissions. It only lists upcoming events and their performers.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "high",
+        "form_links": [
+          "https://airtable.com/appDFij8hk57FXTJI/pagFKaoBnIS6UlhJB/form"
+        ],
+        "open_call_urls": [
+          "https://airtable.com/appDFij8hk57FXTJI/pagFKaoBnIS6UlhJB/form"
+        ]
+      }
+    },
+    {
+      "url": "https://www.nordstern.com/cashless",
+      "title": "Nordstern Club Basel - In Music We Trust",
+      "keyword_hits": [],
+      "form_links": [
+        "https://airtable.com/appDFij8hk57FXTJI/pagFKaoBnIS6UlhJB/form"
+      ],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page does not mention any open call for applications, submissions, or proposals. It only describes the cashless payment policy and some other club information.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "high",
+        "form_links": [
+          "https://airtable.com/appDFij8hk57FXTJI/pagFKaoBnIS6UlhJB/form"
+        ],
+        "open_call_urls": [
+          "https://airtable.com/appDFij8hk57FXTJI/pagFKaoBnIS6UlhJB/form"
+        ]
+      }
+    },
+    {
+      "url": "https://nordstern.com/monthlyprogram",
+      "title": "Nordstern Club Basel - In Music We Trust",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page title and content do not describe an open call for any type of opportunity. It only mentions 'In Music We Trust' and a 'DOWNLOAD' link, which is likely a file or document to download.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    }
+  ],
+  "model": "qwen2.5-3b-instruct-q4_k_m.gguf"
+}

@@ -1,0 +1,174 @@
+{
+  "site": "https://tagderclubkultur.berlin/",
+  "checked_on": "2026-09-22",
+  "status": "open",
+  "status_reason": "Open call announced on 1 page(s)",
+  "opportunity_types": [
+    "other"
+  ],
+  "deadline": "2026-10-03",
+  "deadline_text": "2026-10-03",
+  "announcement_urls": [
+    "https://tagderclubkultur.berlin/about"
+  ],
+  "open_call_urls": [
+    "https://tagderclubkultur.berlin/wp-content/uploads/sites/31/2026/06/OpenCall26_DE.pdf"
+  ],
+  "how_to_apply": "Online Veranstaltungen einreichen und das jährliche Festivalthema individuell und in den Formaten ihrer Wahl interpretieren.",
+  "call_pages": [
+    {
+      "url": "https://tagderclubkultur.berlin/about",
+      "status": "open",
+      "confidence": "high",
+      "opportunity_types": [
+        "other"
+      ],
+      "verified_quotes": [
+        "Jedes Jahr können sich Berliner Clubs und Kollektive über eine offene Ausschreibung auf den Kulturpreis bewerben.",
+        "ALLE INFORMATIONEN ZUR BEWERBUNG"
+      ],
+      "deadline": "2026-10-03",
+      "deadline_text": "2026-10-03",
+      "how_to_apply": "Online Veranstaltungen einreichen und das jährliche Festivalthema individuell und in den Formaten ihrer Wahl interpretieren.",
+      "open_call_urls": [
+        "https://tagderclubkultur.berlin/wp-content/uploads/sites/31/2026/06/OpenCall26_DE.pdf"
+      ],
+      "reasoning": "The page describes an open call for the TAG DER CLUBKULTUR 2026, inviting Berlin clubs and collectives to apply for the cultural prize. It mentions an open call for submissions and provides details about the application process."
+    },
+    {
+      "url": "https://tagderclubkultur.berlin/",
+      "status": "closed",
+      "confidence": "high",
+      "opportunity_types": [
+        "other"
+      ],
+      "verified_quotes": [
+        "Open Call Festivalwoche 2025",
+        "VIELEN DANK FÜR 248 BEWERBUNGEN!"
+      ],
+      "deadline": "2025-10-01",
+      "deadline_text": "2025-10-01",
+      "how_to_apply": "Beamer anwerben",
+      "open_call_urls": [
+        "https://tagderclubkultur.berlin/wp-content/uploads/sites/31/2025/07/OPEN-CALL-Festivalwoche-DE.pdf"
+      ],
+      "reasoning": "Downgraded: deadline 2025-10-01 has passed. Model said: The page describes the TAG DER CLUBKULTUR festival and mentions an open call for submissions for the 2025 festival. The call is described as 'Open Call Festivalwoche 2025'."
+    }
+  ],
+  "coverage": {
+    "discovery": "sitemap + links",
+    "sitemap_urls_found": 168,
+    "pages_visited": 3,
+    "js_rendered_pages": 0,
+    "pages_classified": 3,
+    "llm_used": true,
+    "skipped_by_robots": [],
+    "min_page_date": "2025-01-01",
+    "skipped_by_date": [],
+    "unchecked_documents": [
+      {
+        "url": "https://tagderclubkultur.berlin/wp-content/uploads/sites/31/2025/07/OPEN-CALL-Festivalwoche-DE.pdf",
+        "link_text": "Open Call Festivalwoche 2025"
+      },
+      {
+        "url": "https://tagderclubkultur.berlin/wp-content/uploads/sites/31/2026/06/OpenCall26_DE.pdf",
+        "link_text": "Open Call Preis 2026"
+      }
+    ]
+  },
+  "contact_emails": [],
+  "warnings": [
+    "Crawl time budget (120s) reached after 3 pages."
+  ],
+  "errors": [],
+  "pages": [
+    {
+      "url": "https://tagderclubkultur.berlin/about",
+      "title": "About - TAG DER CLUBKULTUR",
+      "keyword_hits": [
+        "ausschreibung",
+        "bewerben",
+        "bewerbung",
+        "einreichen",
+        "open call"
+      ],
+      "form_links": [],
+      "classification": {
+        "status": "open",
+        "opportunity_types": [
+          "other"
+        ],
+        "quotes": [
+          "Jedes Jahr können sich Berliner Clubs und Kollektive über eine offene Ausschreibung auf den Kulturpreis bewerben.",
+          "ALLE INFORMATIONEN ZUR BEWERBUNG"
+        ],
+        "deadline": "2026-10-03",
+        "how_to_apply": "Online Veranstaltungen einreichen und das jährliche Festivalthema individuell und in den Formaten ihrer Wahl interpretieren.",
+        "reasoning": "The page describes an open call for the TAG DER CLUBKULTUR 2026, inviting Berlin clubs and collectives to apply for the cultural prize. It mentions an open call for submissions and provides details about the application process.",
+        "verified_quotes": [
+          "Jedes Jahr können sich Berliner Clubs und Kollektive über eine offene Ausschreibung auf den Kulturpreis bewerben.",
+          "ALLE INFORMATIONEN ZUR BEWERBUNG"
+        ],
+        "deadline_text": "2026-10-03",
+        "confidence": "high",
+        "form_links": [],
+        "open_call_urls": [
+          "https://tagderclubkultur.berlin/wp-content/uploads/sites/31/2026/06/OpenCall26_DE.pdf"
+        ]
+      }
+    },
+    {
+      "url": "https://tagderclubkultur.berlin/",
+      "title": "Home2026 - TAG DER CLUBKULTUR",
+      "keyword_hits": [
+        "bewerbung",
+        "bewerbungen",
+        "open call"
+      ],
+      "form_links": [],
+      "classification": {
+        "status": "closed",
+        "opportunity_types": [
+          "other"
+        ],
+        "quotes": [
+          "Open Call Festivalwoche 2025",
+          "VIELEN DANK FÜR 248 BEWERBUNGEN!"
+        ],
+        "deadline": "2025-10-01",
+        "how_to_apply": "Beamer anwerben",
+        "reasoning": "Downgraded: deadline 2025-10-01 has passed. Model said: The page describes the TAG DER CLUBKULTUR festival and mentions an open call for submissions for the 2025 festival. The call is described as 'Open Call Festivalwoche 2025'.",
+        "verified_quotes": [
+          "Open Call Festivalwoche 2025",
+          "VIELEN DANK FÜR 248 BEWERBUNGEN!"
+        ],
+        "deadline_text": "2025-10-01",
+        "confidence": "high",
+        "form_links": [],
+        "open_call_urls": [
+          "https://tagderclubkultur.berlin/wp-content/uploads/sites/31/2025/07/OPEN-CALL-Festivalwoche-DE.pdf"
+        ]
+      }
+    },
+    {
+      "url": "https://tagderclubkultur.berlin/programm",
+      "title": "Programm - TAG DER CLUBKULTUR",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page describes the program for TAG DER CLUBKULTUR Festival 2026, but does not mention any open call for proposals, applications, or submissions. It only describes the events and their types.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    }
+  ],
+  "model": "qwen2.5-3b-instruct-q4_k_m.gguf"
+}

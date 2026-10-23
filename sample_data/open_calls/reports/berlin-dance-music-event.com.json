@@ -1,0 +1,88 @@
+{
+  "site": "https://berlin-dance-music-event.com/",
+  "checked_on": "2026-09-22",
+  "status": "needs_review",
+  "status_reason": "Possible call (unclear)",
+  "opportunity_types": [],
+  "deadline": "",
+  "deadline_text": "",
+  "announcement_urls": [
+    "https://berlin-dance-music-event.com/"
+  ],
+  "open_call_urls": [],
+  "how_to_apply": "",
+  "call_pages": [
+    {
+      "url": "https://berlin-dance-music-event.com/",
+      "status": "unclear",
+      "confidence": "low",
+      "opportunity_types": [],
+      "verified_quotes": [],
+      "deadline": "",
+      "deadline_text": "",
+      "how_to_apply": "",
+      "open_call_urls": [],
+      "reasoning": "Downgraded: no quote found verbatim on the page. Model said: The page describes the upcoming BDME 2027 event and mentions that applications for the next edition are not yet open, but will open at a later date. It does not provide any details about a current open call."
+    }
+  ],
+  "coverage": {
+    "discovery": "sitemap + links",
+    "sitemap_urls_found": 78,
+    "pages_visited": 4,
+    "js_rendered_pages": 0,
+    "pages_classified": 2,
+    "llm_used": true,
+    "skipped_by_robots": [],
+    "min_page_date": "2025-01-01",
+    "skipped_by_date": [],
+    "unchecked_documents": []
+  },
+  "contact_emails": [
+    "info@berlin-dance-music-event.com"
+  ],
+  "warnings": [
+    "Crawl time budget (120s) reached after 4 pages."
+  ],
+  "errors": [],
+  "pages": [
+    {
+      "url": "https://berlin-dance-music-event.com/",
+      "title": "BDME - Berlin Dance Music Event⎜25 - 28 February 2027",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "unclear",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "Downgraded: no quote found verbatim on the page. Model said: The page describes the upcoming BDME 2027 event and mentions that applications for the next edition are not yet open, but will open at a later date. It does not provide any details about a current open call.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://berlin-dance-music-event.com/ticketing-info",
+      "title": "Ticketing Info - Berlin Dance Music Event",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page does not describe any open call or provide any information about ticketing or submissions. It only mentions ticketing info.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    }
+  ],
+  "model": "qwen2.5-3b-instruct-q4_k_m.gguf"
+}

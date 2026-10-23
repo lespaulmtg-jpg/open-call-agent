@@ -1,0 +1,17 @@
+{
+  "website": "https://aboutblank.li/",
+  "model": "qwen2.5-7b-instruct-q4_k_m-00001-of-00002.gguf",
+  "review": {
+    "status": "none",
+    "deadline": "",
+    "deadline_text": "",
+    "open_call_url": "",
+    "announcement_url": "",
+    "opportunity_types": "",
+    "how_to_apply": "",
+    "large_model_status": "none",
+    "review_reason": "https://aboutblank.li/sektgarten: The page describes a reservation form for the Sektgarten, but it does not invite people to apply or submit proposals for events or activities. It is a form for reserving spaces, not an open call.",
+    "review_quotes": "",
+    "reviewed_on": "2026-10-23"
+  }
+}

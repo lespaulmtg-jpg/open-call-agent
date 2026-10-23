@@ -4,3 +4,6 @@ __pycache__/
 .pytest_cache/
 *.egg-info/
 .DS_Store
+
+# Notes you make while trying the sample data are yours, not the repo's
+sample_data/dashboard/

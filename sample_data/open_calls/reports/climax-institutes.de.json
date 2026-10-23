@@ -1,0 +1,601 @@
+{
+  "site": "https://climax-institutes.de/",
+  "checked_on": "2026-09-22",
+  "status": "closed",
+  "status_reason": "Only closed calls found on 1 page(s)",
+  "opportunity_types": [
+    "dj"
+  ],
+  "deadline": "2026-02-07",
+  "deadline_text": "07.02.2026",
+  "announcement_urls": [
+    "https://climax-institutes.de/2026/02/04/clubprogramm-februar-2026-climax-institutes-stuttgart"
+  ],
+  "open_call_urls": [],
+  "how_to_apply": "To participate, DJs are invited to send their proposals to the following link.",
+  "call_pages": [
+    {
+      "url": "https://climax-institutes.de/2026/02/04/clubprogramm-februar-2026-climax-institutes-stuttgart",
+      "status": "closed",
+      "confidence": "low",
+      "opportunity_types": [
+        "dj"
+      ],
+      "verified_quotes": [
+        "FLUID – Queer & Gay Rave Experience",
+        "Jas Hirson, MARTINA., MCG"
+      ],
+      "deadline": "2026-02-07",
+      "deadline_text": "07.02.2026",
+      "how_to_apply": "To participate, DJs are invited to send their proposals to the following link.",
+      "open_call_urls": [],
+      "reasoning": "Downgraded: deadline 2026-02-07 has passed. Model said: The page describes the upcoming club program for February 2026, including specific events and performers. It mentions a new event called 'FLUID – Queer & Gay Rave Experience' that opens on February 7th, 2026. This indicates an open call for DJs to participate in the event."
+    }
+  ],
+  "coverage": {
+    "discovery": "sitemap + links",
+    "sitemap_urls_found": 1933,
+    "pages_visited": 15,
+    "js_rendered_pages": 0,
+    "pages_classified": 6,
+    "llm_used": true,
+    "skipped_by_robots": [],
+    "min_page_date": "2025-01-01",
+    "skipped_by_date": [
+      {
+        "url": "https://climax-institutes.de/events/pauls-artists-clubnight-w-jorkes-alexander-maier",
+        "date": "2022-08-22",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://climax-institutes.de/events/pauls-artists-present-jazz-it-up-2",
+        "date": "2017-12-18",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://climax-institutes.de/events/pauls-artists-present-berlins-finest",
+        "date": "2018-05-16",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://climax-institutes.de/events/24-years-pauls-artists-clubnight",
+        "date": "2023-10-29",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://climax-institutes.de/events/love-now-%e2%80%a2-meet-the-artist-w-sjks-21-uhr-2",
+        "date": "2019-06-04",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://climax-institutes.de/events/herz-seele-20-jahre-benztown-artists-w-hovr-timbre-line",
+        "date": "2023-09-28",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://climax-institutes.de/events/infoabend-rund-ums-thema-bitcoin",
+        "date": "2018-05-25",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://climax-institutes.de/events/pauls-artists-clubnight",
+        "date": "2023-04-30",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://climax-institutes.de/events/pauls-artists-night-202female-takeover",
+        "date": "2016-12-07",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://climax-institutes.de/events/pauls-artists-present-kotelett-und-zadak",
+        "date": "2016-09-14",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://climax-institutes.de/events/pauls-artists-pauls-artists-present-druckpunkt",
+        "date": "2017-02-14",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://climax-institutes.de/events/23-years-pauls-artists-clubnight",
+        "date": "2022-10-30",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://climax-institutes.de/events/pauls-artists-pres-the-23rd-23-08-uhr",
+        "date": "2019-09-11",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://climax-institutes.de/events/pauls-artists-present-shut-down-club-22-01-uhr-5",
+        "date": "2020-11-09",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://climax-institutes.de/events/pauls-artists-present-shut-down-club-5",
+        "date": "2021-07-04",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://climax-institutes.de/events/pauls-artists-present-aroma-der-nacht",
+        "date": "2017-05-19",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://climax-institutes.de/events/pauls-artists-clubnight-w-phyllis-blessing-jochen-junker",
+        "date": "2022-03-09",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://climax-institutes.de/events/pauls-artists-present-ride-it-free",
+        "date": "2018-11-15",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://climax-institutes.de/events/pauls-artists-present-the-18th",
+        "date": "2017-10-13",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://climax-institutes.de/events/pauls-artists-present-hi-harry",
+        "date": "2017-11-14",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://climax-institutes.de/events/pauls-artists-pres-the-house-of-house",
+        "date": "2019-04-02",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://climax-institutes.de/events/pauls-artists-present-shut-down-club-22-01-uhr-4",
+        "date": "2020-10-06",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://climax-institutes.de/events/pauls-artists-pres-20-y-e-a-r-s-23-08-uhr",
+        "date": "2019-10-09",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://climax-institutes.de/events/pauls-artists-present-shut-down-club",
+        "date": "2020-06-10",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://climax-institutes.de/events/benztown-artists-pres-ostersonntag-im-climax",
+        "date": "2023-03-27",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://climax-institutes.de/events/pauls-artists-present-jazz-it-up",
+        "date": "2016-11-11",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://climax-institutes.de/events/pauls-artists-present-galopp-non-stop",
+        "date": "2017-04-28",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://climax-institutes.de/events/paulsartists",
+        "date": "2018-09-06",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://climax-institutes.de/events/pauls-artists-pres-22-y-e-a-r-s",
+        "date": "2021-11-07",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://climax-institutes.de/events/pauls-artists-clubnight-w-phyllis-blessing",
+        "date": "2022-04-05",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://climax-institutes.de/events/pauls-artists-present-dance-baby",
+        "date": "2016-07-01",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://climax-institutes.de/events/pauls-artists-present-berlins-colors-w-kalyma-solide-23-uhr",
+        "date": "2019-06-04",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://climax-institutes.de/events/pauls-artists-present-shut-down-club-22-01-uhr-2",
+        "date": "2020-08-03",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://climax-institutes.de/events/pauls-artists-present-shut-down-club-2",
+        "date": "2021-04-05",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://climax-institutes.de/events/pauls-artists-present-shut-down-club-20-0-uhr",
+        "date": "2020-05-05",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://climax-institutes.de/events/pauls-artists-present-damenwahl",
+        "date": "2017-07-10",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://climax-institutes.de/2021/05/02/auktion-zu-gunsten-der-kuenstlersoforthilfe",
+        "date": "2021-05-03",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://climax-institutes.de/events/pauls-artists-present-never-sleep-again",
+        "date": "2019-01-13",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://climax-institutes.de/events/pauls-artists-present-shut-down-club-22-01-uhr-6",
+        "date": "2021-01-03",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://climax-institutes.de/events/pauls-artists-praesentieren-wild-thing",
+        "date": "2016-04-12",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://climax-institutes.de/events/pauls-artists-present-jazz-it-up-3",
+        "date": "2019-01-01",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://climax-institutes.de/events/pauls-artists-clubnight-w-robin-seitter-arcon-ultra",
+        "date": "2023-06-19",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://climax-institutes.de/events/pauls-artists-present-shut-down-club-3",
+        "date": "2021-05-02",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://climax-institutes.de/events/pauls-artists-present-love-is-all-colors-23-08-uhr",
+        "date": "2020-04-11",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://climax-institutes.de/events/pauls-artists-clubnight-w-miss-evoice",
+        "date": "2022-12-27",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://climax-institutes.de/events/pauls-artists-w-astana-bo-live-jochen-junker",
+        "date": "2023-09-28",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://climax-institutes.de/events/pauls-artists-clubnight-w-alina-milame",
+        "date": "2023-01-30",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://climax-institutes.de/events/pauls-artists-present-shut-down-club-22-01-uhr",
+        "date": "2020-07-07",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://climax-institutes.de/events/pauls-artists-present-the-power-of-love",
+        "date": "2018-03-08",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://climax-institutes.de/events/3-infoabend-rund-ums-thema-bitcoin-ab-20-uhr",
+        "date": "2018-07-13",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://climax-institutes.de/events/pauls-artists-clubnight-w-in-out-live-2",
+        "date": "2023-05-30",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://climax-institutes.de/events/pauls-artists-clubnight-w-martin-rapp",
+        "date": "2022-05-10",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://climax-institutes.de/events/pauls-artists-pres-markus-klee-ritter-butzke-bar-25-music-23-uhr",
+        "date": "2019-08-06",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://climax-institutes.de/events/pauls-artists-present-17-years",
+        "date": "2016-10-11",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://climax-institutes.de/events/pauls-artists-present-shut-down-club-22-01-uhr-3",
+        "date": "2020-09-07",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://climax-institutes.de/events/pauls-artists-present-long-distance-3",
+        "date": "2019-07-03",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://climax-institutes.de/events/pauls-artists-present-the-black-session",
+        "date": "2016-06-08",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://climax-institutes.de/events/pauls-artists-present-the-summer-mode",
+        "date": "2016-06-09",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://climax-institutes.de/events/pauls-artists-pres-go-for-gold-23-08-uhr",
+        "date": "2020-01-20",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://climax-institutes.de/events/pauls-artists-clubnight-2",
+        "date": "2023-08-09",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://climax-institutes.de/events/benztown-artists-pres-herz-seele-w-heimlich-knueller-solvane",
+        "date": "2021-10-20",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://climax-institutes.de/events/pauls-artists-present-shut-down-club-4",
+        "date": "2021-06-06",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://climax-institutes.de/events/pauls-artists-present-long-distance-2",
+        "date": "2018-04-17",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://climax-institutes.de/events/full-proof-meets-benztown-artists-22-05-uhr",
+        "date": "2020-04-11",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://climax-institutes.de/events/pauls-artists-clubnight-3",
+        "date": "2023-11-21",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://climax-institutes.de/events/pauls-artists-present-the-21st",
+        "date": "2017-08-29",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://climax-institutes.de/events/pauls-artists-clubnight-4",
+        "date": "2023-12-19",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://climax-institutes.de/events/pauls-artists-present-its-our-house",
+        "date": "2018-02-08",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://climax-institutes.de/events/pauls-artists-present-musique-non-stop",
+        "date": "2016-08-17",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://climax-institutes.de/events/pauls-artists-w-alexander-maier-moodmusic-records",
+        "date": "2023-07-21",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://climax-institutes.de/events/pauls-artists-present-catch-up-23-08-uhr",
+        "date": "2019-11-11",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://climax-institutes.de/events/pauls-artists-clubnight-w-phyllis-blessing-2",
+        "date": "2022-08-08",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://climax-institutes.de/events/pauls-artists-present-free-love-23-uhr",
+        "date": "2019-07-24",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://climax-institutes.de/events/pauls-artists-pauls-artists-present-long-distance",
+        "date": "2017-01-16",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://climax-institutes.de/events/pauls-artists-clubnight-w-sirikit-emi-electrola",
+        "date": "2022-12-07",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://climax-institutes.de/events/pauls-artists-present-greetings-from-vienna",
+        "date": "2017-03-17",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://climax-institutes.de/events/pauls-artists-clubnight-w-manuel-tur-freerange-records",
+        "date": "2022-09-19",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://climax-institutes.de/events/pauls-artists-clubnight-w-tizian-tiffany-la-fox",
+        "date": "2023-03-27",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://climax-institutes.de/events/pauls-artists-present-reflection-of-light",
+        "date": "2018-07-13",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://climax-institutes.de/events/pauls-artists-clubnight-w-ram-phyllis-blessing",
+        "date": "2023-02-16",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://climax-institutes.de/events/pauls-artists-present-its-our-house-_-23-uhr",
+        "date": "2019-04-24",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://climax-institutes.de/events/pauls-artists-present-long-distance",
+        "date": "2017-06-28",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://climax-institutes.de/events/pauls-artists-clubnight-w-in-out-live",
+        "date": "2022-06-05",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://climax-institutes.de/about-club-climax",
+        "date": "2020-12-27",
+        "source": "sitemap lastmod"
+      }
+    ],
+    "unchecked_documents": []
+  },
+  "contact_emails": [
+    "info@climax-institutes.de",
+    "lostandfound@climax-institutes.de"
+  ],
+  "warnings": [
+    "Crawl time budget (120s) reached after 15 pages."
+  ],
+  "errors": [],
+  "pages": [
+    {
+      "url": "https://climax-institutes.de/",
+      "title": "Climax Institutes",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page describes upcoming events and news, but does not mention any open call for proposals, applications, or submissions. There is no link to an application form or a deadline mentioned.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://climax-institutes.de/contact",
+      "title": "Contact | Climax Institutes",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page does not mention any open call or invitation for outside people to apply, submit or propose something. It only provides contact information and details about the club.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://climax-institutes.de/2025/10/01/unser-programm-im-oktober-im-climax",
+      "title": "Unser Programm im Oktober im Climax | Climax Institutes",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page describes past events and activities of Climax Institutes, but does not mention any open call for applications, submissions, or proposals. There is no mention of a deadline or how to apply.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://climax-institutes.de/2026/02/04/clubprogramm-februar-2026-climax-institutes-stuttgart",
+      "title": "Clubprogramm Februar 2026 Climax Institutes Stuttgart | Climax Institutes",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "closed",
+        "opportunity_types": [
+          "dj"
+        ],
+        "quotes": [
+          "FLUID – Queer & Gay Rave Experience",
+          "Jas Hirson, MARTINA., MCG"
+        ],
+        "deadline": "2026-02-07",
+        "how_to_apply": "To participate, DJs are invited to send their proposals to the following link.",
+        "reasoning": "Downgraded: deadline 2026-02-07 has passed. Model said: The page describes the upcoming club program for February 2026, including specific events and performers. It mentions a new event called 'FLUID – Queer & Gay Rave Experience' that opens on February 7th, 2026. This indicates an open call for DJs to participate in the event.",
+        "verified_quotes": [
+          "FLUID – Queer & Gay Rave Experience",
+          "Jas Hirson, MARTINA., MCG"
+        ],
+        "deadline_text": "07.02.2026",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://climax-institutes.de/2026/03/31/clubprogramm-april-2026-climax-institutes-stuttgart",
+      "title": "Clubprogramm April 2026 Climax Institutes Stuttgart | Climax Institutes",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page describes a club program for April 2026, but does not mention any open call for proposals, applications, or submissions. It only lists the events and their details.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://climax-institutes.de/2025/11/04/clubprogramm-november-2025-climax-institutes",
+      "title": "Clubprogramm November 2025 Climax Institutes | Climax Institutes",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page describes the club program for November 2025, but does not mention any open call for proposals, applications, or submissions. It only provides a schedule of events.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    }
+  ],
+  "model": "qwen2.5-3b-instruct-q4_k_m.gguf"
+}

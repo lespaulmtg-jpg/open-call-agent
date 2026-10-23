@@ -1,0 +1,186 @@
+{
+  "site": "https://www.berlinmva.com/about-us",
+  "checked_on": "2026-09-22",
+  "status": "needs_review",
+  "status_reason": "Possible call (open without keyword or link evidence)",
+  "opportunity_types": [
+    "music"
+  ],
+  "deadline": "2026-11-15",
+  "deadline_text": "November 15, 2026",
+  "announcement_urls": [
+    "https://www.berlinmva.com/submit"
+  ],
+  "open_call_urls": [],
+  "how_to_apply": "Submit your video today and join us for the Berlin Music Video Awards 2026",
+  "call_pages": [
+    {
+      "url": "https://www.berlinmva.com/submit",
+      "status": "open",
+      "confidence": "low",
+      "opportunity_types": [
+        "music"
+      ],
+      "verified_quotes": [
+        "Submit your music videos to the BMVA 2027",
+        "Submit your video today",
+        "Early Bird Deadline: November 15, 2026"
+      ],
+      "deadline": "2026-11-15",
+      "deadline_text": "November 15, 2026",
+      "how_to_apply": "Submit your video today and join us for the Berlin Music Video Awards 2026",
+      "open_call_urls": [],
+      "reasoning": "The page describes an open call for music videos to be submitted to the Berlin Music Video Awards 2026. It provides details about the submission process, deadlines, and submission criteria."
+    }
+  ],
+  "coverage": {
+    "discovery": "link crawl (no sitemap found)",
+    "sitemap_urls_found": 0,
+    "pages_visited": 5,
+    "js_rendered_pages": 0,
+    "pages_classified": 5,
+    "llm_used": true,
+    "skipped_by_robots": [],
+    "min_page_date": "2025-01-01",
+    "skipped_by_date": [],
+    "unchecked_documents": []
+  },
+  "contact_emails": [
+    "info@berlinmva.com"
+  ],
+  "warnings": [
+    "Crawl time budget (120s) reached after 5 pages.",
+    "Crawl stopped by its page or time budget with 9 unvisited pages whose URL or link text suggests an open call: ['https://www.berlinmva.com/open-call/call-for-volunteers-join-the-berlin-music-video-awards-2025', 'https://www.berlinmva.com/open-call/one-week-to-earlybird-deadline', 'https://www.berlinmva.com/open-call/10-days-to-the-early-bird-deadline', 'https://www.berlinmva.com/open-call/bmva-2021-internship-call', 'https://www.berlinmva.com/open-call/late-deadline']"
+  ],
+  "errors": [
+    {
+      "url": "/wp-sitemap.xml",
+      "stage": "static_fetch",
+      "error": "Invalid URL '/wp-sitemap.xml': No scheme supplied. Perhaps you meant https:///wp-sitemap.xml?"
+    }
+  ],
+  "pages": [
+    {
+      "url": "https://www.berlinmva.com/open-call",
+      "title": "Open call – Berlin Music Video Awards",
+      "keyword_hits": [
+        "call for submissions",
+        "call for volunteers",
+        "open call"
+      ],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page describes past submission deadlines and an internship call, but does not describe an open call for new submissions or applications.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "high",
+        "form_links": [],
+        "open_call_urls": [
+          "https://www.berlinmva.com/submission/"
+        ]
+      }
+    },
+    {
+      "url": "https://www.berlinmva.com/artist/bmva-2023-winners",
+      "title": "BMVA 2023 WINNERS – Berlin Music Video Awards",
+      "keyword_hits": [
+        "mitmachen",
+        "open call"
+      ],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page describes the winners of the BMVA 2023 and does not mention any open call for submissions, applications, or proposals. It only lists the winners and their respective videos.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "high",
+        "form_links": [],
+        "open_call_urls": [
+          "http://musikmussmit.de/berlin-music-video-awards/",
+          "https://www.berlinmva.com/open-call/",
+          "https://www.berlinmva.com/submission/"
+        ]
+      }
+    },
+    {
+      "url": "https://www.berlinmva.com/einreichung",
+      "title": "Und so kannst du teilnehmen! – Berlin Music Video Awards",
+      "keyword_hits": [
+        "bewerbungsformular",
+        "einreichung"
+      ],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page describes the submission process for the Berlin Music Video Awards, including deadlines and how to submit a video. The page does not mention an open call for new submissions or proposals.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "high",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://www.berlinmva.com/about-us",
+      "title": "About Us – Berlin Music Video Awards",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page describes the upcoming 14th edition of the Berlin Music Video Awards, but does not mention any call for submissions or applications. It only states the event dates and location.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://www.berlinmva.com/submit",
+      "title": "Berlin Music Video Awards: Submit Your Music Video",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "open",
+        "opportunity_types": [
+          "music"
+        ],
+        "quotes": [
+          "Submit your music videos to the BMVA 2027",
+          "Submit your video today",
+          "Early Bird Deadline: November 15, 2026"
+        ],
+        "deadline": "2026-11-15",
+        "how_to_apply": "Submit your video today and join us for the Berlin Music Video Awards 2026",
+        "reasoning": "The page describes an open call for music videos to be submitted to the Berlin Music Video Awards 2026. It provides details about the submission process, deadlines, and submission criteria.",
+        "verified_quotes": [
+          "Submit your music videos to the BMVA 2027",
+          "Submit your video today",
+          "Early Bird Deadline: November 15, 2026"
+        ],
+        "deadline_text": "November 15, 2026",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    }
+  ],
+  "model": "qwen2.5-3b-instruct-q4_k_m.gguf"
+}

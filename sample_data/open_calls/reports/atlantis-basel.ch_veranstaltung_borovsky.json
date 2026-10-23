@@ -1,0 +1,104 @@
+{
+  "site": "https://atlantis-basel.ch/veranstaltung/borovsky",
+  "checked_on": "2026-09-18",
+  "status": "none",
+  "status_reason": "No call found",
+  "opportunity_types": [],
+  "deadline": "",
+  "deadline_text": "",
+  "announcement_urls": [],
+  "open_call_urls": [],
+  "how_to_apply": "",
+  "call_pages": [],
+  "coverage": {
+    "discovery": "sitemap + links",
+    "sitemap_urls_found": 521,
+    "pages_visited": 12,
+    "js_rendered_pages": 0,
+    "pages_classified": 2,
+    "llm_used": true,
+    "skipped_by_robots": [],
+    "min_page_date": "2025-01-01",
+    "skipped_by_date": [
+      {
+        "url": "https://atlantis-basel.ch/veranstaltung/deborah-monard-2",
+        "date": "2024-12-02",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://atlantis-basel.ch/veranstaltung/open-bar-drinks-only-13",
+        "date": "2024-08-30",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://atlantis-basel.ch/veranstaltung/tribute-nights-mr-tambourine-man",
+        "date": "2024-10-21",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://atlantis-basel.ch/veranstaltung/groove-now-blues-weeks-basel-2024-11",
+        "date": "2024-08-30",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://atlantis-basel.ch/veranstaltung/swing-im-tis-basel-jitterbugs",
+        "date": "2024-08-30",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://atlantis-basel.ch/veranstaltung/tanznacht-40-13",
+        "date": "2024-09-24",
+        "source": "sitemap lastmod"
+      }
+    ],
+    "unchecked_documents": []
+  },
+  "contact_emails": [
+    "info@atlantis-basel.ch"
+  ],
+  "warnings": [
+    "Crawl time budget (120s) reached after 12 pages."
+  ],
+  "errors": [],
+  "pages": [
+    {
+      "url": "https://atlantis-basel.ch/veranstaltung/borovsky",
+      "title": "Borovsky - Atlantis",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page describes a concert event for Borovsky, but does not mention any call for proposals, applications, or submissions. It only provides information about the event and ticket details.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://atlantis-basel.ch/kontakt",
+      "title": "Kontakt - Atlantis",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page contains contact information and instructions for making reservations, but does not mention any open call for proposals, applications, or submissions. There is no mention of a deadline or how to apply.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    }
+  ],
+  "model": "qwen2.5-3b-instruct-q4_k_m.gguf"
+}

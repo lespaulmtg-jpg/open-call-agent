@@ -1,0 +1,17 @@
+{
+  "website": "http://www.zermatt-unplugged.ch",
+  "model": "qwen2.5-7b-instruct-q4_k_m-00001-of-00002.gguf",
+  "review": {
+    "status": "needs_review",
+    "deadline": "",
+    "deadline_text": "",
+    "open_call_url": "",
+    "announcement_url": "https://zermatt-unplugged.ch/en/contact",
+    "opportunity_types": "music",
+    "how_to_apply": "Send",
+    "large_model_status": "needs_review",
+    "review_reason": "1 announcement page(s) failed classification",
+    "review_quotes": "",
+    "reviewed_on": "2026-10-23"
+  }
+}

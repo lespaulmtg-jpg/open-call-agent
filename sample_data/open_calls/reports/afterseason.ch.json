@@ -1,0 +1,172 @@
+{
+  "site": "https://afterseason.ch/",
+  "checked_on": "2026-09-21",
+  "status": "none",
+  "status_reason": "No call found",
+  "opportunity_types": [],
+  "deadline": "",
+  "deadline_text": "",
+  "announcement_urls": [],
+  "open_call_urls": [],
+  "how_to_apply": "",
+  "call_pages": [],
+  "coverage": {
+    "discovery": "sitemap + links",
+    "sitemap_urls_found": 20,
+    "pages_visited": 21,
+    "js_rendered_pages": 21,
+    "pages_classified": 6,
+    "llm_used": true,
+    "skipped_by_robots": [],
+    "min_page_date": "2025-01-01",
+    "skipped_by_date": [
+      {
+        "url": "https://afterseason.ch/a-propos",
+        "date": "2020-11-26",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://afterseason.ch/merchandising",
+        "date": "2020-11-26",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://afterseason.ch/conditions-generales",
+        "date": "2020-11-26",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://afterseason.ch/archives",
+        "date": "2020-11-26",
+        "source": "sitemap lastmod"
+      }
+    ],
+    "unchecked_documents": []
+  },
+  "contact_emails": [
+    "info@afterseason.ch"
+  ],
+  "warnings": [
+    "Crawl time budget (120s) reached after 21 pages."
+  ],
+  "errors": [],
+  "pages": [
+    {
+      "url": "https://afterseason.ch/",
+      "title": "Villars Afterseason — Electronic festival",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page describes an upcoming electronic festival in 2026 but does not mention any open call for proposals, applications, or submissions.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": [
+          "https://afterseason.ch/a-propos"
+        ]
+      }
+    },
+    {
+      "url": "https://afterseason.ch/zirkuz/infos",
+      "title": "404 Page Introuvable | Villars Afterseason — Electronic festival",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page title mentions 'Electronic festival' and the URL is for a festival website, but the page itself is a 404 error page, indicating no current information or open call.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://afterseason.ch/summer/infos",
+      "title": "404 Page Introuvable | Villars Afterseason — Electronic festival",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page title mentions 'Villars Afterseason' and describes it as an electronic festival, but there is no mention of an open call for submissions or applications. The page is a 404 error page.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://afterseason.ch/winter/infos",
+      "title": "404 Page Introuvable | Villars Afterseason — Electronic festival",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page title mentions 'Villars Afterseason — Electronic festival' and the URL is for a winter event, indicating a festival or arts organization website. However, there is no mention of an open call or any invitation to apply, submit or propose something.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://afterseason.ch/transhumance/infos",
+      "title": "404 Page Introuvable | Villars Afterseason — Electronic festival",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page title mentions 'Electronic festival' and the URL is for a festival website, but the page itself is a 404 error page, indicating no content or open call is available.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://afterseason.ch/contact",
+      "title": "404 Page Introuvable | Villars Afterseason — Electronic festival",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page title mentions 'Electronic festival' but does not provide any information about an open call for submissions, applications, or proposals. The URL and title do not indicate an open call.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    }
+  ],
+  "model": "qwen2.5-3b-instruct-q4_k_m.gguf"
+}

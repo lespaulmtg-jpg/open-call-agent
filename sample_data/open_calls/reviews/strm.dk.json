@@ -1,0 +1,17 @@
+{
+  "website": "https://strm.dk",
+  "model": "qwen2.5-7b-instruct-q4_k_m-00001-of-00002.gguf",
+  "review": {
+    "status": "closed",
+    "deadline": "2026-10-01",
+    "deadline_text": "2026-10-01 | not specified",
+    "open_call_url": "",
+    "announcement_url": "https://strm.dk/about-lydskatten",
+    "opportunity_types": "residency",
+    "how_to_apply": "APPLY NOW",
+    "large_model_status": "open",
+    "review_reason": "https://strm.dk/about-lydskatten: The page clearly states 'OPEN CALL FOR RESIDENCY' and provides a direct link to apply, indicating that the call is open now. | Deadline 2026-10-01 has passed",
+    "review_quotes": "We’re looking for curious sound artists, producers, and composers to apply for a one-week residency",
+    "reviewed_on": "2026-10-23"
+  }
+}

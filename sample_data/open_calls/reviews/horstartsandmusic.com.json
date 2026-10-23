@@ -1,0 +1,17 @@
+{
+  "website": "https://www.horstartsandmusic.com",
+  "model": "qwen2.5-7b-instruct-q4_k_m-00001-of-00002.gguf",
+  "review": {
+    "status": "none",
+    "deadline": "",
+    "deadline_text": "",
+    "open_call_url": "",
+    "announcement_url": "",
+    "opportunity_types": "",
+    "how_to_apply": "",
+    "large_model_status": "none",
+    "review_reason": "https://horstartsandmusic.com/jobs/club-production: The page does not describe an open call for music, dj, live_performance, visuals, video_film, installation, workshops, talks, residency, exhibition, vendors_food, or volunteers. It only describes past programmes and does not invite people to apply or submit now.",
+    "review_quotes": "",
+    "reviewed_on": "2026-10-23"
+  }
+}

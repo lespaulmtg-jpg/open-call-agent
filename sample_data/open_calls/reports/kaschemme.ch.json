@@ -1,0 +1,671 @@
+{
+  "site": "https://www.kaschemme.ch/",
+  "checked_on": "2026-09-17",
+  "status": "none",
+  "status_reason": "No call found",
+  "opportunity_types": [],
+  "deadline": "",
+  "deadline_text": "",
+  "announcement_urls": [],
+  "open_call_urls": [],
+  "how_to_apply": "",
+  "call_pages": [],
+  "coverage": {
+    "discovery": "sitemap + links",
+    "sitemap_urls_found": 729,
+    "pages_visited": 40,
+    "js_rendered_pages": 0,
+    "pages_classified": 6,
+    "llm_used": true,
+    "skipped_by_robots": [],
+    "min_page_date": "2025-01-01",
+    "skipped_by_date": [
+      {
+        "url": "https://www.kaschemme.ch/programm/2407/bassarcade",
+        "date": "2024-06-16",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://www.kaschemme.ch/programm/2020/3/21/ashta-w-intitche-arg-don-son-amp-luxfux",
+        "date": "2020-02-10",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://www.kaschemme.ch/programm/2023/4/7/lilac-attitude-live",
+        "date": "2023-04-03",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://www.kaschemme.ch/programm/2020/2/10/kalles-kaviar-plattentaufe",
+        "date": "2020-03-24",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://www.kaschemme.ch/programm/2412/indieslot",
+        "date": "2024-11-25",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://www.kaschemme.ch/programm/2501/bassarcade",
+        "date": "2024-12-25",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://www.kaschemme.ch/programm/2020/10/8/rau",
+        "date": "2020-10-02",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://www.kaschemme.ch/programm/2023/bassarcadelvl2",
+        "date": "2023-08-31",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://www.kaschemme.ch/programm/2019/3/8/alter-hase-schwing-das-tanzbein-w-tommy-libera",
+        "date": "2019-02-28",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://www.kaschemme.ch/programm/2022/11/15/rau-b2btl",
+        "date": "2022-11-20",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://www.kaschemme.ch/programm/2023/1/20/klubnacht353-7zw8b",
+        "date": "2023-03-29",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://www.kaschemme.ch/programm/2020/8/1/save-the-rave",
+        "date": "2020-07-25",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://www.kaschemme.ch/programm/2020/6/30/urlaub-in-digitalien",
+        "date": "2020-06-29",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://www.kaschemme.ch/programm/2023/5/27/oro-negro-x-meschgn-release-night",
+        "date": "2023-05-11",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://www.kaschemme.ch/programm/2019/9/1/alter-hase-season-opening-w-vamos-art-traum-schallplatten",
+        "date": "2019-08-14",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://www.kaschemme.ch/programm/2019/6/22/hoppla-inner-kaschemme-rafaele-castiglione-rolandson-amp-dusud",
+        "date": "2019-06-17",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://www.kaschemme.ch/programm/2021/9/10/ende-anfang",
+        "date": "2021-09-10",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://www.kaschemme.ch/programm/2018/9/28/vinylbros-plattentaufe-the-greatest-hits-1",
+        "date": "2020-01-30",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://www.kaschemme.ch/programm/2019/11/15/essence-herzschwester-gelbes-billett",
+        "date": "2019-10-21",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://www.kaschemme.ch/programm/2019/3/23/konzeptlos-presents-karl-hector-and-the-malcouns-live",
+        "date": "2020-01-30",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://www.kaschemme.ch/programm/2019/3/29/come-around-david-rodigan-100-dubplate-set",
+        "date": "2019-03-15",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://www.kaschemme.ch/programm/2022/9/6/indie-rock",
+        "date": "2022-09-06",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://www.kaschemme.ch/programm/2022/8/1/schwarztne",
+        "date": "2022-08-01",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://www.kaschemme.ch/programm/2019/6/9/5-years-kaschemme-afterglow-w-thomash-amp-urubumarinka-voodoohop-bra",
+        "date": "2019-05-20",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://www.kaschemme.ch/programm/231228/rausch",
+        "date": "2023-12-08",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://www.kaschemme.ch/programm/vercetti-dez-kaena",
+        "date": "2023-10-04",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://www.kaschemme.ch/programm/2021/11/6/live-phenomden-and-the-scrusialists",
+        "date": "2021-10-02",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://www.kaschemme.ch/programm/2022/7/16/kaschemme-rocknacht",
+        "date": "2022-07-15",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://www.kaschemme.ch/programm/2024/cypherbasel",
+        "date": "2024-04-28",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://www.kaschemme.ch/programm/24/4/omnes",
+        "date": "2024-04-02",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://www.kaschemme.ch/programm/2022/4/8/chau-fiak-x-schanzeacht-prsentieren-waermer",
+        "date": "2022-03-30",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://www.kaschemme.ch/programm/2021/10/2/turbo-time-by-schanze-acht",
+        "date": "2021-10-02",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://www.kaschemme.ch/programm/2020/4/19/44jlufqktrl25bfovir6g9713tcfnd",
+        "date": "2020-04-18",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://www.kaschemme.ch/programm/2411/akzent",
+        "date": "2024-11-15",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://www.kaschemme.ch/programm/2021/11/26/knackeboul-amp-luuk-tour-2021-kaschemme-basel",
+        "date": "2021-10-02",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://www.kaschemme.ch/programm/2019/5/25/karussell-w-lea-lisa-mona-musique-innerdisc",
+        "date": "2019-04-29",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://www.kaschemme.ch/programm/2411/disco2000",
+        "date": "2024-11-15",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://www.kaschemme.ch/programm/2019/5/18/vivus-w-arapu-sunrise-liniar-bucharest",
+        "date": "2019-04-15",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://www.kaschemme.ch/programm/goodnoise",
+        "date": "2023-12-27",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://www.kaschemme.ch/programm/12/astro",
+        "date": "2023-11-22",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://www.kaschemme.ch/programm/2020/9/26/indie-rock",
+        "date": "2020-09-07",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://www.kaschemme.ch/programm/2019/12/13/indie-rock",
+        "date": "2019-11-14",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://www.kaschemme.ch/programm/2022/6/10/konzeptlos-spins-some-records",
+        "date": "2022-06-03",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://www.kaschemme.ch/programm/2019/5/4/pnoir-plattentaufe",
+        "date": "2019-04-29",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://www.kaschemme.ch/programm/2019/7/31/alter-hase-family-affair-w-holger-nielson-ragnarok",
+        "date": "2019-07-09",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://www.kaschemme.ch/programm/2019/9/21/essence-w-peter-power",
+        "date": "2019-08-30",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://www.kaschemme.ch/programm/2019/2/8/indierock",
+        "date": "2019-02-20",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://www.kaschemme.ch/programm/2024/2/25/kinderdisko",
+        "date": "2024-02-19",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://www.kaschemme.ch/programm/2019/2/21/the-7inch-junkies",
+        "date": "2019-02-04",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://www.kaschemme.ch/programm/2021/7/16/indie-rock-kaschemme-basel",
+        "date": "2021-07-06",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://www.kaschemme.ch/programm/2019/9/28/save-the-rave",
+        "date": "2019-09-25",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://www.kaschemme.ch/programm/porschexttt",
+        "date": "2024-09-23",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://www.kaschemme.ch/programm/24/osterrave",
+        "date": "2024-03-04",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://www.kaschemme.ch/programm/2019/6/14/teki-latex-sound-pellegrino-paris-w-safety-first-",
+        "date": "2019-06-03",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://www.kaschemme.ch/programm/2019/5/17/indie-rock",
+        "date": "2019-04-25",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://www.kaschemme.ch/programm/2023/11/bassarcade",
+        "date": "2024-02-08",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://www.kaschemme.ch/programm/2022/6/30/kollektiv",
+        "date": "2022-05-31",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://www.kaschemme.ch/programm/2024/bassbounce",
+        "date": "2024-09-23",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://www.kaschemme.ch/programm/2022/5/13/kfer-fliegen-lassen",
+        "date": "2022-05-10",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://www.kaschemme.ch/programm/24/brise",
+        "date": "2024-04-17",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://www.kaschemme.ch/programm/2020/10/4/flashback-rob-live-kaschemme-gefilmt-und-recorded-am-28-august-2019",
+        "date": "2020-09-24",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://www.kaschemme.ch/programm/2019/11/1/symbiosis-chancha-via-cirquito-arg",
+        "date": "2020-01-30",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://www.kaschemme.ch/programm/2023/3/24/the-connaisirs-live",
+        "date": "2023-02-24",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://www.kaschemme.ch/programm/2023/12/kinderdisko",
+        "date": "2023-11-22",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://www.kaschemme.ch/programm/2020/10/23/blue-town-and-the-animal-stone",
+        "date": "2020-09-21",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://www.kaschemme.ch/programm/2023/4/15/astroaries",
+        "date": "2023-04-05",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://www.kaschemme.ch/programm/2022/11/15/rau-b2btl-5kg5x-52jpl-kh9tk",
+        "date": "2022-11-20",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://www.kaschemme.ch/programm/nica5years",
+        "date": "2024-10-02",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://www.kaschemme.ch/programm/2022/3/24/rau-w-sentimental808-amp-maeksll",
+        "date": "2022-03-21",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://www.kaschemme.ch/programm/2023/1/28/pon-di-corner-pyro-live-showcase",
+        "date": "2023-01-14",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://www.kaschemme.ch/programm/2022/11/19/we-rock",
+        "date": "2022-10-27",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://www.kaschemme.ch/programm/2022/8/26/akzent-w-ina-valeska",
+        "date": "2022-08-24",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://www.kaschemme.ch/programm/2022/7/15/verteilzentrale56",
+        "date": "2022-07-08",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://www.kaschemme.ch/programm/2022/3/25/frequency-b2b-special",
+        "date": "2022-03-22",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://www.kaschemme.ch/programm/2020/8/14/turbo-time",
+        "date": "2020-08-05",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://www.kaschemme.ch/programm/0224/stimming",
+        "date": "2024-01-19",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://www.kaschemme.ch/programm/2020/1/3/indie-rock-kaschemme",
+        "date": "2019-12-16",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://www.kaschemme.ch/programm/2020/1/2/pon-di-corner-special-guest-riddim-soldiers-records",
+        "date": "2020-01-02",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://www.kaschemme.ch/programm/2022/8/27/kinkirsi-w-mython",
+        "date": "2022-08-24",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://www.kaschemme.ch/programm/2022/6/25/indie-rock-kaschemme",
+        "date": "2022-05-24",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://www.kaschemme.ch/programm/2019/8/26/conquering-basilea-summer-event-vol-2-the-devourer-eu-tour",
+        "date": "2019-08-06",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://www.kaschemme.ch/programm/2019/4/19/ragga-twins-uk-mothership-14",
+        "date": "2019-04-15",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://www.kaschemme.ch/programm/2021/10/8/signals-from-titan",
+        "date": "2021-10-02",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://www.kaschemme.ch/programm/24/3/kinderdisko",
+        "date": "2024-02-28",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://www.kaschemme.ch/programm/23/10/kinderdisko",
+        "date": "2023-10-04",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://www.kaschemme.ch/programm/wunderlandinderkaschemme",
+        "date": "2019-08-10",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://www.kaschemme.ch/programm/2020/2/28/pon-di-corner-special-guest-uptone-movement",
+        "date": "2020-02-10",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://www.kaschemme.ch/programm/2019/5/10/the-devils-amp-the-lombego-surfers",
+        "date": "2019-04-15",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://www.kaschemme.ch/programm/2020/1/17/essence-arutani-laut-amp-luise-lokd",
+        "date": "2020-01-13",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://www.kaschemme.ch/programm/11/rausch",
+        "date": "2023-11-05",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://www.kaschemme.ch/programm/headshop",
+        "date": "2024-06-07",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://www.kaschemme.ch/programm/2022/12/9/akzent-w-polygonia-morphing-territories-dr-salat",
+        "date": "2022-11-15",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://www.kaschemme.ch/programm/2412/wiesoduso",
+        "date": "2024-12-02",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://www.kaschemme.ch/programm/2019/9/29/kinderdisko",
+        "date": "2019-09-05",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://www.kaschemme.ch/programm/2408/openair",
+        "date": "2024-07-15",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://www.kaschemme.ch/programm/24/stuermechopf",
+        "date": "2024-04-02",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://www.kaschemme.ch/programm/2022/5/6/frequency-w-ktk-b2b-toni-ba",
+        "date": "2022-05-01",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://www.kaschemme.ch/programm/summerrave",
+        "date": "2024-07-01",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://www.kaschemme.ch/programm/2020/1/24/neshas-dirty-session",
+        "date": "2020-01-04",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://www.kaschemme.ch/programm/2023/1/21/7-jahre-indie-rock",
+        "date": "2023-02-18",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://www.kaschemme.ch/programm/2412/hitsnshits",
+        "date": "2024-11-15",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://www.kaschemme.ch/programm/2022/9/23/xplicit-contents-auf-radio-x-945mhz-presents-live-blabbermouf-da-shogunz-nl",
+        "date": "2022-08-24",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://www.kaschemme.ch/programm/2021/9/24/pon-di-corner-back-inside",
+        "date": "2021-09-19",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://www.kaschemme.ch/programm/2020/11/21/frag-nicht-eisberg-plattentaufe",
+        "date": "2020-11-16",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://www.kaschemme.ch/programm/2020/10/10/frequency",
+        "date": "2020-10-07",
+        "source": "sitemap lastmod"
+      }
+    ],
+    "unchecked_documents": []
+  },
+  "contact_emails": [],
+  "warnings": [],
+  "errors": [],
+  "pages": [
+    {
+      "url": "https://www.kaschemme.ch/",
+      "title": "Kaschemme",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page describes upcoming events and does not mention any open call for proposals, submissions, or applications. It only lists events and their details.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://www.kaschemme.ch/programm/2604/landscape5",
+      "title": "LANDSCAPE #5 w/ CONCEPT STORE QUARTET & MAGDA DROZD — Kaschemme",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page describes a specific event with performers and a date, but does not mention any open call for proposals, applications, or submissions. There is no invitation to send proposals or applications now, nor any indication that applications are open in the future.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://www.kaschemme.ch/programm/2026/9/10/concept-store-landscape-6",
+      "title": "CONCEPT STORE // LANDSCAPE #6 — Kaschemme",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page describes a specific event with sets by DJs and performers, but does not invite anyone to apply, submit, or propose something. It merely announces the lineup and details of the event.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://www.kaschemme.ch/programm/2509/benzin",
+      "title": "NACHTKATZE präsentiert BENZIN — Kaschemme",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page describes a techno festival called BENZIN that will take place in 2025. It mentions an open call for submissions for future editions, but the call is for a future date, not now. The page does not describe an open call for submissions or applications now.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://www.kaschemme.ch/programm/2605/edhochuli",
+      "title": "EDHOCHULI, TROMBLON & SLEEP ON WEDNESDAY — Kaschemme",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page describes a specific event with artists and a date, but does not mention any call for proposals, applications, or submissions. It also does not provide a deadline or any information about how to apply.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://www.kaschemme.ch/programm/2608/lab2-k2zfn",
+      "title": "UPTOWN DJ-LAB — Kaschemme",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page describes an ongoing DJ lab event with no mention of an open call for submissions or applications. It provides details about the event and how to participate, but does not invite people to submit proposals or applications.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    }
+  ],
+  "model": "qwen2.5-3b-instruct-q4_k_m.gguf"
+}
