@@ -1,0 +1,315 @@
+{
+  "site": "https://www.dampfzentrale.ch/festival/full-of-lava-2025-festival",
+  "checked_on": "2026-09-21",
+  "status": "open",
+  "status_reason": "Open call announced on 2 page(s)",
+  "opportunity_types": [
+    "live_performance",
+    "music"
+  ],
+  "deadline": "2027-05-05",
+  "deadline_text": "05.05.27 | 5.5.27",
+  "announcement_urls": [
+    "https://www.dampfzentrale.ch/infos/ausschreibungen",
+    "https://www.dampfzentrale.ch/en/infos-2/calls"
+  ],
+  "open_call_urls": [
+    "https://www.dampfzentrale.ch/wp-content/uploads/2026/08/DE_260826_Ausschreibung_Szenefenster.pdf",
+    "https://www.dampfzentrale.ch/en/artist-applications/",
+    "https://www.dampfzentrale.ch/wp-content/uploads/2026/08/EN260826_CALL-FOR-ENTRIES_Szenefenster.pdf"
+  ],
+  "how_to_apply": "Bewerbungen erfolgen ausschließlich über die offiziellen Bewerbungslinks und müssen enthalten: eine kurze Projektbeschreibung, Kurzbiografien der Mitwirkenden, Kontaktdaten, Portraitfotos der Mitwirkenden und/oder Fotos vom Projekt. | Applications are accepted exclusively via the official application links and must include a short project description, short biographies of the participants, contact details, and portrait photos of the participants and/or photos of the project.",
+  "call_pages": [
+    {
+      "url": "https://www.dampfzentrale.ch/infos/ausschreibungen",
+      "status": "open",
+      "confidence": "high",
+      "opportunity_types": [
+        "live_performance"
+      ],
+      "verified_quotes": [
+        "«Szenefenster» ist ein unkompliziertes Bühnenformat für szenische Skizzen, rohe Fassungen oder beinahe gekillte Darlings – ein Ausprobierfenster.",
+        "Wer kann sich bewerben?",
+        "Gesucht werden kurze Performances, szenische Skizzen, Stückausschnitte oder experimentelle Formate von 10 – 20 Minuten Länge mit geringem technischem Aufwand."
+      ],
+      "deadline": "2027-05-05",
+      "deadline_text": "05.05.27",
+      "how_to_apply": "Bewerbungen erfolgen ausschließlich über die offiziellen Bewerbungslinks und müssen enthalten: eine kurze Projektbeschreibung, Kurzbiografien der Mitwirkenden, Kontaktdaten, Portraitfotos der Mitwirkenden und/oder Fotos vom Projekt.",
+      "open_call_urls": [
+        "https://www.dampfzentrale.ch/wp-content/uploads/2026/08/DE_260826_Ausschreibung_Szenefenster.pdf"
+      ],
+      "reasoning": "The page describes a call for submissions for the 'Szenefenster' event, which is a performance showcase for local artists. It provides details about the call, including the dates, the number of groups selected, and the process for submission. It also specifies the types of performances that can be submitted."
+    },
+    {
+      "url": "https://www.dampfzentrale.ch/en/infos-2/calls",
+      "status": "open",
+      "confidence": "high",
+      "opportunity_types": [
+        "live_performance",
+        "music"
+      ],
+      "verified_quotes": [
+        "A simple lighting setup (front and backlight, plus a sound system) & light/sound operation during the performance",
+        "45 minutes of rehearsal time on stage in the afternoon of the performance day",
+        "A flat fee of 200.– CHF per person for groups of three or more: a total flat fee of 500. – CHF"
+      ],
+      "deadline": "2027-05-05",
+      "deadline_text": "5.5.27",
+      "how_to_apply": "Applications are accepted exclusively via the official application links and must include a short project description, short biographies of the participants, contact details, and portrait photos of the participants and/or photos of the project.",
+      "open_call_urls": [
+        "https://www.dampfzentrale.ch/en/artist-applications/",
+        "https://www.dampfzentrale.ch/wp-content/uploads/2026/08/EN260826_CALL-FOR-ENTRIES_Szenefenster.pdf"
+      ],
+      "reasoning": "The page describes an open call for a performance called 'Szenefenster' with a deadline and application process. The call is for short performances, drafts, and experimental formats."
+    }
+  ],
+  "coverage": {
+    "discovery": "link crawl (no sitemap found)",
+    "sitemap_urls_found": 0,
+    "pages_visited": 18,
+    "js_rendered_pages": 0,
+    "pages_classified": 9,
+    "llm_used": true,
+    "skipped_by_robots": [],
+    "min_page_date": "2025-01-01",
+    "skipped_by_date": [],
+    "unchecked_documents": [
+      {
+        "url": "https://www.dampfzentrale.ch/wp-content/uploads/2026/08/DE_260826_Ausschreibung_Szenefenster.pdf",
+        "link_text": "PDF zur Ausschreibung"
+      },
+      {
+        "url": "https://www.dampfzentrale.ch/wp-content/uploads/2026/08/EN260826_CALL-FOR-ENTRIES_Szenefenster.pdf",
+        "link_text": "PDF to the call for applications"
+      }
+    ]
+  },
+  "contact_emails": [
+    "agentur@noord.ch",
+    "dampfzentrale@taberna.ch",
+    "info@dampfzentrale.ch",
+    "info@luginbuehl.com",
+    "kasse@dampfzentrale.ch",
+    "presse@dampfzentrale.ch",
+    "tina.odermatt@dampfzentrale.ch",
+    "vermietung@dampfzentrale.ch",
+    "vermittlung@dampfzentrale.ch",
+    "willkommen@dampfzentrale.ch"
+  ],
+  "warnings": [
+    "Crawl time budget (120s) reached after 18 pages."
+  ],
+  "errors": [],
+  "pages": [
+    {
+      "url": "https://www.dampfzentrale.ch/infos/ausschreibungen",
+      "title": "Ausschreibungen | Dampfzentrale Bern",
+      "keyword_hits": [
+        "ausschreibung",
+        "ausschreibungen",
+        "bewerben",
+        "bewerbung",
+        "bewerbungen",
+        "einreichung"
+      ],
+      "form_links": [],
+      "classification": {
+        "status": "open",
+        "opportunity_types": [
+          "live_performance"
+        ],
+        "quotes": [
+          "«Szenefenster» ist ein unkompliziertes Bühnenformat für szenische Skizzen, rohe Fassungen oder beinahe gekillte Darlings – ein Ausprobierfenster.",
+          "Wer kann sich bewerben?",
+          "Gesucht werden kurze Performances, szenische Skizzen, Stückausschnitte oder experimentelle Formate von 10 – 20 Minuten Länge mit geringem technischem Aufwand."
+        ],
+        "deadline": "2027-05-05",
+        "how_to_apply": "Bewerbungen erfolgen ausschließlich über die offiziellen Bewerbungslinks und müssen enthalten: eine kurze Projektbeschreibung, Kurzbiografien der Mitwirkenden, Kontaktdaten, Portraitfotos der Mitwirkenden und/oder Fotos vom Projekt.",
+        "reasoning": "The page describes a call for submissions for the 'Szenefenster' event, which is a performance showcase for local artists. It provides details about the call, including the dates, the number of groups selected, and the process for submission. It also specifies the types of performances that can be submitted.",
+        "verified_quotes": [
+          "«Szenefenster» ist ein unkompliziertes Bühnenformat für szenische Skizzen, rohe Fassungen oder beinahe gekillte Darlings – ein Ausprobierfenster.",
+          "Wer kann sich bewerben?",
+          "Gesucht werden kurze Performances, szenische Skizzen, Stückausschnitte oder experimentelle Formate von 10 – 20 Minuten Länge mit geringem technischem Aufwand."
+        ],
+        "deadline_text": "05.05.27",
+        "confidence": "high",
+        "form_links": [],
+        "open_call_urls": [
+          "https://www.dampfzentrale.ch/wp-content/uploads/2026/08/DE_260826_Ausschreibung_Szenefenster.pdf"
+        ]
+      }
+    },
+    {
+      "url": "https://www.dampfzentrale.ch/en/infos-2/calls",
+      "title": "Calls | Dampfzentrale Bern",
+      "keyword_hits": [
+        "application form",
+        "call for applications"
+      ],
+      "form_links": [],
+      "classification": {
+        "status": "open",
+        "opportunity_types": [
+          "live_performance",
+          "music"
+        ],
+        "quotes": [
+          "A simple lighting setup (front and backlight, plus a sound system) & light/sound operation during the performance",
+          "45 minutes of rehearsal time on stage in the afternoon of the performance day",
+          "A flat fee of 200.– CHF per person for groups of three or more: a total flat fee of 500. – CHF"
+        ],
+        "deadline": "2027-05-05",
+        "how_to_apply": "Applications are accepted exclusively via the official application links and must include a short project description, short biographies of the participants, contact details, and portrait photos of the participants and/or photos of the project.",
+        "reasoning": "The page describes an open call for a performance called 'Szenefenster' with a deadline and application process. The call is for short performances, drafts, and experimental formats.",
+        "verified_quotes": [
+          "A simple lighting setup (front and backlight, plus a sound system) & light/sound operation during the performance",
+          "45 minutes of rehearsal time on stage in the afternoon of the performance day",
+          "A flat fee of 200.– CHF per person for groups of three or more: a total flat fee of 500. – CHF"
+        ],
+        "deadline_text": "5.5.27",
+        "confidence": "high",
+        "form_links": [],
+        "open_call_urls": [
+          "https://www.dampfzentrale.ch/en/artist-applications/",
+          "https://www.dampfzentrale.ch/wp-content/uploads/2026/08/EN260826_CALL-FOR-ENTRIES_Szenefenster.pdf"
+        ]
+      }
+    },
+    {
+      "url": "https://www.dampfzentrale.ch/infos/offene-stellen",
+      "title": "Offene Stellen | Dampfzentrale Bern",
+      "keyword_hits": [
+        "bewerbungen"
+      ],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page does not mention any open call for applications, submissions, or proposals. It only describes the organization and its activities.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "high",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://www.dampfzentrale.ch/festival/full-of-lava-2025-festival",
+      "title": "Full Of Lava 2025 | Dampfzentrale Bern",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page describes the upcoming Full Of Lava festival and provides information about the lineup and ticketing. There is no mention of an open call for proposals, submissions, or applications.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://www.dampfzentrale.ch/infos/zugaenglichkeit",
+      "title": "Zugänglichkeit | Dampfzentrale Bern",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page does not describe any open call or invitation for outside people to apply, submit or propose something. It only provides information about accessibility and early entry.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://www.dampfzentrale.ch/infos/rassismuskritische-arbeit-in-der-dampfzentrale-bern",
+      "title": "Rassismuskritische Arbeit in der Dampfzentrale Bern | Dampfzentrale Bern",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page describes ongoing efforts and past events related to anti-racist work at the Dampfzentrale, but does not mention any open call for proposals, applications, or submissions. It also does not provide a deadline or details on how to apply.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://www.dampfzentrale.ch/kontextprogramm",
+      "title": "Kontextprogramm | Dampfzentrale Bern",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page describes various formats and activities of the Kontextprogramm, but does not mention any open call for proposals, applications, or submissions. It only describes past activities and formats.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://www.dampfzentrale.ch/ueber-uns/associated-artists",
+      "title": "Associated Artists | Dampfzentrale Bern",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page describes Anna Chiedza Spörri and Violeta García as Associated Artists of the Dampfzentrale Bern, but does not mention any open call for new artists or applications. It only lists past Associated Artists and their terms.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://www.dampfzentrale.ch/anfragen-artists",
+      "title": "Anfragen Künstler*innen | Dampfzentrale Bern",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page describes the Dampfzentrale Bern's program and mentions that they receive many artist inquiries, but does not explicitly invite applications or submissions. It also does not provide a deadline or details on how to apply.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    }
+  ],
+  "model": "qwen2.5-3b-instruct-q4_k_m.gguf"
+}

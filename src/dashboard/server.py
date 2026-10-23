@@ -5,6 +5,7 @@ API. It is meant for localhost only and has no authentication, so don't expose i
     open-call-dashboard --port 8000
 """
 import argparse
+import errno
 import gzip
 import json
 import logging
@@ -154,11 +155,25 @@ def serve(data_dir=DEFAULT_DATA_DIR, host="127.0.0.1", port=8000, project_dir=No
     :param open_browser: Open the dashboard in a browser once it is up.
     """
     data_dir = Path(data_dir).resolve()
-    if not scraped_dir(data_dir).is_dir() and not open_calls_dir(data_dir).is_dir():
+    # A relative --data-dir is read from wherever the dashboard was started, which is the easiest way to end up
+    # looking at an empty page: the directory simply isn't there
+    if not data_dir.is_dir():
+        print(f"There is no {data_dir}. A relative --data-dir is resolved from {Path.cwd()}, so start the dashboard "
+              f"in the project directory or give it an absolute path.")
+    elif not scraped_dir(data_dir).is_dir() and not open_calls_dir(data_dir).is_dir():
         print(f"No scraped data or results in {data_dir}. Start the dashboard in the project directory, or pass "
               f"--data-dir <path>.")
     context = {"data_dir": data_dir, "runner": JobRunner(data_dir, project_dir)}
-    server = ThreadingHTTPServer((host, port), partial(DashboardHandler, context=context))
+    try:
+        server = ThreadingHTTPServer((host, port), partial(DashboardHandler, context=context))
+    except OSError as error:
+        if error.errno != errno.EADDRINUSE:
+            raise
+        # Without this the command dies in a traceback while the browser still shows the dashboard already running
+        # on that port, so it looks as though this one started and found nothing
+        print(f"Port {port} is already in use. Another dashboard is probably still running and is what your browser "
+              f"is showing. Stop it, or start this one with --port <other port>.")
+        return 1
     url = f"http://{'localhost' if host == '127.0.0.1' else host}:{server.server_port}"
     print(f"Dashboard on {url} (data: {data_dir}). Ctrl+C to stop.")
     if open_browser:

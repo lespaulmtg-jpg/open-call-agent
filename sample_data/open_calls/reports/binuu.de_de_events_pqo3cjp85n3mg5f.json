@@ -1,0 +1,180 @@
+{
+  "site": "https://binuu.de/de/events/pqo3cjp85n3mg5f",
+  "checked_on": "2026-09-22",
+  "status": "needs_review",
+  "status_reason": "Possible call (open without keyword or link evidence)",
+  "opportunity_types": [
+    "other"
+  ],
+  "deadline": "",
+  "deadline_text": "",
+  "announcement_urls": [
+    "https://binuu.de/de/events/pqo3cjp85n3mg5f"
+  ],
+  "open_call_urls": [],
+  "how_to_apply": "",
+  "call_pages": [
+    {
+      "url": "https://binuu.de/de/events/pqo3cjp85n3mg5f",
+      "status": "open",
+      "confidence": "low",
+      "opportunity_types": [
+        "other"
+      ],
+      "verified_quotes": [
+        "Bring jemand mit den du liebst, Telefone aus und lass tanzen"
+      ],
+      "deadline": "",
+      "deadline_text": "",
+      "how_to_apply": "",
+      "open_call_urls": [],
+      "reasoning": "The page describes a party event called 'Flugmodus' with a call for people to bring someone they love and dance. It does not specify a deadline or provide a link to apply, but it clearly invites people to participate in the event."
+    }
+  ],
+  "coverage": {
+    "discovery": "sitemap + links",
+    "sitemap_urls_found": 114,
+    "pages_visited": 7,
+    "js_rendered_pages": 7,
+    "pages_classified": 6,
+    "llm_used": true,
+    "skipped_by_robots": [],
+    "min_page_date": "2025-01-01",
+    "skipped_by_date": [],
+    "unchecked_documents": []
+  },
+  "contact_emails": [
+    "booking@festsaal-kreuzberg.de",
+    "events@festsaal-kreuzberg.de",
+    "info@binuu.de",
+    "lostandfound@binuu.de"
+  ],
+  "warnings": [
+    "Crawl time budget (120s) reached after 7 pages."
+  ],
+  "errors": [],
+  "pages": [
+    {
+      "url": "https://binuu.de/de/events/pqo3cjp85n3mg5f",
+      "title": "Flugmodus | Bi Nuu",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "open",
+        "opportunity_types": [
+          "other"
+        ],
+        "quotes": [
+          "Bring jemand mit den du liebst, Telefone aus und lass tanzen",
+          "Bring jemand mit den du liebst, Telefone aus und lass tanzen"
+        ],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page describes a party event called 'Flugmodus' with a call for people to bring someone they love and dance. It does not specify a deadline or provide a link to apply, but it clearly invites people to participate in the event.",
+        "verified_quotes": [
+          "Bring jemand mit den du liebst, Telefone aus und lass tanzen"
+        ],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://binuu.de/en/contact",
+      "title": "Contact | Bi Nuu",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page does not describe any open call or provide any information about submitting proposals, applications, or submissions. It only contains general contact information and a contact form.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://binuu.de/de/events",
+      "title": "Programm | Bi Nuu",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page lists upcoming events and performers, but does not describe any open call for submissions or applications. There is no mention of an open call for music, DJs, live performances, visuals, video films, installations, workshops, talks, residencies, exhibitions, vendors, volunteers, or other opportunities.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://binuu.de/de/contact",
+      "title": "Kontakt | Bi Nuu",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page does not describe any open call or opportunity to apply, submit, or propose something. It only contains general contact information and a contact form.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://binuu.de/en/faq",
+      "title": "FAQ | Bi Nuu",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page does not mention any open call or invitation for outside people to apply, submit or propose something. It only provides information about ticket sales, accessibility, payment methods, and youth protection.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://binuu.de/de/faq",
+      "title": "FAQ | Bi Nuu",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page does not mention any open call or invitation for outside people to apply, submit or propose something. It only provides information about the event, ticketing, accessibility, and age restrictions.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    }
+  ],
+  "model": "qwen2.5-3b-instruct-q4_k_m.gguf"
+}

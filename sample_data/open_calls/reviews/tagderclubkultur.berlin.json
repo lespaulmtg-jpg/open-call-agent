@@ -1,0 +1,17 @@
+{
+  "website": "https://tagderclubkultur.berlin/",
+  "model": "qwen2.5-7b-instruct-q4_k_m-00001-of-00002.gguf",
+  "review": {
+    "status": "closed",
+    "deadline": "2026-10-03",
+    "deadline_text": "2026-10-03",
+    "open_call_url": "https://tagderclubkultur.berlin/wp-content/uploads/sites/31/2026/06/OpenCall26_DE.pdf",
+    "announcement_url": "https://tagderclubkultur.berlin/about",
+    "opportunity_types": "dj, exhibition, installation, live_performance, music, other, residency, talks, vendors_food, video_film, visuals, volunteers, workshops",
+    "how_to_apply": "online Veranstaltungen einreichen",
+    "large_model_status": "open",
+    "review_reason": "https://tagderclubkultur.berlin/about: The page clearly states 'ALLE INFORMATIONEN ZUR BEWERBUNG TAG DER CLUBKULTUR 2026' and 'Open Call Preis 2026', indicating an open call for submissions. | Fetch errors: Could not fetch https://tagderclubkultur.berlin/wp-content/uploads/sites/31/2026/06/OpenCall26_DE.pdf | Deadline 2026-10-03 has passed",
+    "review_quotes": "ALLE INFORMATIONEN ZUR BEWERBUNG TAG DER CLUBKULTUR 2026 | Open Call Preis 2026",
+    "reviewed_on": "2026-10-23"
+  }
+}

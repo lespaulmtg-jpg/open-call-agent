@@ -1,0 +1,34 @@
+{
+  "site": "http://www.solarberlin.com/",
+  "checked_on": "2026-09-22",
+  "status": "none",
+  "status_reason": "No call found",
+  "opportunity_types": [],
+  "deadline": "",
+  "deadline_text": "",
+  "announcement_urls": [],
+  "open_call_urls": [],
+  "how_to_apply": "",
+  "call_pages": [],
+  "coverage": {
+    "discovery": "link crawl (no sitemap found)",
+    "sitemap_urls_found": 0,
+    "pages_visited": 1,
+    "js_rendered_pages": 0,
+    "pages_classified": 0,
+    "llm_used": true,
+    "skipped_by_robots": [],
+    "min_page_date": "2025-01-01",
+    "skipped_by_date": [],
+    "unchecked_documents": []
+  },
+  "contact_emails": [
+    "info@solarberlin.com"
+  ],
+  "warnings": [
+    "No sitemap and fewer than 3 pages found by crawling; coverage may be shallow."
+  ],
+  "errors": [],
+  "pages": [],
+  "model": null
+}

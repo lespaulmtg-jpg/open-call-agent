@@ -1,0 +1,17 @@
+{
+  "website": "https://tagammeer-festival.de/impressum/",
+  "model": "qwen2.5-7b-instruct-q4_k_m-00001-of-00002.gguf",
+  "review": {
+    "status": "open",
+    "deadline": "",
+    "deadline_text": "",
+    "open_call_url": "",
+    "announcement_url": "https://www.tagammeer-festival.de/festival-2027/bewerbung",
+    "opportunity_types": "live_performance, music",
+    "how_to_apply": "Nutzt dafür einfach unser nebenstehendes Formular und sendet uns Eure ganz persönliche Bewerbung für das Tag am Meer Festival 2026 in Prora auf Rügen.",
+    "large_model_status": "open",
+    "review_reason": "https://www.tagammeer-festival.de/festival-2027/bewerbung: The page clearly invites artists to apply for the 2026 festival using a form, and there is no mention of a future date or closed status. | Fetch errors: Could not fetch https://www.tagammeer-festival.de/festival-2026",
+    "review_quotes": "Wir suchen Künstler*innen für das Tag am Meer Festival 2026. Bewirb dich jetzt und werde Teil unseres einzigartigen Sommer-Line-ups!",
+    "reviewed_on": "2026-10-23"
+  }
+}

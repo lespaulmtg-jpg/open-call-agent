@@ -1,0 +1,155 @@
+{
+  "site": "https://lacultural.eu/",
+  "checked_on": "2026-09-22",
+  "status": "none",
+  "status_reason": "No call found",
+  "opportunity_types": [],
+  "deadline": "",
+  "deadline_text": "",
+  "announcement_urls": [],
+  "open_call_urls": [],
+  "how_to_apply": "",
+  "call_pages": [],
+  "coverage": {
+    "discovery": "sitemap + links",
+    "sitemap_urls_found": 123,
+    "pages_visited": 32,
+    "js_rendered_pages": 11,
+    "pages_classified": 6,
+    "llm_used": true,
+    "skipped_by_robots": [],
+    "min_page_date": "2025-01-01",
+    "skipped_by_date": [
+      {
+        "url": "https://lacultural.eu/about-us",
+        "date": "2024-09-05",
+        "source": "sitemap lastmod"
+      }
+    ],
+    "unchecked_documents": []
+  },
+  "contact_emails": [
+    "events@lacultural.eu"
+  ],
+  "warnings": [
+    "Crawl time budget (120s) reached after 32 pages."
+  ],
+  "errors": [],
+  "pages": [
+    {
+      "url": "https://lacultural.eu/",
+      "title": "L'A CULTURAL",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page describes a change in the date of the event from October 2026 to May 2027, but does not invite people to apply or submit proposals for the new date. It only provides information about refunds for tickets purchased for the October 2026 event.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://lacultural.eu/artists-years",
+      "title": "Artists Years – L'A CULTURAL",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page lists past artists and does not describe an open call for new submissions or applications. It is a showcase of previous years' artists and does not invite new applications.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://lacultural.eu/category/artists",
+      "title": "Artists – L'A CULTURAL",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page lists artists and does not mention any open call for applications, submissions, or proposals. It only provides a list of artists who have performed in the past.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://lacultural.eu/artists-2",
+      "title": "Artists L’A COSMICA – L'A CULTURAL",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page lists artists who have already performed at the event, but does not mention any open call for new artists or performers. There is no mention of an application or submission process.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://lacultural.eu/category/artists/page/2",
+      "title": "Artists – Page 2 – L'A CULTURAL",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page lists artists and does not mention any open call for applications, submissions, or proposals. There is no mention of a deadline or how to apply.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://lacultural.eu/category/artists/page/3",
+      "title": "Artists – Page 3 – L'A CULTURAL",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page does not describe any open call or opportunity for artists to apply, submit or propose something. It only lists artists and their work.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    }
+  ],
+  "model": "qwen2.5-3b-instruct-q4_k_m.gguf"
+}

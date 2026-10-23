@@ -1,0 +1,557 @@
+{
+  "site": "https://www.roskilde-festival.dk/",
+  "checked_on": "2026-09-22",
+  "status": "open",
+  "status_reason": "Open call announced on 2 page(s)",
+  "opportunity_types": [
+    "volunteers"
+  ],
+  "deadline": "",
+  "deadline_text": "2026-10-00",
+  "announcement_urls": [
+    "https://www.roskilde-festival.dk/en/news/2026/volunteer-at-roskilde-from-anywhere",
+    "https://www.roskilde-festival.dk/en/become-a-volunteer/volunteer-positions"
+  ],
+  "open_call_urls": [
+    "https://www.roskilde-festival.dk/en/become-a-volunteer/volunteer-positions",
+    "https://roskildefestival.typeform.com/to/oveDeLTe"
+  ],
+  "how_to_apply": "See available volunteer positions and how to apply. | https://roskildefestival.typeform.com/to/oveDeLTe",
+  "call_pages": [
+    {
+      "url": "https://www.roskilde-festival.dk/en/news/2026/volunteer-at-roskilde-from-anywhere",
+      "status": "open",
+      "confidence": "high",
+      "opportunity_types": [
+        "volunteers"
+      ],
+      "verified_quotes": [
+        "Volunteer at Roskilde Festival",
+        "See available volunteer positions and how to apply.",
+        "Do it. It’s so fun. It can be hard to imagine before you’ve tried it, but it’s absolutely worth it."
+      ],
+      "deadline": "",
+      "deadline_text": "",
+      "how_to_apply": "See available volunteer positions and how to apply.",
+      "open_call_urls": [
+        "https://www.roskilde-festival.dk/en/become-a-volunteer/volunteer-positions"
+      ],
+      "reasoning": "The page describes volunteer opportunities at Roskilde Festival for 2027, including details about the volunteer village, camping, and the availability of shifts to volunteer with friends. It also mentions that volunteers can apply and be assigned to a team leader."
+    },
+    {
+      "url": "https://www.roskilde-festival.dk/en/become-a-volunteer/volunteer-positions",
+      "status": "open",
+      "confidence": "high",
+      "opportunity_types": [
+        "volunteers"
+      ],
+      "verified_quotes": [
+        "Sign up here, and we'll get in touch when volunteer recruitment opens in October"
+      ],
+      "deadline": "",
+      "deadline_text": "2026-10-00",
+      "how_to_apply": "https://roskildefestival.typeform.com/to/oveDeLTe",
+      "open_call_urls": [
+        "https://roskildefestival.typeform.com/to/oveDeLTe"
+      ],
+      "reasoning": "The page describes volunteer positions for Roskilde Festival 2027 and provides a link to sign up for volunteer registration when it opens in October. This indicates an open call for volunteers."
+    },
+    {
+      "url": "https://www.roskilde-festival.dk/en/become-a-volunteer",
+      "status": "not_yet_open",
+      "confidence": "high",
+      "opportunity_types": [
+        "volunteers"
+      ],
+      "verified_quotes": [
+        "Sign up today, and we’ll contact you when volunteer registration opens for next year’s festival.",
+        "Sign up here, and we'll get in touch when volunteer recruitment opens in October."
+      ],
+      "deadline": "",
+      "deadline_text": "",
+      "how_to_apply": "Sign up here: https://roskildefestival.typeform.com/to/oveDeLTe",
+      "open_call_urls": [
+        "https://roskildefestival.typeform.com/to/oveDeLTe"
+      ],
+      "reasoning": "The page describes volunteer opportunities for Roskilde Festival 2027 and invites people to sign up when volunteer registration opens in October. The page does not specify a deadline but states that applications will be accepted when the call opens."
+    },
+    {
+      "url": "https://faq.roskilde-festival.dk/hc/en-gb/sections/14361365551773-Become-a-volunteer",
+      "status": "unclear",
+      "confidence": "high",
+      "opportunity_types": [
+        "other"
+      ],
+      "verified_quotes": [],
+      "deadline": "",
+      "deadline_text": "",
+      "how_to_apply": "Sign up here, and we’ll contact you when volunteer registration opens for next year’s festival.",
+      "open_call_urls": [
+        "https://roskildefestival.typeform.com/to/oveDeLTe?typeform-source=www.roskilde-festival.dk",
+        "https://faq.roskilde-festival.dk/hc/en-gb/requests/new"
+      ],
+      "reasoning": "Downgraded: no quote found verbatim on the page. Model said: The page describes volunteering opportunities at Roskilde Festival, but does not provide a link or deadline for submitting applications. It only mentions that applications will open for next year's festival in the future."
+    },
+    {
+      "url": "https://faq.roskilde-festival.dk/hc/en-gb/sections/14361365551773-Bliv-frivillig",
+      "status": "unclear",
+      "confidence": "high",
+      "opportunity_types": [
+        "other"
+      ],
+      "verified_quotes": [],
+      "deadline": "",
+      "deadline_text": "",
+      "how_to_apply": "Sign up here, and we’ll contact you when volunteer registration opens for next year’s festival.",
+      "open_call_urls": [
+        "https://roskildefestival.typeform.com/to/oveDeLTe?typeform-source=www.roskilde-festival.dk",
+        "https://faq.roskilde-festival.dk/hc/en-gb/requests/new"
+      ],
+      "reasoning": "Downgraded: no quote found verbatim on the page. Model said: The page describes volunteering opportunities at Roskilde Festival, but does not provide a link or description of an open call for applications. It only mentions that applications will be open for next year's festival."
+    },
+    {
+      "url": "https://faq.roskilde-festival.dk/hc/da/sections/14361365551773-Bliv-frivillig",
+      "status": "not_yet_open",
+      "confidence": "high",
+      "opportunity_types": [
+        "volunteers"
+      ],
+      "verified_quotes": [
+        "Sådan er det også som frivillig! Du bliver en del af et helt særligt fællesskab, både når du er på vagt, og når du nyder festivalens mange tilbud.",
+        "Så vil vi gøre vores bedste for at finde en frivilligrolle, der matcher."
+      ],
+      "deadline": "",
+      "deadline_text": "",
+      "how_to_apply": "",
+      "open_call_urls": [
+        "https://roskildefestival.typeform.com/to/oveDeLTe?typeform-source=www.roskilde-festival.dk"
+      ],
+      "reasoning": "The page describes volunteering opportunities at Roskilde Festival, but does not provide a link to submit an application or describe a future call for applications. It only mentions that applications will be accepted in October for the next festival."
+    },
+    {
+      "url": "https://faq.roskilde-festival.dk/hc/da/sections/14361365551773-Bliv-frivillig?_gl=1%2Ae18715%2A_gcl_au%2AMjA3OTYwMjYwLjE3NjQ3NzI4MzI.%2A_ga%2AMTMyNTQzODY5NC4xNzM3Mzc0MTgy%2A_ga_3MDRMNX0DN%2AczE3NjgzOTIzMTQkbzMxMiRnMSR0MTc2ODM5NTYxOSRqMzckbDAkaDA.",
+      "status": "not_yet_open",
+      "confidence": "high",
+      "opportunity_types": [
+        "volunteers"
+      ],
+      "verified_quotes": [
+        "Sådan er det også som frivillig! Du bliver en del af et helt særligt fællesskab, både når du er på vagt, og når du nyder festivalens mange tilbud."
+      ],
+      "deadline": "",
+      "deadline_text": "",
+      "how_to_apply": "",
+      "open_call_urls": [
+        "https://roskildefestival.typeform.com/to/oveDeLTe?typeform-source=www.roskilde-festival.dk"
+      ],
+      "reasoning": "The page describes volunteering opportunities at Roskilde Festival, but does not provide a link or deadline for submitting applications. It only mentions that applications will be accepted in the future."
+    },
+    {
+      "url": "https://www.roskilde-festival.dk/",
+      "status": "open",
+      "confidence": "low",
+      "opportunity_types": [
+        "music"
+      ],
+      "verified_quotes": [
+        "Send op til fem ønsker senest 23. september",
+        "Send dine ønsker her"
+      ],
+      "deadline": "2026-09-23",
+      "deadline_text": "23. september 2026",
+      "how_to_apply": "Send op til fem ønsker senest 23. september",
+      "open_call_urls": [],
+      "reasoning": "The page describes a call for music wishes to be submitted by September 23, 2026, which is still open as of 2026-09-22."
+    }
+  ],
+  "coverage": {
+    "discovery": "sitemap + links",
+    "sitemap_urls_found": 155,
+    "pages_visited": 40,
+    "js_rendered_pages": 0,
+    "pages_classified": 12,
+    "llm_used": true,
+    "skipped_by_robots": [],
+    "min_page_date": "2025-01-01",
+    "skipped_by_date": [
+      {
+        "url": "https://www.roskilde-festival.dk/ruc-open-call",
+        "date": "2024-04-25",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://www.roskilde-festival.dk/log-ind",
+        "date": "2024-04-19",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://www.roskilde-festival.dk/nyheder",
+        "date": "2024-08-21",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://www.roskilde-festival.dk/search",
+        "date": "2024-09-24",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://www.roskilde-festival.dk/om-grasp/om-musicon",
+        "date": "2024-09-12",
+        "source": "sitemap lastmod"
+      }
+    ],
+    "unchecked_documents": []
+  },
+  "contact_emails": [
+    "accessibility@roskilde-festival.dk",
+    "accreditation@roskilde-festival.dk",
+    "eileen.winterholt@roskilde-festival.dk",
+    "gdpr@roskilde-festival.dk",
+    "info@roskilde-festival.dk",
+    "leif.elken@roskilde-festival.dk",
+    "press@roskilde-festival.dk",
+    "volunteer@roskilde-festival.dk",
+    "wienke.reimer@roskilde-festival.dk"
+  ],
+  "warnings": [],
+  "errors": [],
+  "pages": [
+    {
+      "url": "https://www.roskilde-festival.dk/en/news/2026/volunteer-at-roskilde-from-anywhere",
+      "title": "Volunteer at Roskilde – from anywhere | Roskilde Festival",
+      "keyword_hits": [
+        "how to apply"
+      ],
+      "form_links": [],
+      "classification": {
+        "status": "open",
+        "opportunity_types": [
+          "volunteers"
+        ],
+        "quotes": [
+          "Volunteer at Roskilde Festival",
+          "See available volunteer positions and how to apply.",
+          "Do it. It’s so fun. It can be hard to imagine before you’ve tried it, but it’s absolutely worth it."
+        ],
+        "deadline": "",
+        "how_to_apply": "See available volunteer positions and how to apply.",
+        "reasoning": "The page describes volunteer opportunities at Roskilde Festival for 2027, including details about the volunteer village, camping, and the availability of shifts to volunteer with friends. It also mentions that volunteers can apply and be assigned to a team leader.",
+        "verified_quotes": [
+          "Volunteer at Roskilde Festival",
+          "See available volunteer positions and how to apply.",
+          "Do it. It’s so fun. It can be hard to imagine before you’ve tried it, but it’s absolutely worth it."
+        ],
+        "deadline_text": "",
+        "confidence": "high",
+        "form_links": [],
+        "open_call_urls": [
+          "https://www.roskilde-festival.dk/en/become-a-volunteer/volunteer-positions"
+        ]
+      }
+    },
+    {
+      "url": "https://www.roskilde-festival.dk/en/rising",
+      "title": "Rising | Roskilde Festival",
+      "keyword_hits": [
+        "open call"
+      ],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page describes initiatives and projects under the Rising platform, but does not mention any open call for proposals, applications, or submissions. It only describes past and ongoing activities.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "high",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://www.roskilde-festival.dk/en/become-a-volunteer",
+      "title": "Become a volunteer | Roskilde Festival",
+      "keyword_hits": [],
+      "form_links": [
+        "https://roskildefestival.typeform.com/to/oveDeLTe"
+      ],
+      "classification": {
+        "status": "not_yet_open",
+        "opportunity_types": [
+          "volunteers"
+        ],
+        "quotes": [
+          "Sign up today, and we’ll contact you when volunteer registration opens for next year’s festival.",
+          "Sign up here, and we'll get in touch when volunteer recruitment opens in October."
+        ],
+        "deadline": "",
+        "how_to_apply": "Sign up here: https://roskildefestival.typeform.com/to/oveDeLTe",
+        "reasoning": "The page describes volunteer opportunities for Roskilde Festival 2027 and invites people to sign up when volunteer registration opens in October. The page does not specify a deadline but states that applications will be accepted when the call opens.",
+        "verified_quotes": [
+          "Sign up today, and we’ll contact you when volunteer registration opens for next year’s festival.",
+          "Sign up here, and we'll get in touch when volunteer recruitment opens in October."
+        ],
+        "deadline_text": "",
+        "confidence": "high",
+        "form_links": [
+          "https://roskildefestival.typeform.com/to/oveDeLTe"
+        ],
+        "open_call_urls": [
+          "https://roskildefestival.typeform.com/to/oveDeLTe"
+        ]
+      }
+    },
+    {
+      "url": "https://faq.roskilde-festival.dk/hc/en-gb/sections/14361365551773-Become-a-volunteer",
+      "title": "Become a volunteer – Roskilde Festival",
+      "keyword_hits": [],
+      "form_links": [
+        "https://roskildefestival.typeform.com/to/oveDeLTe?typeform-source=www.roskilde-festival.dk"
+      ],
+      "classification": {
+        "status": "unclear",
+        "opportunity_types": [
+          "other"
+        ],
+        "quotes": [
+          "Want to be part of the volunteer team for RF27? Sign up here, and we’ll contact you when volunteer registration opens for next year’s festival.",
+          "Applications cannot be submitted yet, as the call opens at a later date."
+        ],
+        "deadline": "",
+        "how_to_apply": "Sign up here, and we’ll contact you when volunteer registration opens for next year’s festival.",
+        "reasoning": "Downgraded: no quote found verbatim on the page. Model said: The page describes volunteering opportunities at Roskilde Festival, but does not provide a link or deadline for submitting applications. It only mentions that applications will open for next year's festival in the future.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "high",
+        "form_links": [
+          "https://roskildefestival.typeform.com/to/oveDeLTe?typeform-source=www.roskilde-festival.dk"
+        ],
+        "open_call_urls": [
+          "https://roskildefestival.typeform.com/to/oveDeLTe?typeform-source=www.roskilde-festival.dk",
+          "https://faq.roskilde-festival.dk/hc/en-gb/requests/new"
+        ]
+      }
+    },
+    {
+      "url": "https://faq.roskilde-festival.dk/hc/en-gb/sections/14361365551773-Bliv-frivillig",
+      "title": "Become a volunteer – Roskilde Festival",
+      "keyword_hits": [],
+      "form_links": [
+        "https://roskildefestival.typeform.com/to/oveDeLTe?typeform-source=www.roskilde-festival.dk"
+      ],
+      "classification": {
+        "status": "unclear",
+        "opportunity_types": [
+          "other"
+        ],
+        "quotes": [
+          "Want to be part of the volunteer team for RF27? Sign up here, and we’ll contact you when volunteer registration opens for next year’s festival.",
+          "Applications cannot be submitted yet, as the call opens at a later date."
+        ],
+        "deadline": "",
+        "how_to_apply": "Sign up here, and we’ll contact you when volunteer registration opens for next year’s festival.",
+        "reasoning": "Downgraded: no quote found verbatim on the page. Model said: The page describes volunteering opportunities at Roskilde Festival, but does not provide a link or description of an open call for applications. It only mentions that applications will be open for next year's festival.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "high",
+        "form_links": [
+          "https://roskildefestival.typeform.com/to/oveDeLTe?typeform-source=www.roskilde-festival.dk"
+        ],
+        "open_call_urls": [
+          "https://roskildefestival.typeform.com/to/oveDeLTe?typeform-source=www.roskilde-festival.dk",
+          "https://faq.roskilde-festival.dk/hc/en-gb/requests/new"
+        ]
+      }
+    },
+    {
+      "url": "https://faq.roskilde-festival.dk/hc/da/sections/14361365551773-Bliv-frivillig",
+      "title": "Bliv frivillig – Roskilde Festival",
+      "keyword_hits": [],
+      "form_links": [
+        "https://roskildefestival.typeform.com/to/oveDeLTe?typeform-source=www.roskilde-festival.dk"
+      ],
+      "classification": {
+        "status": "not_yet_open",
+        "opportunity_types": [
+          "volunteers"
+        ],
+        "quotes": [
+          "Sådan er det også som frivillig! Du bliver en del af et helt særligt fællesskab, både når du er på vagt, og når du nyder festivalens mange tilbud.",
+          "Så vil vi gøre vores bedste for at finde en frivilligrolle, der matcher."
+        ],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page describes volunteering opportunities at Roskilde Festival, but does not provide a link to submit an application or describe a future call for applications. It only mentions that applications will be accepted in October for the next festival.",
+        "verified_quotes": [
+          "Sådan er det også som frivillig! Du bliver en del af et helt særligt fællesskab, både når du er på vagt, og når du nyder festivalens mange tilbud.",
+          "Så vil vi gøre vores bedste for at finde en frivilligrolle, der matcher."
+        ],
+        "deadline_text": "",
+        "confidence": "high",
+        "form_links": [
+          "https://roskildefestival.typeform.com/to/oveDeLTe?typeform-source=www.roskilde-festival.dk"
+        ],
+        "open_call_urls": [
+          "https://roskildefestival.typeform.com/to/oveDeLTe?typeform-source=www.roskilde-festival.dk"
+        ]
+      }
+    },
+    {
+      "url": "https://faq.roskilde-festival.dk/hc/da/sections/14361365551773-Bliv-frivillig?_gl=1%2Ae18715%2A_gcl_au%2AMjA3OTYwMjYwLjE3NjQ3NzI4MzI.%2A_ga%2AMTMyNTQzODY5NC4xNzM3Mzc0MTgy%2A_ga_3MDRMNX0DN%2AczE3NjgzOTIzMTQkbzMxMiRnMSR0MTc2ODM5NTYxOSRqMzckbDAkaDA.",
+      "title": "Bliv frivillig – Roskilde Festival",
+      "keyword_hits": [],
+      "form_links": [
+        "https://roskildefestival.typeform.com/to/oveDeLTe?typeform-source=www.roskilde-festival.dk"
+      ],
+      "classification": {
+        "status": "not_yet_open",
+        "opportunity_types": [
+          "volunteers"
+        ],
+        "quotes": [
+          "Sådan er det også som frivillig! Du bliver en del af et helt særligt fællesskab, både når du er på vagt, og når du nyder festivalens mange tilbud.",
+          "Sådan er det også som frivillig! Du bliver en del af et helt særligt fællesskab, både når du er på vagt, og når du nyder festivalens mange tilbud."
+        ],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page describes volunteering opportunities at Roskilde Festival, but does not provide a link or deadline for submitting applications. It only mentions that applications will be accepted in the future.",
+        "verified_quotes": [
+          "Sådan er det også som frivillig! Du bliver en del af et helt særligt fællesskab, både når du er på vagt, og når du nyder festivalens mange tilbud."
+        ],
+        "deadline_text": "",
+        "confidence": "high",
+        "form_links": [
+          "https://roskildefestival.typeform.com/to/oveDeLTe?typeform-source=www.roskilde-festival.dk"
+        ],
+        "open_call_urls": [
+          "https://roskildefestival.typeform.com/to/oveDeLTe?typeform-source=www.roskilde-festival.dk"
+        ]
+      }
+    },
+    {
+      "url": "https://www.roskilde-festival.dk/en/become-a-volunteer/volunteer-positions",
+      "title": "Volunteer positions | Roskilde Festival",
+      "keyword_hits": [],
+      "form_links": [
+        "https://roskildefestival.typeform.com/to/oveDeLTe"
+      ],
+      "classification": {
+        "status": "open",
+        "opportunity_types": [
+          "volunteers"
+        ],
+        "quotes": [
+          "Sign up here, and we’ll reach out to you as soon as we open volunteer registration for next year’s festival",
+          "Sign up here, and we'll get in touch when volunteer recruitment opens in October"
+        ],
+        "deadline": "",
+        "how_to_apply": "https://roskildefestival.typeform.com/to/oveDeLTe",
+        "reasoning": "The page describes volunteer positions for Roskilde Festival 2027 and provides a link to sign up for volunteer registration when it opens in October. This indicates an open call for volunteers.",
+        "verified_quotes": [
+          "Sign up here, and we'll get in touch when volunteer recruitment opens in October"
+        ],
+        "deadline_text": "2026-10-00",
+        "confidence": "high",
+        "form_links": [
+          "https://roskildefestival.typeform.com/to/oveDeLTe"
+        ],
+        "open_call_urls": [
+          "https://roskildefestival.typeform.com/to/oveDeLTe"
+        ]
+      }
+    },
+    {
+      "url": "https://www.roskilde-festival.dk/en/news/thank-you-roskilde-see-you-in-2027",
+      "title": "Thank you, Roskilde – see you in 2027 | Roskilde Festival",
+      "keyword_hits": [],
+      "form_links": [
+        "https://roskildefestival.typeform.com/to/oveDeLTe?typeform-source=www.roskilde-festival.dk"
+      ],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page does not describe any open call for proposals, applications, or submissions. It only mentions volunteer sign-ups and a music request draw for the 2027 festival.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "high",
+        "form_links": [
+          "https://roskildefestival.typeform.com/to/oveDeLTe?typeform-source=www.roskilde-festival.dk"
+        ],
+        "open_call_urls": [
+          "https://roskildefestival.typeform.com/to/oveDeLTe?typeform-source=www.roskilde-festival.dk"
+        ]
+      }
+    },
+    {
+      "url": "https://www.roskilde-festival.dk/",
+      "title": "Roskilde Festival | Roskilde Festival",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "open",
+        "opportunity_types": [
+          "music"
+        ],
+        "quotes": [
+          "Send op til fem ønsker senest 23. september",
+          "Send dine ønsker her"
+        ],
+        "deadline": "2026-09-23",
+        "how_to_apply": "Send op til fem ønsker senest 23. september",
+        "reasoning": "The page describes a call for music wishes to be submitted by September 23, 2026, which is still open as of 2026-09-22.",
+        "verified_quotes": [
+          "Send op til fem ønsker senest 23. september",
+          "Send dine ønsker her"
+        ],
+        "deadline_text": "23. september 2026",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://www.roskilde-festival.dk/kontakt",
+      "title": "Kontakt Roskilde Festival | Roskilde Festival",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page does not mention any open call for submissions or applications. It only provides general contact information and does not describe any opportunity that requires external submissions or proposals.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://www.roskilde-festival.dk/en/contact",
+      "title": "Contact Roskilde Festival | Roskilde Festival",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page does not describe any open call or opportunity for outside people to apply, submit or propose something. It only provides general contact information and details about the festival.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    }
+  ],
+  "model": "qwen2.5-3b-instruct-q4_k_m.gguf"
+}

@@ -1,0 +1,1054 @@
+{
+  "site": "https://hackthepromise.org/",
+  "checked_on": "2026-09-18",
+  "status": "open",
+  "status_reason": "Open call announced on 1 page(s)",
+  "opportunity_types": [
+    "other",
+    "residency",
+    "talks",
+    "workshops"
+  ],
+  "deadline": "2026-10-05",
+  "deadline_text": "2026-10-05",
+  "announcement_urls": [
+    "https://hackthepromise.org/festival-2025/cfp"
+  ],
+  "open_call_urls": [
+    "https://cfp.hackthepromise.org/htp25/cfp"
+  ],
+  "how_to_apply": "You can submit your proposal via the submission page.",
+  "call_pages": [
+    {
+      "url": "https://hackthepromise.org/festival-2025/cfp",
+      "status": "open",
+      "confidence": "high",
+      "opportunity_types": [
+        "other",
+        "residency",
+        "talks",
+        "workshops"
+      ],
+      "verified_quotes": [
+        "Bewirb deine Idee hier:",
+        "Zur Einreiche-Seite",
+        "Bringt eure Hacks am 3.–5. Oktober nach Basel ans HackThePromise25!"
+      ],
+      "deadline": "2026-10-05",
+      "deadline_text": "2026-10-05",
+      "how_to_apply": "You can submit your proposal via the submission page.",
+      "open_call_urls": [
+        "https://cfp.hackthepromise.org/htp25/cfp"
+      ],
+      "reasoning": "The page describes a call for participation for the HackThePromise Festival 2025, including time slots, compensation, and a submission page. It also specifies the theme and the type of contributions they are looking for."
+    },
+    {
+      "url": "https://hackthepromise.org/",
+      "status": "unclear",
+      "confidence": "low",
+      "opportunity_types": [
+        "other"
+      ],
+      "verified_quotes": [],
+      "deadline": "2025-10-05",
+      "deadline_text": "2025-10-05",
+      "how_to_apply": "The page does not provide a specific link or form for applying, but it invites submissions for the 2025 festival.",
+      "open_call_urls": [],
+      "reasoning": "Downgraded: no quote found verbatim on the page. Model said: The page describes a future festival with a call for local LifeHacks, which are open to submissions. The call is for proposals and applications for the 2025 festival."
+    },
+    {
+      "url": "https://cfp.hackthepromise.org/htp25/cfp",
+      "status": "closed",
+      "confidence": "high",
+      "opportunity_types": [
+        "other",
+        "talks",
+        "workshops"
+      ],
+      "verified_quotes": [
+        "This Call for Papers closed on 2025-06-01 04:00 (Europe/Zurich)."
+      ],
+      "deadline": "2025-06-01",
+      "deadline_text": "2025-06-01 04:00 (Europe/Zurich)",
+      "how_to_apply": "",
+      "open_call_urls": [
+        "https://cfp.hackthepromise.org/htp25/me/submissions/",
+        "https://cfp.hackthepromise.org/htp25/submit/"
+      ],
+      "reasoning": "The page states that the Call for Papers closed on 2025-06-01 04:00 (Europe/Zurich), and the current date is 2026-09-18. Therefore, the call is closed."
+    }
+  ],
+  "coverage": {
+    "discovery": "sitemap + links",
+    "sitemap_urls_found": 242,
+    "pages_visited": 40,
+    "js_rendered_pages": 1,
+    "pages_classified": 8,
+    "llm_used": true,
+    "skipped_by_robots": [],
+    "min_page_date": "2025-01-01",
+    "skipped_by_date": [
+      {
+        "url": "https://2023.hackthepromise.org/programm/index.html",
+        "date": "2023-10-10",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2024.hackthepromise.org/htp24/infobooth-digital-ideation-hslu",
+        "date": "2024-09-23",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2024.hackthepromise.org/programm",
+        "date": "2024-09-27",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2023.hackthepromise.org/kunst/privacy-grdn-info/index.html",
+        "date": "2023-10-10",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2024.hackthepromise.org/htp24/bqhufz",
+        "date": "2024-09-27",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2024.hackthepromise.org/htp24/g9sgz9",
+        "date": "2024-09-27",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2024.hackthepromise.org/htp24/mvxcar",
+        "date": "2024-09-25",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2024.hackthepromise.org/htp24/dfsmtf",
+        "date": "2024-09-27",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2024.hackthepromise.org/htp24/9awhyg",
+        "date": "2024-09-27",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2024.hackthepromise.org/htp24/tt9ypv",
+        "date": "2024-09-25",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2024.hackthepromise.org/htp24/q8j8wx",
+        "date": "2024-09-27",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2024.hackthepromise.org/htp24/7plccy",
+        "date": "2024-09-27",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2024.hackthepromise.org/htp24/anvnff",
+        "date": "2024-09-27",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2024.hackthepromise.org/festival-2024/fact-fake-fiction",
+        "date": "2024-09-27",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2024.hackthepromise.org/htp24/zk83nx",
+        "date": "2024-09-27",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2024.hackthepromise.org/htp24/3hxblf",
+        "date": "2024-09-27",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2024.hackthepromise.org/htp24/3h9vh9",
+        "date": "2024-09-27",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2024.hackthepromise.org/htp24/mddg7g",
+        "date": "2024-09-27",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2023.hackthepromise.org/privacy-policy/index.html",
+        "date": "2023-10-10",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2024.hackthepromise.org/htp24/svckft",
+        "date": "2024-09-10",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2024.hackthepromise.org/festival-2024/kunstinstallationen",
+        "date": "2024-09-27",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2024.hackthepromise.org/htp24/uylfrn",
+        "date": "2024-09-27",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2024.hackthepromise.org/htp24/y7uhct",
+        "date": "2024-09-27",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2024.hackthepromise.org/htp24/jyu8ft",
+        "date": "2024-09-27",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2024.hackthepromise.org/htp24/9zftm9",
+        "date": "2024-09-27",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2024.hackthepromise.org/htp24/3zthes",
+        "date": "2024-09-27",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2024.hackthepromise.org/htp24/bf3ewg",
+        "date": "2024-09-27",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2024.hackthepromise.org/festival-2024/fiction-market",
+        "date": "2024-09-27",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2024.hackthepromise.org/htp24/vnhbln",
+        "date": "2024-09-27",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2024.hackthepromise.org/htp24/ptld3n",
+        "date": "2024-09-23",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2024.hackthepromise.org/htp24/9jlzml",
+        "date": "2024-09-27",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2024.hackthepromise.org/htp24/7ncd8n",
+        "date": "2024-09-23",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2024.hackthepromise.org/htp24/nj89lp",
+        "date": "2024-09-23",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2024.hackthepromise.org/htp24/zagujn",
+        "date": "2024-09-27",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2024.hackthepromise.org/htp24/xzmn9f",
+        "date": "2024-09-27",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2024.hackthepromise.org/htp24/dygyyh",
+        "date": "2024-09-27",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2024.hackthepromise.org/htp24/dsyvza",
+        "date": "2024-09-29",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2024.hackthepromise.org/htp24/cfsvxs",
+        "date": "2024-09-27",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2024.hackthepromise.org/htp24/k8pkpk",
+        "date": "2024-09-29",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2024.hackthepromise.org/htp24/clcj9e",
+        "date": "2024-09-27",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2024.hackthepromise.org/htp24/eztvmg",
+        "date": "2024-09-27",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2024.hackthepromise.org/htp24/cx7a7r",
+        "date": "2024-09-27",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2024.hackthepromise.org/htp24/qzeeqg",
+        "date": "2024-09-05",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2024.hackthepromise.org/htp24/exesk3",
+        "date": "2024-09-27",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2023.hackthepromise.org/ueber-uns/index.html",
+        "date": "2023-10-10",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2024.hackthepromise.org/htp24/rajwpv",
+        "date": "2024-09-27",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2024.hackthepromise.org/htp24/wsjrsk",
+        "date": "2024-09-27",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2024.hackthepromise.org/festival-2024/partner",
+        "date": "2024-09-27",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2024.hackthepromise.org/htp24/e7svpu",
+        "date": "2024-09-27",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2024.hackthepromise.org/htp24/wzhx3n",
+        "date": "2024-09-27",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2024.hackthepromise.org/htp24/d4nk3u",
+        "date": "2024-09-28",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2024.hackthepromise.org/htp24/sfvwyh",
+        "date": "2024-09-27",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2024.hackthepromise.org/htp24/pzbxjm",
+        "date": "2024-09-27",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2023.hackthepromise.org/newsletter/indexf898.html?p=preferences",
+        "date": "2023-10-10",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2024.hackthepromise.org/htp24/stbw9r",
+        "date": "2024-09-27",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2024.hackthepromise.org/htp24/ppqk9g",
+        "date": "2024-09-21",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2024.hackthepromise.org/htp24/xkxlm7",
+        "date": "2024-09-27",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2024.hackthepromise.org/htp24/9syv78",
+        "date": "2024-09-27",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2023.hackthepromise.org/kunstinstallationen/index.html",
+        "date": "2023-10-10",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2024.hackthepromise.org/htp24/blqvdj",
+        "date": "2024-09-21",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2024.hackthepromise.org/htp24/jbbjee",
+        "date": "2024-09-27",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2024.hackthepromise.org/festival-2024/specials",
+        "date": "2024-09-27",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2024.hackthepromise.org/htp24/htp900",
+        "date": "2024-09-27",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2024.hackthepromise.org/htp24/pz8ujz",
+        "date": "2024-09-28",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2024.hackthepromise.org/htp24/ayvvrw",
+        "date": "2024-09-27",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2023.hackthepromise.org/",
+        "date": "2023-10-10",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2024.hackthepromise.org/htp24/p9lphe",
+        "date": "2024-09-27",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2023.hackthepromise.org/newsletter/index2bac.html?p=unsubscribe",
+        "date": "2023-10-10",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2024.hackthepromise.org/htp24/wufgpn",
+        "date": "2024-09-29",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2024.hackthepromise.org/htp24/fsdgk3",
+        "date": "2024-09-27",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2024.hackthepromise.org/htp24/tybfen",
+        "date": "2024-09-28",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2024.hackthepromise.org/htp24/8vkdtm",
+        "date": "2024-09-27",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2024.hackthepromise.org/htp24/hcjjke",
+        "date": "2024-09-21",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2024.hackthepromise.org/htp24/rftyup",
+        "date": "2024-09-29",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2024.hackthepromise.org/festival-2024/talks",
+        "date": "2024-09-27",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2024.hackthepromise.org/htp24/kdcgtx",
+        "date": "2024-09-27",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2024.hackthepromise.org/htp24/vpur7p",
+        "date": "2024-09-27",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2024.hackthepromise.org/htp24/3rdqd7",
+        "date": "2024-09-27",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2024.hackthepromise.org/htp24/ht8bh8",
+        "date": "2024-09-27",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2024.hackthepromise.org/htp24/swzxms",
+        "date": "2024-09-22",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2024.hackthepromise.org/htp24/cr7p7b",
+        "date": "2024-09-27",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2024.hackthepromise.org/htp24/tluwlv",
+        "date": "2024-09-27",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2024.hackthepromise.org/htp24/ddnnpy",
+        "date": "2024-09-27",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2023.hackthepromise.org/location/index.html",
+        "date": "2023-10-10",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2024.hackthepromise.org/htp24/nzvgz7",
+        "date": "2024-09-27",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2024.hackthepromise.org/htp24/srebue",
+        "date": "2024-09-27",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2024.hackthepromise.org/htp24/cnw78q",
+        "date": "2024-09-27",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2024.hackthepromise.org/htp24/zauytq",
+        "date": "2024-09-27",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2024.hackthepromise.org/htp24/u8fsa9",
+        "date": "2024-09-27",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2024.hackthepromise.org/htp24/lpa3yj",
+        "date": "2024-09-27",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2024.hackthepromise.org/htp24/7rlvxh",
+        "date": "2024-09-27",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2024.hackthepromise.org/htp24/txtcrh",
+        "date": "2024-09-27",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2024.hackthepromise.org/htp24/pb8uha",
+        "date": "2024-09-21",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2024.hackthepromise.org/htp24/bjqlek",
+        "date": "2024-09-27",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2024.hackthepromise.org/htp24/fdpzlf",
+        "date": "2024-09-27",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2024.hackthepromise.org/htp24/lf7wnm",
+        "date": "2024-09-27",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2024.hackthepromise.org/htp24/hnfvtj",
+        "date": "2024-09-27",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2024.hackthepromise.org/htp24/ydmj8t",
+        "date": "2024-09-27",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2023.hackthepromise.org/beitragende/index.html",
+        "date": "2023-10-10",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2024.hackthepromise.org/htp24/gpym7v",
+        "date": "2024-09-27",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2024.hackthepromise.org/htp24/vrjg9t",
+        "date": "2024-09-23",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2024.hackthepromise.org/htp24/smkgh7",
+        "date": "2024-09-27",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2024.hackthepromise.org/htp24/bubryv",
+        "date": "2024-09-27",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2024.hackthepromise.org/htp24/gmh98j",
+        "date": "2024-09-27",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2024.hackthepromise.org/htp24/hv9xwb",
+        "date": "2024-09-27",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2024.hackthepromise.org/htp24/z7wv3a",
+        "date": "2024-09-27",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2024.hackthepromise.org/htp24/jua977",
+        "date": "2024-09-27",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2023.hackthepromise.org/newsletter/index.html",
+        "date": "2023-10-10",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2024.hackthepromise.org/htp24/9pgeet",
+        "date": "2024-09-27",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2024.hackthepromise.org/festival-2024/beitragende",
+        "date": "2024-09-27",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2024.hackthepromise.org/htp24/7gkxqa",
+        "date": "2024-09-29",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2024.hackthepromise.org/htp24/lha8tc",
+        "date": "2024-09-27",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2024.hackthepromise.org/htp24/zefxuc",
+        "date": "2024-09-27",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2024.hackthepromise.org/htp24/3ct87j",
+        "date": "2024-09-28",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2024.hackthepromise.org/htp24/cbcvum",
+        "date": "2024-09-27",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2024.hackthepromise.org/htp24/jtk9mc",
+        "date": "2024-09-19",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2024.hackthepromise.org/htp24/uz8m7h",
+        "date": "2024-09-27",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2024.hackthepromise.org/htp24/b3rje8",
+        "date": "2024-09-27",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2024.hackthepromise.org/htp24/73hcwk",
+        "date": "2024-09-23",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2024.hackthepromise.org/htp24/bwzxa7",
+        "date": "2024-09-27",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2024.hackthepromise.org/htp24/p3kwvu",
+        "date": "2024-09-23",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2024.hackthepromise.org/festival-2024/location",
+        "date": "2024-09-27",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2024.hackthepromise.org/htp24/hwtvvc",
+        "date": "2024-09-27",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2024.hackthepromise.org/htp24/7xukc7",
+        "date": "2024-09-28",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2024.hackthepromise.org/htp24/bqzvka",
+        "date": "2024-09-27",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2024.hackthepromise.org/htp24/fdrgju",
+        "date": "2024-09-28",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2024.hackthepromise.org/htp24/8nevjf",
+        "date": "2024-09-28",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2024.hackthepromise.org/htp24/ultf8b",
+        "date": "2024-09-27",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2024.hackthepromise.org/htp24/seu7fz",
+        "date": "2024-09-28",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2024.hackthepromise.org/htp24/8pt3cq",
+        "date": "2024-09-27",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2024.hackthepromise.org/htp24/ama793",
+        "date": "2024-09-27",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2024.hackthepromise.org/htp24/zjzhrh",
+        "date": "2024-09-27",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2024.hackthepromise.org/htp24/nrfxdq",
+        "date": "2024-09-27",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2024.hackthepromise.org/htp24/lx8lxu",
+        "date": "2024-09-27",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2023.hackthepromise.org/talks/index.html",
+        "date": "2023-10-10",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2024.hackthepromise.org/htp24/xh9axt",
+        "date": "2024-09-27",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2024.hackthepromise.org/htp24/mnetcu",
+        "date": "2024-09-27",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2024.hackthepromise.org/htp24/pwvrqg",
+        "date": "2024-09-27",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2024.hackthepromise.org/htp24/wnqdxh",
+        "date": "2024-09-27",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2024.hackthepromise.org/htp24/jwqj7h",
+        "date": "2024-09-10",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2024.hackthepromise.org/htp24/97ydfp",
+        "date": "2024-09-27",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2023.hackthepromise.org/index.html",
+        "date": "2023-10-10",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2024.hackthepromise.org/htp24/pqnecz",
+        "date": "2024-09-27",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2024.hackthepromise.org/htp24/vclurw",
+        "date": "2024-09-27",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2024.hackthepromise.org/htp24/wcfexc",
+        "date": "2024-09-27",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2024.hackthepromise.org/htp24/njx7rf",
+        "date": "2024-09-27",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://2024.hackthepromise.org/",
+        "date": "2024-10-06",
+        "source": "meta article:modified_time"
+      },
+      {
+        "url": "https://hackthepromise.org/newsletter",
+        "date": "2024-04-07",
+        "source": "meta article:modified_time"
+      }
+    ],
+    "unchecked_documents": []
+  },
+  "contact_emails": [
+    "admin@hackthepromise.org",
+    "cfp@hackthepromise.org"
+  ],
+  "warnings": [],
+  "errors": [],
+  "pages": [
+    {
+      "url": "https://hackthepromise.org/festival-2025/cfp",
+      "title": "HackThePromise Festival Basel",
+      "keyword_hits": [
+        "call for participation",
+        "submit your idea",
+        "submit your proposal",
+        "we are looking for workshop"
+      ],
+      "form_links": [],
+      "classification": {
+        "status": "open",
+        "opportunity_types": [
+          "other",
+          "residency",
+          "talks",
+          "workshops"
+        ],
+        "quotes": [
+          "Bewirb deine Idee hier:",
+          "Zur Einreiche-Seite",
+          "Bringt eure Hacks am 3.–5. Oktober nach Basel ans HackThePromise25!"
+        ],
+        "deadline": "2026-10-05",
+        "how_to_apply": "You can submit your proposal via the submission page.",
+        "reasoning": "The page describes a call for participation for the HackThePromise Festival 2025, including time slots, compensation, and a submission page. It also specifies the theme and the type of contributions they are looking for.",
+        "verified_quotes": [
+          "Bewirb deine Idee hier:",
+          "Zur Einreiche-Seite",
+          "Bringt eure Hacks am 3.–5. Oktober nach Basel ans HackThePromise25!"
+        ],
+        "deadline_text": "2026-10-05",
+        "confidence": "high",
+        "form_links": [],
+        "open_call_urls": [
+          "https://cfp.hackthepromise.org/htp25/cfp"
+        ]
+      }
+    },
+    {
+      "url": "https://cfp.hackthepromise.org/htp25/cfp",
+      "title": "HackThePromise Festival 2025 :: pretalx",
+      "keyword_hits": [
+        "call for participation",
+        "we are looking for workshop"
+      ],
+      "form_links": [],
+      "classification": {
+        "status": "closed",
+        "opportunity_types": [
+          "other",
+          "talks",
+          "workshops"
+        ],
+        "quotes": [
+          "This Call for Papers closed on 2025-06-01 04:00 (Europe/Zurich)."
+        ],
+        "deadline": "2025-06-01",
+        "how_to_apply": "",
+        "reasoning": "The page states that the Call for Papers closed on 2025-06-01 04:00 (Europe/Zurich), and the current date is 2026-09-18. Therefore, the call is closed.",
+        "verified_quotes": [
+          "This Call for Papers closed on 2025-06-01 04:00 (Europe/Zurich)."
+        ],
+        "deadline_text": "2025-06-01 04:00 (Europe/Zurich)",
+        "confidence": "high",
+        "form_links": [],
+        "open_call_urls": [
+          "https://cfp.hackthepromise.org/htp25/me/submissions/",
+          "https://cfp.hackthepromise.org/htp25/submit/"
+        ]
+      }
+    },
+    {
+      "url": "https://hackthepromise.org/festival-2025/htp-prequel-in-loerrach",
+      "title": "HackThePromise Festival Basel",
+      "keyword_hits": [
+        "mitmachen"
+      ],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page describes a festival event with a workshop and a lecture, but does not mention any call for proposals, applications, or submissions. It also does not provide a deadline or any information about when applications can be submitted.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "high",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://hackthepromise.org/festival-2025/specials",
+      "title": "HackThePromise Festival Basel",
+      "keyword_hits": [
+        "mitmachen"
+      ],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [
+          "music",
+          "other",
+          "talks",
+          "workshops"
+        ],
+        "quotes": [
+          "Talks",
+          "Hacking library",
+          "Hacking Market",
+          "Gastro-Hacks",
+          "Secret drink hacks"
+        ],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page describes various events and activities at the HackThePromise Festival 2025, including talks, films, a hacking library, a hacking market, food and drink offerings, and a brunch. However, there is no mention of an open call for proposals, applications, or submissions. The page is focused on the festival's programs and events.",
+        "verified_quotes": [
+          "Hacking library",
+          "Secret drink hacks",
+          "Der  in der Rubrik  wird in deutsch gehalten, findet um Saturday 04.10. 12:45 für 60 Minuten im Padelhalle statt und endet um 13:15Uhr.",
+          "Der  in der Rubrik  wird in deutsch gehalten, findet um Friday 03.10. 19:30 für 60 Minuten im Padelhalle statt und endet um 20:00Uhr.",
+          "Der  in der Rubrik  wird in englisch gehalten, findet um Sunday 05.10. 13:00 für 60 Minuten im Atelier (viertel-ab) statt und endet um 13:30Uhr."
+        ],
+        "deadline_text": "",
+        "confidence": "high",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://hackthepromise.org/",
+      "title": "HackThePromise Festival Basel",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "unclear",
+        "opportunity_types": [
+          "other"
+        ],
+        "quotes": [
+          "Bring your hacks to HackThePromise25!"
+        ],
+        "deadline": "2025-10-05",
+        "how_to_apply": "The page does not provide a specific link or form for applying, but it invites submissions for the 2025 festival.",
+        "reasoning": "Downgraded: no quote found verbatim on the page. Model said: The page describes a future festival with a call for local LifeHacks, which are open to submissions. The call is for proposals and applications for the 2025 festival.",
+        "verified_quotes": [],
+        "deadline_text": "2025-10-05",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://hackthepromise.org/festival-2025/programm",
+      "title": "HackThePromise Festival Basel",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page describes a festival with talks, performances, workshops, and installations, but does not mention any call for proposals, applications, or submissions. It only describes the program for the festival.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://2024.hackthepromise.org/programm/index.html",
+      "title": "Programm - HackThePromise Festival Basel",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page describes past events and talks, but does not mention any open call for proposals, applications, or submissions. It does not provide any deadline or details about how to apply.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://2024.hackthepromise.org/htp24/7ncd8n/index.html",
+      "title": "Hallenprogramm Samstag Abend - HackThePromise Festival Basel",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page describes a specific event for Saturday evening at the HackThePromise Festival Basel, but does not mention any open call for submissions, applications, or proposals. It only provides information about the program and the event itself.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    }
+  ],
+  "model": "qwen2.5-3b-instruct-q4_k_m.gguf"
+}

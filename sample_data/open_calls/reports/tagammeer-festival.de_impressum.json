@@ -1,0 +1,324 @@
+{
+  "site": "https://www.tagammeer-festival.de/impressum",
+  "checked_on": "2026-09-22",
+  "status": "open",
+  "status_reason": "Open call announced on 2 page(s)",
+  "opportunity_types": [
+    "dj",
+    "exhibition",
+    "installation",
+    "live_performance",
+    "music",
+    "other",
+    "residency",
+    "talks",
+    "vendors_food",
+    "video_film",
+    "visuals",
+    "volunteers",
+    "workshops"
+  ],
+  "deadline": "",
+  "deadline_text": "",
+  "announcement_urls": [
+    "https://www.tagammeer-festival.de/festival-2026/bewerbung",
+    "https://www.tagammeer-festival.de/festival-2026"
+  ],
+  "open_call_urls": [],
+  "how_to_apply": "Nutzt dafür einfach unser nebenstehendes Formular und sendet uns Eure ganz persönliche Bewerbung für das Tag am Meer Festival 2026 in Prora auf Rügen. | Hier gibts die Antwort.",
+  "call_pages": [
+    {
+      "url": "https://www.tagammeer-festival.de/festival-2026/bewerbung",
+      "status": "open",
+      "confidence": "high",
+      "opportunity_types": [
+        "dj",
+        "installation",
+        "live_performance",
+        "music",
+        "other"
+      ],
+      "verified_quotes": [
+        "Wir suchen Künstler*innen für das Tag am Meer Festival 2026.",
+        "Bewirb dich jetzt und werde Teil unseres einzigartigen Sommer-Line-ups!",
+        "Nutzt dafür einfach unser nebenstehendes Formular und sendet uns Eure ganz persönliche Bewerbung für das Tag am Meer Festival 2026 in Prora auf Rügen."
+      ],
+      "deadline": "",
+      "deadline_text": "",
+      "how_to_apply": "Nutzt dafür einfach unser nebenstehendes Formular und sendet uns Eure ganz persönliche Bewerbung für das Tag am Meer Festival 2026 in Prora auf Rügen.",
+      "open_call_urls": [],
+      "reasoning": "The page describes a call for artists to participate in the Tag am Meer Festival 2026, and provides a form for submitting a personal application. The deadline is not specified, but the call is open as it is for the upcoming festival."
+    },
+    {
+      "url": "https://www.tagammeer-festival.de/festival-2026",
+      "status": "open",
+      "confidence": "high",
+      "opportunity_types": [
+        "dj",
+        "exhibition",
+        "installation",
+        "live_performance",
+        "music",
+        "other",
+        "residency",
+        "talks",
+        "vendors_food",
+        "video_film",
+        "visuals",
+        "volunteers",
+        "workshops"
+      ],
+      "verified_quotes": [
+        "Für das Tag am Meer Festival 2026 könnt ihr euch ab jetzt bewerben.",
+        "Hier gibts die Antwort.",
+        "Wie kommst Du am besten nach Prora? Hier gibts die Antwort."
+      ],
+      "deadline": "",
+      "deadline_text": "",
+      "how_to_apply": "Hier gibts die Antwort.",
+      "open_call_urls": [],
+      "reasoning": "The page states that applications for the Tag am Meer Festival 2026 can be submitted now, and it provides a link to apply. The deadline is not specified, but it is currently open."
+    },
+    {
+      "url": "https://www.tagammeer-festival.de/festival-2026/bewerbung26",
+      "status": "unclear",
+      "confidence": "high",
+      "opportunity_types": [],
+      "verified_quotes": [],
+      "deadline": "",
+      "deadline_text": "",
+      "how_to_apply": "",
+      "open_call_urls": [],
+      "reasoning": "Downgraded: no quote found verbatim on the page. Model said: The page states that the selection for the Tag am Meer Festival 2026 is now closed and that applications for the 2026 festival will be accepted starting in the fall of 2026. There is no current call for submissions or applications."
+    }
+  ],
+  "coverage": {
+    "discovery": "sitemap + links",
+    "sitemap_urls_found": 19,
+    "pages_visited": 18,
+    "js_rendered_pages": 0,
+    "pages_classified": 8,
+    "llm_used": true,
+    "skipped_by_robots": [],
+    "min_page_date": "2025-01-01",
+    "skipped_by_date": [
+      {
+        "url": "https://www.tagammeer-festival.de/rueckabwicklung-tickets",
+        "date": "2022-06-28",
+        "source": "sitemap lastmod"
+      }
+    ],
+    "unchecked_documents": []
+  },
+  "contact_emails": [
+    "laju-mv@gmx.de"
+  ],
+  "warnings": [],
+  "errors": [],
+  "pages": [
+    {
+      "url": "https://www.tagammeer-festival.de/festival-2026/bewerbung26",
+      "title": "Bewerbung 2026 – Tag am Meer Festival 2026 – Willkommen in Prora auf Rügen",
+      "keyword_hits": [
+        "bewerben",
+        "bewerbung",
+        "bewerbungen"
+      ],
+      "form_links": [],
+      "classification": {
+        "status": "unclear",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "Downgraded: no quote found verbatim on the page. Model said: The page states that the selection for the Tag am Meer Festival 2026 is now closed and that applications for the 2026 festival will be accepted starting in the fall of 2026. There is no current call for submissions or applications.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "high",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://www.tagammeer-festival.de/festival-2026/bewerbung",
+      "title": "Bewerbung – Tag am Meer Festival 2026 – Willkommen in Prora auf Rügen",
+      "keyword_hits": [
+        "bewerbung",
+        "bewirb dich",
+        "wir suchen künstler"
+      ],
+      "form_links": [],
+      "classification": {
+        "status": "open",
+        "opportunity_types": [
+          "dj",
+          "installation",
+          "live_performance",
+          "music",
+          "other"
+        ],
+        "quotes": [
+          "Wir suchen Künstler*innen für das Tag am Meer Festival 2026.",
+          "Bewirb dich jetzt und werde Teil unseres einzigartigen Sommer-Line-ups!",
+          "Nutzt dafür einfach unser nebenstehendes Formular und sendet uns Eure ganz persönliche Bewerbung für das Tag am Meer Festival 2026 in Prora auf Rügen."
+        ],
+        "deadline": "",
+        "how_to_apply": "Nutzt dafür einfach unser nebenstehendes Formular und sendet uns Eure ganz persönliche Bewerbung für das Tag am Meer Festival 2026 in Prora auf Rügen.",
+        "reasoning": "The page describes a call for artists to participate in the Tag am Meer Festival 2026, and provides a form for submitting a personal application. The deadline is not specified, but the call is open as it is for the upcoming festival.",
+        "verified_quotes": [
+          "Wir suchen Künstler*innen für das Tag am Meer Festival 2026.",
+          "Bewirb dich jetzt und werde Teil unseres einzigartigen Sommer-Line-ups!",
+          "Nutzt dafür einfach unser nebenstehendes Formular und sendet uns Eure ganz persönliche Bewerbung für das Tag am Meer Festival 2026 in Prora auf Rügen."
+        ],
+        "deadline_text": "",
+        "confidence": "high",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://www.tagammeer-festival.de/datenschutzerklaerung",
+      "title": "Datenschutzerklärung – Tag am Meer Festival 2026 – Willkommen in Prora auf Rügen",
+      "keyword_hits": [
+        "bewerben",
+        "bewerbung"
+      ],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page does not describe any open call or invitation for outside people to apply, submit or propose something. It only provides general information about data protection and privacy.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "high",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://www.tagammeer-festival.de/festival-2026",
+      "title": "Das Festival 2026 – Tag am Meer Festival 2026 – Willkommen in Prora auf Rügen",
+      "keyword_hits": [
+        "jetzt bewerben"
+      ],
+      "form_links": [],
+      "classification": {
+        "status": "open",
+        "opportunity_types": [
+          "dj",
+          "exhibition",
+          "installation",
+          "live_performance",
+          "music",
+          "other",
+          "residency",
+          "talks",
+          "vendors_food",
+          "video_film",
+          "visuals",
+          "volunteers",
+          "workshops"
+        ],
+        "quotes": [
+          "Für das Tag am Meer Festival 2026 könnt ihr euch ab jetzt bewerben.",
+          "Hier gibts die Antwort.",
+          "Wie kommst Du am besten nach Prora? Hier gibts die Antwort."
+        ],
+        "deadline": "",
+        "how_to_apply": "Hier gibts die Antwort.",
+        "reasoning": "The page states that applications for the Tag am Meer Festival 2026 can be submitted now, and it provides a link to apply. The deadline is not specified, but it is currently open.",
+        "verified_quotes": [
+          "Für das Tag am Meer Festival 2026 könnt ihr euch ab jetzt bewerben.",
+          "Hier gibts die Antwort.",
+          "Wie kommst Du am besten nach Prora? Hier gibts die Antwort."
+        ],
+        "deadline_text": "",
+        "confidence": "high",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://www.tagammeer-festival.de/agb",
+      "title": "AGB – Tag am Meer Festival 2026 – Willkommen in Prora auf Rügen",
+      "keyword_hits": [
+        "einreichen"
+      ],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page does not mention any open call for proposals, applications, or submissions. It only describes the festival's rules and regulations.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "high",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://www.tagammeer-festival.de/impressum",
+      "title": "Impressum – Tag am Meer Festival 2026 – Willkommen in Prora auf Rügen",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page does not mention any open call or invitation for external applications, submissions, or proposals. It only provides general information and contact details.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://www.tagammeer-festival.de/kontakt",
+      "title": "Kontakt – Tag am Meer Festival 2026 – Willkommen in Prora auf Rügen",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page provides a contact form for inquiries and information about the Tag am Meer Festival 2026, but does not mention any open call for proposals, submissions, or applications. There is no deadline mentioned, and the page does not describe an open call.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://www.tagammeer-festival.de/festival-2026/kuenstler",
+      "title": "Künstler – Tag am Meer Festival 2026 – Willkommen in Prora auf Rügen",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page lists confirmed artists for the Tag am Meer Festival 2026, but does not mention any open call for new artists or performers. There is no mention of a submission or application process.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    }
+  ],
+  "model": "qwen2.5-3b-instruct-q4_k_m.gguf"
+}

@@ -1,0 +1,17 @@
+{
+  "website": "https://berghain.berlin/de/event/80714/",
+  "model": "qwen2.5-7b-instruct-q4_k_m-00001-of-00002.gguf",
+  "review": {
+    "status": "none",
+    "deadline": "",
+    "deadline_text": "",
+    "open_call_url": "",
+    "announcement_url": "",
+    "opportunity_types": "",
+    "how_to_apply": "",
+    "large_model_status": "none",
+    "review_reason": "https://berghain.berlin/de/event/80714: The page does not mention any open call for DJs or other opportunities.",
+    "review_quotes": "",
+    "reviewed_on": "2026-10-23"
+  }
+}

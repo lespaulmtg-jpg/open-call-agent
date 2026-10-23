@@ -1,0 +1,17 @@
+{
+  "website": "http://fogstudio.ch",
+  "model": "qwen2.5-7b-instruct-q4_k_m-00001-of-00002.gguf",
+  "review": {
+    "status": "open",
+    "deadline": "2026-11-15",
+    "deadline_text": "mid-November 2026",
+    "open_call_url": "https://docs.google.com/forms/d/e/1FAIpQLSejjuryg3ZA-5RZglw99DduZQxjYjUV9WPF7hMGywB5ONCQSQ/viewform?usp=header",
+    "announcement_url": "https://www.fogstudio.ch/proposals",
+    "opportunity_types": "installation, live_performance, music, video_film, visuals",
+    "how_to_apply": "https://docs.google.com/forms/d/e/1FAIpQLSejjuryg3ZA-5RZglw99DduZQxjYjUV9WPF7hMGywB5ONCQSQ/viewform?usp=header",
+    "large_model_status": "open",
+    "review_reason": "https://www.fogstudio.ch/proposals: The page clearly invites people to submit proposals for the 2027 FOG Festival, with a deadline that is in the future. | Linked form is accepting",
+    "review_quotes": "If you would like to propose a performance, live set, concert, or other sonic format for the festival, please submit your proposal through this form. | All proposals received through this portal until mid-November 2026 will be considered for the FOC Festival 2027 program.",
+    "reviewed_on": "2026-10-23"
+  }
+}

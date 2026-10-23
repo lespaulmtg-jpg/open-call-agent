@@ -1,0 +1,160 @@
+{
+  "site": "https://www.skalarfestival.de/",
+  "checked_on": "2026-09-22",
+  "status": "needs_review",
+  "status_reason": "Possible call (unclear)",
+  "opportunity_types": [
+    "other"
+  ],
+  "deadline": "2026-06-11",
+  "deadline_text": "2026-06-11",
+  "announcement_urls": [
+    "https://www.skalarfestival.de/"
+  ],
+  "open_call_urls": [],
+  "how_to_apply": "Schreibt uns eine Mail an lostfound@skalarfestival.de oder bring dich ein und werde Teil der Crew! (Join)",
+  "call_pages": [
+    {
+      "url": "https://www.skalarfestival.de/",
+      "status": "unclear",
+      "confidence": "high",
+      "opportunity_types": [
+        "other"
+      ],
+      "verified_quotes": [],
+      "deadline": "2026-06-11",
+      "deadline_text": "2026-06-11",
+      "how_to_apply": "Schreibt uns eine Mail an lostfound@skalarfestival.de oder bring dich ein und werde Teil der Crew! (Join)",
+      "open_call_urls": [],
+      "reasoning": "Downgraded: no quote found verbatim on the page. Model said: The page describes the Skalar Festival lineup for 2026 and mentions that applications are currently being accepted for the festival. It also provides contact information for questions and donations."
+    }
+  ],
+  "coverage": {
+    "discovery": "sitemap + links",
+    "sitemap_urls_found": 13,
+    "pages_visited": 4,
+    "js_rendered_pages": 0,
+    "pages_classified": 4,
+    "llm_used": true,
+    "skipped_by_robots": [],
+    "min_page_date": "2025-01-01",
+    "skipped_by_date": [],
+    "unchecked_documents": []
+  },
+  "contact_emails": [
+    "benni@skalarfestival.de",
+    "cashless@skalarfestival.de",
+    "info@skalarfestival.de",
+    "lostandfound@skalarfestival.de",
+    "mitmachen@skalarfestival.de",
+    "performances@skalarfestival.de",
+    "volunteer@skalarfestival.de",
+    "workshops@skalarfestival.de"
+  ],
+  "warnings": [
+    "Crawl time budget (120s) reached after 4 pages."
+  ],
+  "errors": [],
+  "pages": [
+    {
+      "url": "https://www.skalarfestival.de/mitmachen",
+      "title": "Mitmachen | Skalar",
+      "keyword_hits": [
+        "bewerbungen",
+        "bewerbungsformular",
+        "mitmachen"
+      ],
+      "form_links": [
+        "https://forms.gle/p1NPPKp1Emooaejf8"
+      ],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [
+          "vendors_food",
+          "volunteers"
+        ],
+        "quotes": [
+          "Hier anmelden!: https://forms.gle/p1NPPKp1Emooaejf8",
+          "Volunteer",
+          "Foodcourt"
+        ],
+        "deadline": "",
+        "how_to_apply": "Hier anmelden!: https://forms.gle/p1NPPKp1Emooaejf8",
+        "reasoning": "The page describes volunteer opportunities and a food court, but does not mention any open call for proposals, applications, or submissions. It also does not provide a deadline or details about when applications can be submitted.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "high",
+        "form_links": [
+          "https://forms.gle/p1NPPKp1Emooaejf8"
+        ],
+        "open_call_urls": [
+          "https://forms.gle/p1NPPKp1Emooaejf8"
+        ]
+      }
+    },
+    {
+      "url": "https://www.skalarfestival.de/",
+      "title": "Skalar Festival | 11. - 14. Juni 2026 | Am Helenesee",
+      "keyword_hits": [
+        "mitmachen"
+      ],
+      "form_links": [],
+      "classification": {
+        "status": "unclear",
+        "opportunity_types": [
+          "other"
+        ],
+        "quotes": [
+          ""
+        ],
+        "deadline": "2026-06-11",
+        "how_to_apply": "Schreibt uns eine Mail an lostfound@skalarfestival.de oder bring dich ein und werde Teil der Crew! (Join)",
+        "reasoning": "Downgraded: no quote found verbatim on the page. Model said: The page describes the Skalar Festival lineup for 2026 and mentions that applications are currently being accepted for the festival. It also provides contact information for questions and donations.",
+        "verified_quotes": [],
+        "deadline_text": "2026-06-11",
+        "confidence": "high",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://www.skalarfestival.de/faq-1",
+      "title": "FAQ | Skalar",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page does not describe any open call for applications, submissions, or proposals. It only provides general information about the festival.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://www.skalarfestival.de/faq",
+      "title": "FAQ | Skalar",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page contains information about the AGB (Allgemeine Geschäftsbedingungen) and does not mention any open call for submissions, applications, or proposals. There is no mention of deadlines or how to apply.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    }
+  ],
+  "model": "qwen2.5-3b-instruct-q4_k_m.gguf"
+}

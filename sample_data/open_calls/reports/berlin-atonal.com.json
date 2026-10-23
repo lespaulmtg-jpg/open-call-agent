@@ -1,0 +1,73 @@
+{
+  "site": "https://berlin-atonal.com/",
+  "checked_on": "2026-09-22",
+  "status": "none",
+  "status_reason": "No call found",
+  "opportunity_types": [],
+  "deadline": "",
+  "deadline_text": "",
+  "announcement_urls": [],
+  "open_call_urls": [],
+  "how_to_apply": "",
+  "call_pages": [],
+  "coverage": {
+    "discovery": "link crawl (no sitemap found)",
+    "sitemap_urls_found": 0,
+    "pages_visited": 2,
+    "js_rendered_pages": 2,
+    "pages_classified": 2,
+    "llm_used": true,
+    "skipped_by_robots": [],
+    "min_page_date": "2025-01-01",
+    "skipped_by_date": [],
+    "unchecked_documents": []
+  },
+  "contact_emails": [
+    "info@berlin-atonal.com"
+  ],
+  "warnings": [
+    "No sitemap and fewer than 3 pages found by crawling; coverage may be shallow."
+  ],
+  "errors": [],
+  "pages": [
+    {
+      "url": "https://berlin-atonal.com/",
+      "title": "Berlin Atonal ’27",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page title 'Berlin Atonal ’27' and the lack of any specific call for proposals or submissions indicate that no open call is currently being advertised.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://newsletter.berlin-atonal.com/subscription?f=3b763k892cdu763qM763CqsfSBwF35QQDl8928IebkNz1hZr3vybFmf8eQhDha5t6gNRnyWzPZ",
+      "title": "Join our mailing list",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page does not mention any open call or invitation for outside people to apply, submit or propose something. It only describes a mailing list subscription process.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    }
+  ],
+  "model": "qwen2.5-3b-instruct-q4_k_m.gguf"
+}

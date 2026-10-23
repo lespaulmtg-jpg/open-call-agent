@@ -1,0 +1,313 @@
+{
+  "site": "https://about.sounds.berlin/dexpr",
+  "checked_on": "2026-09-22",
+  "status": "needs_review",
+  "status_reason": "Possible call (unclear)",
+  "opportunity_types": [
+    "music"
+  ],
+  "deadline": "",
+  "deadline_text": "",
+  "announcement_urls": [
+    "https://about.sounds.berlin/musicfordreamingmachines"
+  ],
+  "open_call_urls": [],
+  "how_to_apply": "",
+  "call_pages": [
+    {
+      "url": "https://about.sounds.berlin/musicfordreamingmachines",
+      "status": "unclear",
+      "confidence": "low",
+      "opportunity_types": [
+        "music"
+      ],
+      "verified_quotes": [],
+      "deadline": "",
+      "deadline_text": "",
+      "how_to_apply": "",
+      "open_call_urls": [],
+      "reasoning": "Downgraded: no quote found verbatim on the page. Model said: The page describes a series of events called 'Music for Dream Machines' and mentions that it invites people to submit proposals for future editions. It does not specify a deadline but implies that submissions are accepted for future events."
+    },
+    {
+      "url": "https://about.sounds.berlin/telluricmurmurs",
+      "status": "closed",
+      "confidence": "low",
+      "opportunity_types": [
+        "installation"
+      ],
+      "verified_quotes": [
+        "“Telluric murmurs” tries to create a space of haptic reflection and absorption for the soil-worlds enveloping (and entangled with) our worlds.",
+        "Vernissage: 5.12. Friday, 17:00-22:00",
+        "Opening Times: 6-7.12. Saturday/Sunday, 14:00-21:00"
+      ],
+      "deadline": "",
+      "deadline_text": "5.12. 17:00-22:00",
+      "how_to_apply": "",
+      "open_call_urls": [],
+      "reasoning": "The page describes an installation by Kurt Reinartz Salgado titled 'Telluric murmurs' that invites listeners to attend to the murmurs of below. It mentions an invitation to listen beneath and provides opening times for the installation."
+    }
+  ],
+  "coverage": {
+    "discovery": "sitemap + links",
+    "sitemap_urls_found": 137,
+    "pages_visited": 16,
+    "js_rendered_pages": 0,
+    "pages_classified": 6,
+    "llm_used": true,
+    "skipped_by_robots": [],
+    "min_page_date": "2025-01-01",
+    "skipped_by_date": [
+      {
+        "url": "https://about.sounds.berlin/portfolio/november-2019-soundsabout-re-opening",
+        "date": "2019-11-06",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://about.sounds.berlin/portfolio/soundsabout-season-1-2021-afterimage",
+        "date": "2022-08-07",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://about.sounds.berlin/portfolio/soundsabout-season-1-2021-otium",
+        "date": "2022-01-26",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://about.sounds.berlin/portfolio/sounds-about-streaming-edition",
+        "date": "2022-01-26",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://about.sounds.berlin/about",
+        "date": "2023-01-25",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://about.sounds.berlin/portfolio/jan-marc-2020-full-program",
+        "date": "2020-02-11",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://about.sounds.berlin/jane-arnison-transformation-tapestry-tones-textures",
+        "date": "2023-02-15",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://about.sounds.berlin/mariana-carvalho-process-sharing-of-me-alimento-de-vozes",
+        "date": "2022-03-14",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://about.sounds.berlin/diana-fonseca-and-hayden-dean-performances-kammersaal",
+        "date": "2022-03-24",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://about.sounds.berlin/mitchell-keaney-and-jcjp-030-performances-kammersaal",
+        "date": "2022-02-24",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://about.sounds.berlin/performance_publica",
+        "date": "2023-11-03",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://about.sounds.berlin/udo-koloska-rosetta-variations",
+        "date": "2022-01-18",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://about.sounds.berlin/portfolio/march-14-2019-tief-quiesenza",
+        "date": "2019-07-23",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://about.sounds.berlin/ten-minutes-of-the-canebrake-else",
+        "date": "2022-10-11",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://about.sounds.berlin/portfolio/march-07-10-2019-declassified-records",
+        "date": "2019-07-23",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://about.sounds.berlin/ctm-transmediale-vorspiel-opening",
+        "date": "2022-03-07",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://about.sounds.berlin/barnacles-genesis-victoria",
+        "date": "2022-11-07",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://about.sounds.berlin/portfolio/november-7-8-courtyard-dances",
+        "date": "2019-12-06",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://about.sounds.berlin/portfolio/in-on-through",
+        "date": "2022-01-26",
+        "source": "sitemap lastmod"
+      }
+    ],
+    "unchecked_documents": []
+  },
+  "contact_emails": [
+    "about@sounds.berlin"
+  ],
+  "warnings": [
+    "Crawl time budget (120s) reached after 16 pages."
+  ],
+  "errors": [
+    {
+      "url": "https://about.sounds.berlin/dexpr",
+      "stage": "static_fetch",
+      "error": "HTTPSConnectionPool(host='about.sounds.berlin', port=443): Max retries exceeded with url: /dexpr (Caused by NameResolutionError(\"HTTPSConnection(host='about.sounds.berlin', port=443): Failed to resolve 'about.sounds.berlin' ([Errno 8] nodename nor servname provided, or not known)\"))"
+    },
+    {
+      "url": "https://about.sounds.berlin/robots.txt",
+      "stage": "static_fetch",
+      "error": "HTTPSConnectionPool(host='about.sounds.berlin', port=443): Max retries exceeded with url: /robots.txt (Caused by NameResolutionError(\"HTTPSConnection(host='about.sounds.berlin', port=443): Failed to resolve 'about.sounds.berlin' ([Errno 8] nodename nor servname provided, or not known)\"))"
+    }
+  ],
+  "pages": [
+    {
+      "url": "https://about.sounds.berlin/portfolio/mesh-2-2",
+      "title": "Sounds matters – SoundsAbout",
+      "keyword_hits": [],
+      "form_links": [
+        "https://docs.google.com/forms/d/e/1FAIpQLSdSIO3D6-EMCi0Wc1c2EbvVFnRQqq7KYIXzngm7qEG4jIcdrA/viewform"
+      ],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page describes a series of events and installations for the spring season, but does not mention any open call for proposals, applications, or submissions. It also does not provide a deadline or details about how to apply.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "high",
+        "form_links": [
+          "https://docs.google.com/forms/d/e/1FAIpQLSdSIO3D6-EMCi0Wc1c2EbvVFnRQqq7KYIXzngm7qEG4jIcdrA/viewform"
+        ],
+        "open_call_urls": [
+          "https://docs.google.com/forms/d/e/1FAIpQLSdSIO3D6-EMCi0Wc1c2EbvVFnRQqq7KYIXzngm7qEG4jIcdrA/viewform"
+        ]
+      }
+    },
+    {
+      "url": "https://about.sounds.berlin/dexpr",
+      "title": "dExpr. – SoundsAbout",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page describes an event series with a specific date and lineup, but does not mention any call for proposals, submissions, or applications. It only provides information about the event.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://about.sounds.berlin/participationai",
+      "title": "Participation AI – SoundsAbout",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page describes an installation by Jae Shik Kim titled 'Participation AI' for the SoundsAbout event. There is no mention of an open call for participation, applications, or submissions. The page is focused on the installation and its details.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://about.sounds.berlin/s4ntpsounds",
+      "title": "S4NTP&Sounds – SoundsAbout",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page describes a performance mini-festival with a line-up of performers, but does not mention any call for proposals, applications, or submissions. It is a scheduled event with a fixed date and time.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://about.sounds.berlin/telluricmurmurs",
+      "title": "Telluric murmurs – SoundsAbout",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "closed",
+        "opportunity_types": [
+          "installation"
+        ],
+        "quotes": [
+          "“Telluric murmurs” tries to create a space of haptic reflection and absorption for the soil-worlds enveloping (and entangled with) our worlds.",
+          "Vernissage: 5.12. Friday, 17:00-22:00",
+          "Opening Times: 6-7.12. Saturday/Sunday, 14:00-21:00"
+        ],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page describes an installation by Kurt Reinartz Salgado titled 'Telluric murmurs' that invites listeners to attend to the murmurs of below. It mentions an invitation to listen beneath and provides opening times for the installation.",
+        "verified_quotes": [
+          "“Telluric murmurs” tries to create a space of haptic reflection and absorption for the soil-worlds enveloping (and entangled with) our worlds.",
+          "Vernissage: 5.12. Friday, 17:00-22:00",
+          "Opening Times: 6-7.12. Saturday/Sunday, 14:00-21:00"
+        ],
+        "deadline_text": "5.12. 17:00-22:00",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://about.sounds.berlin/musicfordreamingmachines",
+      "title": "music for dreaming machines – SoundsAbout",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "unclear",
+        "opportunity_types": [
+          "music"
+        ],
+        "quotes": [
+          ""
+        ],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "Downgraded: no quote found verbatim on the page. Model said: The page describes a series of events called 'Music for Dream Machines' and mentions that it invites people to submit proposals for future editions. It does not specify a deadline but implies that submissions are accepted for future events.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    }
+  ],
+  "model": "qwen2.5-3b-instruct-q4_k_m.gguf"
+}

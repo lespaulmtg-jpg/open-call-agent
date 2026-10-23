@@ -1,0 +1,17 @@
+{
+  "website": "https://festivalhibernation.com/",
+  "model": "qwen2.5-7b-instruct-q4_k_m-00001-of-00002.gguf",
+  "review": {
+    "status": "open",
+    "deadline": "",
+    "deadline_text": "",
+    "open_call_url": "https://forms.gle/aVoszRCQtfvj6Phg9, https://forms.gle/P6VKWfpW8PinF4B77",
+    "announcement_url": "https://festivalhibernation.com/hbn-experience",
+    "opportunity_types": "exhibition, vendors_food, volunteers",
+    "how_to_apply": "Submit your project application here",
+    "large_model_status": "open",
+    "review_reason": "https://festivalhibernation.com/hbn-experience: The page describes a call for projects to showcase products or services in the festival village, and provides a link to submit the application. There is no deadline mentioned, so it is considered 'open'. | Linked form is accepting",
+    "review_quotes": "Submit your project application here",
+    "reviewed_on": "2026-10-23"
+  }
+}

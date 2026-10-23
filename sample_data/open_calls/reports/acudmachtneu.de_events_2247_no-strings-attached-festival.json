@@ -1,0 +1,204 @@
+{
+  "site": "https://acudmachtneu.de/events/2247/no-strings-attached-festival",
+  "checked_on": "2026-09-22",
+  "status": "needs_review",
+  "status_reason": "Possible call (unclear)",
+  "opportunity_types": [
+    "other"
+  ],
+  "deadline": "",
+  "deadline_text": "",
+  "announcement_urls": [
+    "https://acudmachtneu.de/info/about"
+  ],
+  "open_call_urls": [],
+  "how_to_apply": "",
+  "call_pages": [
+    {
+      "url": "https://acudmachtneu.de/info/about",
+      "status": "unclear",
+      "confidence": "low",
+      "opportunity_types": [
+        "other"
+      ],
+      "verified_quotes": [],
+      "deadline": "",
+      "deadline_text": "",
+      "how_to_apply": "",
+      "open_call_urls": [],
+      "reasoning": "Downgraded: no quote found verbatim on the page. Model said: The page describes the open call for submissions to develop the program, mentioning that the programming is open to submissions and the criteria are quality and relevance. There is no mention of a deadline or how to apply."
+    }
+  ],
+  "coverage": {
+    "discovery": "sitemap + links",
+    "sitemap_urls_found": 77,
+    "pages_visited": 11,
+    "js_rendered_pages": 0,
+    "pages_classified": 6,
+    "llm_used": true,
+    "skipped_by_robots": [],
+    "min_page_date": "2025-01-01",
+    "skipped_by_date": [
+      {
+        "url": "https://acudmachtneu.de/mag/amplify-berlin-open-call-1-31-21",
+        "date": "2021-01-05",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://acudmachtneu.de/mag/open-call-for-curators",
+        "date": "2020-10-15",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://acudmachtneu.de/mag/meet-juba-the-new-curator-joining-collective-practices-team",
+        "date": "2020-09-07",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://acudmachtneu.de/mag/program-cancellation",
+        "date": "2020-09-12",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://acudmachtneu.de/mag/spam-a-radio-program-of-undesired-desired-messages",
+        "date": "2020-11-27",
+        "source": "sitemap lastmod"
+      }
+    ],
+    "unchecked_documents": []
+  },
+  "contact_emails": [
+    "adomas@acudmachtneu.de",
+    "gabriela@acudmachtneu.de",
+    "galerie@acudmachtneu.de",
+    "info@acudmachtneu.de",
+    "kino@acudkino.de",
+    "press@acudmachtneu.de",
+    "theater@acud.de"
+  ],
+  "warnings": [
+    "Crawl time budget (120s) reached after 11 pages."
+  ],
+  "errors": [],
+  "pages": [
+    {
+      "url": "https://acudmachtneu.de/events/2247/no-strings-attached-festival",
+      "title": "( NO ) STRINGS ATTACHED – Festival | ACUD MACHT NEU",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page describes a festival with a lineup for each day, but does not mention any open call for proposals, applications, or submissions. It only describes the lineup and the event itself.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://acudmachtneu.de/programm",
+      "title": "Programm | ACUD MACHT NEU",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page describes past events and does not mention any open call for submissions or applications. It only lists upcoming events and activities.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://acudmachtneu.de/info/kontakt",
+      "title": "Kontakt | ACUD MACHT NEU",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page does not mention any open call or invitation for outside people to apply, submit or propose something. It only lists contact information for various departments and services.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://acudmachtneu.de/info/about",
+      "title": "About | ACUD MACHT NEU",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "unclear",
+        "opportunity_types": [
+          "other"
+        ],
+        "quotes": [
+          ""
+        ],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "Downgraded: no quote found verbatim on the page. Model said: The page describes the open call for submissions to develop the program, mentioning that the programming is open to submissions and the criteria are quality and relevance. There is no mention of a deadline or how to apply.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://acudmachtneu.de/info/team",
+      "title": "Team | ACUD MACHT NEU",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page does not mention any open call or invitation for outside people to apply, submit or propose something. It only lists past members and current team members.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://acudmachtneu.de/info/rental",
+      "title": "Rentals | ACUD MACHT NEU",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page describes available rentals for the club, studio, and backyard, but does not mention any open call for proposals, applications, or submissions. There is no mention of a deadline or how to apply.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    }
+  ],
+  "model": "qwen2.5-3b-instruct-q4_k_m.gguf"
+}

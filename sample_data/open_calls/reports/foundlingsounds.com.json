@@ -1,0 +1,120 @@
+{
+  "site": "https://foundlingsounds.com/",
+  "checked_on": "2026-09-22",
+  "status": "closed",
+  "status_reason": "Only closed calls found on 1 page(s)",
+  "opportunity_types": [
+    "live_performance"
+  ],
+  "deadline": "2026-09-01",
+  "deadline_text": "2026-09-01",
+  "announcement_urls": [
+    "http://foundlingsounds.com/about"
+  ],
+  "open_call_urls": [],
+  "how_to_apply": "Check here for more details about performances.",
+  "call_pages": [
+    {
+      "url": "http://foundlingsounds.com/about",
+      "status": "closed",
+      "confidence": "low",
+      "opportunity_types": [
+        "live_performance"
+      ],
+      "verified_quotes": [
+        "Check here for more details about performances."
+      ],
+      "deadline": "2026-09-01",
+      "deadline_text": "2026-09-01",
+      "how_to_apply": "Check here for more details about performances.",
+      "open_call_urls": [],
+      "reasoning": "Downgraded: deadline 2026-09-01 has passed. Model said: The page describes future live performances in 2026 and invites people to check for more details about performances, which implies an open call for future events."
+    }
+  ],
+  "coverage": {
+    "discovery": "sitemap + links",
+    "sitemap_urls_found": 62,
+    "pages_visited": 6,
+    "js_rendered_pages": 6,
+    "pages_classified": 3,
+    "llm_used": true,
+    "skipped_by_robots": [],
+    "min_page_date": "2025-01-01",
+    "skipped_by_date": [],
+    "unchecked_documents": []
+  },
+  "contact_emails": [
+    "info@foundlingsounds.com"
+  ],
+  "warnings": [
+    "Crawl time budget (120s) reached after 6 pages."
+  ],
+  "errors": [],
+  "pages": [
+    {
+      "url": "https://foundlingsounds.com/",
+      "title": "Foundling",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page does not describe any open call or opportunity to apply. It only contains information about a tour and a venue.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "http://foundlingsounds.com/about",
+      "title": "Foundling-Band — Foundling",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "closed",
+        "opportunity_types": [
+          "live_performance"
+        ],
+        "quotes": [
+          "'Foundling’s next live appearances are in September 2026.'",
+          "Check here for more details about performances."
+        ],
+        "deadline": "2026-09-01",
+        "how_to_apply": "Check here for more details about performances.",
+        "reasoning": "Downgraded: deadline 2026-09-01 has passed. Model said: The page describes future live performances in 2026 and invites people to check for more details about performances, which implies an open call for future events.",
+        "verified_quotes": [
+          "Check here for more details about performances."
+        ],
+        "deadline_text": "2026-09-01",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "http://foundlingsounds.com/join",
+      "title": "Contact — Foundling",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page describes a community conversation and invites people to join the conversation by signing up, but does not mention any specific open call for proposals, applications, or submissions.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    }
+  ],
+  "model": "qwen2.5-3b-instruct-q4_k_m.gguf"
+}

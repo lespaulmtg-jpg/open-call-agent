@@ -1,0 +1,165 @@
+{
+  "site": "https://berghain.berlin/de/event/80714",
+  "checked_on": "2026-09-22",
+  "status": "needs_review",
+  "status_reason": "Possible call (unclear)",
+  "opportunity_types": [],
+  "deadline": "2026-02-14",
+  "deadline_text": "2026-02-14",
+  "announcement_urls": [
+    "https://berghain.berlin/de/event/80714"
+  ],
+  "open_call_urls": [],
+  "how_to_apply": "",
+  "call_pages": [
+    {
+      "url": "https://berghain.berlin/de/event/80714",
+      "status": "unclear",
+      "confidence": "low",
+      "opportunity_types": [],
+      "verified_quotes": [],
+      "deadline": "2026-02-14",
+      "deadline_text": "2026-02-14",
+      "how_to_apply": "",
+      "open_call_urls": [],
+      "reasoning": "Downgraded: no quote found verbatim on the page. Model said: The page describes a lineup for a club night event at Berghain, but does not mention any open call for submissions, applications, or proposals. The event is scheduled for February 14, 2026, and the page is dated 2026-09-22, so the call is not yet open."
+    }
+  ],
+  "coverage": {
+    "discovery": "link crawl (no sitemap found)",
+    "sitemap_urls_found": 0,
+    "pages_visited": 8,
+    "js_rendered_pages": 0,
+    "pages_classified": 6,
+    "llm_used": true,
+    "skipped_by_robots": [],
+    "min_page_date": "2025-01-01",
+    "skipped_by_date": [],
+    "unchecked_documents": []
+  },
+  "contact_emails": [
+    "lost@ostgut.de",
+    "support@berghain.de"
+  ],
+  "warnings": [
+    "Crawl time budget (120s) reached after 8 pages."
+  ],
+  "errors": [],
+  "pages": [
+    {
+      "url": "https://berghain.berlin/de/event/80714",
+      "title": "Klubnacht\n\n\n    \n        — Berghain",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "unclear",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "2026-02-14",
+        "how_to_apply": "",
+        "reasoning": "Downgraded: no quote found verbatim on the page. Model said: The page describes a lineup for a club night event at Berghain, but does not mention any open call for submissions, applications, or proposals. The event is scheduled for February 14, 2026, and the page is dated 2026-09-22, so the call is not yet open.",
+        "verified_quotes": [],
+        "deadline_text": "2026-02-14",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://berghain.berlin/de/program",
+      "title": "Programm | Berghain / Panorama Bar / Säule / Halle / Kantine am Berghain\n\n\n    \n        — Berghain",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page describes upcoming events at Berghain and Panorama Bar, but does not mention any open call for proposals, submissions, or applications. There is no invitation to send proposals or applications for future events.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://berghain.berlin/de/contact",
+      "title": "Kontakt\n\n\n    \n        — Berghain",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page does not mention any open call or invitation for outside people to apply, submit or propose something. It only contains contact information and lost & found details.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://berghain.berlin/en/program",
+      "title": "Programm | Berghain / Panorama Bar / Säule / Halle / Kantine am Berghain\n\n\n    \n        — Berghain",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page lists upcoming events and does not mention any open call for proposals, submissions, or applications. It only describes past and upcoming events.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://berghain.berlin/de/program/kantine-am-berghain",
+      "title": "Programm | Berghain / Panorama Bar / Säule / Halle / Kantine am Berghain\n\n\n    \n        — Berghain",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page describes a series of live performances and events at Kantine am Berghain, but does not mention any open call for proposals, applications, or submissions. The page is a schedule of upcoming events.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://berghain.berlin/de/program/halle",
+      "title": "Programm | Berghain / Panorama Bar / Säule / Halle / Kantine am Berghain\n\n\n    \n        — Berghain",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page does not mention any open call or invitation for submissions. It only states that there are no events currently in the Halle.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    }
+  ],
+  "model": "qwen2.5-3b-instruct-q4_k_m.gguf"
+}

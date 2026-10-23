@@ -1,0 +1,440 @@
+{
+  "site": "https://detectclassic.com/",
+  "checked_on": "2026-09-17",
+  "status": "open",
+  "status_reason": "Open call announced on 4 page(s)",
+  "opportunity_types": [
+    "volunteers"
+  ],
+  "deadline": "2026-09-17",
+  "deadline_text": "2026-09-17",
+  "announcement_urls": [
+    "https://detectclassic.com/betweenmountains/about/mitmachen",
+    "https://detectclassic.com/festival/about/faq",
+    "https://detectclassic.com/en/festival/about/get-involved",
+    "https://detectclassic.com/en/betweenmountains/about/volunteering"
+  ],
+  "open_call_urls": [
+    "https://portal.helfereinsatz.ch/kfka/de/browse/open/event/210209",
+    "https://detectclassic.festivalpro.com/form/rBETKzrZKzjIExZOqSDM/0"
+  ],
+  "how_to_apply": "Melde dich auf unserem Helfereinsatz-Tool an und wähle deine gewünschte Schicht selbstständig aus. | hello@detectclassicfestival.de | Applications to become a volunteer must be submitted exclusively via the application form. | Sign up on our volunteer platform and select your preferred shift.",
+  "call_pages": [
+    {
+      "url": "https://detectclassic.com/betweenmountains/about/mitmachen",
+      "status": "open",
+      "confidence": "high",
+      "opportunity_types": [
+        "volunteers"
+      ],
+      "verified_quotes": [
+        "Die Volunteering-Bewerbungsphase für 2026 ist gestartet!",
+        "wenn du dich für eine andere Schicht interessierst, melde dich bitte bei Nadia (nadia@kfka.ch)."
+      ],
+      "deadline": "2026-09-17",
+      "deadline_text": "2026-09-17",
+      "how_to_apply": "Melde dich auf unserem Helfereinsatz-Tool an und wähle deine gewünschte Schicht selbstständig aus.",
+      "open_call_urls": [
+        "https://portal.helfereinsatz.ch/kfka/de/browse/open/event/210209"
+      ],
+      "reasoning": "The page describes a volunteering opportunity for the Between Mountains Festival in 2026 and invites people to apply now. It provides details about the types of volunteer positions available and how to apply."
+    },
+    {
+      "url": "https://detectclassic.com/festival/about/faq",
+      "status": "open",
+      "confidence": "high",
+      "opportunity_types": [
+        "volunteers"
+      ],
+      "verified_quotes": [
+        "Aktuell gibt es keine Jobausschreibungen, wir freuen uns aber über deine Initiativbewerbung an: hello@detectclassicfestival.de"
+      ],
+      "deadline": "",
+      "deadline_text": "",
+      "how_to_apply": "hello@detectclassicfestival.de",
+      "open_call_urls": [],
+      "reasoning": "The page mentions a call for volunteer applications, which is an invitation for outside people to apply. It also provides a contact email for inquiries."
+    },
+    {
+      "url": "https://detectclassic.com/en/festival/about/get-involved",
+      "status": "open",
+      "confidence": "high",
+      "opportunity_types": [
+        "volunteers"
+      ],
+      "verified_quotes": [
+        "Do I have to buy a ticket as a volunteer? Yes, you have to buy a regular festival ticket (€170.00) to volunteer at our festival."
+      ],
+      "deadline": "",
+      "deadline_text": "",
+      "how_to_apply": "Applications to become a volunteer must be submitted exclusively via the application form.",
+      "open_call_urls": [
+        "https://detectclassic.festivalpro.com/form/rBETKzrZKzjIExZOqSDM/0"
+      ],
+      "reasoning": "The page states that the application period for volunteering in 2026 has closed, but it provides an application form link. This indicates an open call for future volunteering."
+    },
+    {
+      "url": "https://detectclassic.com/en/betweenmountains/about/volunteering",
+      "status": "open",
+      "confidence": "high",
+      "opportunity_types": [
+        "volunteers"
+      ],
+      "verified_quotes": [
+        "The application period for volunteers for 2026 is now open! Apply now and join the volunteer team.",
+        "Sign up on our volunteer platform and select your preferred shift."
+      ],
+      "deadline": "",
+      "deadline_text": "",
+      "how_to_apply": "Sign up on our volunteer platform and select your preferred shift.",
+      "open_call_urls": [
+        "https://portal.helfereinsatz.ch/kfka/de/browse/open/event/210209"
+      ],
+      "reasoning": "The page states that the application period for volunteers for 2026 is now open and invites people to apply now. The deadline is not specified, but it is currently open."
+    },
+    {
+      "url": "https://detectclassic.com/festival/about/mitmachen",
+      "status": "closed",
+      "confidence": "high",
+      "opportunity_types": [
+        "volunteers"
+      ],
+      "verified_quotes": [
+        "Die Volunteering-Bewerbungsphase für 2026 ist vorbei!"
+      ],
+      "deadline": "2026-08-06",
+      "deadline_text": "2026-08-06",
+      "how_to_apply": "Die Bewerbung als Volunteer erfolgt ausschließlich über unser Volunteering-Formular.",
+      "open_call_urls": [],
+      "reasoning": "The page describes the volunteering opportunities for the Detect Classic Festival and provides information about the application process. It mentions that the volunteering application phase is closed and that the form to submit applications is available."
+    }
+  ],
+  "coverage": {
+    "discovery": "link crawl (no sitemap found)",
+    "sitemap_urls_found": 0,
+    "pages_visited": 40,
+    "js_rendered_pages": 0,
+    "pages_classified": 12,
+    "llm_used": true,
+    "skipped_by_robots": [],
+    "min_page_date": "2025-01-01",
+    "skipped_by_date": [],
+    "unchecked_documents": []
+  },
+  "contact_emails": [
+    "awareness@detectclassicfestival.de",
+    "bmf@kfka.ch",
+    "detect@festspiele-mv.de",
+    "hello@detectclassicfestival.de",
+    "nadia@kfka.ch"
+  ],
+  "warnings": [],
+  "errors": [
+    {
+      "url": "https://detectclassic.com/sitemap.xml",
+      "stage": "static_fetch",
+      "error": "HTTPSConnectionPool(host='detectclassic.com', port=443): Read timed out. (read timeout=20)"
+    }
+  ],
+  "pages": [
+    {
+      "url": "https://detectclassic.com/festival/about/mitmachen",
+      "title": "Volunteering beim Detect Classic Festival",
+      "keyword_hits": [
+        "bewerben",
+        "bewerbung",
+        "bewerbungen",
+        "einreichung"
+      ],
+      "form_links": [],
+      "classification": {
+        "status": "closed",
+        "opportunity_types": [
+          "volunteers"
+        ],
+        "quotes": [
+          "Die Volunteering-Bewerbungsphase 2026 ist vorbei.",
+          "Die Bewerbung als Volunteer erfolgt ausschließlich über unser Volunteering-Formular.",
+          "Die Volunteering-Bewerbungsphase für 2026 ist vorbei!"
+        ],
+        "deadline": "2026-08-06",
+        "how_to_apply": "Die Bewerbung als Volunteer erfolgt ausschließlich über unser Volunteering-Formular.",
+        "reasoning": "The page describes the volunteering opportunities for the Detect Classic Festival and provides information about the application process. It mentions that the volunteering application phase is closed and that the form to submit applications is available.",
+        "verified_quotes": [
+          "Die Volunteering-Bewerbungsphase für 2026 ist vorbei!"
+        ],
+        "deadline_text": "2026-08-06",
+        "confidence": "high",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://detectclassic.com/betweenmountains/about/mitmachen",
+      "title": "Volunteering beim Detect Classic Festival",
+      "keyword_hits": [
+        "bewerben",
+        "bewerbung",
+        "jetzt bewerben"
+      ],
+      "form_links": [],
+      "classification": {
+        "status": "open",
+        "opportunity_types": [
+          "volunteers"
+        ],
+        "quotes": [
+          "Die Volunteering-Bewerbungsphase für 2026 ist gestartet!",
+          "jetzt bewerben",
+          "wenn du dich für eine andere Schicht interessierst, melde dich bitte bei Nadia (nadia@kfka.ch)."
+        ],
+        "deadline": "2026-09-17",
+        "how_to_apply": "Melde dich auf unserem Helfereinsatz-Tool an und wähle deine gewünschte Schicht selbstständig aus.",
+        "reasoning": "The page describes a volunteering opportunity for the Between Mountains Festival in 2026 and invites people to apply now. It provides details about the types of volunteer positions available and how to apply.",
+        "verified_quotes": [
+          "Die Volunteering-Bewerbungsphase für 2026 ist gestartet!",
+          "wenn du dich für eine andere Schicht interessierst, melde dich bitte bei Nadia (nadia@kfka.ch)."
+        ],
+        "deadline_text": "2026-09-17",
+        "confidence": "high",
+        "form_links": [],
+        "open_call_urls": [
+          "https://portal.helfereinsatz.ch/kfka/de/browse/open/event/210209"
+        ]
+      }
+    },
+    {
+      "url": "https://detectclassic.com/festival/about/faq",
+      "title": "Detect Classic Festival FAQ",
+      "keyword_hits": [
+        "ausschreibungen",
+        "bewerbung",
+        "mitmachen"
+      ],
+      "form_links": [],
+      "classification": {
+        "status": "open",
+        "opportunity_types": [
+          "volunteers"
+        ],
+        "quotes": [
+          "jobs",
+          "Aktuell gibt es keine Jobausschreibungen, wir freuen uns aber über deine Initiativbewerbung an: hello@detectclassicfestival.de",
+          "volunteering"
+        ],
+        "deadline": "",
+        "how_to_apply": "hello@detectclassicfestival.de",
+        "reasoning": "The page mentions a call for volunteer applications, which is an invitation for outside people to apply. It also provides a contact email for inquiries.",
+        "verified_quotes": [
+          "Aktuell gibt es keine Jobausschreibungen, wir freuen uns aber über deine Initiativbewerbung an: hello@detectclassicfestival.de"
+        ],
+        "deadline_text": "",
+        "confidence": "high",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://detectclassic.com/betweenmountains/about/faq-bmf",
+      "title": "Between Mountains Festival FAQ",
+      "keyword_hits": [
+        "mitmachen"
+      ],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page does not describe any open call for applications, submissions, or proposals. It only provides information about the festival, its location, and some logistical details.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "high",
+        "form_links": [],
+        "open_call_urls": [
+          "https://detectclassic.com/betweenmountains/about/mitmachen"
+        ]
+      }
+    },
+    {
+      "url": "https://detectclassic.com/en/festival/about/get-involved",
+      "title": "Volunteering at the Detect Classic Festival",
+      "keyword_hits": [
+        "application form"
+      ],
+      "form_links": [],
+      "classification": {
+        "status": "open",
+        "opportunity_types": [
+          "volunteers"
+        ],
+        "quotes": [
+          "Applications to become a volunteer must be submitted exclusively via the application form.",
+          "Do I have to buy a ticket as a volunteer? Yes, you have to buy a regular festival ticket (€170.00) to volunteer at our festival."
+        ],
+        "deadline": "",
+        "how_to_apply": "Applications to become a volunteer must be submitted exclusively via the application form.",
+        "reasoning": "The page states that the application period for volunteering in 2026 has closed, but it provides an application form link. This indicates an open call for future volunteering.",
+        "verified_quotes": [
+          "Do I have to buy a ticket as a volunteer? Yes, you have to buy a regular festival ticket (€170.00) to volunteer at our festival."
+        ],
+        "deadline_text": "",
+        "confidence": "high",
+        "form_links": [],
+        "open_call_urls": [
+          "https://detectclassic.festivalpro.com/form/rBETKzrZKzjIExZOqSDM/0"
+        ]
+      }
+    },
+    {
+      "url": "https://detectclassic.com/en/betweenmountains/about/volunteering",
+      "title": "Volunteering beim Detect Classic Festival",
+      "keyword_hits": [
+        "apply now"
+      ],
+      "form_links": [],
+      "classification": {
+        "status": "open",
+        "opportunity_types": [
+          "volunteers"
+        ],
+        "quotes": [
+          "apply now",
+          "The application period for volunteers for 2026 is now open! Apply now and join the volunteer team.",
+          "Sign up on our volunteer platform and select your preferred shift."
+        ],
+        "deadline": "",
+        "how_to_apply": "Sign up on our volunteer platform and select your preferred shift.",
+        "reasoning": "The page states that the application period for volunteers for 2026 is now open and invites people to apply now. The deadline is not specified, but it is currently open.",
+        "verified_quotes": [
+          "The application period for volunteers for 2026 is now open! Apply now and join the volunteer team.",
+          "Sign up on our volunteer platform and select your preferred shift."
+        ],
+        "deadline_text": "",
+        "confidence": "high",
+        "form_links": [],
+        "open_call_urls": [
+          "https://portal.helfereinsatz.ch/kfka/de/browse/open/event/210209"
+        ]
+      }
+    },
+    {
+      "url": "https://detectclassic.com/artists/alexandra-maria-seywald",
+      "title": "Alexandra Maria Seywald · Between Mountains",
+      "keyword_hits": [
+        "bewerben"
+      ],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page describes Alexandra Maria Seywald as a live act and mentions her upcoming performances, but does not provide any information about an open call for submissions, applications, or proposals. There is no mention of a deadline or how to apply.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "high",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://detectclassic.com/",
+      "title": "Detect Sounds",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page describes past events and festivals, but does not mention an open call for proposals, applications, or submissions. It also does not provide any deadlines or details about how to apply.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://detectclassic.com/betweenmountains/programm-2026",
+      "title": "Between Mountains Festivalprogramm 2026",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page describes the full program and timetable for the Between Mountains Festival 2026, but does not mention any open call for proposals, applications, or submissions. It only lists confirmed acts and performers.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://detectclassic.com/festival/about",
+      "title": "our festival · Detect Classic",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page describes the Detect Classic Festival and mentions that applications are not yet open, but does not provide any details about an open call.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://detectclassic.com/betweenmountains/about",
+      "title": "über between mountains",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page describes past events and the Between Mountains festival, but does not mention any open call for proposals, applications, or submissions. There is no link to an application form or a deadline mentioned.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://detectclassic.com/betweenmountains/about/shuttle",
+      "title": "shuttle · Between Mountains",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page describes the shuttle service between the camping area and the festival site, but does not mention any opportunity for outside people to apply, submit or propose something. It only describes the shuttle service and its schedule.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    }
+  ],
+  "model": "qwen2.5-3b-instruct-q4_k_m.gguf"
+}

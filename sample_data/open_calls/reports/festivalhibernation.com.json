@@ -1,0 +1,166 @@
+{
+  "site": "https://festivalhibernation.com/",
+  "checked_on": "2026-09-21",
+  "status": "open",
+  "status_reason": "Open call announced on 2 page(s)",
+  "opportunity_types": [
+    "other",
+    "residency",
+    "vendors_food"
+  ],
+  "deadline": "",
+  "deadline_text": "",
+  "announcement_urls": [
+    "https://festivalhibernation.com/",
+    "https://festivalhibernation.com/hbn-experience"
+  ],
+  "open_call_urls": [
+    "https://forms.gle/aVoszRCQtfvj6Phg9",
+    "https://forms.gle/P6VKWfpW8PinF4B77"
+  ],
+  "how_to_apply": "https://forms.gle/aVoszRCQtfvj6Phg9 and https://forms.gle/P6VKWfpW8PinF4B77 | Fill out the volunteer application here\nSubmit your project application here",
+  "call_pages": [
+    {
+      "url": "https://festivalhibernation.com/",
+      "status": "open",
+      "confidence": "high",
+      "opportunity_types": [
+        "other",
+        "residency"
+      ],
+      "verified_quotes": [
+        "Submit your project application here",
+        "Fill out the volunteer application here"
+      ],
+      "deadline": "",
+      "deadline_text": "",
+      "how_to_apply": "https://forms.gle/aVoszRCQtfvj6Phg9 and https://forms.gle/P6VKWfpW8PinF4B77",
+      "open_call_urls": [
+        "https://forms.gle/aVoszRCQtfvj6Phg9",
+        "https://forms.gle/P6VKWfpW8PinF4B77"
+      ],
+      "reasoning": "The page describes a call for project submissions, which is an open call opportunity. It provides links to submit applications."
+    },
+    {
+      "url": "https://festivalhibernation.com/hbn-experience",
+      "status": "open",
+      "confidence": "high",
+      "opportunity_types": [
+        "other",
+        "vendors_food"
+      ],
+      "verified_quotes": [
+        "Submit your project application here",
+        "CALL FOR PROJECT"
+      ],
+      "deadline": "",
+      "deadline_text": "",
+      "how_to_apply": "Fill out the volunteer application here\nSubmit your project application here",
+      "open_call_urls": [
+        "https://forms.gle/aVoszRCQtfvj6Phg9",
+        "https://forms.gle/P6VKWfpW8PinF4B77"
+      ],
+      "reasoning": "The page describes an open call for project submissions, inviting creators and entrepreneurs to showcase their products or services in the festival village. The call is described and a link to submit the project application is provided."
+    }
+  ],
+  "coverage": {
+    "discovery": "sitemap + links",
+    "sitemap_urls_found": 3,
+    "pages_visited": 3,
+    "js_rendered_pages": 0,
+    "pages_classified": 2,
+    "llm_used": true,
+    "skipped_by_robots": [],
+    "min_page_date": "2025-01-01",
+    "skipped_by_date": [],
+    "unchecked_documents": []
+  },
+  "contact_emails": [
+    "contact@festivalhibernation.com"
+  ],
+  "warnings": [],
+  "errors": [],
+  "pages": [
+    {
+      "url": "https://festivalhibernation.com/",
+      "title": "Hibernation Festival 2027 | March 19, 20 & 21 | Andorra",
+      "keyword_hits": [
+        "call for project",
+        "submit your project"
+      ],
+      "form_links": [
+        "https://forms.gle/aVoszRCQtfvj6Phg9",
+        "https://forms.gle/P6VKWfpW8PinF4B77"
+      ],
+      "classification": {
+        "status": "open",
+        "opportunity_types": [
+          "other",
+          "residency"
+        ],
+        "quotes": [
+          "Submit your project application here",
+          "Fill out the volunteer application here"
+        ],
+        "deadline": "",
+        "how_to_apply": "https://forms.gle/aVoszRCQtfvj6Phg9 and https://forms.gle/P6VKWfpW8PinF4B77",
+        "reasoning": "The page describes a call for project submissions, which is an open call opportunity. It provides links to submit applications.",
+        "verified_quotes": [
+          "Submit your project application here",
+          "Fill out the volunteer application here"
+        ],
+        "deadline_text": "",
+        "confidence": "high",
+        "form_links": [
+          "https://forms.gle/aVoszRCQtfvj6Phg9",
+          "https://forms.gle/P6VKWfpW8PinF4B77"
+        ],
+        "open_call_urls": [
+          "https://forms.gle/aVoszRCQtfvj6Phg9",
+          "https://forms.gle/P6VKWfpW8PinF4B77"
+        ]
+      }
+    },
+    {
+      "url": "https://festivalhibernation.com/hbn-experience",
+      "title": "HBN Experience - Festival Hibernation 2027",
+      "keyword_hits": [
+        "call for project",
+        "submit your project"
+      ],
+      "form_links": [
+        "https://forms.gle/aVoszRCQtfvj6Phg9",
+        "https://forms.gle/P6VKWfpW8PinF4B77"
+      ],
+      "classification": {
+        "status": "open",
+        "opportunity_types": [
+          "other",
+          "vendors_food"
+        ],
+        "quotes": [
+          "Submit your project application here",
+          "CALL FOR PROJECT"
+        ],
+        "deadline": "",
+        "how_to_apply": "Fill out the volunteer application here\nSubmit your project application here",
+        "reasoning": "The page describes an open call for project submissions, inviting creators and entrepreneurs to showcase their products or services in the festival village. The call is described and a link to submit the project application is provided.",
+        "verified_quotes": [
+          "Submit your project application here",
+          "CALL FOR PROJECT"
+        ],
+        "deadline_text": "",
+        "confidence": "high",
+        "form_links": [
+          "https://forms.gle/aVoszRCQtfvj6Phg9",
+          "https://forms.gle/P6VKWfpW8PinF4B77"
+        ],
+        "open_call_urls": [
+          "https://forms.gle/aVoszRCQtfvj6Phg9",
+          "https://forms.gle/P6VKWfpW8PinF4B77"
+        ]
+      }
+    }
+  ],
+  "model": "qwen2.5-3b-instruct-q4_k_m.gguf"
+}

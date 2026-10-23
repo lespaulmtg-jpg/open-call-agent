@@ -1,0 +1,751 @@
+{
+  "site": "https://www.horstartsandmusic.com/",
+  "checked_on": "2026-09-21",
+  "status": "open",
+  "status_reason": "Open call announced on 1 page(s)",
+  "opportunity_types": [
+    "residency"
+  ],
+  "deadline": "2027-09-13",
+  "deadline_text": "Sunday 13 September, 23:59 (CET)",
+  "announcement_urls": [
+    "https://horstartsandmusic.com/jobs/club-production"
+  ],
+  "open_call_urls": [
+    "https://form.typeform.com/to/CysA02Yx?typeform-source=www.horstartsandmusic.com",
+    "https://form.typeform.com/to/SmaqZSNT",
+    "https://horstartsandmusic.com/jobs/communications-asiat",
+    "https://horstartsandmusic.com/jobs/communications-arts-archive",
+    "https://horstartsandmusic.com/jobs/communications-horst",
+    "https://horstartsandmusic.com/jobs/music-artist-production",
+    "https://horstartsandmusic.com/jobs/finance-admin",
+    "https://horstartsandmusic.com/jobs/cloakroom",
+    "https://horstartsandmusic.com/jobs/entrance-ticketing",
+    "https://horstartsandmusic.com/jobs/door-horst",
+    "https://horstartsandmusic.com/jobs/collective-care-team",
+    "https://horstartsandmusic.com/jobs/collective-care-lead",
+    "https://horstartsandmusic.com/jobs/bartender",
+    "https://horstartsandmusic.com/jobs/bar-manger"
+  ],
+  "how_to_apply": "https://form.typeform.com/to/SmaqZSNT",
+  "call_pages": [
+    {
+      "url": "https://horstartsandmusic.com/jobs/club-production",
+      "status": "open",
+      "confidence": "high",
+      "opportunity_types": [
+        "residency"
+      ],
+      "verified_quotes": [
+        "Apply here before Sunday 13 September, 23:59 (CET)."
+      ],
+      "deadline": "2027-09-13",
+      "deadline_text": "Sunday 13 September, 23:59 (CET)",
+      "how_to_apply": "https://form.typeform.com/to/SmaqZSNT",
+      "open_call_urls": [
+        "https://form.typeform.com/to/CysA02Yx?typeform-source=www.horstartsandmusic.com",
+        "https://form.typeform.com/to/SmaqZSNT",
+        "https://horstartsandmusic.com/jobs/communications-asiat",
+        "https://horstartsandmusic.com/jobs/communications-arts-archive",
+        "https://horstartsandmusic.com/jobs/communications-horst",
+        "https://horstartsandmusic.com/jobs/music-artist-production",
+        "https://horstartsandmusic.com/jobs/finance-admin",
+        "https://horstartsandmusic.com/jobs/cloakroom",
+        "https://horstartsandmusic.com/jobs/entrance-ticketing",
+        "https://horstartsandmusic.com/jobs/door-horst",
+        "https://horstartsandmusic.com/jobs/collective-care-team",
+        "https://horstartsandmusic.com/jobs/collective-care-lead",
+        "https://horstartsandmusic.com/jobs/bartender",
+        "https://horstartsandmusic.com/jobs/bar-manger"
+      ],
+      "reasoning": "The page describes an internship opportunity for Club Production at Asiat Park, with a deadline of Sunday 13 September, 23:59 (CET). The page also includes a link to apply."
+    },
+    {
+      "url": "https://horstartsandmusic.com/jobs/finance-admin",
+      "status": "unclear",
+      "confidence": "high",
+      "opportunity_types": [],
+      "verified_quotes": [],
+      "deadline": "2027-09-13",
+      "deadline_text": "Sunday 13 September, 23:59 (CET)",
+      "how_to_apply": "Apply here ->",
+      "open_call_urls": [
+        "https://form.typeform.com/to/CysA02Yx?typeform-source=www.horstartsandmusic.com",
+        "https://form.typeform.com/to/SmaqZSNT",
+        "https://horstartsandmusic.com/jobs/club-production",
+        "https://horstartsandmusic.com/jobs/communications-asiat",
+        "https://horstartsandmusic.com/jobs/communications-arts-archive",
+        "https://horstartsandmusic.com/jobs/communications-horst",
+        "https://horstartsandmusic.com/jobs/music-artist-production",
+        "https://horstartsandmusic.com/jobs/cloakroom",
+        "https://horstartsandmusic.com/jobs/entrance-ticketing",
+        "https://horstartsandmusic.com/jobs/door-horst",
+        "https://horstartsandmusic.com/jobs/collective-care-team",
+        "https://horstartsandmusic.com/jobs/collective-care-lead",
+        "https://horstartsandmusic.com/jobs/bartender",
+        "https://horstartsandmusic.com/jobs/bar-manger"
+      ],
+      "reasoning": "Downgraded: no quote found verbatim on the page. Model said: The page describes a job position for an unpaid intern in finance and admin at Horst Arts and Music. The deadline is specified as 'Sunday 13 September, 23:59 (CET)', which is in the past. Therefore, the call is closed."
+    },
+    {
+      "url": "https://horstartsandmusic.com/jobs/communications-asiat",
+      "status": "closed",
+      "confidence": "high",
+      "opportunity_types": [
+        "other"
+      ],
+      "verified_quotes": [
+        "Apply here before Sunday 13 September, 23:59 (CET)."
+      ],
+      "deadline": "2027-09-13",
+      "deadline_text": "Sunday 13 September, 23:59 (CET)",
+      "how_to_apply": "https://form.typeform.com/to/SmaqZSNT",
+      "open_call_urls": [
+        "https://form.typeform.com/to/CysA02Yx?typeform-source=www.horstartsandmusic.com",
+        "https://form.typeform.com/to/SmaqZSNT",
+        "https://horstartsandmusic.com/jobs/club-production",
+        "https://horstartsandmusic.com/jobs/communications-arts-archive",
+        "https://horstartsandmusic.com/jobs/communications-horst",
+        "https://horstartsandmusic.com/jobs/music-artist-production",
+        "https://horstartsandmusic.com/jobs/finance-admin",
+        "https://horstartsandmusic.com/jobs/cloakroom",
+        "https://horstartsandmusic.com/jobs/entrance-ticketing",
+        "https://horstartsandmusic.com/jobs/door-horst",
+        "https://horstartsandmusic.com/jobs/collective-care-team",
+        "https://horstartsandmusic.com/jobs/collective-care-lead",
+        "https://horstartsandmusic.com/jobs/bartender",
+        "https://horstartsandmusic.com/jobs/bar-manger"
+      ],
+      "reasoning": "The page describes an internship opportunity for Asiat Park, but does not mention any open call for external submissions or applications. The deadline for the internship is specified as Sunday 13 September, 23:59 (CET)."
+    },
+    {
+      "url": "https://horstartsandmusic.com/jobs/music-artist-production",
+      "status": "closed",
+      "confidence": "high",
+      "opportunity_types": [
+        "music"
+      ],
+      "verified_quotes": [
+        "Apply here before Sunday 13 September, 23:59 (CET)."
+      ],
+      "deadline": "2026-09-13",
+      "deadline_text": "2026-09-13",
+      "how_to_apply": "https://form.typeform.com/to/SmaqZSNT",
+      "open_call_urls": [
+        "https://form.typeform.com/to/CysA02Yx?typeform-source=www.horstartsandmusic.com",
+        "https://form.typeform.com/to/SmaqZSNT",
+        "https://horstartsandmusic.com/jobs/club-production",
+        "https://horstartsandmusic.com/jobs/communications-asiat",
+        "https://horstartsandmusic.com/jobs/communications-arts-archive",
+        "https://horstartsandmusic.com/jobs/communications-horst",
+        "https://horstartsandmusic.com/jobs/finance-admin",
+        "https://horstartsandmusic.com/jobs/cloakroom",
+        "https://horstartsandmusic.com/jobs/entrance-ticketing",
+        "https://horstartsandmusic.com/jobs/door-horst",
+        "https://horstartsandmusic.com/jobs/collective-care-team",
+        "https://horstartsandmusic.com/jobs/collective-care-lead",
+        "https://horstartsandmusic.com/jobs/bartender",
+        "https://horstartsandmusic.com/jobs/bar-manger"
+      ],
+      "reasoning": "Downgraded: deadline 2026-09-13 has passed. Model said: The page describes an internship opportunity for a Music Artist Production role, with a specific application deadline of September 13, 2026. The page also provides a link to apply."
+    },
+    {
+      "url": "https://horstartsandmusic.com/jobs/communications-horst",
+      "status": "closed",
+      "confidence": "high",
+      "opportunity_types": [
+        "other"
+      ],
+      "verified_quotes": [
+        "Apply here before Sunday 13 September, 23:59 (CET)."
+      ],
+      "deadline": "2027-09-13",
+      "deadline_text": "Sunday 13 September, 23:59 (CET)",
+      "how_to_apply": "https://form.typeform.com/to/SmaqZSNT",
+      "open_call_urls": [
+        "https://form.typeform.com/to/CysA02Yx?typeform-source=www.horstartsandmusic.com",
+        "https://form.typeform.com/to/SmaqZSNT",
+        "https://horstartsandmusic.com/jobs/club-production",
+        "https://horstartsandmusic.com/jobs/communications-asiat",
+        "https://horstartsandmusic.com/jobs/communications-arts-archive",
+        "https://horstartsandmusic.com/jobs/music-artist-production",
+        "https://horstartsandmusic.com/jobs/finance-admin",
+        "https://horstartsandmusic.com/jobs/cloakroom",
+        "https://horstartsandmusic.com/jobs/entrance-ticketing",
+        "https://horstartsandmusic.com/jobs/door-horst",
+        "https://horstartsandmusic.com/jobs/collective-care-team",
+        "https://horstartsandmusic.com/jobs/collective-care-lead",
+        "https://horstartsandmusic.com/jobs/bartender",
+        "https://horstartsandmusic.com/jobs/bar-manger"
+      ],
+      "reasoning": "The page describes an internship opportunity for Communications (Horst) with a deadline of Sunday 13 September, 2026. There is no mention of an open call for other types of opportunities."
+    }
+  ],
+  "coverage": {
+    "discovery": "sitemap + links",
+    "sitemap_urls_found": 694,
+    "pages_visited": 40,
+    "js_rendered_pages": 0,
+    "pages_classified": 12,
+    "llm_used": true,
+    "skipped_by_robots": [],
+    "min_page_date": "2025-01-01",
+    "skipped_by_date": [],
+    "unchecked_documents": []
+  },
+  "contact_emails": [
+    "info@horstartsandmusic.com",
+    "press@horstartsandmusic.com",
+    "press@hortsartsandmusic.com"
+  ],
+  "warnings": [
+    "28 keyword-matching pages were not classified (--max-llm-pages=12)."
+  ],
+  "errors": [],
+  "pages": [
+    {
+      "url": "https://horstartsandmusic.com/jobs/communications-arts-archive",
+      "title": "Horst Arts and Music - Arts Archive",
+      "keyword_hits": [
+        "apply\nhere",
+        "apply now"
+      ],
+      "form_links": [
+        "https://form.typeform.com/to/CysA02Yx?typeform-source=www.horstartsandmusic.com",
+        "https://form.typeform.com/to/SmaqZSNT"
+      ],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "2027-09-13",
+        "how_to_apply": "apply here ->",
+        "reasoning": "The page describes an internship opportunity for the Arts Archive at Asiat Park, with a deadline of Sunday 13 September, 23:59 (CET). There is no mention of an open call for submissions or applications.",
+        "verified_quotes": [],
+        "deadline_text": "Sunday 13 September, 23:59 (CET)",
+        "confidence": "high",
+        "form_links": [
+          "https://form.typeform.com/to/CysA02Yx?typeform-source=www.horstartsandmusic.com",
+          "https://form.typeform.com/to/SmaqZSNT"
+        ],
+        "open_call_urls": [
+          "https://form.typeform.com/to/CysA02Yx?typeform-source=www.horstartsandmusic.com",
+          "https://form.typeform.com/to/SmaqZSNT",
+          "https://horstartsandmusic.com/jobs/club-production",
+          "https://horstartsandmusic.com/jobs/communications-asiat",
+          "https://horstartsandmusic.com/jobs/communications-horst",
+          "https://horstartsandmusic.com/jobs/music-artist-production",
+          "https://horstartsandmusic.com/jobs/finance-admin",
+          "https://horstartsandmusic.com/jobs/cloakroom",
+          "https://horstartsandmusic.com/jobs/entrance-ticketing",
+          "https://horstartsandmusic.com/jobs/door-horst",
+          "https://horstartsandmusic.com/jobs/collective-care-team",
+          "https://horstartsandmusic.com/jobs/collective-care-lead",
+          "https://horstartsandmusic.com/jobs/bartender",
+          "https://horstartsandmusic.com/jobs/bar-manger"
+        ]
+      }
+    },
+    {
+      "url": "https://horstartsandmusic.com/jobs/communications-asiat",
+      "title": "Horst Arts and Music - Communications (Asiat Park)",
+      "keyword_hits": [
+        "apply\nhere",
+        "apply now"
+      ],
+      "form_links": [
+        "https://form.typeform.com/to/CysA02Yx?typeform-source=www.horstartsandmusic.com",
+        "https://form.typeform.com/to/SmaqZSNT"
+      ],
+      "classification": {
+        "status": "closed",
+        "opportunity_types": [
+          "other"
+        ],
+        "quotes": [
+          "Apply here before Sunday 13 September, 23:59 (CET).",
+          "apply now ->"
+        ],
+        "deadline": "2027-09-13",
+        "how_to_apply": "https://form.typeform.com/to/SmaqZSNT",
+        "reasoning": "The page describes an internship opportunity for Asiat Park, but does not mention any open call for external submissions or applications. The deadline for the internship is specified as Sunday 13 September, 23:59 (CET).",
+        "verified_quotes": [
+          "Apply here before Sunday 13 September, 23:59 (CET)."
+        ],
+        "deadline_text": "Sunday 13 September, 23:59 (CET)",
+        "confidence": "high",
+        "form_links": [
+          "https://form.typeform.com/to/CysA02Yx?typeform-source=www.horstartsandmusic.com",
+          "https://form.typeform.com/to/SmaqZSNT"
+        ],
+        "open_call_urls": [
+          "https://form.typeform.com/to/CysA02Yx?typeform-source=www.horstartsandmusic.com",
+          "https://form.typeform.com/to/SmaqZSNT",
+          "https://horstartsandmusic.com/jobs/club-production",
+          "https://horstartsandmusic.com/jobs/communications-arts-archive",
+          "https://horstartsandmusic.com/jobs/communications-horst",
+          "https://horstartsandmusic.com/jobs/music-artist-production",
+          "https://horstartsandmusic.com/jobs/finance-admin",
+          "https://horstartsandmusic.com/jobs/cloakroom",
+          "https://horstartsandmusic.com/jobs/entrance-ticketing",
+          "https://horstartsandmusic.com/jobs/door-horst",
+          "https://horstartsandmusic.com/jobs/collective-care-team",
+          "https://horstartsandmusic.com/jobs/collective-care-lead",
+          "https://horstartsandmusic.com/jobs/bartender",
+          "https://horstartsandmusic.com/jobs/bar-manger"
+        ]
+      }
+    },
+    {
+      "url": "https://horstartsandmusic.com/jobs/club-production",
+      "title": "Horst Arts and Music - Club Production",
+      "keyword_hits": [
+        "apply\nhere",
+        "apply now"
+      ],
+      "form_links": [
+        "https://form.typeform.com/to/CysA02Yx?typeform-source=www.horstartsandmusic.com",
+        "https://form.typeform.com/to/SmaqZSNT"
+      ],
+      "classification": {
+        "status": "open",
+        "opportunity_types": [
+          "residency"
+        ],
+        "quotes": [
+          "Apply here before Sunday 13 September, 23:59 (CET).",
+          "apply now ->"
+        ],
+        "deadline": "2027-09-13",
+        "how_to_apply": "https://form.typeform.com/to/SmaqZSNT",
+        "reasoning": "The page describes an internship opportunity for Club Production at Asiat Park, with a deadline of Sunday 13 September, 23:59 (CET). The page also includes a link to apply.",
+        "verified_quotes": [
+          "Apply here before Sunday 13 September, 23:59 (CET)."
+        ],
+        "deadline_text": "Sunday 13 September, 23:59 (CET)",
+        "confidence": "high",
+        "form_links": [
+          "https://form.typeform.com/to/CysA02Yx?typeform-source=www.horstartsandmusic.com",
+          "https://form.typeform.com/to/SmaqZSNT"
+        ],
+        "open_call_urls": [
+          "https://form.typeform.com/to/CysA02Yx?typeform-source=www.horstartsandmusic.com",
+          "https://form.typeform.com/to/SmaqZSNT",
+          "https://horstartsandmusic.com/jobs/communications-asiat",
+          "https://horstartsandmusic.com/jobs/communications-arts-archive",
+          "https://horstartsandmusic.com/jobs/communications-horst",
+          "https://horstartsandmusic.com/jobs/music-artist-production",
+          "https://horstartsandmusic.com/jobs/finance-admin",
+          "https://horstartsandmusic.com/jobs/cloakroom",
+          "https://horstartsandmusic.com/jobs/entrance-ticketing",
+          "https://horstartsandmusic.com/jobs/door-horst",
+          "https://horstartsandmusic.com/jobs/collective-care-team",
+          "https://horstartsandmusic.com/jobs/collective-care-lead",
+          "https://horstartsandmusic.com/jobs/bartender",
+          "https://horstartsandmusic.com/jobs/bar-manger"
+        ]
+      }
+    },
+    {
+      "url": "https://horstartsandmusic.com/jobs/bar-manger",
+      "title": "Horst Arts and Music - Bar Manager",
+      "keyword_hits": [
+        "apply now",
+        "how to apply"
+      ],
+      "form_links": [
+        "https://form.typeform.com/to/CysA02Yx?typeform-source=www.horstartsandmusic.com",
+        "https://form.typeform.com/to/O4ygXMwf"
+      ],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "If you think you'd be a perfect fit as a bar manager, we can't wait to hear from you! Please apply directly via this link All open positions Club Production get hands-on experience in the core operational engine of our club season. apply now ->",
+        "reasoning": "The page describes a job position for a Bar Manager, but does not mention any open call for proposals, applications, or submissions. It only provides details about the job and how to apply.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "high",
+        "form_links": [
+          "https://form.typeform.com/to/CysA02Yx?typeform-source=www.horstartsandmusic.com",
+          "https://form.typeform.com/to/O4ygXMwf"
+        ],
+        "open_call_urls": [
+          "https://form.typeform.com/to/CysA02Yx?typeform-source=www.horstartsandmusic.com",
+          "https://form.typeform.com/to/O4ygXMwf",
+          "https://horstartsandmusic.com/jobs/club-production",
+          "https://horstartsandmusic.com/jobs/communications-asiat",
+          "https://horstartsandmusic.com/jobs/communications-arts-archive",
+          "https://horstartsandmusic.com/jobs/communications-horst",
+          "https://horstartsandmusic.com/jobs/music-artist-production",
+          "https://horstartsandmusic.com/jobs/finance-admin",
+          "https://horstartsandmusic.com/jobs/cloakroom",
+          "https://horstartsandmusic.com/jobs/entrance-ticketing",
+          "https://horstartsandmusic.com/jobs/door-horst",
+          "https://horstartsandmusic.com/jobs/collective-care-team",
+          "https://horstartsandmusic.com/jobs/collective-care-lead",
+          "https://horstartsandmusic.com/jobs/bartender"
+        ]
+      }
+    },
+    {
+      "url": "https://horstartsandmusic.com/jobs/music-artist-production",
+      "title": "Horst Arts and Music - Music Artist Production",
+      "keyword_hits": [
+        "apply\nhere",
+        "apply now"
+      ],
+      "form_links": [
+        "https://form.typeform.com/to/CysA02Yx?typeform-source=www.horstartsandmusic.com",
+        "https://form.typeform.com/to/SmaqZSNT"
+      ],
+      "classification": {
+        "status": "closed",
+        "opportunity_types": [
+          "music"
+        ],
+        "quotes": [
+          "Apply here before Sunday 13 September, 23:59 (CET).",
+          "apply now ->"
+        ],
+        "deadline": "2026-09-13",
+        "how_to_apply": "https://form.typeform.com/to/SmaqZSNT",
+        "reasoning": "Downgraded: deadline 2026-09-13 has passed. Model said: The page describes an internship opportunity for a Music Artist Production role, with a specific application deadline of September 13, 2026. The page also provides a link to apply.",
+        "verified_quotes": [
+          "Apply here before Sunday 13 September, 23:59 (CET)."
+        ],
+        "deadline_text": "2026-09-13",
+        "confidence": "high",
+        "form_links": [
+          "https://form.typeform.com/to/CysA02Yx?typeform-source=www.horstartsandmusic.com",
+          "https://form.typeform.com/to/SmaqZSNT"
+        ],
+        "open_call_urls": [
+          "https://form.typeform.com/to/CysA02Yx?typeform-source=www.horstartsandmusic.com",
+          "https://form.typeform.com/to/SmaqZSNT",
+          "https://horstartsandmusic.com/jobs/club-production",
+          "https://horstartsandmusic.com/jobs/communications-asiat",
+          "https://horstartsandmusic.com/jobs/communications-arts-archive",
+          "https://horstartsandmusic.com/jobs/communications-horst",
+          "https://horstartsandmusic.com/jobs/finance-admin",
+          "https://horstartsandmusic.com/jobs/cloakroom",
+          "https://horstartsandmusic.com/jobs/entrance-ticketing",
+          "https://horstartsandmusic.com/jobs/door-horst",
+          "https://horstartsandmusic.com/jobs/collective-care-team",
+          "https://horstartsandmusic.com/jobs/collective-care-lead",
+          "https://horstartsandmusic.com/jobs/bartender",
+          "https://horstartsandmusic.com/jobs/bar-manger"
+        ]
+      }
+    },
+    {
+      "url": "https://horstartsandmusic.com/jobs/door-horst",
+      "title": "Horst Arts and Music - Door Host",
+      "keyword_hits": [
+        "apply now",
+        "how to apply"
+      ],
+      "form_links": [
+        "https://form.typeform.com/to/CysA02Yx?typeform-source=www.horstartsandmusic.com",
+        "https://form.typeform.com/to/O4ygXMwf"
+      ],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page describes a job position for a Door Host, but does not mention an open call for proposals, applications, or submissions. The page also does not provide a deadline or details about how to apply.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "high",
+        "form_links": [
+          "https://form.typeform.com/to/CysA02Yx?typeform-source=www.horstartsandmusic.com",
+          "https://form.typeform.com/to/O4ygXMwf"
+        ],
+        "open_call_urls": [
+          "https://form.typeform.com/to/CysA02Yx?typeform-source=www.horstartsandmusic.com",
+          "https://form.typeform.com/to/O4ygXMwf",
+          "https://horstartsandmusic.com/jobs/club-production",
+          "https://horstartsandmusic.com/jobs/communications-asiat",
+          "https://horstartsandmusic.com/jobs/communications-arts-archive",
+          "https://horstartsandmusic.com/jobs/communications-horst",
+          "https://horstartsandmusic.com/jobs/music-artist-production",
+          "https://horstartsandmusic.com/jobs/finance-admin",
+          "https://horstartsandmusic.com/jobs/cloakroom",
+          "https://horstartsandmusic.com/jobs/entrance-ticketing",
+          "https://horstartsandmusic.com/jobs/collective-care-team",
+          "https://horstartsandmusic.com/jobs/collective-care-lead",
+          "https://horstartsandmusic.com/jobs/bartender",
+          "https://horstartsandmusic.com/jobs/bar-manger"
+        ]
+      }
+    },
+    {
+      "url": "https://horstartsandmusic.com/jobs/finance-admin",
+      "title": "Horst Arts and Music - Finance & Admin",
+      "keyword_hits": [
+        "apply\nhere",
+        "apply now"
+      ],
+      "form_links": [
+        "https://form.typeform.com/to/CysA02Yx?typeform-source=www.horstartsandmusic.com",
+        "https://form.typeform.com/to/SmaqZSNT"
+      ],
+      "classification": {
+        "status": "unclear",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "2027-09-13",
+        "how_to_apply": "Apply here ->",
+        "reasoning": "Downgraded: no quote found verbatim on the page. Model said: The page describes a job position for an unpaid intern in finance and admin at Horst Arts and Music. The deadline is specified as 'Sunday 13 September, 23:59 (CET)', which is in the past. Therefore, the call is closed.",
+        "verified_quotes": [],
+        "deadline_text": "Sunday 13 September, 23:59 (CET)",
+        "confidence": "high",
+        "form_links": [
+          "https://form.typeform.com/to/CysA02Yx?typeform-source=www.horstartsandmusic.com",
+          "https://form.typeform.com/to/SmaqZSNT"
+        ],
+        "open_call_urls": [
+          "https://form.typeform.com/to/CysA02Yx?typeform-source=www.horstartsandmusic.com",
+          "https://form.typeform.com/to/SmaqZSNT",
+          "https://horstartsandmusic.com/jobs/club-production",
+          "https://horstartsandmusic.com/jobs/communications-asiat",
+          "https://horstartsandmusic.com/jobs/communications-arts-archive",
+          "https://horstartsandmusic.com/jobs/communications-horst",
+          "https://horstartsandmusic.com/jobs/music-artist-production",
+          "https://horstartsandmusic.com/jobs/cloakroom",
+          "https://horstartsandmusic.com/jobs/entrance-ticketing",
+          "https://horstartsandmusic.com/jobs/door-horst",
+          "https://horstartsandmusic.com/jobs/collective-care-team",
+          "https://horstartsandmusic.com/jobs/collective-care-lead",
+          "https://horstartsandmusic.com/jobs/bartender",
+          "https://horstartsandmusic.com/jobs/bar-manger"
+        ]
+      }
+    },
+    {
+      "url": "https://horstartsandmusic.com/jobs/communications-horst",
+      "title": "Horst Arts and Music - Communications (Horst)",
+      "keyword_hits": [
+        "apply\nhere",
+        "apply now"
+      ],
+      "form_links": [
+        "https://form.typeform.com/to/CysA02Yx?typeform-source=www.horstartsandmusic.com",
+        "https://form.typeform.com/to/SmaqZSNT"
+      ],
+      "classification": {
+        "status": "closed",
+        "opportunity_types": [
+          "other"
+        ],
+        "quotes": [
+          "Apply here before Sunday 13 September, 23:59 (CET).",
+          "apply now ->"
+        ],
+        "deadline": "2027-09-13",
+        "how_to_apply": "https://form.typeform.com/to/SmaqZSNT",
+        "reasoning": "The page describes an internship opportunity for Communications (Horst) with a deadline of Sunday 13 September, 2026. There is no mention of an open call for other types of opportunities.",
+        "verified_quotes": [
+          "Apply here before Sunday 13 September, 23:59 (CET)."
+        ],
+        "deadline_text": "Sunday 13 September, 23:59 (CET)",
+        "confidence": "high",
+        "form_links": [
+          "https://form.typeform.com/to/CysA02Yx?typeform-source=www.horstartsandmusic.com",
+          "https://form.typeform.com/to/SmaqZSNT"
+        ],
+        "open_call_urls": [
+          "https://form.typeform.com/to/CysA02Yx?typeform-source=www.horstartsandmusic.com",
+          "https://form.typeform.com/to/SmaqZSNT",
+          "https://horstartsandmusic.com/jobs/club-production",
+          "https://horstartsandmusic.com/jobs/communications-asiat",
+          "https://horstartsandmusic.com/jobs/communications-arts-archive",
+          "https://horstartsandmusic.com/jobs/music-artist-production",
+          "https://horstartsandmusic.com/jobs/finance-admin",
+          "https://horstartsandmusic.com/jobs/cloakroom",
+          "https://horstartsandmusic.com/jobs/entrance-ticketing",
+          "https://horstartsandmusic.com/jobs/door-horst",
+          "https://horstartsandmusic.com/jobs/collective-care-team",
+          "https://horstartsandmusic.com/jobs/collective-care-lead",
+          "https://horstartsandmusic.com/jobs/bartender",
+          "https://horstartsandmusic.com/jobs/bar-manger"
+        ]
+      }
+    },
+    {
+      "url": "https://horstartsandmusic.com/jobs/collective-care-lead",
+      "title": "Horst Arts and Music - Collective Care Lead",
+      "keyword_hits": [
+        "apply now",
+        "how to apply"
+      ],
+      "form_links": [
+        "https://form.typeform.com/to/CysA02Yx?typeform-source=www.horstartsandmusic.com",
+        "https://form.typeform.com/to/O4ygXMwf"
+      ],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "If you think you'd be a perfect fit as a collective care lead we can't wait to hear from you! Please apply directly via this link https://form.typeform.com/to/O4ygXMwf All open positions apply now ->",
+        "reasoning": "The page describes a job position for a Collective Care Lead, but does not mention any open call for proposals, applications, or submissions. The page only provides information about the role and how to apply.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "high",
+        "form_links": [
+          "https://form.typeform.com/to/CysA02Yx?typeform-source=www.horstartsandmusic.com",
+          "https://form.typeform.com/to/O4ygXMwf"
+        ],
+        "open_call_urls": [
+          "https://form.typeform.com/to/CysA02Yx?typeform-source=www.horstartsandmusic.com",
+          "https://form.typeform.com/to/O4ygXMwf",
+          "https://horstartsandmusic.com/jobs/club-production",
+          "https://horstartsandmusic.com/jobs/communications-asiat",
+          "https://horstartsandmusic.com/jobs/communications-arts-archive",
+          "https://horstartsandmusic.com/jobs/communications-horst",
+          "https://horstartsandmusic.com/jobs/music-artist-production",
+          "https://horstartsandmusic.com/jobs/finance-admin",
+          "https://horstartsandmusic.com/jobs/cloakroom",
+          "https://horstartsandmusic.com/jobs/entrance-ticketing",
+          "https://horstartsandmusic.com/jobs/door-horst",
+          "https://horstartsandmusic.com/jobs/collective-care-team",
+          "https://horstartsandmusic.com/jobs/bartender",
+          "https://horstartsandmusic.com/jobs/bar-manger"
+        ]
+      }
+    },
+    {
+      "url": "https://horstartsandmusic.com/jobs/bartender",
+      "title": "Horst Arts and Music - Bartender",
+      "keyword_hits": [
+        "apply now",
+        "how to apply"
+      ],
+      "form_links": [
+        "https://form.typeform.com/to/CysA02Yx?typeform-source=www.horstartsandmusic.com",
+        "https://form.typeform.com/to/O4ygXMwf"
+      ],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page describes job positions, including a bartender role, but does not mention an open call for external submissions or applications. The link provided is for a form to apply for the bartender position, not an open call.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "high",
+        "form_links": [
+          "https://form.typeform.com/to/CysA02Yx?typeform-source=www.horstartsandmusic.com",
+          "https://form.typeform.com/to/O4ygXMwf"
+        ],
+        "open_call_urls": [
+          "https://form.typeform.com/to/CysA02Yx?typeform-source=www.horstartsandmusic.com",
+          "https://form.typeform.com/to/O4ygXMwf",
+          "https://horstartsandmusic.com/jobs/club-production",
+          "https://horstartsandmusic.com/jobs/communications-asiat",
+          "https://horstartsandmusic.com/jobs/communications-arts-archive",
+          "https://horstartsandmusic.com/jobs/communications-horst",
+          "https://horstartsandmusic.com/jobs/music-artist-production",
+          "https://horstartsandmusic.com/jobs/finance-admin",
+          "https://horstartsandmusic.com/jobs/cloakroom",
+          "https://horstartsandmusic.com/jobs/entrance-ticketing",
+          "https://horstartsandmusic.com/jobs/door-horst",
+          "https://horstartsandmusic.com/jobs/collective-care-team",
+          "https://horstartsandmusic.com/jobs/collective-care-lead",
+          "https://horstartsandmusic.com/jobs/bar-manger"
+        ]
+      }
+    },
+    {
+      "url": "https://horstartsandmusic.com/jobs/collective-care-team",
+      "title": "Horst Arts and Music - Collective Care Team",
+      "keyword_hits": [
+        "apply now",
+        "how to apply"
+      ],
+      "form_links": [
+        "https://form.typeform.com/to/CysA02Yx?typeform-source=www.horstartsandmusic.com",
+        "https://form.typeform.com/to/O4ygXMwf"
+      ],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "If you think you'd be a perfect fit as a collective care crew member we can't wait to hear from you! Please apply directly via this link All open positions",
+        "reasoning": "The page describes a job position for a Collective Care Team, but does not mention any open call for external applications, submissions, or proposals. It only provides information about the role and how to apply.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "high",
+        "form_links": [
+          "https://form.typeform.com/to/CysA02Yx?typeform-source=www.horstartsandmusic.com",
+          "https://form.typeform.com/to/O4ygXMwf"
+        ],
+        "open_call_urls": [
+          "https://form.typeform.com/to/CysA02Yx?typeform-source=www.horstartsandmusic.com",
+          "https://form.typeform.com/to/O4ygXMwf",
+          "https://horstartsandmusic.com/jobs/club-production",
+          "https://horstartsandmusic.com/jobs/communications-asiat",
+          "https://horstartsandmusic.com/jobs/communications-arts-archive",
+          "https://horstartsandmusic.com/jobs/communications-horst",
+          "https://horstartsandmusic.com/jobs/music-artist-production",
+          "https://horstartsandmusic.com/jobs/finance-admin",
+          "https://horstartsandmusic.com/jobs/cloakroom",
+          "https://horstartsandmusic.com/jobs/entrance-ticketing",
+          "https://horstartsandmusic.com/jobs/door-horst",
+          "https://horstartsandmusic.com/jobs/collective-care-lead",
+          "https://horstartsandmusic.com/jobs/bartender",
+          "https://horstartsandmusic.com/jobs/bar-manger"
+        ]
+      }
+    },
+    {
+      "url": "https://horstartsandmusic.com/jobs/entrance-ticketing",
+      "title": "Horst Arts and Music - Entrance / Ticketing",
+      "keyword_hits": [
+        "apply now"
+      ],
+      "form_links": [
+        "https://form.typeform.com/to/CysA02Yx?typeform-source=www.horstartsandmusic.com",
+        "https://form.typeform.com/to/O4ygXMwf"
+      ],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page describes job positions and does not mention any open call for proposals, applications, or submissions. It only provides information about job descriptions and application links.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "high",
+        "form_links": [
+          "https://form.typeform.com/to/CysA02Yx?typeform-source=www.horstartsandmusic.com",
+          "https://form.typeform.com/to/O4ygXMwf"
+        ],
+        "open_call_urls": [
+          "https://form.typeform.com/to/CysA02Yx?typeform-source=www.horstartsandmusic.com",
+          "https://form.typeform.com/to/O4ygXMwf",
+          "https://horstartsandmusic.com/jobs/club-production",
+          "https://horstartsandmusic.com/jobs/communications-asiat",
+          "https://horstartsandmusic.com/jobs/communications-arts-archive",
+          "https://horstartsandmusic.com/jobs/communications-horst",
+          "https://horstartsandmusic.com/jobs/music-artist-production",
+          "https://horstartsandmusic.com/jobs/finance-admin",
+          "https://horstartsandmusic.com/jobs/cloakroom",
+          "https://horstartsandmusic.com/jobs/door-horst",
+          "https://horstartsandmusic.com/jobs/collective-care-team",
+          "https://horstartsandmusic.com/jobs/collective-care-lead",
+          "https://horstartsandmusic.com/jobs/bartender",
+          "https://horstartsandmusic.com/jobs/bar-manger"
+        ]
+      }
+    }
+  ],
+  "model": "qwen2.5-3b-instruct-q4_k_m.gguf"
+}

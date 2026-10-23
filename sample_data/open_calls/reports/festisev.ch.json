@@ -1,0 +1,117 @@
+{
+  "site": "http://festisev.ch/",
+  "checked_on": "2026-09-21",
+  "status": "none",
+  "status_reason": "No call found",
+  "opportunity_types": [],
+  "deadline": "",
+  "deadline_text": "",
+  "announcement_urls": [],
+  "open_call_urls": [],
+  "how_to_apply": "",
+  "call_pages": [],
+  "coverage": {
+    "discovery": "link crawl (no sitemap found)",
+    "sitemap_urls_found": 0,
+    "pages_visited": 5,
+    "js_rendered_pages": 5,
+    "pages_classified": 3,
+    "llm_used": true,
+    "skipped_by_robots": [],
+    "min_page_date": "2025-01-01",
+    "skipped_by_date": [],
+    "unchecked_documents": []
+  },
+  "contact_emails": [
+    "communication@festisev.ch",
+    "contact@festisev.ch",
+    "info@festisev.ch",
+    "prog@festisev.ch"
+  ],
+  "warnings": [],
+  "errors": [],
+  "pages": [
+    {
+      "url": "http://festisev.ch/",
+      "title": "home | Festival de Sévelin",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page title 'Festival de Sévelin' and the content 'home' suggest it is the main page of the festival, not a specific call for proposals. There is no mention of any open call or invitation to apply.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "http://festisev.ch/2026/prog",
+      "title": "programmation 2026 | Festival de Sévelin",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [
+          "dj",
+          "live_performance",
+          "music"
+        ],
+        "quotes": [
+          "Darling Chouchou",
+          "g2n",
+          "Vickie Cherie",
+          "ANJEES G.G",
+          "Jade & Naïa",
+          "Genosidra",
+          "guits",
+          "NEGRACONDA",
+          "diabolo fraiz",
+          "Talita otovic",
+          "megateuf",
+          "Jessica Punisher",
+          "Nina Seumer",
+          "CRACHE",
+          "Carolo",
+          "Andra"
+        ],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page describes live performances, DJs, and other types of musical and artistic events for the 2026 Festival de Sévelin. There is no mention of an open call for proposals, applications, or submissions.",
+        "verified_quotes": [
+          "Darling Chouchou",
+          "Jessica Punisher"
+        ],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "http://festisev.ch/festival-de-sevelin-contact",
+      "title": "contact | Festival de Sévelin",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page does not describe any open call or mention any opportunities for external applications, submissions, or proposals. It only provides contact information and a history of the festival.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    }
+  ],
+  "model": "qwen2.5-3b-instruct-q4_k_m.gguf"
+}

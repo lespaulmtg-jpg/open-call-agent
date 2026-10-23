@@ -1,0 +1,182 @@
+{
+  "site": "https://www.tomorrowland.com/",
+  "checked_on": "2026-09-21",
+  "status": "needs_review",
+  "status_reason": "Possible call (open without keyword or link evidence)",
+  "opportunity_types": [
+    "other"
+  ],
+  "deadline": "2026-09-23",
+  "deadline_text": "September 23, 2026, 23:59 BRT",
+  "announcement_urls": [
+    "https://www.tomorrowland.com/article/tomorrowland-brasil-2027-all-you-need-to-know"
+  ],
+  "open_call_urls": [],
+  "how_to_apply": "Pre-Registration is available through your Tomorrowland Account from April 30, 2026, 10:00 BRT, through September 23, 2026, 23:59 BRT.",
+  "call_pages": [
+    {
+      "url": "https://www.tomorrowland.com/article/tomorrowland-brasil-2027-all-you-need-to-know",
+      "status": "open",
+      "confidence": "low",
+      "opportunity_types": [
+        "other"
+      ],
+      "verified_quotes": [
+        "Pre-Registration is the only way to access Tomorrowland Brasil 2027 ticket and package sales.",
+        "Anyone who doesn't Pre-Register within this window won't be able to take part in the sales."
+      ],
+      "deadline": "2026-09-23",
+      "deadline_text": "September 23, 2026, 23:59 BRT",
+      "how_to_apply": "Pre-Registration is available through your Tomorrowland Account from April 30, 2026, 10:00 BRT, through September 23, 2026, 23:59 BRT.",
+      "open_call_urls": [],
+      "reasoning": "The page mentions 'Pre-Registration is the only way to access Tomorrowland Brasil 2027 ticket and package sales. It's available through your Tomorrowland Account from April 30, 2026, 10:00 BRT, through September 23, 2026, 23:59 BRT.' This indicates an open call for pre-registration."
+    }
+  ],
+  "coverage": {
+    "discovery": "link crawl (no sitemap found)",
+    "sitemap_urls_found": 0,
+    "pages_visited": 40,
+    "js_rendered_pages": 5,
+    "pages_classified": 6,
+    "llm_used": true,
+    "skipped_by_robots": [],
+    "min_page_date": "2025-01-01",
+    "skipped_by_date": [],
+    "unchecked_documents": []
+  },
+  "contact_emails": [
+    "foundation@tomorrowland.com",
+    "info@tomorrowland.com",
+    "oneworldradio@tomorrowland.com",
+    "privacidade@tomorrowlandbrasil.com"
+  ],
+  "warnings": [],
+  "errors": [],
+  "pages": [
+    {
+      "url": "https://www.tomorrowland.com/",
+      "title": "Tomorrowland",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page does not describe any open call for applications, submissions, or proposals. It only provides information about upcoming events and packages.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://www.tomorrowland.com/article/tomorrowland-brasil-2027-all-you-need-to-know",
+      "title": "Everything you need to know about the Tomorrowland Brasil 2027 edition",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "open",
+        "opportunity_types": [
+          "other"
+        ],
+        "quotes": [
+          "Pre-Registration is the only way to access Tomorrowland Brasil 2027 ticket and package sales.",
+          "Anyone who doesn't Pre-Register within this window won't be able to take part in the sales."
+        ],
+        "deadline": "2026-09-23",
+        "how_to_apply": "Pre-Registration is available through your Tomorrowland Account from April 30, 2026, 10:00 BRT, through September 23, 2026, 23:59 BRT.",
+        "reasoning": "The page mentions 'Pre-Registration is the only way to access Tomorrowland Brasil 2027 ticket and package sales. It's available through your Tomorrowland Account from April 30, 2026, 10:00 BRT, through September 23, 2026, 23:59 BRT.' This indicates an open call for pre-registration.",
+        "verified_quotes": [
+          "Pre-Registration is the only way to access Tomorrowland Brasil 2027 ticket and package sales.",
+          "Anyone who doesn't Pre-Register within this window won't be able to take part in the sales."
+        ],
+        "deadline_text": "September 23, 2026, 23:59 BRT",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://brasil.tomorrowland.com/en/sales",
+      "title": "Sales Info - Tomorrowland Brasil",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page does not describe any open call for applications, submissions, or proposals. It only provides information about ticket sales and related terms and conditions.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": [
+          "https://brasil.tomorrowland.com/en/sales/sales-dates/terms-conditions"
+        ]
+      }
+    },
+    {
+      "url": "https://academy.tomorrowland.com/courses/social-media-branding-2",
+      "title": "Artist social media & branding course | Tomorrowland Academy",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page describes a course on social media branding for DJs, but does not mention any open call for applications, submissions, or proposals. It only provides information about the course and its features.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://academy.tomorrowland.com/success-stories/ahurus",
+      "title": "Success stories - \"From an independent artist in Italy to playing in Dubrovnik. Tomorrowland Academy made a dream become reality.\" | Tomorrowland Academy",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page is a collection of success stories and does not describe any open call for applications, submissions, or proposals.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://academy.tomorrowland.com/artist-advice",
+      "title": "Artist advice | Tomorrowland Academy",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page does not describe any open call or opportunity to apply. It only contains artist advice and success stories.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    }
+  ],
+  "model": "qwen2.5-3b-instruct-q4_k_m.gguf"
+}

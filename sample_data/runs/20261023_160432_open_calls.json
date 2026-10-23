@@ -1,0 +1,35 @@
+{
+  "id": "20261023_160432_open_calls",
+  "kind": "open_calls",
+  "label": "sample_data/open_calls/open_calls_europe_sample_2026-09-21.csv",
+  "arguments": {
+    "data_dir": "sample_data",
+    "command": "review-open-calls",
+    "input": "sample_data/open_calls/open_calls_europe_sample_2026-09-21.csv",
+    "ignore_robots": "True",
+    "no_reuse": "True",
+    "min_page_date": "2025-01-01",
+    "review_slots": "2"
+  },
+  "pid": 37995,
+  "state": "done",
+  "started": "2026-10-23T16:04:32",
+  "finished": "2026-10-23T16:08:12",
+  "seconds": 220,
+  "progress": {
+    "done": 0,
+    "total": 0,
+    "unit": ""
+  },
+  "counts": {
+    "reviewed": 25,
+    "reviewed_none": 12,
+    "reviewed_open": 4,
+    "reviewed_needs_review": 4,
+    "reviewed_closed": 5
+  },
+  "errors": [
+    "2026-10-23 16:05:56,935 Review classification failed for https://zermatt-unplugged.ch/en/contact: Invalid JSON in model output: Unterminated string starting at: line 1 column 283 (char 282)"
+  ],
+  "source": "run"
+}

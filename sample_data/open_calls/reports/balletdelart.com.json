@@ -1,0 +1,195 @@
+{
+  "site": "https://balletdelart.com/",
+  "checked_on": "2026-09-21",
+  "status": "needs_review",
+  "status_reason": "Possible call (unclear)",
+  "opportunity_types": [
+    "other"
+  ],
+  "deadline": "2031-08-18",
+  "deadline_text": "August 18th-31st",
+  "announcement_urls": [
+    "https://balletdelart.com/summer-intensive"
+  ],
+  "open_call_urls": [],
+  "how_to_apply": "Tuition is 2,100 € and scholarships are available through application. Video of classical work and resume is required.",
+  "call_pages": [
+    {
+      "url": "https://balletdelart.com/summer-intensive",
+      "status": "unclear",
+      "confidence": "high",
+      "opportunity_types": [
+        "other"
+      ],
+      "verified_quotes": [],
+      "deadline": "2031-08-18",
+      "deadline_text": "August 18th-31st",
+      "how_to_apply": "Tuition is 2,100 € and scholarships are available through application. Video of classical work and resume is required.",
+      "open_call_urls": [],
+      "reasoning": "Downgraded: no quote found verbatim on the page. Model said: The page describes an intensive program open to the public, welcoming dancers ages 12 and up. It mentions that the program is open for applications and invites dancers to sign up."
+    }
+  ],
+  "coverage": {
+    "discovery": "sitemap + links",
+    "sitemap_urls_found": 49,
+    "pages_visited": 40,
+    "js_rendered_pages": 0,
+    "pages_classified": 7,
+    "llm_used": true,
+    "skipped_by_robots": [],
+    "min_page_date": "2025-01-01",
+    "skipped_by_date": [],
+    "unchecked_documents": []
+  },
+  "contact_emails": [
+    "balletdelartproductions@gmail.com",
+    "filler@godaddy.com"
+  ],
+  "warnings": [],
+  "errors": [],
+  "pages": [
+    {
+      "url": "https://balletdelart.com/summer-intensive",
+      "title": "Ballet Del'Art Professional Ballet Training Summer Intensive in Antwerp Belgium",
+      "keyword_hits": [
+        "how to apply"
+      ],
+      "form_links": [],
+      "classification": {
+        "status": "unclear",
+        "opportunity_types": [
+          "other"
+        ],
+        "quotes": [
+          "'Are you an aspiring dancer looking to take your training to the next level this summer?'",
+          "'This one-of-a-kind intensive is open to the public, welcoming dancers ages 12 and up who are passionate about honing their technique and artistry.'",
+          "'Sign up for the Ballet Del'Art Summer Intensive today and take your dancing to the next level!'",
+          "'The intensive will run for from August 18th-31st'"
+        ],
+        "deadline": "2031-08-18",
+        "how_to_apply": "Tuition is 2,100 € and scholarships are available through application. Video of classical work and resume is required.",
+        "reasoning": "Downgraded: no quote found verbatim on the page. Model said: The page describes an intensive program open to the public, welcoming dancers ages 12 and up. It mentions that the program is open for applications and invites dancers to sign up.",
+        "verified_quotes": [],
+        "deadline_text": "August 18th-31st",
+        "confidence": "high",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://balletdelart.com/",
+      "title": "Professional Ballet Training, Performances, and Productions at Ballet Del'Art",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page does not describe an open call for any opportunity. It only provides information about the company, its productions, and upcoming events.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://balletdelart.com/contact",
+      "title": "Ballet Del'Art - Ballet, Arts Organization, Art Foundation",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page does not mention any open call or invitation for outside people to apply, submit or propose something. It only contains general contact information and policies.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://balletdelart.com/artistic-staff",
+      "title": "Ballet Del'Art - Ballet Teachers, Guest Choreographers, Ballet Masters",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page does not describe any open call for applications, submissions, or proposals. It only lists the artistic staff and their qualifications.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://balletdelart.com/ptp-and-trainee-program",
+      "title": "Ballet Del'Art - Professional Ballet Training, Aspiring Professional Dancers, Classical Ballet",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page describes a training program for aspiring professional dancers, but does not mention any open call for applications or submissions. It only describes the program and fees.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://balletdelart.com/the-company",
+      "title": "Ballet Del'Art - Ballet Company, Arts Center, About Ballet Del'art",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page does not describe any open call or opportunity for external applications, submissions, or proposals. It only provides information about the Ballet Del'Art company and its values.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://balletdelart.com/ballet-delart-canada",
+      "title": "Ballet Training Canada | Ballet Del&#39;Art&#39;s Dance Programs",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page text describes the training programs offered by Ballet Del'Art but does not mention any open call for applications, submissions, or proposals. There is no mention of deadlines or how to apply.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    }
+  ],
+  "model": "qwen2.5-3b-instruct-q4_k_m.gguf"
+}

@@ -1,0 +1,296 @@
+{
+  "site": "https://asummerstory.com/",
+  "checked_on": "2026-09-22",
+  "status": "needs_review",
+  "status_reason": "Possible call (unclear)",
+  "opportunity_types": [
+    "vendors_food"
+  ],
+  "deadline": "",
+  "deadline_text": "",
+  "announcement_urls": [
+    "https://asummerstory.com/faq-items/los-trayectos-de-lanzadera-son-ida-y-vuelta"
+  ],
+  "open_call_urls": [],
+  "how_to_apply": "",
+  "call_pages": [
+    {
+      "url": "https://asummerstory.com/faq-items/los-trayectos-de-lanzadera-son-ida-y-vuelta",
+      "status": "unclear",
+      "confidence": "low",
+      "opportunity_types": [
+        "vendors_food"
+      ],
+      "verified_quotes": [
+        "Si, todos los trayectos son ida y vuelta.",
+        "2025-12-16T10:34:39+01:00"
+      ],
+      "deadline": "",
+      "deadline_text": "",
+      "how_to_apply": "",
+      "open_call_urls": [],
+      "reasoning": "The page text states 'Si, todos los trayectos son ida y vuelta.' which translates to 'Yes, all the shuttle trips are round trips.' This implies an open call for round trip shuttle services, but no deadline or application details are provided."
+    }
+  ],
+  "coverage": {
+    "discovery": "sitemap + links",
+    "sitemap_urls_found": 40,
+    "pages_visited": 25,
+    "js_rendered_pages": 0,
+    "pages_classified": 8,
+    "llm_used": true,
+    "skipped_by_robots": [],
+    "min_page_date": "2025-01-01",
+    "skipped_by_date": [
+      {
+        "url": "https://asummerstory.com/slide-page/music-fans",
+        "date": "2017-06-27",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://asummerstory.com/fusion_tb_category/page_title_bar",
+        "date": "2023-08-01",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://asummerstory.com/slide-page/music-home",
+        "date": "2016-07-14",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://asummerstory.com/fusion_tb_category/content",
+        "date": "2023-08-01",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://asummerstory.com/albums",
+        "date": "2016-07-14",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://asummerstory.com/live-dates",
+        "date": "2016-07-14",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://asummerstory.com/slide-page/music-album",
+        "date": "2016-07-16",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://asummerstory.com/fans",
+        "date": "2017-06-26",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://asummerstory.com/element_category/post_cards",
+        "date": "2024-01-01",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://asummerstory.com/element_category/columns",
+        "date": "2024-01-01",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://asummerstory.com/slide-page/music-live",
+        "date": "2016-08-01",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://asummerstory.com/slide-page/music-band",
+        "date": "2016-08-01",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://asummerstory.com/latest-news",
+        "date": "2016-07-14",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://asummerstory.com/slide-page/music-news",
+        "date": "2016-08-02",
+        "source": "sitemap lastmod"
+      }
+    ],
+    "unchecked_documents": []
+  },
+  "contact_emails": [
+    "info@asummerstory.com"
+  ],
+  "warnings": [],
+  "errors": [
+    {
+      "url": "https://asummerstory.com/wp-admin",
+      "stage": "static_fetch",
+      "error": "HTTP 423"
+    }
+  ],
+  "pages": [
+    {
+      "url": "https://asummerstory.com/bono-recargas",
+      "title": "BONO RECARGAS - A Summer Story",
+      "keyword_hits": [
+        "bando"
+      ],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page is only showing the availability of tickets and does not mention any open call for proposals, submissions, or applications. There is no information about an open call.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "high",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://asummerstory.com/tickets",
+      "title": "TICKETS - A Summer Story",
+      "keyword_hits": [
+        "bando"
+      ],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page does not describe any open call or provide any information about submitting proposals, applications, or submissions. It only mentions available tickets and a placeholder for entradas disponibles.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "high",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://asummerstory.com/",
+      "title": "A Summer Story - Donde empieza el verano",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page describes the upcoming A Summer Story festival and mentions that artists are still being confirmed. It does not provide any information about an open call for submissions or applications.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://asummerstory.com/artistas-confirmados",
+      "title": "ARTISTAS CONFIRMADOS - A Summer Story",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page title and text indicate that the event is already confirmed and does not mention any open call for artists or performers.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://asummerstory.com/faq-items/como-funciona-el-bono-recarga",
+      "title": "¿Cómo funciona el bono recarga? - A Summer Story",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page describes the functionality of the recharge bonus and mentions that it can be used on any product or service within the venue. However, it does not provide any information about an open call for applications, submissions, or proposals.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://asummerstory.com/faq-items/se-puede-acceder-con-caravanas-campers-o-furgonetas",
+      "title": "¿Se puede acceder con caravanas/campers o furgonetas? - A Summer Story",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page does not describe an open call. It only states that caravans, campers, and furgonetas are not allowed and provides a date for this restriction.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://asummerstory.com/faq-items/los-trayectos-de-lanzadera-son-ida-y-vuelta",
+      "title": "¿Los trayectos de lanzadera son ida y vuelta? - A Summer Story",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "unclear",
+        "opportunity_types": [
+          "vendors_food"
+        ],
+        "quotes": [
+          "Si, todos los trayectos son ida y vuelta.",
+          "2025-12-16T10:34:39+01:00"
+        ],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page text states 'Si, todos los trayectos son ida y vuelta.' which translates to 'Yes, all the shuttle trips are round trips.' This implies an open call for round trip shuttle services, but no deadline or application details are provided.",
+        "verified_quotes": [
+          "Si, todos los trayectos son ida y vuelta.",
+          "2025-12-16T10:34:39+01:00"
+        ],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://asummerstory.com/faq-items/se-devuelve-lo-que-sobra-en-la-pulsera",
+      "title": "¿Se devuelve lo que sobra en la pulsera? - A Summer Story",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page text does not mention any open call or invitation for outside people to apply, submit or propose something. It only discusses the return policy for the bracelet and how to use it.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    }
+  ],
+  "model": "qwen2.5-3b-instruct-q4_k_m.gguf"
+}

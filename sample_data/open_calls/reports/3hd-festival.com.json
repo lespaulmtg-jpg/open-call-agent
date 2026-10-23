@@ -1,0 +1,268 @@
+{
+  "site": "https://3hd-festival.com/en",
+  "checked_on": "2026-09-22",
+  "status": "closed",
+  "status_reason": "Only closed calls found on 1 page(s)",
+  "opportunity_types": [
+    "workshops"
+  ],
+  "deadline": "2025-09-21",
+  "deadline_text": "September 21, 2025",
+  "announcement_urls": [
+    "https://3hd-festival.com/2025/en/program/open-call-kareoki-at-the-slagheap"
+  ],
+  "open_call_urls": [
+    "https://docs.google.com/forms/d/1LgwnJKVMN1q-7vLlgaGHHYu3TGefqccYGQksEi9-R3k/preview"
+  ],
+  "how_to_apply": "via this form",
+  "call_pages": [
+    {
+      "url": "https://3hd-festival.com/2025/en/program/open-call-kareoki-at-the-slagheap",
+      "status": "closed",
+      "confidence": "high",
+      "opportunity_types": [
+        "workshops"
+      ],
+      "verified_quotes": [
+        "Apply by: September 21, 2025 via this form",
+        "Workshop: October 3, 12-4pm at Haus der Visionäre"
+      ],
+      "deadline": "2025-09-21",
+      "deadline_text": "September 21, 2025",
+      "how_to_apply": "via this form",
+      "open_call_urls": [
+        "https://docs.google.com/forms/d/1LgwnJKVMN1q-7vLlgaGHHYu3TGefqccYGQksEi9-R3k/preview"
+      ],
+      "reasoning": "Downgraded: deadline 2025-09-21 has passed. Model said: The page describes a workshop called 'KAREOKI AT THE SLAGHEAP' and invites applications via a form. The deadline is specified as September 21, 2025."
+    }
+  ],
+  "coverage": {
+    "discovery": "link crawl (no sitemap found)",
+    "sitemap_urls_found": 0,
+    "pages_visited": 13,
+    "js_rendered_pages": 0,
+    "pages_classified": 9,
+    "llm_used": true,
+    "skipped_by_robots": [],
+    "min_page_date": "2025-01-01",
+    "skipped_by_date": [],
+    "unchecked_documents": []
+  },
+  "contact_emails": [
+    "hi@creamcake.de"
+  ],
+  "warnings": [
+    "Crawl time budget (120s) reached after 13 pages."
+  ],
+  "errors": [],
+  "pages": [
+    {
+      "url": "https://3hd-festival.com/2025/en",
+      "title": "3hd Festival 2025: Vertigo | home",
+      "keyword_hits": [
+        "open call"
+      ],
+      "form_links": [
+        "https://docs.google.com/forms/d/1LgwnJKVMN1q-7vLlgaGHHYu3TGefqccYGQksEi9-R3k/preview"
+      ],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page describes the 3hd Festival 2025 with a theme of 'Vertigo' and mentions various events and artists. However, there is no explicit invitation to apply, submit, or propose something.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "high",
+        "form_links": [
+          "https://docs.google.com/forms/d/1LgwnJKVMN1q-7vLlgaGHHYu3TGefqccYGQksEi9-R3k/preview"
+        ],
+        "open_call_urls": [
+          "https://docs.google.com/forms/d/1LgwnJKVMN1q-7vLlgaGHHYu3TGefqccYGQksEi9-R3k/preview",
+          "https://3hd-festival.com/2025/en/program/open-call-kareoki-at-the-slagheap"
+        ]
+      }
+    },
+    {
+      "url": "https://3hd-festival.com/2025/en/program/open-call-kareoki-at-the-slagheap",
+      "title": "3hd Festival 2025: Vertigo | KAREOKI AT THE SLAGHEAP (Open Call)",
+      "keyword_hits": [
+        "open call"
+      ],
+      "form_links": [
+        "https://docs.google.com/forms/d/1LgwnJKVMN1q-7vLlgaGHHYu3TGefqccYGQksEi9-R3k/preview",
+        "https://docs.google.com/forms/d/1LgwnJKVMN1q-7vLlgaGHHYu3TGefqccYGQksEi9-R3k/preview"
+      ],
+      "classification": {
+        "status": "closed",
+        "opportunity_types": [
+          "workshops"
+        ],
+        "quotes": [
+          "Apply by: September 21, 2025 via this form",
+          "Workshop: October 3, 12-4pm at Haus der Visionäre"
+        ],
+        "deadline": "2025-09-21",
+        "how_to_apply": "via this form",
+        "reasoning": "Downgraded: deadline 2025-09-21 has passed. Model said: The page describes a workshop called 'KAREOKI AT THE SLAGHEAP' and invites applications via a form. The deadline is specified as September 21, 2025.",
+        "verified_quotes": [
+          "Apply by: September 21, 2025 via this form",
+          "Workshop: October 3, 12-4pm at Haus der Visionäre"
+        ],
+        "deadline_text": "September 21, 2025",
+        "confidence": "high",
+        "form_links": [
+          "https://docs.google.com/forms/d/1LgwnJKVMN1q-7vLlgaGHHYu3TGefqccYGQksEi9-R3k/preview",
+          "https://docs.google.com/forms/d/1LgwnJKVMN1q-7vLlgaGHHYu3TGefqccYGQksEi9-R3k/preview"
+        ],
+        "open_call_urls": [
+          "https://docs.google.com/forms/d/1LgwnJKVMN1q-7vLlgaGHHYu3TGefqccYGQksEi9-R3k/preview"
+        ]
+      }
+    },
+    {
+      "url": "https://3hd-festival.com/2025/en/program",
+      "title": "3hd Festival 2025: Vertigo | Program",
+      "keyword_hits": [
+        "open call"
+      ],
+      "form_links": [
+        "https://docs.google.com/forms/d/1LgwnJKVMN1q-7vLlgaGHHYu3TGefqccYGQksEi9-R3k/preview"
+      ],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page describes past events and does not mention any open call for submissions or applications. It only lists events and performers.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "high",
+        "form_links": [
+          "https://docs.google.com/forms/d/1LgwnJKVMN1q-7vLlgaGHHYu3TGefqccYGQksEi9-R3k/preview"
+        ],
+        "open_call_urls": [
+          "https://docs.google.com/forms/d/1LgwnJKVMN1q-7vLlgaGHHYu3TGefqccYGQksEi9-R3k/preview",
+          "https://3hd-festival.com/2025/en/program/open-call-kareoki-at-the-slagheap"
+        ]
+      }
+    },
+    {
+      "url": "https://3hd-festival.com/en",
+      "title": "3hd Festival 2026: Beyond Imagining | home",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page describes a performance event at the 3hd Festival 2026, but does not mention any open call for proposals, applications, or submissions. It only describes past events and artists.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://3hd-festival.com/2025/en/about",
+      "title": "3hd Festival 2025: Vertigo | About",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page describes the 3hd Festival 2025 with its theme 'Vertigo' and the types of events and performances it will feature. There is no mention of an open call for submissions or applications.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://3hd-festival.com/2025/en/program/hostile-atmospheres",
+      "title": "3hd Festival 2025: Vertigo | Hostile Atmospheres",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page describes a program for the 3hd Festival 2025 and mentions that the works will be screened online and in person. However, there is no mention of an open call for proposals, submissions, or applications. The page is purely a program description.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://3hd-festival.com/2025/en/program/nausea",
+      "title": "3hd Festival 2025: Vertigo | Nausea",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page describes a performance event titled 'Nausea' at the Haus der Visionäre on October 2nd, 2025. It does not mention any call for proposals, submissions, or applications. There is no deadline mentioned, and the event is scheduled for a future date.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://3hd-festival.com/2025/en/program/shifting-ground",
+      "title": "3hd Festival 2025: Vertigo | Shifting Ground",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page describes a performance program for the 3hd Festival 2025, but does not mention any open call for proposals, applications, or submissions. It only describes the lineup and program details.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://3hd-festival.com/2025/en/program/shifting-ground-ii",
+      "title": "3hd Festival 2025: Vertigo | Shifting Ground",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page describes a performance program for the 3hd Festival 2025, but does not mention any open call for proposals, applications, or submissions. It only describes past events and their details.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    }
+  ],
+  "model": "qwen2.5-3b-instruct-q4_k_m.gguf"
+}

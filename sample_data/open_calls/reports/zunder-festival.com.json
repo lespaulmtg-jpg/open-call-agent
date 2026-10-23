@@ -1,0 +1,181 @@
+{
+  "site": "https://www.zunder-festival.com/",
+  "checked_on": "2026-09-21",
+  "status": "none",
+  "status_reason": "No call found",
+  "opportunity_types": [],
+  "deadline": "",
+  "deadline_text": "",
+  "announcement_urls": [],
+  "open_call_urls": [],
+  "how_to_apply": "",
+  "call_pages": [],
+  "coverage": {
+    "discovery": "sitemap + links",
+    "sitemap_urls_found": 57,
+    "pages_visited": 40,
+    "js_rendered_pages": 40,
+    "pages_classified": 7,
+    "llm_used": true,
+    "skipped_by_robots": [],
+    "min_page_date": "2025-01-01",
+    "skipped_by_date": [
+      {
+        "url": "https://www.zunder-festival.com/artists/jjjfodmap",
+        "date": "2024-10-10",
+        "source": "sitemap lastmod"
+      }
+    ],
+    "unchecked_documents": []
+  },
+  "contact_emails": [
+    "contact@inseminoid.com",
+    "info@zunder-festival.com",
+    "verschub@columbosnext.com",
+    "zunder-festival@gmail.com"
+  ],
+  "warnings": [],
+  "errors": [],
+  "pages": [
+    {
+      "url": "https://www.zunder-festival.com/home",
+      "title": "HOME — Zunder Festival",
+      "keyword_hits": [],
+      "form_links": [
+        "https://docs.google.com/forms/d/e/1FAIpQLSd8svBlMo-KEG3PrNk4sN2GNC1EEGPt-IP7NTzVAkkdOOMwQw/viewform"
+      ],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page describes the upcoming festival and its schedule, but does not mention any open call for proposals, applications, or submissions. It only provides information about the event and ticketing.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "high",
+        "form_links": [
+          "https://docs.google.com/forms/d/e/1FAIpQLSd8svBlMo-KEG3PrNk4sN2GNC1EEGPt-IP7NTzVAkkdOOMwQw/viewform"
+        ],
+        "open_call_urls": [
+          "https://docs.google.com/forms/d/e/1FAIpQLSd8svBlMo-KEG3PrNk4sN2GNC1EEGPt-IP7NTzVAkkdOOMwQw/viewform"
+        ]
+      }
+    },
+    {
+      "url": "https://www.zunder-festival.com/",
+      "title": "Zunder Festival",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page only contains information about the festival dates and venue, and does not mention any open call for applications, submissions, or proposals.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://www.zunder-festival.com/artists/tag/Drug+Searching+Dogs",
+      "title": "Drug Searching Dogs — Artists 2024 — Zunder Festival",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page describes the Drug Searching Dogs as a musical act and provides details about their upcoming album release. There is no mention of an open call for submissions or applications.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://www.zunder-festival.com/artists/tag/Das+Babelexperiment",
+      "title": "Das Babelexperiment — Artists 2024 — Zunder Festival",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page text does not mention any call for applications, submissions, or proposals. It only contains information about the artists for the 2024 Zunder Festival.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://www.zunder-festival.com/artists/tag/Talpah",
+      "title": "Talpah — Artists 2024 — Zunder Festival",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page describes Talpah, a musician, but does not mention any open call for artists or performers. There is no invitation to apply or submit something.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://www.zunder-festival.com/artists/category/2024",
+      "title": "2024 — Artists 2024 — Zunder Festival",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page describes artists and performances for the 2024 Zunder Festival, but does not mention any open call for submissions or applications. It only lists past and upcoming performances.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://www.zunder-festival.com/artists/dsd",
+      "title": "DRUG SEARCHING DOGS — Zunder Festival",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page describes the DRUG SEARCHING DOGS, a musical act, and provides details about their upcoming performance at the Zunder Festival in 2024. There is no mention of an open call for artists or performers.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    }
+  ],
+  "model": "qwen2.5-3b-instruct-q4_k_m.gguf"
+}

@@ -1,0 +1,17 @@
+{
+  "website": "https://www.roskilde-festival.dk",
+  "model": "qwen2.5-7b-instruct-q4_k_m-00001-of-00002.gguf",
+  "review": {
+    "status": "closed",
+    "deadline": "",
+    "deadline_text": "2026-10-00",
+    "open_call_url": "https://www.roskilde-festival.dk/en/become-a-volunteer/volunteer-positions, https://roskildefestival.typeform.com/to/oveDeLTe",
+    "announcement_url": "https://www.roskilde-festival.dk/en/news/2026/volunteer-at-roskilde-from-anywhere, https://www.roskilde-festival.dk/en/become-a-volunteer/volunteer-positions",
+    "opportunity_types": "volunteers",
+    "how_to_apply": "See available volunteer positions and how to apply. | https://roskildefestival.typeform.com/to/oveDeLTe",
+    "large_model_status": "closed",
+    "review_reason": "https://www.roskilde-festival.dk/en/news/2026/volunteer-at-roskilde-from-anywhere: The page does not invite people to apply or submit now. Instead, it states that the open call is now closed and provides a link to a closed typeform. | https://www.roskilde-festival.dk/en/become-a-volunteer/volunteer-positions: The page describes volunteer positions for Roskilde Festival in 2027, but it explicitly states that the typeform is now closed. There is no open call for applications at the moment. | Linked form is accepting",
+    "review_quotes": "It would have been awesome as it was made with Typeform. What’s that? | It would have been awesome as it was made with Typeform. What’s that?",
+    "reviewed_on": "2026-10-23"
+  }
+}

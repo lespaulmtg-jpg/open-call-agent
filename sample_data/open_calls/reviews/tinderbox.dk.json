@@ -1,0 +1,17 @@
+{
+  "website": "https://tinderbox.dk/",
+  "model": "qwen2.5-7b-instruct-q4_k_m-00001-of-00002.gguf",
+  "review": {
+    "status": "needs_review",
+    "deadline": "",
+    "deadline_text": "",
+    "open_call_url": "",
+    "announcement_url": "https://tinderbox.dk/en/performers-2",
+    "opportunity_types": "live_performance, talks, workshops",
+    "how_to_apply": "Send an email to roo@dtdgroup.dk with a description of your concept.",
+    "large_model_status": "needs_review",
+    "review_reason": "https://tinderbox.dk/en/performers-2: Downgraded: no quote found verbatim on the pages. Model said: The page clearly invites performers and other types of participants to submit their ideas for the upcoming festival edition.",
+    "review_quotes": "",
+    "reviewed_on": "2026-10-23"
+  }
+}

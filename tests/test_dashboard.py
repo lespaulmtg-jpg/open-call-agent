@@ -221,3 +221,23 @@ def test_api_endpoints(results_dir, monkeypatch):
     finally:
         server.shutdown()
         server.server_close()
+
+
+def test_a_missing_data_directory_and_a_taken_port_both_say_so(tmp_path, capsys):
+    """
+    Two easy ways to end up looking at an empty dashboard: a relative --data-dir resolved from the wrong directory,
+    and another dashboard already holding the port, which leaves the browser showing that one instead of this.
+    """
+    import socket
+
+    from dashboard.server import serve
+
+    with socket.socket() as taken:
+        taken.bind(("127.0.0.1", 0))
+        taken.listen()
+        port = taken.getsockname()[1]
+        assert serve(tmp_path / "not-here", port=port) == 1, "it gives up rather than raising"
+
+    output = capsys.readouterr().out
+    assert "There is no" in output and "not-here" in output, "says the directory isn't there, and where it looked"
+    assert f"Port {port} is already in use" in output and "--port" in output

@@ -1,0 +1,243 @@
+{
+  "site": "https://moonfield.be/",
+  "checked_on": "2026-09-21",
+  "status": "none",
+  "status_reason": "No call found",
+  "opportunity_types": [],
+  "deadline": "",
+  "deadline_text": "",
+  "announcement_urls": [],
+  "open_call_urls": [],
+  "how_to_apply": "",
+  "call_pages": [],
+  "coverage": {
+    "discovery": "sitemap + links",
+    "sitemap_urls_found": 47,
+    "pages_visited": 14,
+    "js_rendered_pages": 14,
+    "pages_classified": 2,
+    "llm_used": true,
+    "skipped_by_robots": [],
+    "min_page_date": "2025-01-01",
+    "skipped_by_date": [
+      {
+        "url": "https://moonfield.be/tbuilder-layout/artists-2",
+        "date": "2022-04-07",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://moonfield.be/volunteers",
+        "date": "2022-04-07",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://moonfield.be/bdc",
+        "date": "2023-03-17",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://moonfield.be/lolita",
+        "date": "2023-03-17",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://moonfield.be/bennybettane",
+        "date": "2023-03-30",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://moonfield.be/subscribe",
+        "date": "2024-09-02",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://moonfield.be/wamakis",
+        "date": "2023-03-20",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://moonfield.be/egidius",
+        "date": "2023-03-29",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://moonfield.be/tbuilder-layout/paginas",
+        "date": "2022-01-25",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://moonfield.be/privacystatement",
+        "date": "2023-02-08",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://moonfield.be/lukasfirtzer",
+        "date": "2023-03-20",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://moonfield.be/avaeva",
+        "date": "2023-03-20",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://moonfield.be/sweats",
+        "date": "2023-03-17",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://moonfield.be/romanflugel",
+        "date": "2023-03-17",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://moonfield.be/tbuilder-layout/discover",
+        "date": "2022-01-25",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://moonfield.be/lighterthief",
+        "date": "2023-03-17",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://moonfield.be/ciscofm",
+        "date": "2023-03-30",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://moonfield.be/kunikuni",
+        "date": "2023-03-20",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://moonfield.be/pripjet",
+        "date": "2023-03-20",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://moonfield.be/camping",
+        "date": "2022-06-09",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://moonfield.be/shethedj",
+        "date": "2023-03-17",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://moonfield.be/droptheneedle",
+        "date": "2023-03-20",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://moonfield.be/nosedrip",
+        "date": "2023-03-20",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://moonfield.be/bothlane",
+        "date": "2023-03-17",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://moonfield.be/mixmonstermenno",
+        "date": "2023-03-30",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://moonfield.be/tbuilder-layout-part/line-up2020",
+        "date": "2021-08-13",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://moonfield.be/disclaimer",
+        "date": "2023-02-08",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://moonfield.be/brucebotnik",
+        "date": "2023-03-30",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://moonfield.be/themify_popup/stay-tuned",
+        "date": "2018-11-10",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://moonfield.be/jaylumen",
+        "date": "2023-03-17",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://moonfield.be/pasteditions",
+        "date": "2023-02-08",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://moonfield.be/zohra",
+        "date": "2023-03-17",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://moonfield.be/sacred",
+        "date": "2023-03-17",
+        "source": "sitemap lastmod"
+      },
+      {
+        "url": "https://moonfield.be/fooddrinks",
+        "date": "2023-02-08",
+        "source": "sitemap lastmod"
+      }
+    ],
+    "unchecked_documents": []
+  },
+  "contact_emails": [
+    "info@moonfield.be",
+    "nfo@moonfield.be"
+  ],
+  "warnings": [],
+  "errors": [],
+  "pages": [
+    {
+      "url": "https://moonfield.be/",
+      "title": "Moonfield Festival - 10 & 11 juli 2026 - Oude Bleken, Mol",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page does not mention any open call or invitation for submissions. It only talks about the festival dates and tickets.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://moonfield.be/faq",
+      "title": "FAQ - Moonfield Festival - 8 & 9 juli 2022 - Oude Bleken, Mol",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page describes the festival's opening hours, location, and general rules but does not mention any call for proposals, applications, or submissions. It does not provide any deadlines or details about how to apply.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    }
+  ],
+  "model": "qwen2.5-3b-instruct-q4_k_m.gguf"
+}

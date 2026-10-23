@@ -1,0 +1,308 @@
+{
+  "site": "https://www.odaysfestival.dk/",
+  "checked_on": "2026-09-22",
+  "status": "open",
+  "status_reason": "Open call announced on 1 page(s)",
+  "opportunity_types": [
+    "dj",
+    "exhibition",
+    "installation",
+    "live_performance",
+    "music",
+    "other",
+    "residency",
+    "talks",
+    "vendors_food",
+    "video_film",
+    "visuals",
+    "volunteers",
+    "workshops"
+  ],
+  "deadline": "",
+  "deadline_text": "",
+  "announcement_urls": [
+    "https://www.odaysfestival.dk/o-create"
+  ],
+  "open_call_urls": [],
+  "how_to_apply": "",
+  "call_pages": [
+    {
+      "url": "https://www.odaysfestival.dk/o-create",
+      "status": "open",
+      "confidence": "high",
+      "opportunity_types": [
+        "dj",
+        "exhibition",
+        "installation",
+        "live_performance",
+        "music",
+        "other",
+        "residency",
+        "talks",
+        "vendors_food",
+        "video_film",
+        "visuals",
+        "volunteers",
+        "workshops"
+      ],
+      "verified_quotes": [
+        "O/Create presented by Netcompany is an open call competition inviting emerging creatives to design and build a site-specific project for O Days.",
+        "Stay close for updates on next year’s O/Create competition brief."
+      ],
+      "deadline": "",
+      "deadline_text": "",
+      "how_to_apply": "",
+      "open_call_urls": [],
+      "reasoning": "The page describes an open call for emerging creatives to design and build a site-specific project for O Days. It mentions that the call is open and invites submissions for the next year."
+    },
+    {
+      "url": "https://www.odaysfestival.dk/program",
+      "status": "not_yet_open",
+      "confidence": "low",
+      "opportunity_types": [
+        "dj",
+        "exhibition",
+        "installation",
+        "live_performance",
+        "music",
+        "other",
+        "residency",
+        "talks",
+        "vendors_food",
+        "video_film",
+        "visuals",
+        "volunteers",
+        "workshops"
+      ],
+      "verified_quotes": [
+        "The 2027 program will unfold in the months to come."
+      ],
+      "deadline": "",
+      "deadline_text": "",
+      "how_to_apply": "",
+      "open_call_urls": [],
+      "reasoning": "The page describes the upcoming 2027 lineup and mentions that the program will unfold in the months to come. It does not provide a deadline or details about how to apply, but it indicates that applications are not yet open."
+    },
+    {
+      "url": "https://www.odaysfestival.dk/volunteer",
+      "status": "closed",
+      "confidence": "low",
+      "opportunity_types": [
+        "volunteers"
+      ],
+      "verified_quotes": [
+        "Sign up to our newsletter below to be the first to know when volunteer sign-up opens dor O Days 2027.",
+        "Your submission has been received!"
+      ],
+      "deadline": "",
+      "deadline_text": "",
+      "how_to_apply": "",
+      "open_call_urls": [],
+      "reasoning": "The page mentions signing up to the newsletter to be the first to know when volunteer sign-up opens for O Days 2027, indicating that the current volunteer sign-up is closed and will open at a later date."
+    }
+  ],
+  "coverage": {
+    "discovery": "link crawl (no sitemap found)",
+    "sitemap_urls_found": 0,
+    "pages_visited": 15,
+    "js_rendered_pages": 0,
+    "pages_classified": 7,
+    "llm_used": true,
+    "skipped_by_robots": [],
+    "min_page_date": "2025-01-01",
+    "skipped_by_date": [],
+    "unchecked_documents": []
+  },
+  "contact_emails": [
+    "communications@odays.dk",
+    "frivillig@odays.dk",
+    "info@odays.dk"
+  ],
+  "warnings": [],
+  "errors": [],
+  "pages": [
+    {
+      "url": "https://www.odaysfestival.dk/o-create",
+      "title": "O Days / 2026 | O/Create – Art, Design & Collaboration",
+      "keyword_hits": [
+        "open call"
+      ],
+      "form_links": [],
+      "classification": {
+        "status": "open",
+        "opportunity_types": [
+          "dj",
+          "exhibition",
+          "installation",
+          "live_performance",
+          "music",
+          "other",
+          "residency",
+          "talks",
+          "vendors_food",
+          "video_film",
+          "visuals",
+          "volunteers",
+          "workshops"
+        ],
+        "quotes": [
+          "O/Create presented by Netcompany is an open call competition inviting emerging creatives to design and build a site-specific project for O Days.",
+          "Stay close for updates on next year’s O/Create competition brief."
+        ],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page describes an open call for emerging creatives to design and build a site-specific project for O Days. It mentions that the call is open and invites submissions for the next year.",
+        "verified_quotes": [
+          "O/Create presented by Netcompany is an open call competition inviting emerging creatives to design and build a site-specific project for O Days.",
+          "Stay close for updates on next year’s O/Create competition brief."
+        ],
+        "deadline_text": "",
+        "confidence": "high",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://www.odaysfestival.dk/",
+      "title": "O Days 2027 / Music Festival in Copenhagen",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page does not mention any open call or invitation for submissions. It only contains general information and a submission form that has been received.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://www.odaysfestival.dk/program",
+      "title": "O Days / 2027 Lineup | Program & Artists Coming Soon",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "not_yet_open",
+        "opportunity_types": [
+          "dj",
+          "exhibition",
+          "installation",
+          "live_performance",
+          "music",
+          "other",
+          "residency",
+          "talks",
+          "vendors_food",
+          "video_film",
+          "visuals",
+          "volunteers",
+          "workshops"
+        ],
+        "quotes": [
+          "The 2027 program will unfold in the months to come.",
+          "Stay tuned."
+        ],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page describes the upcoming 2027 lineup and mentions that the program will unfold in the months to come. It does not provide a deadline or details about how to apply, but it indicates that applications are not yet open.",
+        "verified_quotes": [
+          "The 2027 program will unfold in the months to come."
+        ],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://www.odaysfestival.dk/about",
+      "title": "O Days / 2026 | About the Festival",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page describes past editions of the festival and does not mention any open call for future submissions or applications.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://www.odaysfestival.dk/volunteer",
+      "title": "O Days / 2026 | Volunteers & Community",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "closed",
+        "opportunity_types": [
+          "volunteers"
+        ],
+        "quotes": [
+          "Sign up to our newsletter below to be the first to know when volunteer sign-up opens dor O Days 2027.",
+          "Your submission has been received!"
+        ],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page mentions signing up to the newsletter to be the first to know when volunteer sign-up opens for O Days 2027, indicating that the current volunteer sign-up is closed and will open at a later date.",
+        "verified_quotes": [
+          "Sign up to our newsletter below to be the first to know when volunteer sign-up opens dor O Days 2027.",
+          "Your submission has been received!"
+        ],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://www.odaysfestival.dk/practical-info",
+      "title": "O Days / 2026 | Practical Information & Festival Details",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page does not mention any open call for proposals, submissions, or applications. It only provides information about the festival, ticketing, and site details.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://www.odaysfestival.dk/contact",
+      "title": "O Days / 2026 | Contact & Inquiries",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page contains contact information and does not mention any open call for submissions, applications, or proposals.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    }
+  ],
+  "model": "qwen2.5-3b-instruct-q4_k_m.gguf"
+}

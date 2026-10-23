@@ -1,0 +1,17 @@
+{
+  "website": "https://www.dampfzentrale.ch/festival/full-of-lava-2025-festival/",
+  "model": "qwen2.5-7b-instruct-q4_k_m-00001-of-00002.gguf",
+  "review": {
+    "status": "open",
+    "deadline": "2027-05-05",
+    "deadline_text": "05.05.27 | 5.5.27",
+    "open_call_url": "https://www.dampfzentrale.ch/wp-content/uploads/2026/08/DE_260826_Ausschreibung_Szenefenster.pdf, https://www.dampfzentrale.ch/en/artist-applications/, https://www.dampfzentrale.ch/wp-content/uploads/2026/08/EN260826_CALL-FOR-ENTRIES_Szenefenster.pdf",
+    "announcement_url": "https://www.dampfzentrale.ch/en/infos-2/calls",
+    "opportunity_types": "installation, live_performance, music, visuals",
+    "how_to_apply": "Applications are accepted exclusively via the official application links and must include: A short project description (max. 1200 characters including spaces) Short biographies of the participants (max. 800 characters including spaces) Contact details Portrait photos of the participants and/or photos of the project",
+    "large_model_status": "open",
+    "review_reason": "https://www.dampfzentrale.ch/en/infos-2/calls: The page describes an open call for artist applications, with specific details on how to apply and key dates for submission. | Fetch errors: Could not fetch https://www.dampfzentrale.ch/wp-content/uploads/2026/08/DE_260826_Ausschreibung_Szenefenster.pdf; Could not fetch https://www.dampfzentrale.ch/wp-content/uploads/2026/08/EN260826_CALL-FOR-ENTRIES_Szenefenster.pdf",
+    "review_quotes": "Applications are accepted exclusively via the official application links and must include: A short project description (max. 1200 characters including spaces) Short biographies of the participants (max. 800 characters including spaces) Contact details Portrait photos of the participants and/or photos of the project | For each “Szenefenster” date, 3–4 groups are selected. Selection is made by lottery. “Szenefenster” is an uncurated format. It is possible to apply for each date, but participation is limited to one performance. | Key Dates: Szenefenster on 30.11.26, Schlachthaus Theater, Saal 28.9.-26.10.26: Registration window open 2.11.26: Announcement of selected groups",
+    "reviewed_on": "2026-10-23"
+  }
+}

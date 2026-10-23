@@ -4,8 +4,10 @@ import pytest
 from bs4 import BeautifulSoup
 
 from open_call_agent.open_call.checker import SiteChecker
+from open_call_agent.open_call.review import REVIEW_COLUMNS
 from open_call_agent.open_call.dates import (MIN_PAGE_DATE, html_page_dates, http_last_modified, is_too_old,
-                                             normalize_deadline, normalize_deadline_column)
+                                             normalize_deadline, normalize_deadline_column,
+                                             past_deadline)
 
 
 @pytest.mark.parametrize("text, expected", [
@@ -126,3 +128,41 @@ def test_identical_sitemap_dates_are_ignored(monkeypatch):
     checker.discover_sitemap_urls()
     assert checker.sitemap_lastmod == {}
     assert MIN_PAGE_DATE == date(2025, 1, 1)
+
+
+def test_a_column_is_past_only_when_every_deadline_in_it_is():
+    today = date(2026, 10, 23)
+    assert past_deadline("2026-09-22", today) is True
+    assert past_deadline("2026-11-15", today) is False
+    assert past_deadline("2026-09-22 | 2026-12-01", today) is False, "one deadline still ahead keeps the call open"
+    assert past_deadline("2026-09-22 | 2026-10-01", today) is True
+    assert past_deadline("", today) is False and past_deadline(None, today) is False, "no deadline is not a past one"
+    assert past_deadline("rolling", today) is False, "wording that isn't a date can't have passed"
+
+
+def test_the_review_closes_a_call_whose_carried_over_deadline_has_passed():
+    """
+    The second pass keeps the first pass's deadline when it finds none of its own. classifier.verify only ever checks
+    the deadline its own model returned, so without this the row would stay open with a date that has gone by.
+    """
+    from open_call_agent.open_call.review import review_row
+
+    class Page:
+        url = "https://festival.example/open-call"
+        title = "Open call"
+        text = "We invite artists to apply for the 2027 edition."
+        keyword_hits = ["apply"]
+        form_links = []
+
+    page = Page()
+    row = {column: "" for column in REVIEW_COLUMNS} | {
+        "website": "https://festival.example", "status": "open", "deadline": "2020-01-31",
+        "announcement_url": page.url, "status_reason": "Open call announced"}
+    evidence = {"announcements": [page], "forms": [], "errors": [], "too_old": [], "announcement_errors": 0}
+    classification = {"status": "open", "quotes": ["invite artists to apply"], "deadline": "",
+                      "how_to_apply": "", "reasoning": "The page invites artists to apply.", "opportunity_types": []}
+
+    reviewed = review_row(row, evidence, {page.url: [classification]})
+    assert reviewed["large_model_status"] == "open", "the model did say open, and that is kept"
+    assert reviewed["status"] == "closed", "but its deadline went by years ago"
+    assert "2020-01-31 has passed" in reviewed["review_reason"]

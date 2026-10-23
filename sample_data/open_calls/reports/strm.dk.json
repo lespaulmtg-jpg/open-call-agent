@@ -1,0 +1,537 @@
+{
+  "site": "https://strm.dk/",
+  "checked_on": "2026-09-22",
+  "status": "open",
+  "status_reason": "Open call announced on 4 page(s)",
+  "opportunity_types": [
+    "residency"
+  ],
+  "deadline": "2026-10-01",
+  "deadline_text": "2026-10-01 | not specified",
+  "announcement_urls": [
+    "https://strm.dk/about-lydskatten",
+    "https://strm.dk/music/strom-sound-system",
+    "https://strm.dk/studios/kodbyen",
+    "https://strm.dk/articles/from-strom-once-a-year-to-strom-all-year"
+  ],
+  "open_call_urls": [],
+  "how_to_apply": "use the following link to apply | Please submit your application here. | No direct link to apply is provided, but interested parties can contact Strøm Studios for more information. | not specified",
+  "call_pages": [
+    {
+      "url": "https://strm.dk/about-lydskatten",
+      "status": "open",
+      "confidence": "high",
+      "opportunity_types": [
+        "residency"
+      ],
+      "verified_quotes": [
+        "OPEN CALL FOR RESIDENCY"
+      ],
+      "deadline": "",
+      "deadline_text": "",
+      "how_to_apply": "use the following link to apply",
+      "open_call_urls": [],
+      "reasoning": "The page describes an open call for a residency at Strøm Studios, Kødbyen. It provides a link to apply and states the call is open now."
+    },
+    {
+      "url": "https://strm.dk/music/strom-sound-system",
+      "status": "open",
+      "confidence": "high",
+      "opportunity_types": [
+        "residency"
+      ],
+      "verified_quotes": [
+        "APPLICATIONS OPEN AUTUMN 2026",
+        "Are you interested in featuring the Strøm Sound System at your event? Submit your application here."
+      ],
+      "deadline": "2026-10-01",
+      "deadline_text": "2026-10-01",
+      "how_to_apply": "Please submit your application here.",
+      "open_call_urls": [],
+      "reasoning": "The page describes an open call for the Strøm Sound System, which is a powerful, custom-built sound system offered free of charge to local event organizers in Denmark. The call is for applications in autumn 2026."
+    },
+    {
+      "url": "https://strm.dk/studios/kodbyen",
+      "status": "open",
+      "confidence": "high",
+      "opportunity_types": [
+        "residency"
+      ],
+      "verified_quotes": [
+        "OPEN CALL AUTUMN 2026",
+        "ELECTRONIC MUSIC STUDIO RESIDENCY",
+        "STRØM STUDIOS: KØDBYEN"
+      ],
+      "deadline": "2026-10-01",
+      "deadline_text": "2026-10-01",
+      "how_to_apply": "No direct link to apply is provided, but interested parties can contact Strøm Studios for more information.",
+      "open_call_urls": [],
+      "reasoning": "The page describes an open call for an electronic music studio residency at Kødbyen in Copenhagen, Denmark. It mentions the call is for the autumn of 2026 and provides details about the residency."
+    },
+    {
+      "url": "https://strm.dk/articles/from-strom-once-a-year-to-strom-all-year",
+      "status": "open",
+      "confidence": "high",
+      "opportunity_types": [
+        "residency"
+      ],
+      "verified_quotes": [
+        "open calls for our studios in the fall."
+      ],
+      "deadline": "",
+      "deadline_text": "not specified",
+      "how_to_apply": "not specified",
+      "open_call_urls": [],
+      "reasoning": "The page mentions 'open calls for our studios in the fall' which indicates an open call for a residency opportunity."
+    },
+    {
+      "url": "https://strm.dk/studios/kodbyen/application-form-kodbyen",
+      "status": "closed",
+      "confidence": "high",
+      "opportunity_types": [
+        "residency"
+      ],
+      "verified_quotes": [
+        "APPLICATION DEADLINE: 20 September, 2026",
+        "Submit your application"
+      ],
+      "deadline": "2026-09-20",
+      "deadline_text": "20 September, 2026",
+      "how_to_apply": "I have read and agree to the Terms and Conditions and Privacy Policy\nSubmit your application",
+      "open_call_urls": [],
+      "reasoning": "Downgraded: deadline 2026-09-20 has passed. Model said: The page describes an open call for a residency at Strøm Studios: Kødbyen, with a specific deadline of 20 September, 2026. It also provides an application form and details on how to apply."
+    },
+    {
+      "url": "https://strm.dk/studios/kapellet/application-form-kapellet",
+      "status": "closed",
+      "confidence": "high",
+      "opportunity_types": [
+        "residency"
+      ],
+      "verified_quotes": [
+        "Application deadline: 31st of July, 2026"
+      ],
+      "deadline": "2026-07-31",
+      "deadline_text": "31st of July, 2026",
+      "how_to_apply": "Please note: Strøm is not available to supply accommodation nor a working grant. More information: About the studio, About Lydskatten, Other residents experience, Powered by Lydskatten & Strøm",
+      "open_call_urls": [],
+      "reasoning": "Downgraded: deadline 2026-07-31 has passed. Model said: The page describes an open call for a residency at Strøm Studios: Kødbyen, with a specified application deadline of July 31, 2026. The page also provides details about the residency, including the duration and location."
+    },
+    {
+      "url": "https://strm.dk/articles/open-call-strom-studios-kodbyen",
+      "status": "closed",
+      "confidence": "high",
+      "opportunity_types": [
+        "residency"
+      ],
+      "verified_quotes": [
+        "APPLICATION DEADLINE: 20 September 2026",
+        "The residency offers artists dedicated time and space to experiment, develop ideas, and explore the unique collection of analogue and vintage equipment at Strøm Studios: Kødbyen"
+      ],
+      "deadline": "2026-09-20",
+      "deadline_text": "20 September 2026",
+      "how_to_apply": "Please note that this open call offers one-week residencies only. Send your application by the deadline.",
+      "open_call_urls": [
+        "https://strm.dk/studios/kodbyen/"
+      ],
+      "reasoning": "Downgraded: deadline 2026-09-20 has passed. Model said: The page describes a residency opportunity at Strøm Studios in Kødbyen, with a specific application deadline of 20 September 2026. The page also provides details about the residency, including the dates and the equipment available."
+    },
+    {
+      "url": "https://strm.dk/",
+      "status": "closed",
+      "confidence": "high",
+      "opportunity_types": [
+        "residency"
+      ],
+      "verified_quotes": [
+        "OPEN CALL STRØM STUDIOS: KØDBYEN",
+        "Strøm Studios: Kødbyen"
+      ],
+      "deadline": "2026-09-08",
+      "deadline_text": "08.09.2026",
+      "how_to_apply": "Read more",
+      "open_call_urls": [],
+      "reasoning": "Downgraded: deadline 2026-09-08 has passed. Model said: The page describes an open call for a residency at Strøm Studios: Kødbyen, with a deadline of 8 September 2026."
+    },
+    {
+      "url": "https://strm.dk/articles",
+      "status": "closed",
+      "confidence": "high",
+      "opportunity_types": [
+        "residency"
+      ],
+      "verified_quotes": [
+        "We’re looking for curious sound artists, producers, and composers for a one week residency at Strøm Studios: Kødbyen.",
+        "FROM STRØM ONCE A YEAR TO STRØM ALL YEAR"
+      ],
+      "deadline": "2026-09-08",
+      "deadline_text": "08.09.2026",
+      "how_to_apply": "No direct link to apply is provided, but interested parties can visit the page and apply through the provided link.",
+      "open_call_urls": [],
+      "reasoning": "Downgraded: deadline 2026-09-08 has passed. Model said: The page describes a residency opportunity at Strøm Studios: Kødbyen, which is an open call for sound artists, producers, and composers. The deadline is provided as 08.09.2026, which is in the future."
+    }
+  ],
+  "coverage": {
+    "discovery": "sitemap + links",
+    "sitemap_urls_found": 75,
+    "pages_visited": 19,
+    "js_rendered_pages": 0,
+    "pages_classified": 12,
+    "llm_used": true,
+    "skipped_by_robots": [],
+    "min_page_date": "2025-01-01",
+    "skipped_by_date": [],
+    "unchecked_documents": []
+  },
+  "contact_emails": [
+    "cibo@strm.dk",
+    "frederik@strm.dk",
+    "info@strm.dk",
+    "jasper@strm.dk",
+    "lydskatten@strm.dk",
+    "maddi@strm.dk",
+    "music@strm.dk",
+    "press@strm.dk",
+    "residency@strm.dk",
+    "simone@strm.dk",
+    "sound@strm.dk",
+    "stb@strm.dk",
+    "studio@strm.dk",
+    "studios@strm.dk"
+  ],
+  "warnings": [
+    "Crawl time budget (120s) reached after 19 pages."
+  ],
+  "errors": [],
+  "pages": [
+    {
+      "url": "https://strm.dk/studios/kodbyen/application-form-kodbyen",
+      "title": "Strøm Studios: Kødbyen - Apply here - Strøm",
+      "keyword_hits": [
+        "application\nopen",
+        "application deadline",
+        "application form",
+        "apply here",
+        "open call",
+        "submit your application"
+      ],
+      "form_links": [],
+      "classification": {
+        "status": "closed",
+        "opportunity_types": [
+          "residency"
+        ],
+        "quotes": [
+          "APPLICATION DEADLINE: 20 September, 2026",
+          "Submit your application"
+        ],
+        "deadline": "2026-09-20",
+        "how_to_apply": "I have read and agree to the Terms and Conditions and Privacy Policy\nSubmit your application",
+        "reasoning": "Downgraded: deadline 2026-09-20 has passed. Model said: The page describes an open call for a residency at Strøm Studios: Kødbyen, with a specific deadline of 20 September, 2026. It also provides an application form and details on how to apply.",
+        "verified_quotes": [
+          "APPLICATION DEADLINE: 20 September, 2026",
+          "Submit your application"
+        ],
+        "deadline_text": "20 September, 2026",
+        "confidence": "high",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://strm.dk/studios/kapellet/application-form-kapellet",
+      "title": "Strøm Studios: Kødbyen - Apply here - Strøm",
+      "keyword_hits": [
+        "application\nopen",
+        "application deadline",
+        "apply here"
+      ],
+      "form_links": [],
+      "classification": {
+        "status": "closed",
+        "opportunity_types": [
+          "residency"
+        ],
+        "quotes": [
+          "APPLICATION OPEN CALL: STRØM STUDIOS: We are now looking for electronic music producers, sound artists and composers interested in a residency at Strøm Studios: Kødbyen.",
+          "Application deadline: 31st of July, 2026"
+        ],
+        "deadline": "2026-07-31",
+        "how_to_apply": "Please note: Strøm is not available to supply accommodation nor a working grant. More information: About the studio, About Lydskatten, Other residents experience, Powered by Lydskatten & Strøm",
+        "reasoning": "Downgraded: deadline 2026-07-31 has passed. Model said: The page describes an open call for a residency at Strøm Studios: Kødbyen, with a specified application deadline of July 31, 2026. The page also provides details about the residency, including the duration and location.",
+        "verified_quotes": [
+          "Application deadline: 31st of July, 2026"
+        ],
+        "deadline_text": "31st of July, 2026",
+        "confidence": "high",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://strm.dk/articles/open-call-strom-studios-kodbyen",
+      "title": "OPEN CALL: STRØM STUDIO - Strøm",
+      "keyword_hits": [
+        "application deadline",
+        "open call"
+      ],
+      "form_links": [],
+      "classification": {
+        "status": "closed",
+        "opportunity_types": [
+          "residency"
+        ],
+        "quotes": [
+          "APPLICATION DEADLINE: 20 September 2026",
+          "The residency offers artists dedicated time and space to experiment, develop ideas, and explore the unique collection of analogue and vintage equipment at Strøm Studios: Kødbyen"
+        ],
+        "deadline": "2026-09-20",
+        "how_to_apply": "Please note that this open call offers one-week residencies only. Send your application by the deadline.",
+        "reasoning": "Downgraded: deadline 2026-09-20 has passed. Model said: The page describes a residency opportunity at Strøm Studios in Kødbyen, with a specific application deadline of 20 September 2026. The page also provides details about the residency, including the dates and the equipment available.",
+        "verified_quotes": [
+          "APPLICATION DEADLINE: 20 September 2026",
+          "The residency offers artists dedicated time and space to experiment, develop ideas, and explore the unique collection of analogue and vintage equipment at Strøm Studios: Kødbyen"
+        ],
+        "deadline_text": "20 September 2026",
+        "confidence": "high",
+        "form_links": [],
+        "open_call_urls": [
+          "https://strm.dk/studios/kodbyen/"
+        ]
+      }
+    },
+    {
+      "url": "https://strm.dk/about-lydskatten",
+      "title": "About Lydskatten - Strøm",
+      "keyword_hits": [
+        "apply now",
+        "open call"
+      ],
+      "form_links": [],
+      "classification": {
+        "status": "open",
+        "opportunity_types": [
+          "residency"
+        ],
+        "quotes": [
+          "OPEN CALL FOR RESIDENCY",
+          "APPLY NOW"
+        ],
+        "deadline": "",
+        "how_to_apply": "use the following link to apply",
+        "reasoning": "The page describes an open call for a residency at Strøm Studios, Kødbyen. It provides a link to apply and states the call is open now.",
+        "verified_quotes": [
+          "OPEN CALL FOR RESIDENCY"
+        ],
+        "deadline_text": "",
+        "confidence": "high",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://strm.dk/music/strom-sound-system",
+      "title": "STRØM SOUND SYSTEM - Strøm",
+      "keyword_hits": [
+        "applications open",
+        "submit your application"
+      ],
+      "form_links": [],
+      "classification": {
+        "status": "open",
+        "opportunity_types": [
+          "residency"
+        ],
+        "quotes": [
+          "APPLICATIONS OPEN AUTUMN 2026",
+          "Are you interested in featuring the Strøm Sound System at your event? Submit your application here."
+        ],
+        "deadline": "2026-10-01",
+        "how_to_apply": "Please submit your application here.",
+        "reasoning": "The page describes an open call for the Strøm Sound System, which is a powerful, custom-built sound system offered free of charge to local event organizers in Denmark. The call is for applications in autumn 2026.",
+        "verified_quotes": [
+          "APPLICATIONS OPEN AUTUMN 2026",
+          "Are you interested in featuring the Strøm Sound System at your event? Submit your application here."
+        ],
+        "deadline_text": "2026-10-01",
+        "confidence": "high",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://strm.dk/",
+      "title": "Strøm",
+      "keyword_hits": [
+        "open call"
+      ],
+      "form_links": [],
+      "classification": {
+        "status": "closed",
+        "opportunity_types": [
+          "residency"
+        ],
+        "quotes": [
+          "OPEN CALL STRØM STUDIOS: KØDBYEN",
+          "Strøm Studios: Kødbyen"
+        ],
+        "deadline": "2026-09-08",
+        "how_to_apply": "Read more",
+        "reasoning": "Downgraded: deadline 2026-09-08 has passed. Model said: The page describes an open call for a residency at Strøm Studios: Kødbyen, with a deadline of 8 September 2026.",
+        "verified_quotes": [
+          "OPEN CALL STRØM STUDIOS: KØDBYEN",
+          "Strøm Studios: Kødbyen"
+        ],
+        "deadline_text": "08.09.2026",
+        "confidence": "high",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://strm.dk/studios/kodbyen",
+      "title": "Kødbyen - Strøm",
+      "keyword_hits": [
+        "open call"
+      ],
+      "form_links": [],
+      "classification": {
+        "status": "open",
+        "opportunity_types": [
+          "residency"
+        ],
+        "quotes": [
+          "OPEN CALL AUTUMN 2026",
+          "ELECTRONIC MUSIC STUDIO RESIDENCY",
+          "STRØM STUDIOS: KØDBYEN"
+        ],
+        "deadline": "2026-10-01",
+        "how_to_apply": "No direct link to apply is provided, but interested parties can contact Strøm Studios for more information.",
+        "reasoning": "The page describes an open call for an electronic music studio residency at Kødbyen in Copenhagen, Denmark. It mentions the call is for the autumn of 2026 and provides details about the residency.",
+        "verified_quotes": [
+          "OPEN CALL AUTUMN 2026",
+          "ELECTRONIC MUSIC STUDIO RESIDENCY",
+          "STRØM STUDIOS: KØDBYEN"
+        ],
+        "deadline_text": "2026-10-01",
+        "confidence": "high",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://strm.dk/articles/from-strom-once-a-year-to-strom-all-year",
+      "title": "From Strøm once a year to Strøm all year - Strøm",
+      "keyword_hits": [
+        "open calls"
+      ],
+      "form_links": [],
+      "classification": {
+        "status": "open",
+        "opportunity_types": [
+          "residency"
+        ],
+        "quotes": [
+          "open calls for our studios in the fall."
+        ],
+        "deadline": "",
+        "how_to_apply": "not specified",
+        "reasoning": "The page mentions 'open calls for our studios in the fall' which indicates an open call for a residency opportunity.",
+        "verified_quotes": [
+          "open calls for our studios in the fall."
+        ],
+        "deadline_text": "not specified",
+        "confidence": "high",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://strm.dk/articles",
+      "title": "Articles - Strøm",
+      "keyword_hits": [
+        "open call"
+      ],
+      "form_links": [],
+      "classification": {
+        "status": "closed",
+        "opportunity_types": [
+          "residency"
+        ],
+        "quotes": [
+          "We’re looking for curious sound artists, producers, and composers for a one week residency at Strøm Studios: Kødbyen.",
+          "FROM STRØM ONCE A YEAR TO STRØM ALL YEAR"
+        ],
+        "deadline": "2026-09-08",
+        "how_to_apply": "No direct link to apply is provided, but interested parties can visit the page and apply through the provided link.",
+        "reasoning": "Downgraded: deadline 2026-09-08 has passed. Model said: The page describes a residency opportunity at Strøm Studios: Kødbyen, which is an open call for sound artists, producers, and composers. The deadline is provided as 08.09.2026, which is in the future.",
+        "verified_quotes": [
+          "We’re looking for curious sound artists, producers, and composers for a one week residency at Strøm Studios: Kødbyen.",
+          "FROM STRØM ONCE A YEAR TO STRØM ALL YEAR"
+        ],
+        "deadline_text": "08.09.2026",
+        "confidence": "high",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://strm.dk/about",
+      "title": "About - Strøm",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page does not describe any open call or opportunity for external applications, submissions, or proposals. It only provides information about the institution and its activities.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://strm.dk/events/hainbach-artist-talk-and-concert",
+      "title": "Hainbach – Artist talk and concert",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page describes a concert and artist talk with Hainbach, but does not mention an open call for proposals, applications, or submissions. It only states the event details and the artist's residency.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://strm.dk/da/events/hainbach-artist-talk-og-koncert",
+      "title": "Hainbach – Artist talk og koncert - Strøm",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page describes a talk and concert with Hainbach, but does not mention any call for proposals, applications, or submissions. It only states the date and time of the event.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    }
+  ],
+  "model": "qwen2.5-3b-instruct-q4_k_m.gguf"
+}

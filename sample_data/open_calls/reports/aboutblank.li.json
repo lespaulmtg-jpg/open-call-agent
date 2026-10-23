@@ -1,0 +1,194 @@
+{
+  "site": "https://aboutblank.li/",
+  "checked_on": "2026-09-22",
+  "status": "needs_review",
+  "status_reason": "Possible call (unclear)",
+  "opportunity_types": [
+    "other"
+  ],
+  "deadline": "",
+  "deadline_text": "",
+  "announcement_urls": [
+    "https://aboutblank.li/sektgarten"
+  ],
+  "open_call_urls": [
+    "https://forms.gle/KSXK7U5SmqW5vH1Y8"
+  ],
+  "how_to_apply": "https://forms.gle/KSXK7U5SmqW5vH1Y8",
+  "call_pages": [
+    {
+      "url": "https://aboutblank.li/sektgarten",
+      "status": "unclear",
+      "confidence": "high",
+      "opportunity_types": [
+        "other"
+      ],
+      "verified_quotes": [
+        "Reservierungen sind bis 20 Personen, z.b. für Plenum, Geburtstag, Jubiläum o.ä. möglich."
+      ],
+      "deadline": "",
+      "deadline_text": "",
+      "how_to_apply": "https://forms.gle/KSXK7U5SmqW5vH1Y8",
+      "open_call_urls": [
+        "https://forms.gle/KSXK7U5SmqW5vH1Y8"
+      ],
+      "reasoning": "The page describes the opening of Sektgarten in 2027 and mentions that applications for future events can be sent via a form. However, it does not provide a specific deadline or details about the current call."
+    }
+  ],
+  "coverage": {
+    "discovery": "link crawl (no sitemap found)",
+    "sitemap_urls_found": 0,
+    "pages_visited": 10,
+    "js_rendered_pages": 10,
+    "pages_classified": 6,
+    "llm_used": true,
+    "skipped_by_robots": [],
+    "min_page_date": "2025-01-01",
+    "skipped_by_date": [],
+    "unchecked_documents": []
+  },
+  "contact_emails": [
+    "info@aboutblank.li",
+    "lost@aboutblank.li"
+  ],
+  "warnings": [
+    "Crawl time budget (120s) reached after 10 pages."
+  ],
+  "errors": [],
+  "pages": [
+    {
+      "url": "https://aboutblank.li/sektgarten",
+      "title": "Sektgarten – ://about blank",
+      "keyword_hits": [],
+      "form_links": [
+        "https://forms.gle/KSXK7U5SmqW5vH1Y8"
+      ],
+      "classification": {
+        "status": "unclear",
+        "opportunity_types": [
+          "other"
+        ],
+        "quotes": [
+          "Reservierungen sind bis 20 Personen, z.b. für Plenum, Geburtstag, Jubiläum o.ä. möglich.",
+          "Zum Formular: https://forms.gle/KSXK7U5SmqW5vH1Y8"
+        ],
+        "deadline": "",
+        "how_to_apply": "https://forms.gle/KSXK7U5SmqW5vH1Y8",
+        "reasoning": "The page describes the opening of Sektgarten in 2027 and mentions that applications for future events can be sent via a form. However, it does not provide a specific deadline or details about the current call.",
+        "verified_quotes": [
+          "Reservierungen sind bis 20 Personen, z.b. für Plenum, Geburtstag, Jubiläum o.ä. möglich."
+        ],
+        "deadline_text": "",
+        "confidence": "high",
+        "form_links": [
+          "https://forms.gle/KSXK7U5SmqW5vH1Y8"
+        ],
+        "open_call_urls": [
+          "https://forms.gle/KSXK7U5SmqW5vH1Y8"
+        ]
+      }
+    },
+    {
+      "url": "https://aboutblank.li/feiern",
+      "title": "Feiern im ://about blank",
+      "keyword_hits": [],
+      "form_links": [
+        "https://forms.gle/PKXbgVC7tF1uU8pM9"
+      ],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page describes a private party venue with a form for inquiries, but does not mention any open call for proposals, applications, or submissions. The form is for inquiries and not for submitting proposals or applications.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "high",
+        "form_links": [
+          "https://forms.gle/PKXbgVC7tF1uU8pM9"
+        ],
+        "open_call_urls": [
+          "https://forms.gle/PKXbgVC7tF1uU8pM9"
+        ]
+      }
+    },
+    {
+      "url": "https://aboutblank.li/",
+      "title": "aboutblank.li",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page does not describe any open call or provide any information about applying or submitting. It only contains links and a list of services.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://aboutblank.li/faq",
+      "title": "FAQ - Das ://about blank und der israelisch-palästinensische Konflikt",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page does not describe an open call for any opportunity. It is a FAQ page that provides information about the ://about blank club and its stance on the Israeli-Palestinian conflict.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://aboutblank.li/faq_en",
+      "title": "FAQ - ://about blank and the Israeli-Palestinian conflict",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page does not describe any open call or opportunity for external applications, submissions, or proposals. It is a FAQ page providing information about the club's history, political stance, and recent events.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    },
+    {
+      "url": "https://aboutblank.li/next",
+      "title": "aboutblank.li",
+      "keyword_hits": [],
+      "form_links": [],
+      "classification": {
+        "status": "none",
+        "opportunity_types": [],
+        "quotes": [],
+        "deadline": "",
+        "how_to_apply": "",
+        "reasoning": "The page does not contain any information about an open call or any opportunity to apply, submit or propose something. It only contains links and a footer.",
+        "verified_quotes": [],
+        "deadline_text": "",
+        "confidence": "low",
+        "form_links": [],
+        "open_call_urls": []
+      }
+    }
+  ],
+  "model": "qwen2.5-3b-instruct-q4_k_m.gguf"
+}

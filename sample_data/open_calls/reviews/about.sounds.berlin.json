@@ -1,0 +1,17 @@
+{
+  "website": "https://about.sounds.berlin/",
+  "model": "qwen2.5-7b-instruct-q4_k_m-00001-of-00002.gguf",
+  "review": {
+    "status": "none",
+    "deadline": "",
+    "deadline_text": "",
+    "open_call_url": "",
+    "announcement_url": "",
+    "opportunity_types": "",
+    "how_to_apply": "",
+    "large_model_status": "none",
+    "review_reason": "https://about.sounds.berlin/musicfordreamingmachines: The page does not mention any open call for submissions or applications. It only describes an ongoing series of events.",
+    "review_quotes": "",
+    "reviewed_on": "2026-10-23"
+  }
+}
